@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Browse\Types;
+namespace Enbit\eBaySDK\Test\Browse\Types;
 
-use DTS\eBaySDK\Browse\Types\SearchForItemsRestResponse;
+use Enbit\eBaySDK\Browse\Types\SearchForItemsRestResponse;
 
 class SearchForItemsRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SearchForItemsRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Browse\Types\SearchForItemsRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Browse\Types\SearchForItemsRestResponse', $this->obj);
     }
 
     public function testExtendsSearchPagedCollection()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Browse\Types\SearchPagedCollection', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Browse\Types\SearchPagedCollection', $this->obj);
     }
 }

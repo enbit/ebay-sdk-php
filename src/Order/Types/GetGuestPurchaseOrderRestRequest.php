@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
  * @property string $purchaseOrderId
  */
-class GetGuestPurchaseOrderRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetGuestPurchaseOrderRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

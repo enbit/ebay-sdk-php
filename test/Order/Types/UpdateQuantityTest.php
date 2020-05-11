@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Order\Types;
+namespace Enbit\eBaySDK\Test\Order\Types;
 
-use DTS\eBaySDK\Order\Types\UpdateQuantity;
+use Enbit\eBaySDK\Order\Types\UpdateQuantity;
 
 class UpdateQuantityTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateQuantityTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\UpdateQuantity', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\UpdateQuantity', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

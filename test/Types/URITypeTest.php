@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Types\Test;
+namespace Enbit\eBaySDK\Types\Test;
 
-use DTS\eBaySDK\Types\URIType;
+use Enbit\eBaySDK\Types\URIType;
 
 class URITypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,12 +14,12 @@ class URITypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\URIType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\URIType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 
     public function testHasValueProperty()

@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Parser\Test;
+namespace Enbit\eBaySDK\Parser\Test;
 
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
 
 class JsonTest extends \PHPUnit_Framework_TestCase
 {
@@ -19,7 +19,7 @@ class JsonTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(true, $obj->booleanTrue);
         $this->assertEquals(false, $obj->booleanFalse);
         $this->assertEquals(new \DateTime('2000-01-01T16:15:30.123Z', new \DateTimeZone('UTC')), $obj->DateTime);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->SimpleClass);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->SimpleClass);
         $this->assertEquals(321, $obj->SimpleClass->integer);
         $this->assertEquals('another string', $obj->SimpleClass->string);
         $this->assertEquals('foo', $obj->strings[0]);
@@ -30,9 +30,9 @@ class JsonTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(4, $obj->integers[3]);
         $this->assertEquals(5, $obj->integers[4]);
         $this->assertEquals('bar', $obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[0]);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[0]);
         $this->assertEquals(888, $obj->simpleClasses[0]->integer);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[1]);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[1]);
         $this->assertEquals(999, $obj->simpleClasses[1]->integer);
         $this->assertEquals(543.21, $obj->AmountClass->value);
         $this->assertEquals('binary type', $obj->base64BinaryType->value);

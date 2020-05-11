@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\BulkDataExchange\Enums;
+namespace Enbit\eBaySDK\Test\BulkDataExchange\Enums;
 
-use DTS\eBaySDK\BulkDataExchange\Enums\ListingType;
+use Enbit\eBaySDK\BulkDataExchange\Enums\ListingType;
 
 class ListingTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class ListingTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BulkDataExchange\Enums\ListingType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BulkDataExchange\Enums\ListingType', $this->obj);
     }
 }

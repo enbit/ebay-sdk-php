@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse;
+use Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse;
 
 class CreateOrReplaceProductCompatibilityRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CreateOrReplaceProductCompatibilityRestResponseTest extends \PHPUnit_Frame
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse', $this->obj);
     }
 
     public function testExtendsBaseResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\BaseResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\BaseResponse', $this->obj);
     }
 }

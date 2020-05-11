@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\ReturnManagement\Types;
+namespace Enbit\eBaySDK\Test\ReturnManagement\Types;
 
-use DTS\eBaySDK\ReturnManagement\Types\SetItemAsReceivedRequest;
+use Enbit\eBaySDK\ReturnManagement\Types\SetItemAsReceivedRequest;
 
 class SetItemAsReceivedRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SetItemAsReceivedRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ReturnManagement\Types\SetItemAsReceivedRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ReturnManagement\Types\SetItemAsReceivedRequest', $this->obj);
     }
 
     public function testExtendsBaseRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ReturnManagement\Types\BaseRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ReturnManagement\Types\BaseRequest', $this->obj);
     }
 }

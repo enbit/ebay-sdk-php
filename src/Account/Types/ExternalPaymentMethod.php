@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
  * @property string $paymentMethodName
- * @property \DTS\eBaySDK\Account\Enums\ExternalPaymentMethodTypeEnum $paymentMethodType
+ * @property \Enbit\eBaySDK\Account\Enums\ExternalPaymentMethodTypeEnum $paymentMethodType
  * @property boolean $primary
  * @property boolean $verified
  */
-class ExternalPaymentMethod extends \DTS\eBaySDK\Types\BaseType
+class ExternalPaymentMethod extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

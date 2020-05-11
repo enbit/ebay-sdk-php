@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property boolean $eligible
  * @property string[] $eligibleCancelReason
- * @property \DTS\eBaySDK\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
- * @property \DTS\eBaySDK\PostOrder\Types\ItemEligibilityResult[] $itemEligibilityResult
+ * @property \Enbit\eBaySDK\PostOrder\Enums\EligibilityFailureReasonEnum[] $failureReason
+ * @property \Enbit\eBaySDK\PostOrder\Types\ItemEligibilityResult[] $itemEligibilityResult
  * @property string $legacyOrderId
  */
-class OrderEligibilityResult extends \DTS\eBaySDK\Types\BaseType
+class OrderEligibilityResult extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -43,7 +43,7 @@ class OrderEligibilityResult extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'failureReason'
         ],
         'itemEligibilityResult' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ItemEligibilityResult',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ItemEligibilityResult',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemEligibilityResult'

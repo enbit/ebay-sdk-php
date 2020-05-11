@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Taxonomy\Types;
+namespace Enbit\eBaySDK\Test\Taxonomy\Types;
 
-use DTS\eBaySDK\Taxonomy\Types\CategorySuggestion;
+use Enbit\eBaySDK\Taxonomy\Types\CategorySuggestion;
 
 class CategorySuggestionTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CategorySuggestionTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Taxonomy\Types\CategorySuggestion', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Taxonomy\Types\CategorySuggestion', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

@@ -8,24 +8,24 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Types\Amount $maxSoldInventoryValue
+ * @property \Enbit\eBaySDK\Account\Types\Amount $maxSoldInventoryValue
  * @property integer $maxSoldQuantity
- * @property \DTS\eBaySDK\Account\Types\Amount $minSoldInventoryValue
+ * @property \Enbit\eBaySDK\Account\Types\Amount $minSoldInventoryValue
  * @property integer $minSoldQuantity
- * @property \DTS\eBaySDK\Account\Types\TimeDuration $period
+ * @property \Enbit\eBaySDK\Account\Types\TimeDuration $period
  */
-class SoldAggregatedMetrics extends \DTS\eBaySDK\Types\BaseType
+class SoldAggregatedMetrics extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'maxSoldInventoryValue' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxSoldInventoryValue'
@@ -37,7 +37,7 @@ class SoldAggregatedMetrics extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'maxSoldQuantity'
         ],
         'minSoldInventoryValue' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minSoldInventoryValue'
@@ -49,7 +49,7 @@ class SoldAggregatedMetrics extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'minSoldQuantity'
         ],
         'period' => [
-            'type' => 'DTS\eBaySDK\Account\Types\TimeDuration',
+            'type' => 'Enbit\eBaySDK\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'period'

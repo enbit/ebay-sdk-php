@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace Enbit\eBaySDK\Catalog\Types;
 
 /**
  *
@@ -17,11 +17,11 @@ namespace DTS\eBaySDK\Catalog\Types;
  * @property string $next
  * @property integer $offset
  * @property string $prev
- * @property \DTS\eBaySDK\Catalog\Types\ProductSummary[] $productSummaries
- * @property \DTS\eBaySDK\Catalog\Types\Refinement $refinement
+ * @property \Enbit\eBaySDK\Catalog\Types\ProductSummary[] $productSummaries
+ * @property \Enbit\eBaySDK\Catalog\Types\Refinement $refinement
  * @property integer $total
  */
-class ProductSearchResponse extends \DTS\eBaySDK\Types\BaseType
+class ProductSearchResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -58,13 +58,13 @@ class ProductSearchResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'prev'
         ],
         'productSummaries' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductSummary',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\ProductSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'productSummaries'
         ],
         'refinement' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\Refinement',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\Refinement',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refinement'

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
+ * @property \Enbit\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
  * @property string $Description
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
-class CurrencyDetailsType extends \DTS\eBaySDK\Types\BaseType
+class CurrencyDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

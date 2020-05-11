@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Enums;
+namespace Enbit\eBaySDK\Merchandising\Enums;
 
 class AckValue
 {

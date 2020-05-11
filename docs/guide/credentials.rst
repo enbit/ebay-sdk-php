@@ -43,7 +43,7 @@ The sections ``default`` and ``project1`` are examples of credential **profiles*
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     // Instantiate a service that will use the credentials from the project1 profile.
     $service = new FindingService([
@@ -63,7 +63,7 @@ You can provide an associative array to the "credentials" configuration option o
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -84,14 +84,14 @@ You can provide an associative array to the "credentials" configuration option o
 Using a credentials provider
 ----------------------------
 
-A credentials provider is a function that returns an object that is an instance of the ``DTS\eBaySDK\Credentials\CredentialsInterface`` interface. If the provider is unable to supply the credentials it should return an instance of ``InvalidArgumentException`` whose message states the reason for the failure.
+A credentials provider is a function that returns an object that is an instance of the ``Enbit\eBaySDK\Credentials\CredentialsInterface`` interface. If the provider is unable to supply the credentials it should return an instance of ``InvalidArgumentException`` whose message states the reason for the failure.
 
 Providers are specified using the ``credentials`` configuration option and will be called every time a service is instantiated.
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\CredentialsProvider;
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Credentials\CredentialsProvider;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $provider = new CredentialsProvider::defaultProvider();
 
@@ -105,17 +105,17 @@ The SDK comes with several providers that can be combined together with your own
 
 .. important::
 
-    Credential providers are called every time a service is instantiated. If loading credentials is expensive, for example requires the reading of a file from the disk, then you should consider wrapping your provider in the ``DTS\eBaySDK\Credentials\CredentialsProvider::memoize`` function. The default provider that the SDK uses is automatically memorized.
+    Credential providers are called every time a service is instantiated. If loading credentials is expensive, for example requires the reading of a file from the disk, then you should consider wrapping your provider in the ``Enbit\eBaySDK\Credentials\CredentialsProvider::memoize`` function. The default provider that the SDK uses is automatically memorized.
 
 env provider
 ~~~~~~~~~~~~
 
-``DTS\eBaySDK\Credentials\CredentialsProvider::env`` attempts to load credentials from environment variables.
+``Enbit\eBaySDK\Credentials\CredentialsProvider::env`` attempts to load credentials from environment variables.
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\CredentialsProvider;
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Credentials\CredentialsProvider;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -126,12 +126,12 @@ env provider
 ini provider
 ~~~~~~~~~~~~
 
-``DTS\eBaySDK\Credentials\CredentialsProvider::ini`` attempts to load credentials from an :ref:`ini credential file <credentials_profiles>`. The SDK will by default attempt to load the "default" profile from a file located at ``~/.ebay_sdk/credentials``.
+``Enbit\eBaySDK\Credentials\CredentialsProvider::ini`` attempts to load credentials from an :ref:`ini credential file <credentials_profiles>`. The SDK will by default attempt to load the "default" profile from a file located at ``~/.ebay_sdk/credentials``.
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\CredentialsProvider;
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Credentials\CredentialsProvider;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $provider = CredentialsProvider::ini();
     // Cache the results in a memoize function to avoid loading and parsing
@@ -163,7 +163,7 @@ You can use a custom profile or ini file location by providing arguments to the 
 defaultProvider provider
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-``DTS\eBaySDK\Credentials\CredentialsProvider::defaultProvider`` is the default credentials provider. This provider is used if you omit a ``credentials`` configuration option when creating a service. It first attempts to load credentials from the environment variables and then from an ini file.
+``Enbit\eBaySDK\Credentials\CredentialsProvider::defaultProvider`` is the default credentials provider. This provider is used if you omit a ``credentials`` configuration option when creating a service. It first attempts to load credentials from the environment variables and then from an ini file.
 
 .. note::
 
@@ -172,13 +172,13 @@ defaultProvider provider
 Creating a custom provider
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Credential providers are functions that when invoked return an object that implements the ``DTS\eBaySDK\Credentials\CredentialsInterface`` interface or that will return an ``InvalidArgumentException`` instance upon failure.
+Credential providers are functions that when invoked return an object that implements the ``Enbit\eBaySDK\Credentials\CredentialsInterface`` interface or that will return an ``InvalidArgumentException`` instance upon failure.
 
 A best practice for creating providers is to create a function that is invoked to create the actual credential provider. As an example, here's the source of the ``env`` provider (slightly modified for example purposes). Notice that it is a function that returns the actual provider function. This allows you to easily compose credential providers and pass them around as values.
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\Credentials;
+    use Enbit\eBaySDK\Credentials\Credentials;
 
     // This function CREATES a credentials provider.
     public static function env()
@@ -205,12 +205,12 @@ A best practice for creating providers is to create a function that is invoked t
 Memoizing Credentials
 ~~~~~~~~~~~~~~~~~~~~~
 
-It is sometimes necessary to create a credentials provider that remembers the previous return value. This can be useful for performance when loading credentials is an expensive operation or when using the ``DTS\eBaySDK\Sdk`` class to share a credentials provider across multiple services. You can add memoization to a credentials provider by wrapping the credentials provider function in a ``memoize`` function:
+It is sometimes necessary to create a credentials provider that remembers the previous return value. This can be useful for performance when loading credentials is an expensive operation or when using the ``Enbit\eBaySDK\Sdk`` class to share a credentials provider across multiple services. You can add memoization to a credentials provider by wrapping the credentials provider function in a ``memoize`` function:
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\CredentialsProvider;
-    use DTS\eBaySDK\Sdk;
+    use Enbit\eBaySDK\Credentials\CredentialsProvider;
+    use Enbit\eBaySDK\Sdk;
 
     $provider = CredentialsProvider::ini();
     // Wrap the actual provider in a memoize function.
@@ -236,7 +236,7 @@ It is sometimes necessary to create a credentials provider that remembers the pr
 Chaining providers
 ~~~~~~~~~~~~~~~~~~
 
-Credential providers can be chained using the ``DTS\eBaySDK\Credentials\CredentialsProvider::chain()`` function. This function accepts a variadic number of arguments, each of which are credentials provider functions. This function then returns a new function that is the composition of the provided functions such that they are invoked one after the other until one of the providers returns an object that is an instance of the ``DTS\eBaySDK\Credentials\CredentialsInterface`` interface .
+Credential providers can be chained using the ``Enbit\eBaySDK\Credentials\CredentialsProvider::chain()`` function. This function accepts a variadic number of arguments, each of which are credentials provider functions. This function then returns a new function that is the composition of the provided functions such that they are invoked one after the other until one of the providers returns an object that is an instance of the ``Enbit\eBaySDK\Credentials\CredentialsInterface`` interface .
 
 The ``defaultProvider`` uses this composition in order to check multiple providers before failing. The source of the ``defaultProvider`` demonstrates the use of the ``chain`` function.
 

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\Test\ResolutionCaseManagement\Types;
 
-use DTS\eBaySDK\ResolutionCaseManagement\Types\IssueFullRefundRequest;
+use Enbit\eBaySDK\ResolutionCaseManagement\Types\IssueFullRefundRequest;
 
 class IssueFullRefundRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class IssueFullRefundRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\IssueFullRefundRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\IssueFullRefundRequest', $this->obj);
     }
 
     public function testExtendsBaseRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\BaseRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\BaseRequest', $this->obj);
     }
 }

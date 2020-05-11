@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $itemId
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
+ * @property \Enbit\eBaySDK\PostOrder\Enums\ReturnReasonEnum $reason
  * @property integer $returnQuantity
  * @property string $transactionId
  */
-class ReturnEligibilityItemType extends \DTS\eBaySDK\Types\BaseType
+class ReturnEligibilityItemType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

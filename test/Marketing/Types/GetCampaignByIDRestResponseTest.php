@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\GetCampaignByIDRestResponse;
+use Enbit\eBaySDK\Marketing\Types\GetCampaignByIDRestResponse;
 
 class GetCampaignByIDRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetCampaignByIDRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\GetCampaignByIDRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\GetCampaignByIDRestResponse', $this->obj);
     }
 
     public function testExtendsCampaign()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\Campaign', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\Campaign', $this->obj);
     }
 }

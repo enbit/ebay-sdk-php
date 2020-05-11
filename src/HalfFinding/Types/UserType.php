@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\HalfFinding\Types;
+namespace Enbit\eBaySDK\HalfFinding\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\HalfFinding\Types;
  * @property integer $feedbackScore
  * @property double $positiveFeedbackPercent
  */
-class UserType extends \DTS\eBaySDK\Types\BaseType
+class UserType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

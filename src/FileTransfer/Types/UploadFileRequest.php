@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\FileTransfer\Types;
+namespace Enbit\eBaySDK\FileTransfer\Types;
 
 /**
  *
  * @property string $taskReferenceId
  * @property string $fileReferenceId
  * @property string $fileFormat
- * @property \DTS\eBaySDK\FileTransfer\Types\FileAttachment $fileAttachment
+ * @property \Enbit\eBaySDK\FileTransfer\Types\FileAttachment $fileAttachment
  */
-class UploadFileRequest extends \DTS\eBaySDK\FileTransfer\Types\BaseServiceRequest
+class UploadFileRequest extends \Enbit\eBaySDK\FileTransfer\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -42,7 +42,7 @@ class UploadFileRequest extends \DTS\eBaySDK\FileTransfer\Types\BaseServiceReque
             'elementName' => 'fileFormat'
         ],
         'fileAttachment' => [
-            'type' => 'DTS\eBaySDK\FileTransfer\Types\FileAttachment',
+            'type' => 'Enbit\eBaySDK\FileTransfer\Types\FileAttachment',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fileAttachment'

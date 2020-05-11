@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $SecretID
  * @property string $SessionID
  */
-class FetchTokenRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class FetchTokenRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

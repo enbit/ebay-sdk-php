@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\GetReturnDraftFilesRestResponse;
+use Enbit\eBaySDK\PostOrder\Types\GetReturnDraftFilesRestResponse;
 
 class GetReturnDraftFilesRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetReturnDraftFilesRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\GetReturnDraftFilesRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\GetReturnDraftFilesRestResponse', $this->obj);
     }
 
     public function testExtendsGetFileResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\GetFileResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\GetFileResponse', $this->obj);
     }
 }

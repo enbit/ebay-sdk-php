@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerProductDetailsType $SellingManagerProductDetails
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerFolderDetailsType $SellingManagerFolderDetails
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerProductDetailsType $SellingManagerProductDetails
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerFolderDetailsType $SellingManagerFolderDetails
  * @property string[] $DeletedField
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerProductSpecificsType $SellingManagerProductSpecifics
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerProductSpecificsType $SellingManagerProductSpecifics
  */
-class ReviseSellingManagerProductRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class ReviseSellingManagerProductRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'SellingManagerProductDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerProductDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerProductDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingManagerProductDetails'
         ],
         'SellingManagerFolderDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerFolderDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerFolderDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingManagerFolderDetails'
@@ -42,7 +42,7 @@ class ReviseSellingManagerProductRequestType extends \DTS\eBaySDK\Trading\Types\
             'elementName' => 'DeletedField'
         ],
         'SellingManagerProductSpecifics' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerProductSpecificsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerProductSpecificsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingManagerProductSpecifics'

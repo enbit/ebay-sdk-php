@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace Enbit\eBaySDK\Merchandising\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Merchandising\Types;
  * @property string $networkId
  * @property string $customId
  */
-class Affiliate extends \DTS\eBaySDK\Types\BaseType
+class Affiliate extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

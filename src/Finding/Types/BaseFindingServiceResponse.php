@@ -8,28 +8,28 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\SearchResult $searchResult
- * @property \DTS\eBaySDK\Finding\Types\PaginationOutput $paginationOutput
+ * @property \Enbit\eBaySDK\Finding\Types\SearchResult $searchResult
+ * @property \Enbit\eBaySDK\Finding\Types\PaginationOutput $paginationOutput
  * @property string $itemSearchURL
  */
-class BaseFindingServiceResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceResponse
+class BaseFindingServiceResponse extends \Enbit\eBaySDK\Finding\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'searchResult' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\SearchResult',
+            'type' => 'Enbit\eBaySDK\Finding\Types\SearchResult',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'searchResult'
         ],
         'paginationOutput' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\PaginationOutput',
+            'type' => 'Enbit\eBaySDK\Finding\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

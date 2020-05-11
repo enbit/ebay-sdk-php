@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\RelatedItemsManagement\Types;
+namespace Enbit\eBaySDK\RelatedItemsManagement\Types;
 
 /**
  *
  * @property string $bundleName
  * @property string[] $primarySKU
  * @property integer $bundleID
- * @property \DTS\eBaySDK\RelatedItemsManagement\Enums\AckValue $ack
- * @property \DTS\eBaySDK\RelatedItemsManagement\Types\ErrorMessage $errorMessage
+ * @property \Enbit\eBaySDK\RelatedItemsManagement\Enums\AckValue $ack
+ * @property \Enbit\eBaySDK\RelatedItemsManagement\Types\ErrorMessage $errorMessage
  */
-class BundleStatus extends \DTS\eBaySDK\Types\BaseType
+class BundleStatus extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -49,7 +49,7 @@ class BundleStatus extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ack'
         ],
         'errorMessage' => [
-            'type' => 'DTS\eBaySDK\RelatedItemsManagement\Types\ErrorMessage',
+            'type' => 'Enbit\eBaySDK\RelatedItemsManagement\Types\ErrorMessage',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'errorMessage'

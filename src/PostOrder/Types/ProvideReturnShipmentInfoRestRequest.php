@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $caseId
  */
-class ProvideReturnShipmentInfoRestRequest extends \DTS\eBaySDK\PostOrder\Types\ProvideShipmentInfoRequest
+class ProvideReturnShipmentInfoRestRequest extends \Enbit\eBaySDK\PostOrder\Types\ProvideShipmentInfoRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

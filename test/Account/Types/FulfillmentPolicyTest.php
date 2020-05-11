@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Account\Types;
+namespace Enbit\eBaySDK\Test\Account\Types;
 
-use DTS\eBaySDK\Account\Types\FulfillmentPolicy;
+use Enbit\eBaySDK\Account\Types\FulfillmentPolicy;
 
 class FulfillmentPolicyTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FulfillmentPolicyTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Account\Types\FulfillmentPolicy', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Account\Types\FulfillmentPolicy', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

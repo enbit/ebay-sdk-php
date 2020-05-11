@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\BidGroupType;
+use Enbit\eBaySDK\Trading\Types\BidGroupType;
 
 class BidGroupTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class BidGroupTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\BidGroupType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\BidGroupType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

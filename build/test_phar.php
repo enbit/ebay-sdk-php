@@ -1,9 +1,9 @@
 <?php
 require __DIR__ . '/artifacts/ebay-sdk-php.phar';
 
-$sdk = new \DTS\eBaySDK\Sdk();
+$sdk = new \Enbit\eBaySDK\Sdk();
 
-$trading = new \DTS\eBaySDK\Trading\Services\TradingService([
+$trading = new \Enbit\eBaySDK\Trading\Services\TradingService([
     'siteId'      => 0,
     'credentials' => [
         'appId'  => 'secret',
@@ -12,4 +12,4 @@ $trading = new \DTS\eBaySDK\Trading\Services\TradingService([
     ]
 ]);
 
-echo 'Version=' . \DTS\eBaySDK\Sdk::VERSION;
+echo 'Version=' . \Enbit\eBaySDK\Sdk::VERSION;

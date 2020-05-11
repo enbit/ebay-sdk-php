@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $identify
  * @property string $name
  */
-class CustomListDataType extends \DTS\eBaySDK\Types\BaseType
+class CustomListDataType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

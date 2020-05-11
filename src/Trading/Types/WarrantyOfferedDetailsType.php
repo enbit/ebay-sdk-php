@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $WarrantyOfferedOption
  * @property string $Description
  */
-class WarrantyOfferedDetailsType extends \DTS\eBaySDK\Types\BaseType
+class WarrantyOfferedDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

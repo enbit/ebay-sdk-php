@@ -1,11 +1,11 @@
 <?php
-namespace DTS\eBaySDK\Credentials;
+namespace Enbit\eBaySDK\Credentials;
 
 /**
  * Implementation of the CredentialsInterface that allows client code
  * to pass in their credentials in the constructor.
  */
-class Credentials implements \DTS\eBaySDK\Credentials\CredentialsInterface
+class Credentials implements \Enbit\eBaySDK\Credentials\CredentialsInterface
 {
     /**
      * @var string $appId Application ID

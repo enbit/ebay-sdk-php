@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\LocationResponse;
+use Enbit\eBaySDK\Inventory\Types\LocationResponse;
 
 class LocationResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class LocationResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\LocationResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\LocationResponse', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

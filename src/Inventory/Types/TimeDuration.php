@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Enums\TimeDurationUnitEnum $unit
+ * @property \Enbit\eBaySDK\Inventory\Enums\TimeDurationUnitEnum $unit
  * @property integer $value
  */
-class TimeDuration extends \DTS\eBaySDK\Types\BaseType
+class TimeDuration extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

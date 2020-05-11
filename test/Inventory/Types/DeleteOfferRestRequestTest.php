@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\DeleteOfferRestRequest;
+use Enbit\eBaySDK\Inventory\Types\DeleteOfferRestRequest;
 
 class DeleteOfferRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class DeleteOfferRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\DeleteOfferRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\DeleteOfferRestRequest', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\Test\BulkDataExchange\Types;
 
-use DTS\eBaySDK\BulkDataExchange\Types\CreateRecurringJobRequest;
+use Enbit\eBaySDK\BulkDataExchange\Types\CreateRecurringJobRequest;
 
 class CreateRecurringJobRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CreateRecurringJobRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BulkDataExchange\Types\CreateRecurringJobRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BulkDataExchange\Types\CreateRecurringJobRequest', $this->obj);
     }
 
     public function testExtendsBaseServiceRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BulkDataExchange\Types\BaseServiceRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BulkDataExchange\Types\BaseServiceRequest', $this->obj);
     }
 }

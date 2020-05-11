@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\SellingManagerEmailTypeCodeType $EmailType
+ * @property \Enbit\eBaySDK\Trading\Enums\SellingManagerEmailTypeCodeType $EmailType
  * @property string $CustomEmailName
- * @property \DTS\eBaySDK\Trading\Enums\SellingManagerEmailSentStatusCodeType $EmailState
+ * @property \Enbit\eBaySDK\Trading\Enums\SellingManagerEmailSentStatusCodeType $EmailState
  * @property \DateTime $EventTime
  */
-class SellingManagerEmailLogType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerEmailLogType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

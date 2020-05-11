@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\OrderLineItemType[] $OrderLineItem
+ * @property \Enbit\eBaySDK\MerchantData\Types\OrderLineItemType[] $OrderLineItem
  */
-class OrderItemDetailsType extends \DTS\eBaySDK\Types\BaseType
+class OrderItemDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'OrderLineItem' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\OrderLineItemType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\OrderLineItemType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'OrderLineItem'

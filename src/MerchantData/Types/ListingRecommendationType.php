@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -18,9 +18,9 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $Code
  * @property string[] $Value
  * @property string $Message
- * @property \DTS\eBaySDK\MerchantData\Types\MetadataType[] $Metadata
+ * @property \Enbit\eBaySDK\MerchantData\Types\MetadataType[] $Metadata
  */
-class ListingRecommendationType extends \DTS\eBaySDK\Types\BaseType
+class ListingRecommendationType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -63,7 +63,7 @@ class ListingRecommendationType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Message'
         ],
         'Metadata' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MetadataType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\MetadataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Metadata'

@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $shipmentDate
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $shipmentDate
  * @property string $trackingNumber
  */
-class RejectCancelRequest extends \DTS\eBaySDK\Types\BaseType
+class RejectCancelRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'shipmentDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipmentDate'

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\FileTransfer\Enums;
+namespace Enbit\eBaySDK\FileTransfer\Enums;
 
 class AckValue
 {

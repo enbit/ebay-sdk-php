@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -17,10 +17,10 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $FolderLevel
  * @property string $FolderName
  * @property string $FolderComment
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerFolderDetailsType[] $ChildFolder
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerFolderDetailsType[] $ChildFolder
  * @property \DateTime $CreationTime
  */
-class SellingManagerFolderDetailsType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerFolderDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -57,7 +57,7 @@ class SellingManagerFolderDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'FolderComment'
         ],
         'ChildFolder' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerFolderDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerFolderDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ChildFolder'

@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use Enbit\eBaySDK\StatusCodeTrait;
+use Enbit\eBaySDK\HttpHeadersTrait;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
- * @property \DTS\eBaySDK\Marketing\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\Marketing\Types\ErrorDetailV3[] $warnings
  */
-class GetCampaignByIDRestResponse extends \DTS\eBaySDK\Marketing\Types\Campaign
+class GetCampaignByIDRestResponse extends \Enbit\eBaySDK\Marketing\Types\Campaign
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -28,13 +28,13 @@ class GetCampaignByIDRestResponse extends \DTS\eBaySDK\Marketing\Types\Campaign
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

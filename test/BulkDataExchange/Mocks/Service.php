@@ -1,9 +1,9 @@
 <?php
-namespace DTS\eBaySDK\Test\BulkDataExchange\Mocks;
+namespace Enbit\eBaySDK\Test\BulkDataExchange\Mocks;
 
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
 
-class Service extends \DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeBaseService
+class Service extends \Enbit\eBaySDK\BulkDataExchange\Services\BulkDataExchangeBaseService
 {
     public function __construct(array $config)
     {
@@ -15,7 +15,7 @@ class Service extends \DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeBas
         return $this->callOperationAsync(
             'testOperation',
             new ComplexClass(),
-            '\DTS\eBaySDK\Test\Mocks\ComplexClass'
+            '\Enbit\eBaySDK\Test\Mocks\ComplexClass'
         )->wait();
     }
 }

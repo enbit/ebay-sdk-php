@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property boolean $Delete
- * @property \DTS\eBaySDK\Trading\Types\NameValueListType[] $NameValueList
+ * @property \Enbit\eBaySDK\Trading\Types\NameValueListType[] $NameValueList
  * @property string $CompatibilityNotes
  */
-class ItemCompatibilityType extends \DTS\eBaySDK\Types\BaseType
+class ItemCompatibilityType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,7 +29,7 @@ class ItemCompatibilityType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Delete'
         ],
         'NameValueList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NameValueListType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NameValueListType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'NameValueList'

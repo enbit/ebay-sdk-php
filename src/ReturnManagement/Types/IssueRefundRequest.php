@@ -8,28 +8,28 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Types\ReturnIdType $ReturnId
- * @property \DTS\eBaySDK\ReturnManagement\Types\RefundDetailType $refundDetail
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\ReturnIdType $ReturnId
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\RefundDetailType $refundDetail
  * @property string $comments
  */
-class IssueRefundRequest extends \DTS\eBaySDK\ReturnManagement\Types\BaseRequest
+class IssueRefundRequest extends \Enbit\eBaySDK\ReturnManagement\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ReturnId' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\ReturnIdType',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\ReturnIdType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReturnId'
         ],
         'refundDetail' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\RefundDetailType',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\RefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundDetail'

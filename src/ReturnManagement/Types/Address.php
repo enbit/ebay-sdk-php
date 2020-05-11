@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
@@ -21,7 +21,7 @@ namespace DTS\eBaySDK\ReturnManagement\Types;
  * @property string $country
  * @property string $postalCode
  */
-class Address extends \DTS\eBaySDK\Types\BaseType
+class Address extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

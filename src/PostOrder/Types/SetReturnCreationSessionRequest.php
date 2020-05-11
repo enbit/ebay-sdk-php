@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnRequestType $returnRequest
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnRequestType $returnRequest
  */
-class SetReturnCreationSessionRequest extends \DTS\eBaySDK\Types\BaseType
+class SetReturnCreationSessionRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'returnRequest' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnRequestType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnRequestType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnRequest'

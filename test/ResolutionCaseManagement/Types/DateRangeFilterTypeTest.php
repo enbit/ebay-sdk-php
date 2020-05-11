@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\Test\ResolutionCaseManagement\Types;
 
-use DTS\eBaySDK\ResolutionCaseManagement\Types\DateRangeFilterType;
+use Enbit\eBaySDK\ResolutionCaseManagement\Types\DateRangeFilterType;
 
 class DateRangeFilterTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class DateRangeFilterTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\DateRangeFilterType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\DateRangeFilterType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

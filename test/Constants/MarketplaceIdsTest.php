@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Constants\Test;
+namespace Enbit\eBaySDK\Constants\Test;
 
-use DTS\eBaySDK\Constants\MarketplaceIds as MarketplaceIds;
+use Enbit\eBaySDK\Constants\MarketplaceIds as MarketplaceIds;
 
 class MarketplaceIdsTest extends \PHPUnit_Framework_TestCase
 {

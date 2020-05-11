@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Test\Mocks;
+namespace Enbit\eBaySDK\Test\Mocks;
 
-class Service extends \DTS\eBaySDK\Test\Mocks\BaseService
+class Service extends \Enbit\eBaySDK\Test\Mocks\BaseService
 {
     public function __construct(array $config)
     {
@@ -16,21 +16,21 @@ class Service extends \DTS\eBaySDK\Test\Mocks\BaseService
         );
     }
 
-    public function foo(\DTS\eBaySDK\Test\Mocks\ComplexClass $request)
+    public function foo(\Enbit\eBaySDK\Test\Mocks\ComplexClass $request)
     {
         return $this->callOperationAsync(
             'foo',
             $request,
-            '\DTS\eBaySDK\Test\Mocks\ComplexClass'
+            '\Enbit\eBaySDK\Test\Mocks\ComplexClass'
         )->wait();
     }
 
-    public function bar(\DTS\eBaySDK\Test\Mocks\ComplexClass $request)
+    public function bar(\Enbit\eBaySDK\Test\Mocks\ComplexClass $request)
     {
         return $this->callOperationAsync(
             'foo',
             $request,
-            '\DTS\eBaySDK\Test\Mocks\ComplexClass'
+            '\Enbit\eBaySDK\Test\Mocks\ComplexClass'
         )->wait();
     }
 }

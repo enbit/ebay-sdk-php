@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Order\Types\Amount $baseDeliveryCost
- * @property \DTS\eBaySDK\Order\Types\Amount $deliveryDiscount
+ * @property \Enbit\eBaySDK\Order\Types\Amount $baseDeliveryCost
+ * @property \Enbit\eBaySDK\Order\Types\Amount $deliveryDiscount
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
  * @property boolean $selected
@@ -21,20 +21,20 @@ namespace DTS\eBaySDK\Order\Types;
  * @property string $shippingOptionId
  * @property string $shippingServiceCode
  */
-class ShippingOption extends \DTS\eBaySDK\Types\BaseType
+class ShippingOption extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'baseDeliveryCost' => [
-            'type' => 'DTS\eBaySDK\Order\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'baseDeliveryCost'
         ],
         'deliveryDiscount' => [
-            'type' => 'DTS\eBaySDK\Order\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'deliveryDiscount'

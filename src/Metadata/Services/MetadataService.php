@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Metadata\Services;
+namespace Enbit\eBaySDK\Metadata\Services;
 
-class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
+class MetadataService extends \Enbit\eBaySDK\Metadata\Services\MetadataBaseService
 {
     const API_VERSION = 'v1';
 
@@ -21,7 +21,7 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
         'GetSalesTaxJurisdictions' => [
             'method' => 'GET',
             'resource' => 'country/{countryCode}/sales_tax_jurisdiction',
-            'responseClass' => '\DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestResponse',
             'params' => [
                 'countryCode' => [
                     'valid' => ['string'],
@@ -32,7 +32,7 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
         'GetPoliciesForAutoPartsCompatibility' => [
             'method' => 'GET',
             'resource' => 'marketplace/{marketplace_id}/get_automotive_parts_compatibility_policies',
-            'responseClass' => '\DTS\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestResponse',
             'params' => [
                 'filter' => [
                     'valid' => ['string']
@@ -46,7 +46,7 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
         'GetPoliciesForItemCondition' => [
             'method' => 'GET',
             'resource' => 'marketplace/{marketplace_id}/get_item_condition_policies',
-            'responseClass' => '\DTS\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestResponse',
             'params' => [
                 'filter' => [
                     'valid' => ['string']
@@ -60,7 +60,7 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
         'GetPoliciesForListingStructures' => [
             'method' => 'GET',
             'resource' => 'marketplace/{marketplace_id}/get_listing_structure_policies',
-            'responseClass' => '\DTS\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestResponse',
             'params' => [
                 'filter' => [
                     'valid' => ['string']
@@ -74,7 +74,7 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
         'GetPoliciesForNegotiatedPrice' => [
             'method' => 'GET',
             'resource' => 'marketplace/{marketplace_id}/get_negotiated_price_policies',
-            'responseClass' => '\DTS\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestResponse',
             'params' => [
                 'filter' => [
                     'valid' => ['string']
@@ -88,7 +88,7 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
         'GetPoliciesForReturns' => [
             'method' => 'GET',
             'resource' => 'marketplace/{marketplace_id}/get_return_policies',
-            'responseClass' => '\DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse',
             'params' => [
                 'filter' => [
                     'valid' => ['string']
@@ -110,109 +110,109 @@ class MetadataService extends \DTS\eBaySDK\Metadata\Services\MetadataBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request
-     * @return \DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestResponse
+     * @param \Enbit\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request
+     * @return \Enbit\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestResponse
      */
-    public function getSalesTaxJurisdictions(\DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request)
+    public function getSalesTaxJurisdictions(\Enbit\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request)
     {
         return $this->getSalesTaxJurisdictionsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request
+     * @param \Enbit\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getSalesTaxJurisdictionsAsync(\DTS\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request)
+    public function getSalesTaxJurisdictionsAsync(\Enbit\eBaySDK\Metadata\Types\GetSalesTaxJurisdictionsRestRequest $request)
     {
         return $this->callOperationAsync('GetSalesTaxJurisdictions', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request
-     * @return \DTS\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestResponse
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request
+     * @return \Enbit\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestResponse
      */
-    public function getPoliciesForAutoPartsCompatibility(\DTS\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request)
+    public function getPoliciesForAutoPartsCompatibility(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request)
     {
         return $this->getPoliciesForAutoPartsCompatibilityAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPoliciesForAutoPartsCompatibilityAsync(\DTS\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request)
+    public function getPoliciesForAutoPartsCompatibilityAsync(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForAutoPartsCompatibilityRestRequest $request)
     {
         return $this->callOperationAsync('GetPoliciesForAutoPartsCompatibility', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request
-     * @return \DTS\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestResponse
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request
+     * @return \Enbit\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestResponse
      */
-    public function getPoliciesForItemCondition(\DTS\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request)
+    public function getPoliciesForItemCondition(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request)
     {
         return $this->getPoliciesForItemConditionAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPoliciesForItemConditionAsync(\DTS\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request)
+    public function getPoliciesForItemConditionAsync(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForItemConditionRestRequest $request)
     {
         return $this->callOperationAsync('GetPoliciesForItemCondition', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request
-     * @return \DTS\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestResponse
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request
+     * @return \Enbit\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestResponse
      */
-    public function getPoliciesForListingStructures(\DTS\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request)
+    public function getPoliciesForListingStructures(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request)
     {
         return $this->getPoliciesForListingStructuresAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPoliciesForListingStructuresAsync(\DTS\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request)
+    public function getPoliciesForListingStructuresAsync(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForListingStructuresRestRequest $request)
     {
         return $this->callOperationAsync('GetPoliciesForListingStructures', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request
-     * @return \DTS\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestResponse
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request
+     * @return \Enbit\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestResponse
      */
-    public function getPoliciesForNegotiatedPrice(\DTS\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request)
+    public function getPoliciesForNegotiatedPrice(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request)
     {
         return $this->getPoliciesForNegotiatedPriceAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPoliciesForNegotiatedPriceAsync(\DTS\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request)
+    public function getPoliciesForNegotiatedPriceAsync(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForNegotiatedPriceRestRequest $request)
     {
         return $this->callOperationAsync('GetPoliciesForNegotiatedPrice', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request
-     * @return \DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request
+     * @return \Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse
      */
-    public function getPoliciesForReturns(\DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request)
+    public function getPoliciesForReturns(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request)
     {
         return $this->getPoliciesForReturnsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request
+     * @param \Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getPoliciesForReturnsAsync(\DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request)
+    public function getPoliciesForReturnsAsync(\Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestRequest $request)
     {
         return $this->callOperationAsync('GetPoliciesForReturns', $request);
     }

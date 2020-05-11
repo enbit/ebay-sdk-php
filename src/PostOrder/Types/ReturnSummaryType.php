@@ -8,35 +8,35 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\AvailableOptionType[] $buyerAvailableOptions
+ * @property \Enbit\eBaySDK\PostOrder\Types\AvailableOptionType[] $buyerAvailableOptions
  * @property string $buyerLoginName
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnResponseDueType $buyerResponseDue
- * @property \DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType $buyerTotalRefund
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnCreationInfoType $creationInfo
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnTypeEnum $currentType
- * @property \DTS\eBaySDK\PostOrder\Enums\DispositionRuleTemplateTypeEnum[] $dispositionRuleTriggered
- * @property \DTS\eBaySDK\PostOrder\Types\EscalationInfoType $escalationInfo
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnResponseDueType $buyerResponseDue
+ * @property \Enbit\eBaySDK\PostOrder\Types\TotalRefundAmountType $buyerTotalRefund
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnCreationInfoType $creationInfo
+ * @property \Enbit\eBaySDK\PostOrder\Enums\ReturnTypeEnum $currentType
+ * @property \Enbit\eBaySDK\PostOrder\Enums\DispositionRuleTemplateTypeEnum[] $dispositionRuleTriggered
+ * @property \Enbit\eBaySDK\PostOrder\Types\EscalationInfoType $escalationInfo
  * @property string $returnId
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnPolicyType $returnPolicy
- * @property \DTS\eBaySDK\PostOrder\Types\AvailableOptionType[] $sellerAvailableOptions
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnPolicyType $returnPolicy
+ * @property \Enbit\eBaySDK\PostOrder\Types\AvailableOptionType[] $sellerAvailableOptions
  * @property string $sellerLoginName
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnResponseDueType $sellerResponseDue
- * @property \DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType $sellerTotalRefund
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnResponseDueType $sellerResponseDue
+ * @property \Enbit\eBaySDK\PostOrder\Types\TotalRefundAmountType $sellerTotalRefund
  * @property string $state
  * @property string $status
  */
-class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
+class ReturnSummaryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'buyerAvailableOptions' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\AvailableOptionType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\AvailableOptionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'buyerAvailableOptions'
@@ -48,19 +48,19 @@ class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'buyerLoginName'
         ],
         'buyerResponseDue' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnResponseDueType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnResponseDueType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerResponseDue'
         ],
         'buyerTotalRefund' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\TotalRefundAmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerTotalRefund'
         ],
         'creationInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnCreationInfoType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnCreationInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationInfo'
@@ -78,7 +78,7 @@ class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'dispositionRuleTriggered'
         ],
         'escalationInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\EscalationInfoType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\EscalationInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalationInfo'
@@ -90,13 +90,13 @@ class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'returnId'
         ],
         'returnPolicy' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnPolicyType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnPolicyType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPolicy'
         ],
         'sellerAvailableOptions' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\AvailableOptionType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\AvailableOptionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'sellerAvailableOptions'
@@ -108,13 +108,13 @@ class ReturnSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'sellerLoginName'
         ],
         'sellerResponseDue' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnResponseDueType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnResponseDueType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerResponseDue'
         ],
         'sellerTotalRefund' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\TotalRefundAmountType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\TotalRefundAmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerTotalRefund'

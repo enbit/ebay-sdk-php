@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\RelatedItemsManagement\Services;
+namespace Enbit\eBaySDK\RelatedItemsManagement\Services;
 
 /**
  * Base class for the Return Management service.
  */
-class RelatedItemsManagementBaseService extends \DTS\eBaySDK\Services\BaseService
+class RelatedItemsManagementBaseService extends \Enbit\eBaySDK\Services\BaseService
 {
     /**
      * HTTP header constant. The API version your application supports.
@@ -46,7 +46,7 @@ class RelatedItemsManagementBaseService extends \DTS\eBaySDK\Services\BaseServic
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService::API_VERSION
+                'default' => \Enbit\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService::API_VERSION
             ],
             'authToken' => [
                 'valid' => ['string'],

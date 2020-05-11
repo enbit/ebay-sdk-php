@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\EscalationEligibilityInfo $buyerEscalationEligibilityInfo
+ * @property \Enbit\eBaySDK\PostOrder\Types\EscalationEligibilityInfo $buyerEscalationEligibilityInfo
  * @property string $caseId
- * @property \DTS\eBaySDK\PostOrder\Types\EscalationEligibilityInfo $sellerEscalationEligibilityInfo
+ * @property \Enbit\eBaySDK\PostOrder\Types\EscalationEligibilityInfo $sellerEscalationEligibilityInfo
  */
-class EscalationInfoType extends \DTS\eBaySDK\Types\BaseType
+class EscalationInfoType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'buyerEscalationEligibilityInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\EscalationEligibilityInfo',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\EscalationEligibilityInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerEscalationEligibilityInfo'
@@ -35,7 +35,7 @@ class EscalationInfoType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'caseId'
         ],
         'sellerEscalationEligibilityInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\EscalationEligibilityInfo',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\EscalationEligibilityInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerEscalationEligibilityInfo'

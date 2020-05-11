@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\LocationDetails $location
+ * @property \Enbit\eBaySDK\Inventory\Types\LocationDetails $location
  * @property string $locationAdditionalInformation
  * @property string $locationInstructions
- * @property \DTS\eBaySDK\Inventory\Enums\StoreTypeEnum[] $locationTypes
+ * @property \Enbit\eBaySDK\Inventory\Enums\StoreTypeEnum[] $locationTypes
  * @property string $locationWebUrl
- * @property \DTS\eBaySDK\Inventory\Enums\StatusEnum $merchantLocationStatus
+ * @property \Enbit\eBaySDK\Inventory\Enums\StatusEnum $merchantLocationStatus
  * @property string $name
- * @property \DTS\eBaySDK\Inventory\Types\OperatingHours[] $operatingHours
+ * @property \Enbit\eBaySDK\Inventory\Types\OperatingHours[] $operatingHours
  * @property string $phone
- * @property \DTS\eBaySDK\Inventory\Types\SpecialHours[] $specialHours
+ * @property \Enbit\eBaySDK\Inventory\Types\SpecialHours[] $specialHours
  */
-class InventoryLocationFull extends \DTS\eBaySDK\Types\BaseType
+class InventoryLocationFull extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'location' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\LocationDetails',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\LocationDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'location'
@@ -72,7 +72,7 @@ class InventoryLocationFull extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'name'
         ],
         'operatingHours' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\OperatingHours',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\OperatingHours',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'operatingHours'
@@ -84,7 +84,7 @@ class InventoryLocationFull extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'phone'
         ],
         'specialHours' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\SpecialHours',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\SpecialHours',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'specialHours'

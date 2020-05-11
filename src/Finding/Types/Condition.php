@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
  * @property integer $conditionId
  * @property string $conditionDisplayName
  */
-class Condition extends \DTS\eBaySDK\Types\BaseType
+class Condition extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

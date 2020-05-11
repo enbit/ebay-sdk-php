@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\PriceQuantityResponse[] $responses
+ * @property \Enbit\eBaySDK\Inventory\Types\PriceQuantityResponse[] $responses
  */
-class BulkPriceQuantityResponse extends \DTS\eBaySDK\Types\BaseType
+class BulkPriceQuantityResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'responses' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\PriceQuantityResponse',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\PriceQuantityResponse',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'responses'

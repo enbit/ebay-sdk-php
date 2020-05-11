@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Enums;
+namespace Enbit\eBaySDK\Test\MerchantData\Enums;
 
-use DTS\eBaySDK\MerchantData\Enums\SellerLevelCodeType;
+use Enbit\eBaySDK\MerchantData\Enums\SellerLevelCodeType;
 
 class SellerLevelCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class SellerLevelCodeTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Enums\SellerLevelCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Enums\SellerLevelCodeType', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\UpdateReturnDraftRestResponse;
+use Enbit\eBaySDK\PostOrder\Types\UpdateReturnDraftRestResponse;
 
 class UpdateReturnDraftRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateReturnDraftRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\UpdateReturnDraftRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\UpdateReturnDraftRestResponse', $this->obj);
     }
 
     public function testExtendsSetReturnCreationSessionResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\SetReturnCreationSessionResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\SetReturnCreationSessionResponse', $this->obj);
     }
 }

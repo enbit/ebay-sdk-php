@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $DisplayMessageStoreCustomText
  * @property string $MessageStoreCustomText
  */
-class StoreVacationPreferencesType extends \DTS\eBaySDK\Types\BaseType
+class StoreVacationPreferencesType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property string[] $ItemID
  */
-class GetItemStatusRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
+class GetItemStatusRequestType extends \Enbit\eBaySDK\Shopping\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

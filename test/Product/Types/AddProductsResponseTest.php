@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Product\Types;
+namespace Enbit\eBaySDK\Test\Product\Types;
 
-use DTS\eBaySDK\Product\Types\AddProductsResponse;
+use Enbit\eBaySDK\Product\Types\AddProductsResponse;
 
 class AddProductsResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AddProductsResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Product\Types\AddProductsResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Product\Types\AddProductsResponse', $this->obj);
     }
 
     public function testExtendsBaseServiceResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Product\Types\BaseServiceResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Product\Types\BaseServiceResponse', $this->obj);
     }
 }

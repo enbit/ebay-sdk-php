@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\RelatedItemsManagement\Types;
+namespace Enbit\eBaySDK\RelatedItemsManagement\Types;
 
 /**
  *
  * @property string $primarySKU
  * @property integer $bundleID
  */
-class BundleFilter extends \DTS\eBaySDK\Types\BaseType
+class BundleFilter extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

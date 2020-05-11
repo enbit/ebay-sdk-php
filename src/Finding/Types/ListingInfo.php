@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
  * @property boolean $bestOfferEnabled
  * @property boolean $buyItNowAvailable
- * @property \DTS\eBaySDK\Finding\Types\Amount $buyItNowPrice
- * @property \DTS\eBaySDK\Finding\Types\Amount $convertedBuyItNowPrice
+ * @property \Enbit\eBaySDK\Finding\Types\Amount $buyItNowPrice
+ * @property \Enbit\eBaySDK\Finding\Types\Amount $convertedBuyItNowPrice
  * @property \DateTime $startTime
  * @property \DateTime $endTime
  * @property string $listingType
  * @property boolean $gift
  */
-class ListingInfo extends \DTS\eBaySDK\Types\BaseType
+class ListingInfo extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -40,13 +40,13 @@ class ListingInfo extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'buyItNowAvailable'
         ],
         'buyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Finding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyItNowPrice'
         ],
         'convertedBuyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Finding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'convertedBuyItNowPrice'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse;
+use Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse;
 
 class GetInventoryItemGroupRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetInventoryItemGroupRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse', $this->obj);
     }
 
     public function testExtendsInventoryItemGroup()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\InventoryItemGroup', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\InventoryItemGroup', $this->obj);
     }
 }

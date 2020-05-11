@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use Enbit\eBaySDK\StatusCodeTrait;
+use Enbit\eBaySDK\HttpHeadersTrait;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\ErrorDetailV3[] $errors
- * @property \DTS\eBaySDK\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Inventory\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\Inventory\Types\ErrorDetailV3[] $warnings
  */
-class WithdrawOfferRestResponse extends \DTS\eBaySDK\Inventory\Types\WithdrawResponse
+class WithdrawOfferRestResponse extends \Enbit\eBaySDK\Inventory\Types\WithdrawResponse
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -28,13 +28,13 @@ class WithdrawOfferRestResponse extends \DTS\eBaySDK\Inventory\Types\WithdrawRes
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

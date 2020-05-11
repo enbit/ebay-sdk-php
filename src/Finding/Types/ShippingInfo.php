@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\Amount $shippingServiceCost
+ * @property \Enbit\eBaySDK\Finding\Types\Amount $shippingServiceCost
  * @property string $shippingType
  * @property string[] $shipToLocations
  * @property boolean $expeditedShipping
@@ -20,14 +20,14 @@ namespace DTS\eBaySDK\Finding\Types;
  * @property integer $handlingTime
  * @property boolean $intermediatedShipping
  */
-class ShippingInfo extends \DTS\eBaySDK\Types\BaseType
+class ShippingInfo extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'shippingServiceCost' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Finding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingServiceCost'

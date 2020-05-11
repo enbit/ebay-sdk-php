@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\CreateCustomListRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\CreateCustomListRestRequest;
 
 class CreateCustomListRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CreateCustomListRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\CreateCustomListRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\CreateCustomListRestRequest', $this->obj);
     }
 
     public function testExtendsCreateCustomListRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\CreateCustomListRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\CreateCustomListRequest', $this->obj);
     }
 }

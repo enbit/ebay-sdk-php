@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
@@ -20,11 +20,11 @@ namespace DTS\eBaySDK\Browse\Types;
  * @property string $name
  * @property string $phone
  * @property string $registrationNumber
- * @property \DTS\eBaySDK\Browse\Types\LegalAddress $sellerProvidedLegalAddress
+ * @property \Enbit\eBaySDK\Browse\Types\LegalAddress $sellerProvidedLegalAddress
  * @property string $termsOfService
- * @property \DTS\eBaySDK\Browse\Types\VatDetail[] $vatDetails
+ * @property \Enbit\eBaySDK\Browse\Types\VatDetail[] $vatDetails
  */
-class SellerLegalInfo extends \DTS\eBaySDK\Types\BaseType
+class SellerLegalInfo extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -79,7 +79,7 @@ class SellerLegalInfo extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'registrationNumber'
         ],
         'sellerProvidedLegalAddress' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\LegalAddress',
+            'type' => 'Enbit\eBaySDK\Browse\Types\LegalAddress',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerProvidedLegalAddress'
@@ -91,7 +91,7 @@ class SellerLegalInfo extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'termsOfService'
         ],
         'vatDetails' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\VatDetail',
+            'type' => 'Enbit\eBaySDK\Browse\Types\VatDetail',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'vatDetails'

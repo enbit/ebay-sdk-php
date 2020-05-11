@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
@@ -18,7 +18,7 @@ namespace DTS\eBaySDK\Inventory\Types;
  * @property string $trim
  * @property string $year
  */
-class ProductFamilyProperties extends \DTS\eBaySDK\Types\BaseType
+class ProductFamilyProperties extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

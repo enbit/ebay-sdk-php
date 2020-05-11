@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $carrier
  * @property string $labelContent
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $labelCost
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $labelCost
  * @property string $labelPrintStatus
  * @property string $labelURL
  * @property string $trackingNumber
  */
-class GetShippingLabelResponse extends \DTS\eBaySDK\Types\BaseType
+class GetShippingLabelResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -38,7 +38,7 @@ class GetShippingLabelResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'labelContent'
         ],
         'labelCost' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'labelCost'

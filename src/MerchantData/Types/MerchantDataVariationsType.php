@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\MerchantDataVariationType[] $Variation
+ * @property \Enbit\eBaySDK\MerchantData\Types\MerchantDataVariationType[] $Variation
  */
-class MerchantDataVariationsType extends \DTS\eBaySDK\Types\BaseType
+class MerchantDataVariationsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Variation' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MerchantDataVariationType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\MerchantDataVariationType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Variation'

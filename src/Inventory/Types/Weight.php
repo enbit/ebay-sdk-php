@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Enums\WeightUnitOfMeasureEnum $unit
+ * @property \Enbit\eBaySDK\Inventory\Enums\WeightUnitOfMeasureEnum $unit
  * @property double $value
  */
-class Weight extends \DTS\eBaySDK\Types\BaseType
+class Weight extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

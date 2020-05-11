@@ -8,32 +8,32 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
  * @property string $openReason
  * @property string $decisionReason
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\DecisionReasonDetailType $decisionReasonDetail
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\DecisionReasonDetailType $decisionReasonDetail
  * @property \DateTime $decisionDate
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Enums\CaseDecisionType $decision
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Enums\CaseDecisionType $decision
  * @property boolean $FVFCredited
  * @property boolean $notCountedInBuyerProtectionCases
  * @property string $globalId
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\AppealType[] $appeal
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\EBPCaseResponseHistoryType[] $responseHistory
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\Amount $agreedRefundAmount
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\PaymentDetailType $paymentDetail
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\ShipmentType $buyerReturnShipment
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\ShipmentType $sellerShipment
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\AppealType[] $appeal
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\EBPCaseResponseHistoryType[] $responseHistory
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\Amount $agreedRefundAmount
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\PaymentDetailType $paymentDetail
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\ShipmentType $buyerReturnShipment
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\ShipmentType $sellerShipment
  * @property string $detailStatus
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\DetailStatusInfoType $detailStatusInfo
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\DetailStatusInfoType $detailStatusInfo
  * @property string $initialBuyerExpectation
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\InitialBuyerExpectationDetailType $initialBuyerExpectationDetail
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\InitialBuyerExpectationDetailType $initialBuyerExpectationDetail
  * @property string $returnMerchandiseAuthorization
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\EBPCaseDocumentInfoType[] $caseDocumentInfo
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\EBPCaseDocumentInfoType[] $caseDocumentInfo
  */
-class EBPCaseDetailType extends \DTS\eBaySDK\Types\BaseType
+class EBPCaseDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -52,7 +52,7 @@ class EBPCaseDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'decisionReason'
         ],
         'decisionReasonDetail' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\DecisionReasonDetailType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\DecisionReasonDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'decisionReasonDetail'
@@ -88,37 +88,37 @@ class EBPCaseDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'globalId'
         ],
         'appeal' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\AppealType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\AppealType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'appeal'
         ],
         'responseHistory' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\EBPCaseResponseHistoryType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\EBPCaseResponseHistoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'responseHistory'
         ],
         'agreedRefundAmount' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\Amount',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'agreedRefundAmount'
         ],
         'paymentDetail' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\PaymentDetailType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\PaymentDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paymentDetail'
         ],
         'buyerReturnShipment' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\ShipmentType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\ShipmentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerReturnShipment'
         ],
         'sellerShipment' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\ShipmentType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\ShipmentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerShipment'
@@ -130,7 +130,7 @@ class EBPCaseDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'detailStatus'
         ],
         'detailStatusInfo' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\DetailStatusInfoType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\DetailStatusInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'detailStatusInfo'
@@ -142,7 +142,7 @@ class EBPCaseDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'initialBuyerExpectation'
         ],
         'initialBuyerExpectationDetail' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\InitialBuyerExpectationDetailType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\InitialBuyerExpectationDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'initialBuyerExpectationDetail'
@@ -154,7 +154,7 @@ class EBPCaseDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'returnMerchandiseAuthorization'
         ],
         'caseDocumentInfo' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\EBPCaseDocumentInfoType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\EBPCaseDocumentInfoType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'caseDocumentInfo'

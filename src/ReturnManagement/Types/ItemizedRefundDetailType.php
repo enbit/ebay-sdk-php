@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Enums\RefundFeeType $refundFeeType
- * @property \DTS\eBaySDK\ReturnManagement\Types\Amount $amount
+ * @property \Enbit\eBaySDK\ReturnManagement\Enums\RefundFeeType $refundFeeType
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\Amount $amount
  */
-class ItemizedRefundDetailType extends \DTS\eBaySDK\Types\BaseType
+class ItemizedRefundDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class ItemizedRefundDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'refundFeeType'
         ],
         'amount' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\Amount',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

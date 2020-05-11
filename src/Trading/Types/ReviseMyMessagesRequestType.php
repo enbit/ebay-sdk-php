@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\MyMessagesMessageIDArrayType $MessageIDs
+ * @property \Enbit\eBaySDK\Trading\Types\MyMessagesMessageIDArrayType $MessageIDs
  * @property boolean $Read
  * @property boolean $Flagged
  * @property integer $FolderID
  */
-class ReviseMyMessagesRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class ReviseMyMessagesRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'MessageIDs' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MyMessagesMessageIDArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MyMessagesMessageIDArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MessageIDs'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\ValidateChallengeInputRequestType;
+use Enbit\eBaySDK\Trading\Types\ValidateChallengeInputRequestType;
 
 class ValidateChallengeInputRequestTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ValidateChallengeInputRequestTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\ValidateChallengeInputRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\ValidateChallengeInputRequestType', $this->obj);
     }
 
     public function testExtendsAbstractRequestType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\AbstractRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\AbstractRequestType', $this->obj);
     }
 }

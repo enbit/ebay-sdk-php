@@ -8,30 +8,30 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace Enbit\eBaySDK\Merchandising\Types;
 
 /**
  *
  * @property string $itemId
  * @property string $title
  * @property string $viewItemURL
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $currentPrice
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $originalPrice
+ * @property \Enbit\eBaySDK\Merchandising\Types\Amount $currentPrice
+ * @property \Enbit\eBaySDK\Merchandising\Types\Amount $originalPrice
  * @property string $globalId
  * @property string $timeLeft
  * @property string $primaryCategoryId
  * @property string $primaryCategoryName
  * @property string $subtitle
  * @property integer $bidCount
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $buyItNowPrice
+ * @property \Enbit\eBaySDK\Merchandising\Types\Amount $buyItNowPrice
  * @property string $country
  * @property string $imageURL
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $shippingCost
+ * @property \Enbit\eBaySDK\Merchandising\Types\Amount $shippingCost
  * @property string $shippingType
  * @property integer $watchCount
- * @property \DTS\eBaySDK\Merchandising\Types\DiscountPriceInfo $discountPriceInfo
+ * @property \Enbit\eBaySDK\Merchandising\Types\DiscountPriceInfo $discountPriceInfo
  */
-class Item extends \DTS\eBaySDK\Types\BaseType
+class Item extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -56,13 +56,13 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'viewItemURL'
         ],
         'currentPrice' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentPrice'
         ],
         'originalPrice' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'originalPrice'
@@ -104,7 +104,7 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'bidCount'
         ],
         'buyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyItNowPrice'
@@ -122,7 +122,7 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'imageURL'
         ],
         'shippingCost' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
@@ -140,7 +140,7 @@ class Item extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'watchCount'
         ],
         'discountPriceInfo' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\DiscountPriceInfo',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\DiscountPriceInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountPriceInfo'

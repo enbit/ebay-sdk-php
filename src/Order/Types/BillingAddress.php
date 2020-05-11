@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
  * @property string $addressLine1
  * @property string $addressLine2
  * @property string $city
- * @property \DTS\eBaySDK\Order\Enums\CountryCodeEnum $country
+ * @property \Enbit\eBaySDK\Order\Enums\CountryCodeEnum $country
  * @property string $county
  * @property string $firstName
  * @property string $lastName
  * @property string $postalCode
  * @property string $stateOrProvince
  */
-class BillingAddress extends \DTS\eBaySDK\Types\BaseType
+class BillingAddress extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

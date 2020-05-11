@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\DayOfWeekCodeType[] $DayOfWeek
+ * @property \Enbit\eBaySDK\Trading\Enums\DayOfWeekCodeType[] $DayOfWeek
  * @property integer $ListingPeriodInWeeks
  * @property string $ListAtSpecificTimeOfDay
  * @property \DateTime $StartTime
@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $MaxActiveItemCount
  * @property integer $ListingHoldInventoryLevel
  */
-class SellingManagerAutoListAccordingToScheduleType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerAutoListAccordingToScheduleType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

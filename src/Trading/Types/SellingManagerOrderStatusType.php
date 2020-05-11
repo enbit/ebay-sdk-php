@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\CheckoutStatusCodeType $CheckoutStatus
- * @property \DTS\eBaySDK\Trading\Enums\SellingManagerPaidStatusCodeType $PaidStatus
- * @property \DTS\eBaySDK\Trading\Enums\SellingManagerShippedStatusCodeType $ShippedStatus
- * @property \DTS\eBaySDK\Trading\Enums\PaymentStatusCodeType $eBayPaymentStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\CheckoutStatusCodeType $CheckoutStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\SellingManagerPaidStatusCodeType $PaidStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\SellingManagerShippedStatusCodeType $ShippedStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\PaymentStatusCodeType $eBayPaymentStatus
  * @property string $PayPalTransactionID
- * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType $PaymentMethodUsed
- * @property \DTS\eBaySDK\Trading\Enums\CommentTypeCodeType $FeedbackReceived
+ * @property \Enbit\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType $PaymentMethodUsed
+ * @property \Enbit\eBaySDK\Trading\Enums\CommentTypeCodeType $FeedbackReceived
  * @property boolean $FeedbackSent
  * @property integer $TotalEmailsSent
- * @property \DTS\eBaySDK\Trading\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
  * @property string $SellerInvoiceNumber
  * @property \DateTime $ShippedTime
  * @property \DateTime $PaidTime
@@ -29,7 +29,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property \DateTime $SellerInvoiceTime
  * @property boolean $IntegratedMerchantCreditCardEnabled
  */
-class SellingManagerOrderStatusType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerOrderStatusType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

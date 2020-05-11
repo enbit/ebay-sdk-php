@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace Enbit\eBaySDK\Fulfillment\Types;
 
 /**
  *
  * @property string $description
- * @property \DTS\eBaySDK\Fulfillment\Types\Amount $discountAmount
+ * @property \Enbit\eBaySDK\Fulfillment\Types\Amount $discountAmount
  * @property string $promotionId
  */
-class AppliedPromotion extends \DTS\eBaySDK\Types\BaseType
+class AppliedPromotion extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,7 +29,7 @@ class AppliedPromotion extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'description'
         ],
         'discountAmount' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discountAmount'

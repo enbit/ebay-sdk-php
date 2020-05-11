@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -19,20 +19,20 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $CityName
  * @property string $County
  * @property string $StateOrProvince
- * @property \DTS\eBaySDK\MerchantData\Enums\CountryCodeType $Country
+ * @property \Enbit\eBaySDK\MerchantData\Enums\CountryCodeType $Country
  * @property string $CountryName
  * @property string $Phone
- * @property \DTS\eBaySDK\MerchantData\Enums\CountryCodeType $PhoneCountryCode
+ * @property \Enbit\eBaySDK\MerchantData\Enums\CountryCodeType $PhoneCountryCode
  * @property string $PhoneCountryPrefix
  * @property string $PhoneAreaOrCityCode
  * @property string $PhoneLocalNumber
- * @property \DTS\eBaySDK\MerchantData\Enums\CountryCodeType $Phone2CountryCode
+ * @property \Enbit\eBaySDK\MerchantData\Enums\CountryCodeType $Phone2CountryCode
  * @property string $Phone2CountryPrefix
  * @property string $Phone2AreaOrCityCode
  * @property string $Phone2LocalNumber
  * @property string $PostalCode
  * @property string $AddressID
- * @property \DTS\eBaySDK\MerchantData\Enums\AddressOwnerCodeType $AddressOwner
+ * @property \Enbit\eBaySDK\MerchantData\Enums\AddressOwnerCodeType $AddressOwner
  * @property string $ExternalAddressID
  * @property string $InternationalName
  * @property string $InternationalStateAndCity
@@ -41,11 +41,11 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $FirstName
  * @property string $LastName
  * @property string $Phone2
- * @property \DTS\eBaySDK\MerchantData\Enums\AddressUsageCodeType $AddressUsage
+ * @property \Enbit\eBaySDK\MerchantData\Enums\AddressUsageCodeType $AddressUsage
  * @property string $ReferenceID
- * @property \DTS\eBaySDK\MerchantData\Types\AddressAttributeType[] $AddressAttribute
+ * @property \Enbit\eBaySDK\MerchantData\Types\AddressAttributeType[] $AddressAttribute
  */
-class AddressType extends \DTS\eBaySDK\Types\BaseType
+class AddressType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -238,7 +238,7 @@ class AddressType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ReferenceID'
         ],
         'AddressAttribute' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AddressAttributeType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AddressAttributeType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'AddressAttribute'

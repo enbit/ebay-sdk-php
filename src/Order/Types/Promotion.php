@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Order\Types\Amount $discount
+ * @property \Enbit\eBaySDK\Order\Types\Amount $discount
  * @property string $message
  * @property string $promotionCode
  * @property string $promotionType
  */
-class Promotion extends \DTS\eBaySDK\Types\BaseType
+class Promotion extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'discount' => [
-            'type' => 'DTS\eBaySDK\Order\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Order\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discount'

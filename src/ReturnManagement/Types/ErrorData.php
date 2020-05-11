@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
  * @property integer $errorId
  * @property string $domain
  * @property string $subdomain
- * @property \DTS\eBaySDK\ReturnManagement\Enums\ErrorSeverity $severity
- * @property \DTS\eBaySDK\ReturnManagement\Enums\ErrorCategory $category
+ * @property \Enbit\eBaySDK\ReturnManagement\Enums\ErrorSeverity $severity
+ * @property \Enbit\eBaySDK\ReturnManagement\Enums\ErrorCategory $category
  * @property string $message
  * @property string $exceptionId
- * @property \DTS\eBaySDK\ReturnManagement\Types\ErrorParameter[] $parameter
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\ErrorParameter[] $parameter
  */
-class ErrorData extends \DTS\eBaySDK\Types\BaseType
+class ErrorData extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -70,7 +70,7 @@ class ErrorData extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'exceptionId'
         ],
         'parameter' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\ErrorParameter',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\ErrorParameter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'parameter'

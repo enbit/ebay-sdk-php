@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace Enbit\eBaySDK\Merchandising\Types;
 
 /**
  *
  */
-class BaseMerchandisingServiceResponse extends \DTS\eBaySDK\Merchandising\Types\BaseServiceResponse
+class BaseMerchandisingServiceResponse extends \Enbit\eBaySDK\Merchandising\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.

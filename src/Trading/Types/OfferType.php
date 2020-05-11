@@ -8,26 +8,26 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\BidActionCodeType $Action
- * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
- * @property \DTS\eBaySDK\Trading\Types\AmountType $MaxBid
+ * @property \Enbit\eBaySDK\Trading\Enums\BidActionCodeType $Action
+ * @property \Enbit\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $MaxBid
  * @property integer $Quantity
  * @property boolean $SecondChanceEnabled
- * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $SiteCurrency
+ * @property \Enbit\eBaySDK\Trading\Enums\CurrencyCodeType $SiteCurrency
  * @property \DateTime $TimeBid
- * @property \DTS\eBaySDK\Trading\Types\AmountType $HighestBid
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ConvertedPrice
- * @property \DTS\eBaySDK\Trading\Types\UserType $User
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $HighestBid
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ConvertedPrice
+ * @property \Enbit\eBaySDK\Trading\Types\UserType $User
  * @property boolean $UserConsent
  * @property string $Message
  * @property string $BestOfferID
- * @property \DTS\eBaySDK\Trading\Types\AmountType $MyMaxBid
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $MyMaxBid
  */
-class OfferType extends \DTS\eBaySDK\Types\BaseType
+class OfferType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -46,7 +46,7 @@ class OfferType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Currency'
         ],
         'MaxBid' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MaxBid'
@@ -76,19 +76,19 @@ class OfferType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TimeBid'
         ],
         'HighestBid' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'HighestBid'
         ],
         'ConvertedPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedPrice'
         ],
         'User' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\UserType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\UserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'User'
@@ -112,7 +112,7 @@ class OfferType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BestOfferID'
         ],
         'MyMaxBid' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MyMaxBid'

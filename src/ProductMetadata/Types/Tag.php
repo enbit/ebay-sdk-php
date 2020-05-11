@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Types;
+namespace Enbit\eBaySDK\ProductMetadata\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\ProductMetadata\Types;
  * @property string[] $value
  * @property string $description
  */
-class Tag extends \DTS\eBaySDK\Types\BaseType
+class Tag extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

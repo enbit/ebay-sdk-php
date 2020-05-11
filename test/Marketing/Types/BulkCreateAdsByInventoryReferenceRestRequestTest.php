@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRestRequest;
+use Enbit\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRestRequest;
 
 class BulkCreateAdsByInventoryReferenceRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class BulkCreateAdsByInventoryReferenceRestRequestTest extends \PHPUnit_Framewor
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRestRequest', $this->obj);
     }
 
     public function testExtendsBulkCreateAdsByInventoryReferenceRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\BulkCreateAdsByInventoryReferenceRequest', $this->obj);
     }
 }

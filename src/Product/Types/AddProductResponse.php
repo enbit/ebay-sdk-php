@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
  * @property string $invocationId
- * @property \DTS\eBaySDK\Product\Types\ProductSubmissionStatus $status
+ * @property \Enbit\eBaySDK\Product\Types\ProductSubmissionStatus $status
  */
-class AddProductResponse extends \DTS\eBaySDK\Product\Types\BaseServiceResponse
+class AddProductResponse extends \Enbit\eBaySDK\Product\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class AddProductResponse extends \DTS\eBaySDK\Product\Types\BaseServiceResponse
             'elementName' => 'invocationId'
         ],
         'status' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductSubmissionStatus',
+            'type' => 'Enbit\eBaySDK\Product\Types\ProductSubmissionStatus',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'status'

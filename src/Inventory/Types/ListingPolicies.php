@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $fulfillmentPolicyId
  * @property string $paymentPolicyId
  * @property string $returnPolicyId
- * @property \DTS\eBaySDK\Inventory\Types\ShippingCostOverride[] $shippingCostOverrides
+ * @property \Enbit\eBaySDK\Inventory\Types\ShippingCostOverride[] $shippingCostOverrides
  */
-class ListingPolicies extends \DTS\eBaySDK\Types\BaseType
+class ListingPolicies extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -42,7 +42,7 @@ class ListingPolicies extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'returnPolicyId'
         ],
         'shippingCostOverrides' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ShippingCostOverride',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\ShippingCostOverride',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingCostOverrides'

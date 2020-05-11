@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\GetCancellationRestResponse;
+use Enbit\eBaySDK\PostOrder\Types\GetCancellationRestResponse;
 
 class GetCancellationRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetCancellationRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\GetCancellationRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\GetCancellationRestResponse', $this->obj);
     }
 
     public function testExtendsGetCancelDetailResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\GetCancelDetailResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\GetCancelDetailResponse', $this->obj);
     }
 }

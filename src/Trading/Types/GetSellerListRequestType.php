@@ -8,26 +8,26 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $UserID
- * @property \DTS\eBaySDK\Trading\Types\UserIDArrayType $MotorsDealerUsers
+ * @property \Enbit\eBaySDK\Trading\Types\UserIDArrayType $MotorsDealerUsers
  * @property \DateTime $EndTimeFrom
  * @property \DateTime $EndTimeTo
  * @property integer $Sort
  * @property \DateTime $StartTimeFrom
  * @property \DateTime $StartTimeTo
- * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
- * @property \DTS\eBaySDK\Trading\Enums\GranularityLevelCodeType $GranularityLevel
- * @property \DTS\eBaySDK\Trading\Types\SKUArrayType $SKUArray
+ * @property \Enbit\eBaySDK\Trading\Types\PaginationType $Pagination
+ * @property \Enbit\eBaySDK\Trading\Enums\GranularityLevelCodeType $GranularityLevel
+ * @property \Enbit\eBaySDK\Trading\Types\SKUArrayType $SKUArray
  * @property boolean $IncludeWatchCount
  * @property boolean $AdminEndedItemsOnly
  * @property integer $CategoryID
  * @property boolean $IncludeVariations
  */
-class GetSellerListRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetSellerListRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -40,7 +40,7 @@ class GetSellerListRequestType extends \DTS\eBaySDK\Trading\Types\AbstractReques
             'elementName' => 'UserID'
         ],
         'MotorsDealerUsers' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\UserIDArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\UserIDArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MotorsDealerUsers'
@@ -76,7 +76,7 @@ class GetSellerListRequestType extends \DTS\eBaySDK\Trading\Types\AbstractReques
             'elementName' => 'StartTimeTo'
         ],
         'Pagination' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaginationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Pagination'
@@ -88,7 +88,7 @@ class GetSellerListRequestType extends \DTS\eBaySDK\Trading\Types\AbstractReques
             'elementName' => 'GranularityLevel'
         ],
         'SKUArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SKUArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SKUArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SKUArray'

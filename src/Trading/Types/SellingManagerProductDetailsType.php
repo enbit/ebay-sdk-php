@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -16,14 +16,14 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $ProductID
  * @property string $CustomLabel
  * @property integer $QuantityAvailable
- * @property \DTS\eBaySDK\Trading\Types\AmountType $UnitCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $UnitCost
  * @property integer $FolderID
  * @property boolean $RestockAlert
  * @property integer $RestockThreshold
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerVendorDetailsType $VendorInfo
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerVendorDetailsType $VendorInfo
  * @property string $Note
  */
-class SellingManagerProductDetailsType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerProductDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -54,7 +54,7 @@ class SellingManagerProductDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'QuantityAvailable'
         ],
         'UnitCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UnitCost'
@@ -78,7 +78,7 @@ class SellingManagerProductDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'RestockThreshold'
         ],
         'VendorInfo' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerVendorDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerVendorDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VendorInfo'

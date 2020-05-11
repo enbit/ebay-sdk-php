@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace Enbit\eBaySDK\Merchandising\Types;
 
 /**
  *
  * @property string $categoryId
  */
-class GetMostWatchedItemsRequest extends \DTS\eBaySDK\Merchandising\Types\BaseMerchandisingServiceRequest
+class GetMostWatchedItemsRequest extends \Enbit\eBaySDK\Merchandising\Types\BaseMerchandisingServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

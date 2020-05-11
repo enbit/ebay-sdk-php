@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\ReturnManagement\Types;
+namespace Enbit\eBaySDK\Test\ReturnManagement\Types;
 
-use DTS\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType;
+use Enbit\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType;
 
 class ProvideSellerInfoOptionTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ProvideSellerInfoOptionTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ReturnManagement\Types\ProvideSellerInfoOptionType', $this->obj);
     }
 
     public function testExtendsBaseActivityOptionType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ReturnManagement\Types\BaseActivityOptionType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ReturnManagement\Types\BaseActivityOptionType', $this->obj);
     }
 }

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Types;
+namespace Enbit\eBaySDK\ProductMetadata\Types;
 
 /**
  *
  * @property string $categoryId
- * @property \DTS\eBaySDK\ProductMetadata\Types\PropertyValue[] $propertyFilter
+ * @property \Enbit\eBaySDK\ProductMetadata\Types\PropertyValue[] $propertyFilter
  * @property boolean $listFormatOnly
- * @property \DTS\eBaySDK\ProductMetadata\Types\SortOrder[] $sortOrder
+ * @property \Enbit\eBaySDK\ProductMetadata\Types\SortOrder[] $sortOrder
  */
-class GetProductSearchValuesBaseRequest extends \DTS\eBaySDK\ProductMetadata\Types\BaseServiceRequest
+class GetProductSearchValuesBaseRequest extends \Enbit\eBaySDK\ProductMetadata\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class GetProductSearchValuesBaseRequest extends \DTS\eBaySDK\ProductMetadata\Typ
             'elementName' => 'categoryId'
         ],
         'propertyFilter' => [
-            'type' => 'DTS\eBaySDK\ProductMetadata\Types\PropertyValue',
+            'type' => 'Enbit\eBaySDK\ProductMetadata\Types\PropertyValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'propertyFilter'
@@ -42,7 +42,7 @@ class GetProductSearchValuesBaseRequest extends \DTS\eBaySDK\ProductMetadata\Typ
             'elementName' => 'listFormatOnly'
         ],
         'sortOrder' => [
-            'type' => 'DTS\eBaySDK\ProductMetadata\Types\SortOrder',
+            'type' => 'Enbit\eBaySDK\ProductMetadata\Types\SortOrder',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'sortOrder'

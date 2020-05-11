@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\GetMetadataForAReportTypeRestResponse;
+use Enbit\eBaySDK\Marketing\Types\GetMetadataForAReportTypeRestResponse;
 
 class GetMetadataForAReportTypeRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetMetadataForAReportTypeRestResponseTest extends \PHPUnit_Framework_TestC
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\GetMetadataForAReportTypeRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\GetMetadataForAReportTypeRestResponse', $this->obj);
     }
 
     public function testExtendsReportMetadata()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\ReportMetadata', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\ReportMetadata', $this->obj);
     }
 }

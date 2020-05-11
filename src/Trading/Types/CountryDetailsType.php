@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\CountryCodeType $Country
+ * @property \Enbit\eBaySDK\Trading\Enums\CountryCodeType $Country
  * @property string $Description
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
-class CountryDetailsType extends \DTS\eBaySDK\Types\BaseType
+class CountryDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
  */
-class GetVersionResponse extends \DTS\eBaySDK\Finding\Types\BaseServiceResponse
+class GetVersionResponse extends \Enbit\eBaySDK\Finding\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.

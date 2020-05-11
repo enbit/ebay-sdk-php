@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\ClassifiedAdPhoneCountDefinitionType;
+use Enbit\eBaySDK\Trading\Types\ClassifiedAdPhoneCountDefinitionType;
 
 class ClassifiedAdPhoneCountDefinitionTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ClassifiedAdPhoneCountDefinitionTypeTest extends \PHPUnit_Framework_TestCa
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\ClassifiedAdPhoneCountDefinitionType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\ClassifiedAdPhoneCountDefinitionType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

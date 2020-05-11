@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\LocalListingDistancesRegularDefinitionType;
+use Enbit\eBaySDK\Trading\Types\LocalListingDistancesRegularDefinitionType;
 
 class LocalListingDistancesRegularDefinitionTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class LocalListingDistancesRegularDefinitionTypeTest extends \PHPUnit_Framework_
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\LocalListingDistancesRegularDefinitionType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\LocalListingDistancesRegularDefinitionType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

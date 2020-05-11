@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -16,11 +16,11 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $LongMessage
  * @property string $ErrorCode
  * @property boolean $UserDisplayHint
- * @property \DTS\eBaySDK\MerchantData\Enums\SeverityCodeType $SeverityCode
- * @property \DTS\eBaySDK\MerchantData\Types\ErrorParameterType[] $ErrorParameters
- * @property \DTS\eBaySDK\MerchantData\Enums\ErrorClassificationCodeType $ErrorClassification
+ * @property \Enbit\eBaySDK\MerchantData\Enums\SeverityCodeType $SeverityCode
+ * @property \Enbit\eBaySDK\MerchantData\Types\ErrorParameterType[] $ErrorParameters
+ * @property \Enbit\eBaySDK\MerchantData\Enums\ErrorClassificationCodeType $ErrorClassification
  */
-class ErrorType extends \DTS\eBaySDK\Types\BaseType
+class ErrorType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -57,7 +57,7 @@ class ErrorType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SeverityCode'
         ],
         'ErrorParameters' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ErrorParameterType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ErrorParameterType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ErrorParameters'

@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\EstimatedRefundInfoType $refundInfo
- * @property \DTS\eBaySDK\PostOrder\Types\EstimatedShippingInfoType $returnShippingCostInfo
+ * @property \Enbit\eBaySDK\PostOrder\Types\EstimatedRefundInfoType $refundInfo
+ * @property \Enbit\eBaySDK\PostOrder\Types\EstimatedShippingInfoType $returnShippingCostInfo
  */
-class GetEstimateResponse extends \DTS\eBaySDK\Types\BaseType
+class GetEstimateResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'refundInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\EstimatedRefundInfoType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\EstimatedRefundInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundInfo'
         ],
         'returnShippingCostInfo' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\EstimatedShippingInfoType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\EstimatedShippingInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnShippingCostInfo'

@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $inquiryId
  */
-class IssueInquiryRefundRestRequest extends \DTS\eBaySDK\PostOrder\Types\InquiryVoluntaryRefundRequest
+class IssueInquiryRefundRestRequest extends \Enbit\eBaySDK\PostOrder\Types\InquiryVoluntaryRefundRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

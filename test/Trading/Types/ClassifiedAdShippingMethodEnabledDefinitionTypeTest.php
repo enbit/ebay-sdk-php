@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\ClassifiedAdShippingMethodEnabledDefinitionType;
+use Enbit\eBaySDK\Trading\Types\ClassifiedAdShippingMethodEnabledDefinitionType;
 
 class ClassifiedAdShippingMethodEnabledDefinitionTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ClassifiedAdShippingMethodEnabledDefinitionTypeTest extends \PHPUnit_Frame
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\ClassifiedAdShippingMethodEnabledDefinitionType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\ClassifiedAdShippingMethodEnabledDefinitionType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

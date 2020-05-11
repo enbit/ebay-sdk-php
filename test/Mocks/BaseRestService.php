@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Test\Mocks;
+namespace Enbit\eBaySDK\Test\Mocks;
 
-class BaseRestService extends \DTS\eBaySDK\Services\BaseRestService
+class BaseRestService extends \Enbit\eBaySDK\Services\BaseRestService
 {
     protected static $endPoints = [
         'sandbox'    => 'http://sandbox.com',

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Types;
+namespace Enbit\eBaySDK\ProductMetadata\Types;
 
 /**
  *
  * @property string $metadataVersion
- * @property \DTS\eBaySDK\ProductMetadata\Types\PropertyValue[] $propertyValues
- * @property \DTS\eBaySDK\ProductMetadata\Types\PropertyNameValue $propertyValuesTree
+ * @property \Enbit\eBaySDK\ProductMetadata\Types\PropertyValue[] $propertyValues
+ * @property \Enbit\eBaySDK\ProductMetadata\Types\PropertyNameValue $propertyValuesTree
  * @property boolean $treeFormat
  */
-class GetProductSearchValuesResponse extends \DTS\eBaySDK\ProductMetadata\Types\BaseServiceResponse
+class GetProductSearchValuesResponse extends \Enbit\eBaySDK\ProductMetadata\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,13 +30,13 @@ class GetProductSearchValuesResponse extends \DTS\eBaySDK\ProductMetadata\Types\
             'elementName' => 'metadataVersion'
         ],
         'propertyValues' => [
-            'type' => 'DTS\eBaySDK\ProductMetadata\Types\PropertyValue',
+            'type' => 'Enbit\eBaySDK\ProductMetadata\Types\PropertyValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'propertyValues'
         ],
         'propertyValuesTree' => [
-            'type' => 'DTS\eBaySDK\ProductMetadata\Types\PropertyNameValue',
+            'type' => 'Enbit\eBaySDK\ProductMetadata\Types\PropertyNameValue',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'propertyValuesTree'

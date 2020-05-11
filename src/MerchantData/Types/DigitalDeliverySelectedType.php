@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $DeliveryMethod
- * @property \DTS\eBaySDK\MerchantData\Types\DeliveryStatusType $DeliveryStatus
- * @property \DTS\eBaySDK\MerchantData\Types\DeliveryDetailsType $DeliveryDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\DeliveryStatusType $DeliveryStatus
+ * @property \Enbit\eBaySDK\MerchantData\Types\DeliveryDetailsType $DeliveryDetails
  */
-class DigitalDeliverySelectedType extends \DTS\eBaySDK\Types\BaseType
+class DigitalDeliverySelectedType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,13 +29,13 @@ class DigitalDeliverySelectedType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'DeliveryMethod'
         ],
         'DeliveryStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\DeliveryStatusType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\DeliveryStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DeliveryStatus'
         ],
         'DeliveryDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\DeliveryDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\DeliveryDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DeliveryDetails'

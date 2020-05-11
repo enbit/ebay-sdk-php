@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $fieldgroups
  */
-class CreateReturnRequestRestRequest extends \DTS\eBaySDK\PostOrder\Types\CreateReturnRequest
+class CreateReturnRequestRestRequest extends \Enbit\eBaySDK\PostOrder\Types\CreateReturnRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

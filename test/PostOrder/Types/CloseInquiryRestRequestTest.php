@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\CloseInquiryRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\CloseInquiryRestRequest;
 
 class CloseInquiryRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CloseInquiryRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\CloseInquiryRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\CloseInquiryRestRequest', $this->obj);
     }
 
     public function testExtendsBuyerCloseInquiryRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\BuyerCloseInquiryRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\BuyerCloseInquiryRequest', $this->obj);
     }
 }

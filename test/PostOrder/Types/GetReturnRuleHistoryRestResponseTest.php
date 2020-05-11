@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\GetReturnRuleHistoryRestResponse;
+use Enbit\eBaySDK\PostOrder\Types\GetReturnRuleHistoryRestResponse;
 
 class GetReturnRuleHistoryRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetReturnRuleHistoryRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\GetReturnRuleHistoryRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\GetReturnRuleHistoryRestResponse', $this->obj);
     }
 
     public function testExtendsGetDispositionRuleTriggerHistResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\GetDispositionRuleTriggerHistResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\GetDispositionRuleTriggerHistResponse', $this->obj);
     }
 }

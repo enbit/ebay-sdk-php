@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\Trading\Types\MemberMessageType $MemberMessage
+ * @property \Enbit\eBaySDK\Trading\Types\MemberMessageType $MemberMessage
  */
-class AddMemberMessageAAQToPartnerRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class AddMemberMessageAAQToPartnerRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class AddMemberMessageAAQToPartnerRequestType extends \DTS\eBaySDK\Trading\Types
             'elementName' => 'ItemID'
         ],
         'MemberMessage' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MemberMessageType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MemberMessageType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MemberMessage'

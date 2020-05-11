@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\Test\ResolutionCaseManagement\Types;
 
-use DTS\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType;
+use Enbit\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType;
 
 class ActivityDetailTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ActivityDetailTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType', $this->obj);
     }
 
     public function testExtendsEnumerationDetailType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\EnumerationDetailType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\EnumerationDetailType', $this->obj);
     }
 }

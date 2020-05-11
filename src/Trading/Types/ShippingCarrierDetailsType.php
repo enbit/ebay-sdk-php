@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property integer $ShippingCarrierID
  * @property string $Description
- * @property \DTS\eBaySDK\Trading\Enums\ShippingCarrierCodeType $ShippingCarrier
+ * @property \Enbit\eBaySDK\Trading\Enums\ShippingCarrierCodeType $ShippingCarrier
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  */
-class ShippingCarrierDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ShippingCarrierDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

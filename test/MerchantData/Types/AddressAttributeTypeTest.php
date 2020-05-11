@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Types;
+namespace Enbit\eBaySDK\Test\MerchantData\Types;
 
-use DTS\eBaySDK\MerchantData\Types\AddressAttributeType;
+use Enbit\eBaySDK\MerchantData\Types\AddressAttributeType;
 
 class AddressAttributeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AddressAttributeTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Types\AddressAttributeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Types\AddressAttributeType', $this->obj);
     }
 
     public function testExtendsStringType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\StringType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\StringType', $this->obj);
     }
 }

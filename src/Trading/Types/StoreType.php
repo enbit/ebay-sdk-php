@@ -8,30 +8,30 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $Name
  * @property string $URLPath
  * @property string $URL
- * @property \DTS\eBaySDK\Trading\Enums\StoreSubscriptionLevelCodeType $SubscriptionLevel
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreSubscriptionLevelCodeType $SubscriptionLevel
  * @property string $Description
- * @property \DTS\eBaySDK\Trading\Types\StoreLogoType $Logo
- * @property \DTS\eBaySDK\Trading\Types\StoreThemeType $Theme
- * @property \DTS\eBaySDK\Trading\Enums\StoreHeaderStyleCodeType $HeaderStyle
+ * @property \Enbit\eBaySDK\Trading\Types\StoreLogoType $Logo
+ * @property \Enbit\eBaySDK\Trading\Types\StoreThemeType $Theme
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreHeaderStyleCodeType $HeaderStyle
  * @property integer $HomePage
- * @property \DTS\eBaySDK\Trading\Enums\StoreItemListLayoutCodeType $ItemListLayout
- * @property \DTS\eBaySDK\Trading\Enums\StoreItemListSortOrderCodeType $ItemListSortOrder
- * @property \DTS\eBaySDK\Trading\Enums\StoreCustomHeaderLayoutCodeType $CustomHeaderLayout
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreItemListLayoutCodeType $ItemListLayout
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreItemListSortOrderCodeType $ItemListSortOrder
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreCustomHeaderLayoutCodeType $CustomHeaderLayout
  * @property string $CustomHeader
  * @property boolean $ExportListings
- * @property \DTS\eBaySDK\Trading\Types\StoreCustomCategoryArrayType $CustomCategories
- * @property \DTS\eBaySDK\Trading\Types\StoreCustomListingHeaderType $CustomListingHeader
+ * @property \Enbit\eBaySDK\Trading\Types\StoreCustomCategoryArrayType $CustomCategories
+ * @property \Enbit\eBaySDK\Trading\Types\StoreCustomListingHeaderType $CustomListingHeader
  * @property \DateTime $LastOpenedTime
  * @property boolean $TitleWithCompatibility
  */
-class StoreType extends \DTS\eBaySDK\Types\BaseType
+class StoreType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -68,13 +68,13 @@ class StoreType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Description'
         ],
         'Logo' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\StoreLogoType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\StoreLogoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Logo'
         ],
         'Theme' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\StoreThemeType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\StoreThemeType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Theme'
@@ -122,13 +122,13 @@ class StoreType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ExportListings'
         ],
         'CustomCategories' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\StoreCustomCategoryArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\StoreCustomCategoryArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CustomCategories'
         ],
         'CustomListingHeader' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\StoreCustomListingHeaderType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\StoreCustomListingHeaderType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CustomListingHeader'

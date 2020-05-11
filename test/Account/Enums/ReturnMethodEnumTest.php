@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Account\Enums;
+namespace Enbit\eBaySDK\Test\Account\Enums;
 
-use DTS\eBaySDK\Account\Enums\ReturnMethodEnum;
+use Enbit\eBaySDK\Account\Enums\ReturnMethodEnum;
 
 class ReturnMethodEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class ReturnMethodEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Account\Enums\ReturnMethodEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Account\Enums\ReturnMethodEnum', $this->obj);
     }
 }

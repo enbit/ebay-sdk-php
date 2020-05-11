@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\Test\ResolutionCaseManagement\Types;
 
-use DTS\eBaySDK\ResolutionCaseManagement\Types\IssuePartialRefundRequest;
+use Enbit\eBaySDK\ResolutionCaseManagement\Types\IssuePartialRefundRequest;
 
 class IssuePartialRefundRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class IssuePartialRefundRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\IssuePartialRefundRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\IssuePartialRefundRequest', $this->obj);
     }
 
     public function testExtendsBaseRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\ResolutionCaseManagement\Types\BaseRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\ResolutionCaseManagement\Types\BaseRequest', $this->obj);
     }
 }

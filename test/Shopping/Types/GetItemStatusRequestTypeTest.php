@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Shopping\Types;
+namespace Enbit\eBaySDK\Test\Shopping\Types;
 
-use DTS\eBaySDK\Shopping\Types\GetItemStatusRequestType;
+use Enbit\eBaySDK\Shopping\Types\GetItemStatusRequestType;
 
 class GetItemStatusRequestTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetItemStatusRequestTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\GetItemStatusRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\GetItemStatusRequestType', $this->obj);
     }
 
     public function testExtendsAbstractRequestType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\AbstractRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\AbstractRequestType', $this->obj);
     }
 }

@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Finding\Types\PaginationInput $paginationInput
+ * @property \Enbit\eBaySDK\Finding\Types\PaginationInput $paginationInput
  * @property string $buyerPostalCode
- * @property \DTS\eBaySDK\Finding\Types\Affiliate $affiliate
+ * @property \Enbit\eBaySDK\Finding\Types\Affiliate $affiliate
  */
-class BestMatchFindingServiceRequest extends \DTS\eBaySDK\Finding\Types\BaseServiceRequest
+class BestMatchFindingServiceRequest extends \Enbit\eBaySDK\Finding\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'paginationInput' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\PaginationInput',
+            'type' => 'Enbit\eBaySDK\Finding\Types\PaginationInput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationInput'
@@ -35,7 +35,7 @@ class BestMatchFindingServiceRequest extends \DTS\eBaySDK\Finding\Types\BaseServ
             'elementName' => 'buyerPostalCode'
         ],
         'affiliate' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\Affiliate',
+            'type' => 'Enbit\eBaySDK\Finding\Types\Affiliate',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'affiliate'

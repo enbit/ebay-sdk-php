@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Types\SalesTax[] $salesTaxes
+ * @property \Enbit\eBaySDK\Account\Types\SalesTax[] $salesTaxes
  */
-class SalesTaxes extends \DTS\eBaySDK\Types\BaseType
+class SalesTaxes extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'salesTaxes' => [
-            'type' => 'DTS\eBaySDK\Account\Types\SalesTax',
+            'type' => 'Enbit\eBaySDK\Account\Types\SalesTax',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'salesTaxes'

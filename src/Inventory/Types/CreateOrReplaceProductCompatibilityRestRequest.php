@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $sku
  */
-class CreateOrReplaceProductCompatibilityRestRequest extends \DTS\eBaySDK\Inventory\Types\Compatibility
+class CreateOrReplaceProductCompatibilityRestRequest extends \Enbit\eBaySDK\Inventory\Types\Compatibility
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Types;
+namespace Enbit\eBaySDK\Test\Finding\Types;
 
-use DTS\eBaySDK\Finding\Types\Amount;
+use Enbit\eBaySDK\Finding\Types\Amount;
 
 class AmountTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AmountTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\Amount', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\Amount', $this->obj);
     }
 
     public function testExtendsDoubleType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\DoubleType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\DoubleType', $this->obj);
     }
 }

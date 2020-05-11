@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\ReturnManagement\Types;
  * @property string $description
  * @property string $content
  */
-class EnumerationDetailType extends \DTS\eBaySDK\Types\BaseType
+class EnumerationDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

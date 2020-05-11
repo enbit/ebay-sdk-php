@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
  * @property string $categoryId
- * @property \DTS\eBaySDK\Browse\Types\FilterField[] $filters
+ * @property \Enbit\eBaySDK\Browse\Types\FilterField[] $filters
  */
-class AspectFilter extends \DTS\eBaySDK\Types\BaseType
+class AspectFilter extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class AspectFilter extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'categoryId'
         ],
         'filters' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\FilterField',
+            'type' => 'Enbit\eBaySDK\Browse\Types\FilterField',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'filters'

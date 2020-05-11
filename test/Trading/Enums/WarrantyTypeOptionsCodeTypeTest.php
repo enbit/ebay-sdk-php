@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Enums;
+namespace Enbit\eBaySDK\Test\Trading\Enums;
 
-use DTS\eBaySDK\Trading\Enums\WarrantyTypeOptionsCodeType;
+use Enbit\eBaySDK\Trading\Enums\WarrantyTypeOptionsCodeType;
 
 class WarrantyTypeOptionsCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class WarrantyTypeOptionsCodeTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Enums\WarrantyTypeOptionsCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Enums\WarrantyTypeOptionsCodeType', $this->obj);
     }
 }

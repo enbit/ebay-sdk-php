@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerProductDetailsType $SellingManagerProductDetails
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerProductDetailsType $SellingManagerProductDetails
  */
-class ReviseSellingManagerProductResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class ReviseSellingManagerProductResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'SellingManagerProductDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerProductDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerProductDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingManagerProductDetails'

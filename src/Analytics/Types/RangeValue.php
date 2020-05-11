@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Analytics\Types;
+namespace Enbit\eBaySDK\Analytics\Types;
 
 /**
  *
@@ -18,7 +18,7 @@ namespace DTS\eBaySDK\Analytics\Types;
  * @property boolean $range
  * @property string $start
  */
-class RangeValue extends \DTS\eBaySDK\Types\BaseType
+class RangeValue extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

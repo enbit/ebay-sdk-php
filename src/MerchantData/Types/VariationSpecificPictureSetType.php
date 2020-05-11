@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $VariationSpecificValue
  * @property string[] $PictureURL
  * @property string[] $ExternalPictureURL
- * @property \DTS\eBaySDK\MerchantData\Types\ExtendedPictureDetailsType $ExtendedPictureDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\ExtendedPictureDetailsType $ExtendedPictureDetails
  */
-class VariationSpecificPictureSetType extends \DTS\eBaySDK\Types\BaseType
+class VariationSpecificPictureSetType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -42,7 +42,7 @@ class VariationSpecificPictureSetType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ExternalPictureURL'
         ],
         'ExtendedPictureDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ExtendedPictureDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ExtendedPictureDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ExtendedPictureDetails'

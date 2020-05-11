@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use Enbit\eBaySDK\StatusCodeTrait;
+use Enbit\eBaySDK\HttpHeadersTrait;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Types\ErrorDetailV3[] $errors
- * @property \DTS\eBaySDK\Account\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Account\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\Account\Types\ErrorDetailV3[] $warnings
  */
-class UpdateAPaymentPolicyRestResponse extends \DTS\eBaySDK\Account\Types\SetPaymentPolicyResponse
+class UpdateAPaymentPolicyRestResponse extends \Enbit\eBaySDK\Account\Types\SetPaymentPolicyResponse
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -28,13 +28,13 @@ class UpdateAPaymentPolicyRestResponse extends \DTS\eBaySDK\Account\Types\SetPay
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'DTS\eBaySDK\Account\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Account\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

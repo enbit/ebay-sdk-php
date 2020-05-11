@@ -37,9 +37,9 @@ You can create a service object by passing an associative array of configuration
     // Use the Composer autoloader to include the SDK.
     require 'vendor/autoload.php';
 
-    $finding = new DTS\eBaySDK\Finding\Services\FindingService([
+    $finding = new Enbit\eBaySDK\Finding\Services\FindingService([
         'apiVersion' => '1.13.0',
-        'globalId'   => DTS\eBaySDK\Constants\GlobalIds::US
+        'globalId'   => Enbit\eBaySDK\Constants\GlobalIds::US
     ]);
 
 .. _sdk-class:
@@ -47,7 +47,7 @@ You can create a service object by passing an associative array of configuration
 Using the Sdk class
 -------------------
 
-The ``DTS\eBaySDK\Sdk`` class can be used as a factory for creating services. Configuration options passed to this class are shared with any services that it creates.
+The ``Enbit\eBaySDK\Sdk`` class can be used as a factory for creating services. Configuration options passed to this class are shared with any services that it creates.
 
 .. code-block:: php
 
@@ -58,7 +58,7 @@ The ``DTS\eBaySDK\Sdk`` class can be used as a factory for creating services. Co
     ];
 
     // Create an SDK class used to share configuration across services.
-    $sdk = new DTS\eBaySDK\Sdk($config);
+    $sdk = new Enbit\eBaySDK\Sdk($config);
 
     // Create two services that share the same configuration.
     $trading = $sdk->createTrading();
@@ -68,7 +68,7 @@ Configuration options that are in the root-level key-value pairs are shared acro
 
 .. code-block:: php
 
-    $sdk = new DTS\eBaySDK\Sdk([
+    $sdk = new Enbit\eBaySDK\Sdk([
         'apiVersion' => '903',
         'Finding'    => [
             'apiVersion' => '1.13.0'
@@ -85,7 +85,7 @@ Service-specific configuration options are deep merged with those provided to th
 
 .. code-block:: php
 
-    $sdk = new DTS\eBaySDK\Sdk([
+    $sdk = new Enbit\eBaySDK\Sdk([
         'apiVersion' => '903',
         'siteId'     => '3'
     ]);
@@ -103,14 +103,14 @@ Service-specific configuration options are deep merged with those provided to th
 Creating a Request
 ------------------
 
-Before sending data to the API you will need to instaniate a **request** object. This example will call the `findItemsByKeywords <http://developer.ebay.com/DevZone/finding/CallRef/findItemsByKeywords.html>`_ operation and so the object will be an instance of the `DTS\\eBaySDK\\Finding\\Types\\FindItemsByKeywordsRequest <https://github.com/davidtsadler/ebay-sdk-php/blob/master/src/Finding/Types/FindItemsByKeywordsRequest.php>`_ class.
+Before sending data to the API you will need to instaniate a **request** object. This example will call the `findItemsByKeywords <http://developer.ebay.com/DevZone/finding/CallRef/findItemsByKeywords.html>`_ operation and so the object will be an instance of the `Enbit\\eBaySDK\\Finding\\Types\\FindItemsByKeywordsRequest <https://github.com/davidtsadler/ebay-sdk-php/blob/master/src/Finding/Types/FindItemsByKeywordsRequest.php>`_ class.
 
 .. code-block:: php
 
     // Create the API request object.
     $request = new Types\FindItemsByKeywordsRequest();
 
-Properties of the request object can then be assigned values that will be sent to the API. Note that you may have to create instances of other classes, such as `DTS\\eBaySDK\\Finding\\Types\\PaginationInput <https://github.com/davidtsadler/ebay-sdk-php/blob/master/src/Finding/Types/PaginationInput.php>`_, in order to build up a complete request.
+Properties of the request object can then be assigned values that will be sent to the API. Note that you may have to create instances of other classes, such as `Enbit\\eBaySDK\\Finding\\Types\\PaginationInput <https://github.com/davidtsadler/ebay-sdk-php/blob/master/src/Finding/Types/PaginationInput.php>`_, in order to build up a complete request.
 
 .. code-block:: php
 
@@ -162,7 +162,7 @@ You can make a promise complete synchronously by using the `wait` method of the 
 Working with Responses
 ----------------------
 
-The result of calling a service operation is a **response** object that contains the data returned from the API. The SDK uses the raw XML response to assign values to the properties on the response object. The type and contents of the object depend on the service operation that was called. In this example the object will be an instance of the `DTS\\eBaySDK\\Finding\\Types\\FindItemsByKeywordsResponse <https://github.com/davidtsadler/ebay-sdk-php/blob/master/src/Finding/Types/FindItemsByKeywordsResponse.php>`_ class.
+The result of calling a service operation is a **response** object that contains the data returned from the API. The SDK uses the raw XML response to assign values to the properties on the response object. The type and contents of the object depend on the service operation that was called. In this example the object will be an instance of the `Enbit\\eBaySDK\\Finding\\Types\\FindItemsByKeywordsResponse <https://github.com/davidtsadler/ebay-sdk-php/blob/master/src/Finding/Types/FindItemsByKeywordsResponse.php>`_ class.
 
 .. code-block:: php
 

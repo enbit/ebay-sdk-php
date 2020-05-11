@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
@@ -24,7 +24,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $RestockingFeeValue
  * @property string $RestockingFeeValueOption
  */
-class ReturnPolicyType extends \DTS\eBaySDK\Types\BaseType
+class ReturnPolicyType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

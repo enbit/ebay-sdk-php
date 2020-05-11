@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property string $ShippingServiceName
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $InsuranceCost
- * @property \DTS\eBaySDK\Shopping\Enums\ShippingTypeCodeType $ShippingType
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $InsuranceCost
+ * @property \Enbit\eBaySDK\Shopping\Enums\ShippingTypeCodeType $ShippingType
  * @property boolean $LocalPickup
- * @property \DTS\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
+ * @property \Enbit\eBaySDK\Shopping\Enums\InsuranceOptionCodeType $InsuranceOption
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ListedShippingServiceCost
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ImportCharge
  * @property string $LogisticPlanType
  */
-class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
+class ShippingCostSummaryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,13 +35,13 @@ class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippingServiceName'
         ],
         'ShippingServiceCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCost'
         ],
         'InsuranceCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'InsuranceCost'
@@ -65,13 +65,13 @@ class ShippingCostSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'InsuranceOption'
         ],
         'ListedShippingServiceCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListedShippingServiceCost'
         ],
         'ImportCharge' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ImportCharge'

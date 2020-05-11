@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Services;
+namespace Enbit\eBaySDK\Browse\Services;
 
-class BrowseService extends \DTS\eBaySDK\Browse\Services\BrowseBaseService
+class BrowseService extends \Enbit\eBaySDK\Browse\Services\BrowseBaseService
 {
     const API_VERSION = 'v1';
 
@@ -21,7 +21,7 @@ class BrowseService extends \DTS\eBaySDK\Browse\Services\BrowseBaseService
         'GetItem' => [
             'method' => 'GET',
             'resource' => 'item/{item_id}',
-            'responseClass' => '\DTS\eBaySDK\Browse\Types\GetItemRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Browse\Types\GetItemRestResponse',
             'params' => [
                 'item_id' => [
                     'valid' => ['string'],
@@ -32,7 +32,7 @@ class BrowseService extends \DTS\eBaySDK\Browse\Services\BrowseBaseService
         'GetItemByLegacyId' => [
             'method' => 'GET',
             'resource' => 'item/get_item_by_legacy_id',
-            'responseClass' => '\DTS\eBaySDK\Browse\Types\GetItemByLegacyIdRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Browse\Types\GetItemByLegacyIdRestResponse',
             'params' => [
                 'legacy_item_id' => [
                     'valid' => ['string'],
@@ -49,7 +49,7 @@ class BrowseService extends \DTS\eBaySDK\Browse\Services\BrowseBaseService
         'GetItemsByItemGroup' => [
             'method' => 'GET',
             'resource' => 'item/get_items_by_item_group',
-            'responseClass' => '\DTS\eBaySDK\Browse\Types\GetItemsByItemGroupRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Browse\Types\GetItemsByItemGroupRestResponse',
             'params' => [
                 'item_group_id' => [
                     'valid' => ['string'],
@@ -60,7 +60,7 @@ class BrowseService extends \DTS\eBaySDK\Browse\Services\BrowseBaseService
         'SearchForItems' => [
             'method' => 'GET',
             'resource' => 'item_summary/search',
-            'responseClass' => '\DTS\eBaySDK\Browse\Types\SearchForItemsRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Browse\Types\SearchForItemsRestResponse',
             'params' => [
                 'aspect_filter' => [
                     'valid' => ['string']
@@ -105,73 +105,73 @@ class BrowseService extends \DTS\eBaySDK\Browse\Services\BrowseBaseService
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\GetItemRestRequest $request
-     * @return \DTS\eBaySDK\Browse\Types\GetItemRestResponse
+     * @param \Enbit\eBaySDK\Browse\Types\GetItemRestRequest $request
+     * @return \Enbit\eBaySDK\Browse\Types\GetItemRestResponse
      */
-    public function getItem(\DTS\eBaySDK\Browse\Types\GetItemRestRequest $request)
+    public function getItem(\Enbit\eBaySDK\Browse\Types\GetItemRestRequest $request)
     {
         return $this->getItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\GetItemRestRequest $request
+     * @param \Enbit\eBaySDK\Browse\Types\GetItemRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemAsync(\DTS\eBaySDK\Browse\Types\GetItemRestRequest $request)
+    public function getItemAsync(\Enbit\eBaySDK\Browse\Types\GetItemRestRequest $request)
     {
         return $this->callOperationAsync('GetItem', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request
-     * @return \DTS\eBaySDK\Browse\Types\GetItemByLegacyIdRestResponse
+     * @param \Enbit\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request
+     * @return \Enbit\eBaySDK\Browse\Types\GetItemByLegacyIdRestResponse
      */
-    public function getItemByLegacyId(\DTS\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request)
+    public function getItemByLegacyId(\Enbit\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request)
     {
         return $this->getItemByLegacyIdAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request
+     * @param \Enbit\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemByLegacyIdAsync(\DTS\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request)
+    public function getItemByLegacyIdAsync(\Enbit\eBaySDK\Browse\Types\GetItemByLegacyIdRestRequest $request)
     {
         return $this->callOperationAsync('GetItemByLegacyId', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request
-     * @return \DTS\eBaySDK\Browse\Types\GetItemsByItemGroupRestResponse
+     * @param \Enbit\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request
+     * @return \Enbit\eBaySDK\Browse\Types\GetItemsByItemGroupRestResponse
      */
-    public function getItemsByItemGroup(\DTS\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request)
+    public function getItemsByItemGroup(\Enbit\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request)
     {
         return $this->getItemsByItemGroupAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request
+     * @param \Enbit\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getItemsByItemGroupAsync(\DTS\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request)
+    public function getItemsByItemGroupAsync(\Enbit\eBaySDK\Browse\Types\GetItemsByItemGroupRestRequest $request)
     {
         return $this->callOperationAsync('GetItemsByItemGroup', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\SearchForItemsRestRequest $request
-     * @return \DTS\eBaySDK\Browse\Types\SearchForItemsRestResponse
+     * @param \Enbit\eBaySDK\Browse\Types\SearchForItemsRestRequest $request
+     * @return \Enbit\eBaySDK\Browse\Types\SearchForItemsRestResponse
      */
-    public function searchForItems(\DTS\eBaySDK\Browse\Types\SearchForItemsRestRequest $request)
+    public function searchForItems(\Enbit\eBaySDK\Browse\Types\SearchForItemsRestRequest $request)
     {
         return $this->searchForItemsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Browse\Types\SearchForItemsRestRequest $request
+     * @param \Enbit\eBaySDK\Browse\Types\SearchForItemsRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function searchForItemsAsync(\DTS\eBaySDK\Browse\Types\SearchForItemsRestRequest $request)
+    public function searchForItemsAsync(\Enbit\eBaySDK\Browse\Types\SearchForItemsRestRequest $request)
     {
         return $this->callOperationAsync('SearchForItems', $request);
     }

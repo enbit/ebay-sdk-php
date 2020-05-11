@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\ItemBestOffersType[] $ItemBestOffers
+ * @property \Enbit\eBaySDK\Trading\Types\ItemBestOffersType[] $ItemBestOffers
  */
-class ItemBestOffersArrayType extends \DTS\eBaySDK\Types\BaseType
+class ItemBestOffersArrayType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ItemBestOffers' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemBestOffersType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemBestOffersType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ItemBestOffers'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\HalfFinding\Types;
+namespace Enbit\eBaySDK\Test\HalfFinding\Types;
 
-use DTS\eBaySDK\HalfFinding\Types\GetVersionResponse;
+use Enbit\eBaySDK\HalfFinding\Types\GetVersionResponse;
 
 class GetVersionResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetVersionResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\HalfFinding\Types\GetVersionResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\HalfFinding\Types\GetVersionResponse', $this->obj);
     }
 
     public function testExtendsBaseResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\HalfFinding\Types\BaseResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\HalfFinding\Types\BaseResponse', $this->obj);
     }
 }

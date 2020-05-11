@@ -8,57 +8,57 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $OrderID
- * @property \DTS\eBaySDK\MerchantData\Enums\OrderStatusCodeType $OrderStatus
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $AdjustmentAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $AmountPaid
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $AmountSaved
- * @property \DTS\eBaySDK\MerchantData\Types\CheckoutStatusType $CheckoutStatus
- * @property \DTS\eBaySDK\MerchantData\Types\ShippingDetailsType $ShippingDetails
- * @property \DTS\eBaySDK\MerchantData\Enums\TradingRoleCodeType $CreatingUserRole
+ * @property \Enbit\eBaySDK\MerchantData\Enums\OrderStatusCodeType $OrderStatus
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $AdjustmentAmount
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $AmountPaid
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $AmountSaved
+ * @property \Enbit\eBaySDK\MerchantData\Types\CheckoutStatusType $CheckoutStatus
+ * @property \Enbit\eBaySDK\MerchantData\Types\ShippingDetailsType $ShippingDetails
+ * @property \Enbit\eBaySDK\MerchantData\Enums\TradingRoleCodeType $CreatingUserRole
  * @property \DateTime $CreatedTime
- * @property \DTS\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
+ * @property \Enbit\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
  * @property string $SellerEmail
- * @property \DTS\eBaySDK\MerchantData\Types\AddressType $ShippingAddress
- * @property \DTS\eBaySDK\MerchantData\Types\ShippingServiceOptionsType $ShippingServiceSelected
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $Subtotal
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $Total
- * @property \DTS\eBaySDK\MerchantData\Types\ExternalTransactionType[] $ExternalTransaction
- * @property \DTS\eBaySDK\MerchantData\Types\TransactionArrayType $TransactionArray
+ * @property \Enbit\eBaySDK\MerchantData\Types\AddressType $ShippingAddress
+ * @property \Enbit\eBaySDK\MerchantData\Types\ShippingServiceOptionsType $ShippingServiceSelected
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $Subtotal
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $Total
+ * @property \Enbit\eBaySDK\MerchantData\Types\ExternalTransactionType[] $ExternalTransaction
+ * @property \Enbit\eBaySDK\MerchantData\Types\TransactionArrayType $TransactionArray
  * @property string $BuyerUserID
  * @property \DateTime $PaidTime
  * @property \DateTime $ShippedTime
  * @property boolean $IntegratedMerchantCreditCardEnabled
  * @property string $BuyerCheckoutMessage
  * @property string $EIASToken
- * @property \DTS\eBaySDK\MerchantData\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
- * @property \DTS\eBaySDK\MerchantData\Types\PaymentHoldDetailType $PaymentHoldDetails
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $RefundAmount
+ * @property \Enbit\eBaySDK\MerchantData\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
+ * @property \Enbit\eBaySDK\MerchantData\Types\PaymentHoldDetailType $PaymentHoldDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $RefundAmount
  * @property string $RefundStatus
- * @property \DTS\eBaySDK\MerchantData\Types\RefundArrayType $RefundArray
+ * @property \Enbit\eBaySDK\MerchantData\Types\RefundArrayType $RefundArray
  * @property boolean $IsMultiLegShipping
- * @property \DTS\eBaySDK\MerchantData\Types\MultiLegShippingDetailsType $MultiLegShippingDetails
- * @property \DTS\eBaySDK\MerchantData\Types\PaymentsInformationType $MonetaryDetails
- * @property \DTS\eBaySDK\MerchantData\Types\PickupDetailsType $PickupDetails
- * @property \DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType $PickupMethodSelected
+ * @property \Enbit\eBaySDK\MerchantData\Types\MultiLegShippingDetailsType $MultiLegShippingDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\PaymentsInformationType $MonetaryDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\PickupDetailsType $PickupDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\PickupMethodSelectedType $PickupMethodSelected
  * @property string $SellerUserID
  * @property string $SellerEIASToken
  * @property string $CancelReason
- * @property \DTS\eBaySDK\MerchantData\Enums\CancelStatusCodeType $CancelStatus
+ * @property \Enbit\eBaySDK\MerchantData\Enums\CancelStatusCodeType $CancelStatus
  * @property string $CancelReasonDetails
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ShippingConvenienceCharge
- * @property \DTS\eBaySDK\MerchantData\Types\CancelDetailType[] $CancelDetail
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $ShippingConvenienceCharge
+ * @property \Enbit\eBaySDK\MerchantData\Types\CancelDetailType[] $CancelDetail
  * @property string $LogisticsPlanType
- * @property \DTS\eBaySDK\MerchantData\Types\TaxIdentifierType[] $BuyerTaxIdentifier
- * @property \DTS\eBaySDK\MerchantData\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
+ * @property \Enbit\eBaySDK\MerchantData\Types\TaxIdentifierType[] $BuyerTaxIdentifier
+ * @property \Enbit\eBaySDK\MerchantData\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $ExtendedOrderID
  * @property boolean $ContainseBayPlusTransaction
  */
-class OrderType extends \DTS\eBaySDK\Types\BaseType
+class OrderType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -77,31 +77,31 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'OrderStatus'
         ],
         'AdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AdjustmentAmount'
         ],
         'AmountPaid' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AmountPaid'
         ],
         'AmountSaved' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AmountSaved'
         ],
         'CheckoutStatus' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CheckoutStatusType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\CheckoutStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CheckoutStatus'
         ],
         'ShippingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShippingDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ShippingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingDetails'
@@ -131,37 +131,37 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SellerEmail'
         ],
         'ShippingAddress' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AddressType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingAddress'
         ],
         'ShippingServiceSelected' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShippingServiceOptionsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ShippingServiceOptionsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceSelected'
         ],
         'Subtotal' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Subtotal'
         ],
         'Total' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Total'
         ],
         'ExternalTransaction' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ExternalTransactionType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ExternalTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ExternalTransaction'
         ],
         'TransactionArray' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TransactionArrayType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\TransactionArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TransactionArray'
@@ -209,13 +209,13 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PaymentHoldStatus'
         ],
         'PaymentHoldDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PaymentHoldDetailType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\PaymentHoldDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentHoldDetails'
         ],
         'RefundAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RefundAmount'
@@ -227,7 +227,7 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'RefundStatus'
         ],
         'RefundArray' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\RefundArrayType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\RefundArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RefundArray'
@@ -239,25 +239,25 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IsMultiLegShipping'
         ],
         'MultiLegShippingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MultiLegShippingDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\MultiLegShippingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MultiLegShippingDetails'
         ],
         'MonetaryDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PaymentsInformationType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\PaymentsInformationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MonetaryDetails'
         ],
         'PickupDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\PickupDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupDetails'
         ],
         'PickupMethodSelected' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PickupMethodSelectedType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\PickupMethodSelectedType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupMethodSelected'
@@ -293,13 +293,13 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'CancelReasonDetails'
         ],
         'ShippingConvenienceCharge' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingConvenienceCharge'
         ],
         'CancelDetail' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\CancelDetailType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\CancelDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'CancelDetail'
@@ -311,13 +311,13 @@ class OrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'LogisticsPlanType'
         ],
         'BuyerTaxIdentifier' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TaxIdentifierType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\TaxIdentifierType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'BuyerTaxIdentifier'
         ],
         'BuyerPackageEnclosures' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BuyerPackageEnclosuresType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\BuyerPackageEnclosuresType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerPackageEnclosures'

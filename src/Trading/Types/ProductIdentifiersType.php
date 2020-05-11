@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\GroupValidationRulesType $ValidationRules
- * @property \DTS\eBaySDK\Trading\Types\NameRecommendationType[] $NameRecommendation
+ * @property \Enbit\eBaySDK\Trading\Types\GroupValidationRulesType $ValidationRules
+ * @property \Enbit\eBaySDK\Trading\Types\NameRecommendationType[] $NameRecommendation
  */
-class ProductIdentifiersType extends \DTS\eBaySDK\Types\BaseType
+class ProductIdentifiersType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ValidationRules' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\GroupValidationRulesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\GroupValidationRulesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ValidationRules'
         ],
         'NameRecommendation' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NameRecommendationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NameRecommendationType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'NameRecommendation'

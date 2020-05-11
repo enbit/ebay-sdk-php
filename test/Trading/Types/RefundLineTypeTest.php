@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\RefundLineType;
+use Enbit\eBaySDK\Trading\Types\RefundLineType;
 
 class RefundLineTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class RefundLineTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\RefundLineType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\RefundLineType', $this->obj);
     }
 
     public function testExtendsAmountType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\AmountType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\AmountType', $this->obj);
     }
 }

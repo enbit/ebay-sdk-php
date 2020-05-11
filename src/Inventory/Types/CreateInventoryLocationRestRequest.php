@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $merchantLocationKey
  */
-class CreateInventoryLocationRestRequest extends \DTS\eBaySDK\Inventory\Types\InventoryLocationFull
+class CreateInventoryLocationRestRequest extends \Enbit\eBaySDK\Inventory\Types\InventoryLocationFull
 {
     /**
      * @var array Properties belonging to objects of this class.

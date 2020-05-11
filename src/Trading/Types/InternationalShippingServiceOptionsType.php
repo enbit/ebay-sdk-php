@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ShippingService
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingServiceCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingServiceAdditionalCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ShippingServiceCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ShippingServiceAdditionalCost
  * @property integer $ShippingServicePriority
  * @property string[] $ShipToLocation
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingInsuranceCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ImportCharge
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ShippingInsuranceCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ImportCharge
  * @property \DateTime $ShippingServiceCutOffTime
  */
-class InternationalShippingServiceOptionsType extends \DTS\eBaySDK\Types\BaseType
+class InternationalShippingServiceOptionsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -34,13 +34,13 @@ class InternationalShippingServiceOptionsType extends \DTS\eBaySDK\Types\BaseTyp
             'elementName' => 'ShippingService'
         ],
         'ShippingServiceCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCost'
         ],
         'ShippingServiceAdditionalCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceAdditionalCost'
@@ -58,13 +58,13 @@ class InternationalShippingServiceOptionsType extends \DTS\eBaySDK\Types\BaseTyp
             'elementName' => 'ShipToLocation'
         ],
         'ShippingInsuranceCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingInsuranceCost'
         ],
         'ImportCharge' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ImportCharge'

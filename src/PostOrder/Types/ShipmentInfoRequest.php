@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property boolean $proofOfShipmentUploaded
- * @property \DTS\eBaySDK\PostOrder\Types\Text $sellerComments
+ * @property \Enbit\eBaySDK\PostOrder\Types\Text $sellerComments
  * @property boolean $shippedWithTracking
  * @property string $shippingCarrierName
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $shippingDate
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $shippingDate
  * @property string $trackingNumber
  */
-class ShipmentInfoRequest extends \DTS\eBaySDK\Types\BaseType
+class ShipmentInfoRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -32,7 +32,7 @@ class ShipmentInfoRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'proofOfShipmentUploaded'
         ],
         'sellerComments' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Text',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Text',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerComments'
@@ -50,7 +50,7 @@ class ShipmentInfoRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'shippingCarrierName'
         ],
         'shippingDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingDate'

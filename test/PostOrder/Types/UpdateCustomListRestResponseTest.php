@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\UpdateCustomListRestResponse;
+use Enbit\eBaySDK\PostOrder\Types\UpdateCustomListRestResponse;
 
 class UpdateCustomListRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateCustomListRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\UpdateCustomListRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\UpdateCustomListRestResponse', $this->obj);
     }
 
     public function testExtendsModifyCustomListResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\ModifyCustomListResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\ModifyCustomListResponse', $this->obj);
     }
 }

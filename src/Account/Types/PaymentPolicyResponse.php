@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
@@ -16,11 +16,11 @@ namespace DTS\eBaySDK\Account\Types;
  * @property integer $limit
  * @property string $next
  * @property integer $offset
- * @property \DTS\eBaySDK\Account\Types\PaymentPolicy[] $paymentPolicies
+ * @property \Enbit\eBaySDK\Account\Types\PaymentPolicy[] $paymentPolicies
  * @property string $prev
  * @property integer $total
  */
-class PaymentPolicyResponse extends \DTS\eBaySDK\Types\BaseType
+class PaymentPolicyResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -51,7 +51,7 @@ class PaymentPolicyResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'offset'
         ],
         'paymentPolicies' => [
-            'type' => 'DTS\eBaySDK\Account\Types\PaymentPolicy',
+            'type' => 'Enbit\eBaySDK\Account\Types\PaymentPolicy',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'paymentPolicies'

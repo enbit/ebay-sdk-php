@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Enums;
+namespace Enbit\eBaySDK\Test\Trading\Enums;
 
-use DTS\eBaySDK\Trading\Enums\SimpleItemSortCodeType;
+use Enbit\eBaySDK\Trading\Enums\SimpleItemSortCodeType;
 
 class SimpleItemSortCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class SimpleItemSortCodeTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Enums\SimpleItemSortCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Enums\SimpleItemSortCodeType', $this->obj);
     }
 }

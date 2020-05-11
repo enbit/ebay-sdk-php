@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\AdReferences;
+use Enbit\eBaySDK\Marketing\Types\AdReferences;
 
 class AdReferencesTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AdReferencesTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\AdReferences', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\AdReferences', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

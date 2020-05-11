@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Order\Types;
+namespace Enbit\eBaySDK\Test\Order\Types;
 
-use DTS\eBaySDK\Order\Types\UpdateQuantityForLineItemRestResponse;
+use Enbit\eBaySDK\Order\Types\UpdateQuantityForLineItemRestResponse;
 
 class UpdateQuantityForLineItemRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateQuantityForLineItemRestResponseTest extends \PHPUnit_Framework_TestC
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\UpdateQuantityForLineItemRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\UpdateQuantityForLineItemRestResponse', $this->obj);
     }
 
     public function testExtendsCheckoutSessionResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\CheckoutSessionResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\CheckoutSessionResponse', $this->obj);
     }
 }

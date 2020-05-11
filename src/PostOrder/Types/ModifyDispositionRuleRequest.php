@@ -8,35 +8,35 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\RuleModificationType $operation
- * @property \DTS\eBaySDK\PostOrder\Types\PriorityListType $priorityList
- * @property \DTS\eBaySDK\PostOrder\Types\RuleDetailInputType $ruleDetail
+ * @property \Enbit\eBaySDK\PostOrder\Types\RuleModificationType $operation
+ * @property \Enbit\eBaySDK\PostOrder\Types\PriorityListType $priorityList
+ * @property \Enbit\eBaySDK\PostOrder\Types\RuleDetailInputType $ruleDetail
  * @property integer $versionId
  */
-class ModifyDispositionRuleRequest extends \DTS\eBaySDK\Types\BaseType
+class ModifyDispositionRuleRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'operation' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleModificationType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\RuleModificationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'operation'
         ],
         'priorityList' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\PriorityListType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\PriorityListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'priorityList'
         ],
         'ruleDetail' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleDetailInputType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\RuleDetailInputType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ruleDetail'

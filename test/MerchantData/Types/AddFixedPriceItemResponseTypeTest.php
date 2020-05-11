@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Types;
+namespace Enbit\eBaySDK\Test\MerchantData\Types;
 
-use DTS\eBaySDK\MerchantData\Types\AddFixedPriceItemResponseType;
+use Enbit\eBaySDK\MerchantData\Types\AddFixedPriceItemResponseType;
 
 class AddFixedPriceItemResponseTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AddFixedPriceItemResponseTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Types\AddFixedPriceItemResponseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Types\AddFixedPriceItemResponseType', $this->obj);
     }
 
     public function testExtendsAbstractResponseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Types\AbstractResponseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Types\AbstractResponseType', $this->obj);
     }
 }

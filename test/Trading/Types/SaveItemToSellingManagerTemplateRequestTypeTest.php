@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType;
+use Enbit\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType;
 
 class SaveItemToSellingManagerTemplateRequestTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SaveItemToSellingManagerTemplateRequestTypeTest extends \PHPUnit_Framework
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\SaveItemToSellingManagerTemplateRequestType', $this->obj);
     }
 
     public function testExtendsAbstractRequestType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\AbstractRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\AbstractRequestType', $this->obj);
     }
 }

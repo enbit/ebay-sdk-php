@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Shopping\Types;
+namespace Enbit\eBaySDK\Test\Shopping\Types;
 
-use DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType;
+use Enbit\eBaySDK\Shopping\Types\DiscountPriceInfoType;
 
 class DiscountPriceInfoTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class DiscountPriceInfoTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\DiscountPriceInfoType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

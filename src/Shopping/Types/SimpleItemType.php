@@ -8,78 +8,78 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property boolean $BestOfferEnabled
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $BuyItNowPrice
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $BuyItNowPrice
  * @property string $Description
  * @property string $ItemID
  * @property boolean $BuyItNowAvailable
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ConvertedBuyItNowPrice
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ConvertedBuyItNowPrice
  * @property \DateTime $EndTime
  * @property \DateTime $StartTime
  * @property string $ViewItemURLForNaturalSearch
- * @property \DTS\eBaySDK\Shopping\Enums\ListingTypeCodeType $ListingType
+ * @property \Enbit\eBaySDK\Shopping\Enums\ListingTypeCodeType $ListingType
  * @property string $Location
- * @property \DTS\eBaySDK\Shopping\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
+ * @property \Enbit\eBaySDK\Shopping\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
  * @property string $GalleryURL
  * @property string[] $PictureURL
  * @property string $PostalCode
  * @property string $PrimaryCategoryID
  * @property string $PrimaryCategoryName
  * @property integer $Quantity
- * @property \DTS\eBaySDK\Shopping\Types\SimpleUserType $Seller
+ * @property \Enbit\eBaySDK\Shopping\Types\SimpleUserType $Seller
  * @property integer $BidCount
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ConvertedCurrentPrice
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $CurrentPrice
- * @property \DTS\eBaySDK\Shopping\Types\SimpleUserType $HighBidder
- * @property \DTS\eBaySDK\Shopping\Enums\ListingStatusCodeType $ListingStatus
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ConvertedCurrentPrice
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $CurrentPrice
+ * @property \Enbit\eBaySDK\Shopping\Types\SimpleUserType $HighBidder
+ * @property \Enbit\eBaySDK\Shopping\Enums\ListingStatusCodeType $ListingStatus
  * @property integer $QuantitySold
  * @property boolean $ReserveMet
  * @property string[] $ShipToLocations
- * @property \DTS\eBaySDK\Shopping\Enums\SiteCodeType $Site
+ * @property \Enbit\eBaySDK\Shopping\Enums\SiteCodeType $Site
  * @property string $TimeLeft
  * @property string $Title
- * @property \DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
- * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
+ * @property \Enbit\eBaySDK\Shopping\Types\ShippingCostSummaryType $ShippingCostSummary
+ * @property \Enbit\eBaySDK\Shopping\Types\NameValueListArrayType $ItemSpecifics
  * @property integer $HitCount
  * @property string $Subtitle
  * @property string $PrimaryCategoryIDPath
  * @property string $SecondaryCategoryID
  * @property string $SecondaryCategoryName
  * @property string $SecondaryCategoryIDPath
- * @property \DTS\eBaySDK\Shopping\Types\CharityType $Charity
- * @property \DTS\eBaySDK\Shopping\Types\StorefrontType $Storefront
- * @property \DTS\eBaySDK\Shopping\Enums\CountryCodeType $Country
- * @property \DTS\eBaySDK\Shopping\Enums\HalfItemConditionCodeType $HalfItemCondition
+ * @property \Enbit\eBaySDK\Shopping\Types\CharityType $Charity
+ * @property \Enbit\eBaySDK\Shopping\Types\StorefrontType $Storefront
+ * @property \Enbit\eBaySDK\Shopping\Enums\CountryCodeType $Country
+ * @property \Enbit\eBaySDK\Shopping\Enums\HalfItemConditionCodeType $HalfItemCondition
  * @property string $SellerComments
- * @property \DTS\eBaySDK\Shopping\Types\ReturnPolicyType $ReturnPolicy
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $MinimumToBid
- * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \Enbit\eBaySDK\Shopping\Types\ReturnPolicyType $ReturnPolicy
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $MinimumToBid
+ * @property \Enbit\eBaySDK\Shopping\Types\ProductIDType $ProductID
  * @property boolean $AutoPay
- * @property \DTS\eBaySDK\Shopping\Types\BusinessSellerDetailsType $BusinessSellerDetails
- * @property \DTS\eBaySDK\Shopping\Enums\SiteCodeType[] $PaymentAllowedSite
+ * @property \Enbit\eBaySDK\Shopping\Types\BusinessSellerDetailsType $BusinessSellerDetails
+ * @property \Enbit\eBaySDK\Shopping\Enums\SiteCodeType[] $PaymentAllowedSite
  * @property boolean $IntegratedMerchantCreditCardEnabled
- * @property \DTS\eBaySDK\Shopping\Types\VariationsType $Variations
+ * @property \Enbit\eBaySDK\Shopping\Types\VariationsType $Variations
  * @property integer $HandlingTime
  * @property integer $LotSize
  * @property integer $ConditionID
  * @property string $ConditionDisplayName
- * @property \DTS\eBaySDK\Shopping\Enums\QuantityAvailableHintCodeType $QuantityAvailableHint
+ * @property \Enbit\eBaySDK\Shopping\Enums\QuantityAvailableHintCodeType $QuantityAvailableHint
  * @property integer $QuantityThreshold
- * @property \DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
+ * @property \Enbit\eBaySDK\Shopping\Types\DiscountPriceInfoType $DiscountPriceInfo
  * @property string[] $ExcludeShipToLocation
  * @property boolean $TopRatedListing
  * @property string $VhrUrl
  * @property boolean $VhrAvailable
- * @property \DTS\eBaySDK\Shopping\Types\QuantityInfo $QuantityInfo
- * @property \DTS\eBaySDK\Shopping\Types\UnitInfoType $UnitInfo
+ * @property \Enbit\eBaySDK\Shopping\Types\QuantityInfo $QuantityInfo
+ * @property \Enbit\eBaySDK\Shopping\Types\UnitInfoType $UnitInfo
  * @property boolean $GlobalShipping
  * @property string $ConditionDescription
  * @property integer $ItemCompatibilityCount
- * @property \DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType $ItemCompatibilityList
+ * @property \Enbit\eBaySDK\Shopping\Types\ItemCompatibilityListType $ItemCompatibilityList
  * @property integer $QuantitySoldByPickupInStore
  * @property string $SKU
  * @property boolean $eBayNowEligible
@@ -88,7 +88,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $AvailableForPickupDropOff
  * @property boolean $EligibleForPickupDropOff
  */
-class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
+class SimpleItemType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -101,7 +101,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BestOfferEnabled'
         ],
         'BuyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyItNowPrice'
@@ -125,7 +125,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BuyItNowAvailable'
         ],
         'ConvertedBuyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedBuyItNowPrice'
@@ -203,7 +203,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Quantity'
         ],
         'Seller' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\SimpleUserType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\SimpleUserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Seller'
@@ -215,19 +215,19 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BidCount'
         ],
         'ConvertedCurrentPrice' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedCurrentPrice'
         ],
         'CurrentPrice' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CurrentPrice'
         ],
         'HighBidder' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\SimpleUserType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\SimpleUserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'HighBidder'
@@ -275,13 +275,13 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Title'
         ],
         'ShippingCostSummary' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\ShippingCostSummaryType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\ShippingCostSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingCostSummary'
         ],
         'ItemSpecifics' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemSpecifics'
@@ -323,13 +323,13 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SecondaryCategoryIDPath'
         ],
         'Charity' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\CharityType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\CharityType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Charity'
         ],
         'Storefront' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\StorefrontType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\StorefrontType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Storefront'
@@ -353,19 +353,19 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SellerComments'
         ],
         'ReturnPolicy' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\ReturnPolicyType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\ReturnPolicyType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReturnPolicy'
         ],
         'MinimumToBid' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MinimumToBid'
         ],
         'ProductID' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\ProductIDType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\ProductIDType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductID'
@@ -377,7 +377,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'AutoPay'
         ],
         'BusinessSellerDetails' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\BusinessSellerDetailsType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\BusinessSellerDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BusinessSellerDetails'
@@ -395,7 +395,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IntegratedMerchantCreditCardEnabled'
         ],
         'Variations' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\VariationsType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\VariationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Variations'
@@ -437,7 +437,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'QuantityThreshold'
         ],
         'DiscountPriceInfo' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\DiscountPriceInfoType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\DiscountPriceInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DiscountPriceInfo'
@@ -467,13 +467,13 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'VhrAvailable'
         ],
         'QuantityInfo' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\QuantityInfo',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\QuantityInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'QuantityInfo'
         ],
         'UnitInfo' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\UnitInfoType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\UnitInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UnitInfo'
@@ -497,7 +497,7 @@ class SimpleItemType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ItemCompatibilityCount'
         ],
         'ItemCompatibilityList' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\ItemCompatibilityListType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\ItemCompatibilityListType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemCompatibilityList'

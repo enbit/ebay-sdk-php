@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Merchandising\Types;
+namespace Enbit\eBaySDK\Test\Merchandising\Types;
 
-use DTS\eBaySDK\Merchandising\Types\Affiliate;
+use Enbit\eBaySDK\Merchandising\Types\Affiliate;
 
 class AffiliateTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AffiliateTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Merchandising\Types\Affiliate', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Merchandising\Types\Affiliate', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

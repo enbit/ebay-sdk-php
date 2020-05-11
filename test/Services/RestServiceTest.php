@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Test\Services;
+namespace Enbit\eBaySDK\Test\Services;
 
-use DTS\eBaySDK\Services\BaseRestService;
-use DTS\eBaySDK\Test\Mocks\RestService;
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
-use DTS\eBaySDK\Test\Mocks\HttpRestHandler;
+use Enbit\eBaySDK\Services\BaseRestService;
+use Enbit\eBaySDK\Test\Mocks\RestService;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\HttpRestHandler;
 
 class RestServiceTest extends \PHPUnit_Framework_TestCase
 {
@@ -21,14 +21,14 @@ class RestServiceTest extends \PHPUnit_Framework_TestCase
         $this->assertArrayHasKey('debug', $d);
         $this->assertEquals([
             'valid'   => ['bool', 'array'],
-            'fn'      => 'DTS\eBaySDK\applyDebug',
+            'fn'      => 'Enbit\eBaySDK\applyDebug',
             'default' => false
         ], $d['debug']);
 
         $this->assertArrayHasKey('httpHandler', $d);
         $this->assertEquals([
             'valid'   => ['callable'],
-            'default' => 'DTS\eBaySDK\defaultHttpHandler'
+            'default' => 'Enbit\eBaySDK\defaultHttpHandler'
         ], $d['httpHandler']);
 
         $this->assertArrayHasKey('httpOptions', $d);
@@ -132,7 +132,7 @@ class RestServiceTest extends \PHPUnit_Framework_TestCase
         ]);
         $r = $s->foo(new ComplexClass());
 
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\ComplexClass', $r);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\ComplexClass', $r);
     }
 
     public function testDebugging()

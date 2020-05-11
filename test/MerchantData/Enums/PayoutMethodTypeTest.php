@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Enums;
+namespace Enbit\eBaySDK\Test\MerchantData\Enums;
 
-use DTS\eBaySDK\MerchantData\Enums\PayoutMethodType;
+use Enbit\eBaySDK\MerchantData\Enums\PayoutMethodType;
 
 class PayoutMethodTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class PayoutMethodTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Enums\PayoutMethodType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Enums\PayoutMethodType', $this->obj);
     }
 }

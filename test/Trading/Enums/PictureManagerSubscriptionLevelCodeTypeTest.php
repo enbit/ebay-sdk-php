@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Enums;
+namespace Enbit\eBaySDK\Test\Trading\Enums;
 
-use DTS\eBaySDK\Trading\Enums\PictureManagerSubscriptionLevelCodeType;
+use Enbit\eBaySDK\Trading\Enums\PictureManagerSubscriptionLevelCodeType;
 
 class PictureManagerSubscriptionLevelCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class PictureManagerSubscriptionLevelCodeTypeTest extends \PHPUnit_Framework_Tes
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Enums\PictureManagerSubscriptionLevelCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Enums\PictureManagerSubscriptionLevelCodeType', $this->obj);
     }
 }

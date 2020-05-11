@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\SellerAccountStatusCodeType $Status
- * @property \DTS\eBaySDK\Trading\Types\SellerDashboardAlertType[] $Alert
+ * @property \Enbit\eBaySDK\Trading\Enums\SellerAccountStatusCodeType $Status
+ * @property \Enbit\eBaySDK\Trading\Types\SellerDashboardAlertType[] $Alert
  */
-class SellerAccountDashboardType extends \DTS\eBaySDK\Types\BaseType
+class SellerAccountDashboardType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class SellerAccountDashboardType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Status'
         ],
         'Alert' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellerDashboardAlertType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellerDashboardAlertType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Alert'

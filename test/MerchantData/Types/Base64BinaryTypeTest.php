@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Types;
+namespace Enbit\eBaySDK\Test\MerchantData\Types;
 
-use DTS\eBaySDK\MerchantData\Types\Base64BinaryType;
+use Enbit\eBaySDK\MerchantData\Types\Base64BinaryType;
 
 class Base64BinaryTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class Base64BinaryTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Types\Base64BinaryType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Types\Base64BinaryType', $this->obj);
     }
 
     public function testExtendsBase64BinaryType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\Base64BinaryType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\Base64BinaryType', $this->obj);
     }
 }

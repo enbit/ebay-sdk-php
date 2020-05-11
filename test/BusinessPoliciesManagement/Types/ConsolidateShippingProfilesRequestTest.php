@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\Test\BusinessPoliciesManagement\Types;
 
-use DTS\eBaySDK\BusinessPoliciesManagement\Types\ConsolidateShippingProfilesRequest;
+use Enbit\eBaySDK\BusinessPoliciesManagement\Types\ConsolidateShippingProfilesRequest;
 
 class ConsolidateShippingProfilesRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ConsolidateShippingProfilesRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BusinessPoliciesManagement\Types\ConsolidateShippingProfilesRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BusinessPoliciesManagement\Types\ConsolidateShippingProfilesRequest', $this->obj);
     }
 
     public function testExtendsBaseRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BusinessPoliciesManagement\Types\BaseRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BusinessPoliciesManagement\Types\BaseRequest', $this->obj);
     }
 }

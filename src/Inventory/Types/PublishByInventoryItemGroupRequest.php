@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $inventoryItemGroupKey
- * @property \DTS\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \Enbit\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
  */
-class PublishByInventoryItemGroupRequest extends \DTS\eBaySDK\Types\BaseType
+class PublishByInventoryItemGroupRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

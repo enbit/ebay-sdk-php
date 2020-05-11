@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Services;
+namespace Enbit\eBaySDK\Inventory\Services;
 
-class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseService
+class InventoryService extends \Enbit\eBaySDK\Inventory\Services\InventoryBaseService
 {
     const API_VERSION = 'v1';
 
@@ -21,14 +21,14 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'BulkUpdatePriceAndQuantity' => [
             'method' => 'POST',
             'resource' => 'bulk_update_price_quantity',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse',
             'params' => [
             ]
         ],
         'CreateOrReplaceInventoryItem' => [
             'method' => 'PUT',
             'resource' => 'inventory_item/{sku}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestResponse',
             'params' => [
                 'sku' => [
                     'valid' => ['string'],
@@ -39,7 +39,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'DeleteInventoryItem' => [
             'method' => 'DELETE',
             'resource' => 'inventory_item/{sku}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\DeleteInventoryItemRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemRestResponse',
             'params' => [
                 'sku' => [
                     'valid' => ['string'],
@@ -50,7 +50,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetInventoryItem' => [
             'method' => 'GET',
             'resource' => 'inventory_item/{sku}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetInventoryItemRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetInventoryItemRestResponse',
             'params' => [
                 'sku' => [
                     'valid' => ['string'],
@@ -61,7 +61,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetInventoryItems' => [
             'method' => 'GET',
             'resource' => 'inventory_item',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetInventoryItemsRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetInventoryItemsRestResponse',
             'params' => [
                 'limit' => [
                     'valid' => ['string']
@@ -74,7 +74,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'CreateOrReplaceInventoryItemGroup' => [
             'method' => 'PUT',
             'resource' => 'inventory_item_group/{inventoryItemGroupKey}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestResponse',
             'params' => [
                 'inventoryItemGroupKey' => [
                     'valid' => ['string'],
@@ -85,7 +85,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'DeleteInventoryItemGroup' => [
             'method' => 'DELETE',
             'resource' => 'inventory_item_group/{inventoryItemGroupKey}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestResponse',
             'params' => [
                 'inventoryItemGroupKey' => [
                     'valid' => ['string'],
@@ -96,7 +96,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetInventoryItemGroup' => [
             'method' => 'GET',
             'resource' => 'inventory_item_group/{inventoryItemGroupKey}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse',
             'params' => [
                 'inventoryItemGroupKey' => [
                     'valid' => ['string'],
@@ -107,14 +107,14 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'BulkMigrateListings' => [
             'method' => 'POST',
             'resource' => 'bulk_migrate_listing',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\BulkMigrateListingsRestResponse',
             'params' => [
             ]
         ],
         'CreateInventoryLocation' => [
             'method' => 'POST',
             'resource' => 'location/{merchantLocationKey}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\CreateInventoryLocationRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\CreateInventoryLocationRestResponse',
             'params' => [
                 'merchantLocationKey' => [
                     'valid' => ['string'],
@@ -125,7 +125,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'DeleteInventoryLocation' => [
             'method' => 'DELETE',
             'resource' => 'location/{merchantLocationKey}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\DeleteInventoryLocationRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\DeleteInventoryLocationRestResponse',
             'params' => [
                 'merchantLocationKey' => [
                     'valid' => ['string'],
@@ -136,7 +136,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'DisableInventoryLocation' => [
             'method' => 'POST',
             'resource' => 'location/{merchantLocationKey}/disable',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\DisableInventoryLocationRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\DisableInventoryLocationRestResponse',
             'params' => [
                 'merchantLocationKey' => [
                     'valid' => ['string'],
@@ -147,7 +147,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'EnableInventoryLocation' => [
             'method' => 'POST',
             'resource' => 'location/{merchantLocationKey}/enable',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\EnableInventoryLocationRestResponse',
             'params' => [
                 'merchantLocationKey' => [
                     'valid' => ['string'],
@@ -158,7 +158,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetInventoryLocation' => [
             'method' => 'GET',
             'resource' => 'location/{merchantLocationKey}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetInventoryLocationRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetInventoryLocationRestResponse',
             'params' => [
                 'merchantLocationKey' => [
                     'valid' => ['string'],
@@ -169,7 +169,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetInventoryLocations' => [
             'method' => 'GET',
             'resource' => 'location',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetInventoryLocationsRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetInventoryLocationsRestResponse',
             'params' => [
                 'limit' => [
                     'valid' => ['string']
@@ -182,7 +182,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'UpdateInventoryLocation' => [
             'method' => 'POST',
             'resource' => 'location/{merchantLocationKey}/update_location_details',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestResponse',
             'params' => [
                 'merchantLocationKey' => [
                     'valid' => ['string'],
@@ -193,14 +193,14 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'CreateOffer' => [
             'method' => 'POST',
             'resource' => 'offer',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\CreateOfferRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\CreateOfferRestResponse',
             'params' => [
             ]
         ],
         'DeleteOffer' => [
             'method' => 'DELETE',
             'resource' => 'offer/{offerId}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\DeleteOfferRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\DeleteOfferRestResponse',
             'params' => [
                 'offerId' => [
                     'valid' => ['string'],
@@ -211,14 +211,14 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetListingFees' => [
             'method' => 'POST',
             'resource' => 'offer/get_listing_fees',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetListingFeesRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetListingFeesRestResponse',
             'params' => [
             ]
         ],
         'GetOffer' => [
             'method' => 'GET',
             'resource' => 'offer/{offerId}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetOfferRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetOfferRestResponse',
             'params' => [
                 'offerId' => [
                     'valid' => ['string'],
@@ -229,7 +229,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetOffers' => [
             'method' => 'GET',
             'resource' => 'offer',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetOffersRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetOffersRestResponse',
             'params' => [
                 'format' => [
                     'valid' => ['string']
@@ -252,7 +252,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'PublishOffer' => [
             'method' => 'POST',
             'resource' => 'offer/{offerId}/publish',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\PublishOfferRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\PublishOfferRestResponse',
             'params' => [
                 'offerId' => [
                     'valid' => ['string'],
@@ -263,7 +263,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'WithdrawOffer' => [
             'method' => 'POST',
             'resource' => 'offer/{offerId}/withdraw',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\WithdrawOfferRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\WithdrawOfferRestResponse',
             'params' => [
                 'offerId' => [
                     'valid' => ['string'],
@@ -274,7 +274,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'UpdateOffer' => [
             'method' => 'PUT',
             'resource' => 'offer/{offerId}',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\UpdateOfferRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\UpdateOfferRestResponse',
             'params' => [
                 'offerId' => [
                     'valid' => ['string'],
@@ -285,7 +285,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'CreateOrReplaceProductCompatibility' => [
             'method' => 'PUT',
             'resource' => 'inventory_item/{sku}/product_compatibility',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse',
             'params' => [
                 'sku' => [
                     'valid' => ['string'],
@@ -296,7 +296,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'DeleteProductCompatibility' => [
             'method' => 'DELETE',
             'resource' => 'inventory_item/{sku}/product_compatibility',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestResponse',
             'params' => [
                 'sku' => [
                     'valid' => ['string'],
@@ -307,7 +307,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'GetProductCompatibility' => [
             'method' => 'GET',
             'resource' => 'inventory_item/{sku}/product_compatibility',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\GetProductCompatibilityRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\GetProductCompatibilityRestResponse',
             'params' => [
                 'sku' => [
                     'valid' => ['string'],
@@ -318,7 +318,7 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
         'PublishOfferByInventoryItemGroup' => [
             'method' => 'POST',
             'resource' => 'offer/publish_by_inventory_item_group',
-            'responseClass' => '\DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestResponse',
+            'responseClass' => '\Enbit\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestResponse',
             'params' => [
             ]
         ]
@@ -333,505 +333,505 @@ class InventoryService extends \DTS\eBaySDK\Inventory\Services\InventoryBaseServ
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse
      */
-    public function bulkUpdatePriceAndQuantity(\DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request)
+    public function bulkUpdatePriceAndQuantity(\Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request)
     {
         return $this->bulkUpdatePriceAndQuantityAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function bulkUpdatePriceAndQuantityAsync(\DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request)
+    public function bulkUpdatePriceAndQuantityAsync(\Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestRequest $request)
     {
         return $this->callOperationAsync('BulkUpdatePriceAndQuantity', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestResponse
      */
-    public function createOrReplaceInventoryItem(\DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request)
+    public function createOrReplaceInventoryItem(\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request)
     {
         return $this->createOrReplaceInventoryItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createOrReplaceInventoryItemAsync(\DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request)
+    public function createOrReplaceInventoryItemAsync(\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemRestRequest $request)
     {
         return $this->callOperationAsync('CreateOrReplaceInventoryItem', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\DeleteInventoryItemRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemRestResponse
      */
-    public function deleteInventoryItem(\DTS\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request)
+    public function deleteInventoryItem(\Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request)
     {
         return $this->deleteInventoryItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteInventoryItemAsync(\DTS\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request)
+    public function deleteInventoryItemAsync(\Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemRestRequest $request)
     {
         return $this->callOperationAsync('DeleteInventoryItem', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetInventoryItemRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetInventoryItemRestResponse
      */
-    public function getInventoryItem(\DTS\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request)
+    public function getInventoryItem(\Enbit\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request)
     {
         return $this->getInventoryItemAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getInventoryItemAsync(\DTS\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request)
+    public function getInventoryItemAsync(\Enbit\eBaySDK\Inventory\Types\GetInventoryItemRestRequest $request)
     {
         return $this->callOperationAsync('GetInventoryItem', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetInventoryItemsRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetInventoryItemsRestResponse
      */
-    public function getInventoryItems(\DTS\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request)
+    public function getInventoryItems(\Enbit\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request)
     {
         return $this->getInventoryItemsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getInventoryItemsAsync(\DTS\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request)
+    public function getInventoryItemsAsync(\Enbit\eBaySDK\Inventory\Types\GetInventoryItemsRestRequest $request)
     {
         return $this->callOperationAsync('GetInventoryItems', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestResponse
      */
-    public function createOrReplaceInventoryItemGroup(\DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request)
+    public function createOrReplaceInventoryItemGroup(\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request)
     {
         return $this->createOrReplaceInventoryItemGroupAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createOrReplaceInventoryItemGroupAsync(\DTS\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request)
+    public function createOrReplaceInventoryItemGroupAsync(\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceInventoryItemGroupRestRequest $request)
     {
         return $this->callOperationAsync('CreateOrReplaceInventoryItemGroup', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestResponse
      */
-    public function deleteInventoryItemGroup(\DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request)
+    public function deleteInventoryItemGroup(\Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request)
     {
         return $this->deleteInventoryItemGroupAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteInventoryItemGroupAsync(\DTS\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request)
+    public function deleteInventoryItemGroupAsync(\Enbit\eBaySDK\Inventory\Types\DeleteInventoryItemGroupRestRequest $request)
     {
         return $this->callOperationAsync('DeleteInventoryItemGroup', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestResponse
      */
-    public function getInventoryItemGroup(\DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request)
+    public function getInventoryItemGroup(\Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request)
     {
         return $this->getInventoryItemGroupAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getInventoryItemGroupAsync(\DTS\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request)
+    public function getInventoryItemGroupAsync(\Enbit\eBaySDK\Inventory\Types\GetInventoryItemGroupRestRequest $request)
     {
         return $this->callOperationAsync('GetInventoryItemGroup', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\BulkMigrateListingsRestResponse
      */
-    public function bulkMigrateListings(\DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request)
+    public function bulkMigrateListings(\Enbit\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request)
     {
         return $this->bulkMigrateListingsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function bulkMigrateListingsAsync(\DTS\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request)
+    public function bulkMigrateListingsAsync(\Enbit\eBaySDK\Inventory\Types\BulkMigrateListingsRestRequest $request)
     {
         return $this->callOperationAsync('BulkMigrateListings', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\CreateInventoryLocationRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\CreateInventoryLocationRestResponse
      */
-    public function createInventoryLocation(\DTS\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request)
+    public function createInventoryLocation(\Enbit\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request)
     {
         return $this->createInventoryLocationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createInventoryLocationAsync(\DTS\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request)
+    public function createInventoryLocationAsync(\Enbit\eBaySDK\Inventory\Types\CreateInventoryLocationRestRequest $request)
     {
         return $this->callOperationAsync('CreateInventoryLocation', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\DeleteInventoryLocationRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\DeleteInventoryLocationRestResponse
      */
-    public function deleteInventoryLocation(\DTS\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request)
+    public function deleteInventoryLocation(\Enbit\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request)
     {
         return $this->deleteInventoryLocationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteInventoryLocationAsync(\DTS\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request)
+    public function deleteInventoryLocationAsync(\Enbit\eBaySDK\Inventory\Types\DeleteInventoryLocationRestRequest $request)
     {
         return $this->callOperationAsync('DeleteInventoryLocation', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\DisableInventoryLocationRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\DisableInventoryLocationRestResponse
      */
-    public function disableInventoryLocation(\DTS\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request)
+    public function disableInventoryLocation(\Enbit\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request)
     {
         return $this->disableInventoryLocationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function disableInventoryLocationAsync(\DTS\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request)
+    public function disableInventoryLocationAsync(\Enbit\eBaySDK\Inventory\Types\DisableInventoryLocationRestRequest $request)
     {
         return $this->callOperationAsync('DisableInventoryLocation', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\EnableInventoryLocationRestResponse
      */
-    public function enableInventoryLocation(\DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request)
+    public function enableInventoryLocation(\Enbit\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request)
     {
         return $this->enableInventoryLocationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function enableInventoryLocationAsync(\DTS\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request)
+    public function enableInventoryLocationAsync(\Enbit\eBaySDK\Inventory\Types\EnableInventoryLocationRestRequest $request)
     {
         return $this->callOperationAsync('EnableInventoryLocation', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetInventoryLocationRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetInventoryLocationRestResponse
      */
-    public function getInventoryLocation(\DTS\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request)
+    public function getInventoryLocation(\Enbit\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request)
     {
         return $this->getInventoryLocationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getInventoryLocationAsync(\DTS\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request)
+    public function getInventoryLocationAsync(\Enbit\eBaySDK\Inventory\Types\GetInventoryLocationRestRequest $request)
     {
         return $this->callOperationAsync('GetInventoryLocation', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetInventoryLocationsRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetInventoryLocationsRestResponse
      */
-    public function getInventoryLocations(\DTS\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request)
+    public function getInventoryLocations(\Enbit\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request)
     {
         return $this->getInventoryLocationsAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getInventoryLocationsAsync(\DTS\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request)
+    public function getInventoryLocationsAsync(\Enbit\eBaySDK\Inventory\Types\GetInventoryLocationsRestRequest $request)
     {
         return $this->callOperationAsync('GetInventoryLocations', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestResponse
      */
-    public function updateInventoryLocation(\DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request)
+    public function updateInventoryLocation(\Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request)
     {
         return $this->updateInventoryLocationAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function updateInventoryLocationAsync(\DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request)
+    public function updateInventoryLocationAsync(\Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest $request)
     {
         return $this->callOperationAsync('UpdateInventoryLocation', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOfferRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\CreateOfferRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOfferRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\CreateOfferRestResponse
      */
-    public function createOffer(\DTS\eBaySDK\Inventory\Types\CreateOfferRestRequest $request)
+    public function createOffer(\Enbit\eBaySDK\Inventory\Types\CreateOfferRestRequest $request)
     {
         return $this->createOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOfferRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOfferRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createOfferAsync(\DTS\eBaySDK\Inventory\Types\CreateOfferRestRequest $request)
+    public function createOfferAsync(\Enbit\eBaySDK\Inventory\Types\CreateOfferRestRequest $request)
     {
         return $this->callOperationAsync('CreateOffer', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\DeleteOfferRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\DeleteOfferRestResponse
      */
-    public function deleteOffer(\DTS\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request)
+    public function deleteOffer(\Enbit\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request)
     {
         return $this->deleteOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteOfferAsync(\DTS\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request)
+    public function deleteOfferAsync(\Enbit\eBaySDK\Inventory\Types\DeleteOfferRestRequest $request)
     {
         return $this->callOperationAsync('DeleteOffer', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetListingFeesRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetListingFeesRestResponse
      */
-    public function getListingFees(\DTS\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request)
+    public function getListingFees(\Enbit\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request)
     {
         return $this->getListingFeesAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getListingFeesAsync(\DTS\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request)
+    public function getListingFeesAsync(\Enbit\eBaySDK\Inventory\Types\GetListingFeesRestRequest $request)
     {
         return $this->callOperationAsync('GetListingFees', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetOfferRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetOfferRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetOfferRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetOfferRestResponse
      */
-    public function getOffer(\DTS\eBaySDK\Inventory\Types\GetOfferRestRequest $request)
+    public function getOffer(\Enbit\eBaySDK\Inventory\Types\GetOfferRestRequest $request)
     {
         return $this->getOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetOfferRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetOfferRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getOfferAsync(\DTS\eBaySDK\Inventory\Types\GetOfferRestRequest $request)
+    public function getOfferAsync(\Enbit\eBaySDK\Inventory\Types\GetOfferRestRequest $request)
     {
         return $this->callOperationAsync('GetOffer', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetOffersRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetOffersRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetOffersRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetOffersRestResponse
      */
-    public function getOffers(\DTS\eBaySDK\Inventory\Types\GetOffersRestRequest $request)
+    public function getOffers(\Enbit\eBaySDK\Inventory\Types\GetOffersRestRequest $request)
     {
         return $this->getOffersAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetOffersRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetOffersRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getOffersAsync(\DTS\eBaySDK\Inventory\Types\GetOffersRestRequest $request)
+    public function getOffersAsync(\Enbit\eBaySDK\Inventory\Types\GetOffersRestRequest $request)
     {
         return $this->callOperationAsync('GetOffers', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\PublishOfferRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\PublishOfferRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\PublishOfferRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\PublishOfferRestResponse
      */
-    public function publishOffer(\DTS\eBaySDK\Inventory\Types\PublishOfferRestRequest $request)
+    public function publishOffer(\Enbit\eBaySDK\Inventory\Types\PublishOfferRestRequest $request)
     {
         return $this->publishOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\PublishOfferRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\PublishOfferRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function publishOfferAsync(\DTS\eBaySDK\Inventory\Types\PublishOfferRestRequest $request)
+    public function publishOfferAsync(\Enbit\eBaySDK\Inventory\Types\PublishOfferRestRequest $request)
     {
         return $this->callOperationAsync('PublishOffer', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\WithdrawOfferRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\WithdrawOfferRestResponse
      */
-    public function withdrawOffer(\DTS\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request)
+    public function withdrawOffer(\Enbit\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request)
     {
         return $this->withdrawOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function withdrawOfferAsync(\DTS\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request)
+    public function withdrawOfferAsync(\Enbit\eBaySDK\Inventory\Types\WithdrawOfferRestRequest $request)
     {
         return $this->callOperationAsync('WithdrawOffer', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\UpdateOfferRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\UpdateOfferRestResponse
      */
-    public function updateOffer(\DTS\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request)
+    public function updateOffer(\Enbit\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request)
     {
         return $this->updateOfferAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function updateOfferAsync(\DTS\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request)
+    public function updateOfferAsync(\Enbit\eBaySDK\Inventory\Types\UpdateOfferRestRequest $request)
     {
         return $this->callOperationAsync('UpdateOffer', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestResponse
      */
-    public function createOrReplaceProductCompatibility(\DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request)
+    public function createOrReplaceProductCompatibility(\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request)
     {
         return $this->createOrReplaceProductCompatibilityAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function createOrReplaceProductCompatibilityAsync(\DTS\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request)
+    public function createOrReplaceProductCompatibilityAsync(\Enbit\eBaySDK\Inventory\Types\CreateOrReplaceProductCompatibilityRestRequest $request)
     {
         return $this->callOperationAsync('CreateOrReplaceProductCompatibility', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestResponse
      */
-    public function deleteProductCompatibility(\DTS\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request)
+    public function deleteProductCompatibility(\Enbit\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request)
     {
         return $this->deleteProductCompatibilityAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function deleteProductCompatibilityAsync(\DTS\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request)
+    public function deleteProductCompatibilityAsync(\Enbit\eBaySDK\Inventory\Types\DeleteProductCompatibilityRestRequest $request)
     {
         return $this->callOperationAsync('DeleteProductCompatibility', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\GetProductCompatibilityRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\GetProductCompatibilityRestResponse
      */
-    public function getProductCompatibility(\DTS\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request)
+    public function getProductCompatibility(\Enbit\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request)
     {
         return $this->getProductCompatibilityAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getProductCompatibilityAsync(\DTS\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request)
+    public function getProductCompatibilityAsync(\Enbit\eBaySDK\Inventory\Types\GetProductCompatibilityRestRequest $request)
     {
         return $this->callOperationAsync('GetProductCompatibility', $request);
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request
-     * @return \DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestResponse
+     * @param \Enbit\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request
+     * @return \Enbit\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestResponse
      */
-    public function publishOfferByInventoryItemGroup(\DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request)
+    public function publishOfferByInventoryItemGroup(\Enbit\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request)
     {
         return $this->publishOfferByInventoryItemGroupAsync($request)->wait();
     }
 
     /**
-     * @param \DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request
+     * @param \Enbit\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function publishOfferByInventoryItemGroupAsync(\DTS\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request)
+    public function publishOfferByInventoryItemGroupAsync(\Enbit\eBaySDK\Inventory\Types\PublishOfferByInventoryItemGroupRestRequest $request)
     {
         return $this->callOperationAsync('PublishOfferByInventoryItemGroup', $request);
     }

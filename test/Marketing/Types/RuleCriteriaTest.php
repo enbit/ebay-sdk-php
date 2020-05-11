@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\RuleCriteria;
+use Enbit\eBaySDK\Marketing\Types\RuleCriteria;
 
 class RuleCriteriaTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class RuleCriteriaTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\RuleCriteria', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\RuleCriteria', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

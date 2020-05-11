@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ListDataType[] $all
+ * @property \Enbit\eBaySDK\PostOrder\Types\ListDataType[] $all
  * @property boolean $isMultiple
- * @property \DTS\eBaySDK\PostOrder\Types\ListDataType[] $selected
+ * @property \Enbit\eBaySDK\PostOrder\Types\ListDataType[] $selected
  */
-class ConditionListDetailType extends \DTS\eBaySDK\Types\BaseType
+class ConditionListDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'all' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ListDataType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ListDataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'all'
@@ -35,7 +35,7 @@ class ConditionListDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'isMultiple'
         ],
         'selected' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ListDataType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ListDataType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'selected'

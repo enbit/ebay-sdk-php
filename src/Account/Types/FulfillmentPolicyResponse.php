@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Types\FulfillmentPolicy[] $fulfillmentPolicies
+ * @property \Enbit\eBaySDK\Account\Types\FulfillmentPolicy[] $fulfillmentPolicies
  * @property string $href
  * @property integer $limit
  * @property string $next
@@ -20,14 +20,14 @@ namespace DTS\eBaySDK\Account\Types;
  * @property string $prev
  * @property integer $total
  */
-class FulfillmentPolicyResponse extends \DTS\eBaySDK\Types\BaseType
+class FulfillmentPolicyResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'fulfillmentPolicies' => [
-            'type' => 'DTS\eBaySDK\Account\Types\FulfillmentPolicy',
+            'type' => 'Enbit\eBaySDK\Account\Types\FulfillmentPolicy',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'fulfillmentPolicies'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Compliance\Types;
+namespace Enbit\eBaySDK\Test\Compliance\Types;
 
-use DTS\eBaySDK\Compliance\Types\GetListingViolationsSummaryRestResponse;
+use Enbit\eBaySDK\Compliance\Types\GetListingViolationsSummaryRestResponse;
 
 class GetListingViolationsSummaryRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetListingViolationsSummaryRestResponseTest extends \PHPUnit_Framework_Tes
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Compliance\Types\GetListingViolationsSummaryRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Compliance\Types\GetListingViolationsSummaryRestResponse', $this->obj);
     }
 
     public function testExtendsComplianceSummary()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Compliance\Types\ComplianceSummary', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Compliance\Types\ComplianceSummary', $this->obj);
     }
 }

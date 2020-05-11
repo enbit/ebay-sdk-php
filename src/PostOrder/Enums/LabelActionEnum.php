@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Enums;
+namespace Enbit\eBaySDK\PostOrder\Enums;
 
 class LabelActionEnum
 {

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Analytics\Enums;
+namespace Enbit\eBaySDK\Analytics\Enums;
 
 class CycleTypeEnum
 {

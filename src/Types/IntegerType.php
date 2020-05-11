@@ -1,12 +1,12 @@
 <?php
-namespace DTS\eBaySDK\Types;
+namespace Enbit\eBaySDK\Types;
 
 /**
  * Base class for objects that correspond to int types in the XML.
  *
  * @property integer $value
  */
-class IntegerType extends \DTS\eBaySDK\Types\BaseType
+class IntegerType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

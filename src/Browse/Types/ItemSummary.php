@@ -8,44 +8,44 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Browse\Types\Image[] $additionalImages
+ * @property \Enbit\eBaySDK\Browse\Types\Image[] $additionalImages
  * @property integer $bidCount
  * @property string[] $buyingOptions
- * @property \DTS\eBaySDK\Browse\Types\Category[] $categories
+ * @property \Enbit\eBaySDK\Browse\Types\Category[] $categories
  * @property string $condition
  * @property string $conditionId
- * @property \DTS\eBaySDK\Browse\Types\ConvertedAmount $currentBidPrice
- * @property \DTS\eBaySDK\Browse\Types\TargetLocation $distanceFromPickupLocation
+ * @property \Enbit\eBaySDK\Browse\Types\ConvertedAmount $currentBidPrice
+ * @property \Enbit\eBaySDK\Browse\Types\TargetLocation $distanceFromPickupLocation
  * @property string $energyEfficiencyClass
  * @property string $epid
- * @property \DTS\eBaySDK\Browse\Types\Image $image
+ * @property \Enbit\eBaySDK\Browse\Types\Image $image
  * @property string $itemAffiliateWebUrl
  * @property string $itemGroupHref
  * @property string $itemGroupType
  * @property string $itemHref
  * @property string $itemId
- * @property \DTS\eBaySDK\Browse\Types\ItemLocationImpl $itemLocation
+ * @property \Enbit\eBaySDK\Browse\Types\ItemLocationImpl $itemLocation
  * @property string $itemWebUrl
- * @property \DTS\eBaySDK\Browse\Types\MarketingPrice $marketingPrice
- * @property \DTS\eBaySDK\Browse\Types\PickupOptionSummary[] $pickupOptions
- * @property \DTS\eBaySDK\Browse\Types\ConvertedAmount $price
- * @property \DTS\eBaySDK\Browse\Types\Seller $seller
- * @property \DTS\eBaySDK\Browse\Types\ShippingOptionSummary[] $shippingOptions
- * @property \DTS\eBaySDK\Browse\Types\Image[] $thumbnailImages
+ * @property \Enbit\eBaySDK\Browse\Types\MarketingPrice $marketingPrice
+ * @property \Enbit\eBaySDK\Browse\Types\PickupOptionSummary[] $pickupOptions
+ * @property \Enbit\eBaySDK\Browse\Types\ConvertedAmount $price
+ * @property \Enbit\eBaySDK\Browse\Types\Seller $seller
+ * @property \Enbit\eBaySDK\Browse\Types\ShippingOptionSummary[] $shippingOptions
+ * @property \Enbit\eBaySDK\Browse\Types\Image[] $thumbnailImages
  * @property string $title
  */
-class ItemSummary extends \DTS\eBaySDK\Types\BaseType
+class ItemSummary extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'additionalImages' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Image',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Image',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'additionalImages'
@@ -63,7 +63,7 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'buyingOptions'
         ],
         'categories' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Category',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Category',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categories'
@@ -81,13 +81,13 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'conditionId'
         ],
         'currentBidPrice' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ConvertedAmount',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'currentBidPrice'
         ],
         'distanceFromPickupLocation' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\TargetLocation',
+            'type' => 'Enbit\eBaySDK\Browse\Types\TargetLocation',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'distanceFromPickupLocation'
@@ -105,7 +105,7 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'epid'
         ],
         'image' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Image',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'image'
@@ -141,7 +141,7 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'itemId'
         ],
         'itemLocation' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ItemLocationImpl',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ItemLocationImpl',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemLocation'
@@ -153,37 +153,37 @@ class ItemSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'itemWebUrl'
         ],
         'marketingPrice' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\MarketingPrice',
+            'type' => 'Enbit\eBaySDK\Browse\Types\MarketingPrice',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketingPrice'
         ],
         'pickupOptions' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\PickupOptionSummary',
+            'type' => 'Enbit\eBaySDK\Browse\Types\PickupOptionSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'pickupOptions'
         ],
         'price' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ConvertedAmount',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'price'
         ],
         'seller' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Seller',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Seller',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'seller'
         ],
         'shippingOptions' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ShippingOptionSummary',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ShippingOptionSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'shippingOptions'
         ],
         'thumbnailImages' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Image',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Image',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'thumbnailImages'

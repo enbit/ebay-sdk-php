@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
@@ -18,7 +18,7 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $promotion_status
  * @property string $q
  */
-class GetAPromotionReportRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetAPromotionReportRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

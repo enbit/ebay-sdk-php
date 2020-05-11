@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace Enbit\eBaySDK\Merchandising\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $originalRetailPrice
- * @property \DTS\eBaySDK\Merchandising\Enums\PriceTreatmentEnum $pricingTreatment
+ * @property \Enbit\eBaySDK\Merchandising\Types\Amount $originalRetailPrice
+ * @property \Enbit\eBaySDK\Merchandising\Enums\PriceTreatmentEnum $pricingTreatment
  * @property boolean $soldOnEbay
  * @property boolean $soldOffEbay
  */
-class DiscountPriceInfo extends \DTS\eBaySDK\Types\BaseType
+class DiscountPriceInfo extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'originalRetailPrice' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'originalRetailPrice'

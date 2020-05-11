@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $ShippingService
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $TotalShippingCost
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $TotalShippingCost
  */
-class MultiLegShippingServiceType extends \DTS\eBaySDK\Types\BaseType
+class MultiLegShippingServiceType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class MultiLegShippingServiceType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippingService'
         ],
         'TotalShippingCost' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalShippingCost'

@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\RefundTransactionInfoType[] $Refund
+ * @property \Enbit\eBaySDK\Trading\Types\RefundTransactionInfoType[] $Refund
  */
-class RefundInformationType extends \DTS\eBaySDK\Types\BaseType
+class RefundInformationType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Refund' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\RefundTransactionInfoType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\RefundTransactionInfoType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Refund'

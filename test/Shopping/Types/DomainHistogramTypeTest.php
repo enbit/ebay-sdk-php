@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Shopping\Types;
+namespace Enbit\eBaySDK\Test\Shopping\Types;
 
-use DTS\eBaySDK\Shopping\Types\DomainHistogramType;
+use Enbit\eBaySDK\Shopping\Types\DomainHistogramType;
 
 class DomainHistogramTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class DomainHistogramTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\DomainHistogramType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\DomainHistogramType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

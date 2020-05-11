@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Product\Enums\SortType $sortType
- * @property \DTS\eBaySDK\Product\Enums\OrderType $sortOrder
+ * @property \Enbit\eBaySDK\Product\Enums\SortType $sortType
+ * @property \Enbit\eBaySDK\Product\Enums\OrderType $sortOrder
  */
-class SortOption extends \DTS\eBaySDK\Types\BaseType
+class SortOption extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

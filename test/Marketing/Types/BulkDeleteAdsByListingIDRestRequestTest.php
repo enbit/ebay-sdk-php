@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\BulkDeleteAdsByListingIDRestRequest;
+use Enbit\eBaySDK\Marketing\Types\BulkDeleteAdsByListingIDRestRequest;
 
 class BulkDeleteAdsByListingIDRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class BulkDeleteAdsByListingIDRestRequestTest extends \PHPUnit_Framework_TestCas
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\BulkDeleteAdsByListingIDRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\BulkDeleteAdsByListingIDRestRequest', $this->obj);
     }
 
     public function testExtendsBulkDeleteAdRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\BulkDeleteAdRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\BulkDeleteAdRequest', $this->obj);
     }
 }

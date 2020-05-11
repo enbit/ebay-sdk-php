@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Analytics\Types;
+namespace Enbit\eBaySDK\Test\Analytics\Types;
 
-use DTS\eBaySDK\Analytics\Types\FilterField;
+use Enbit\eBaySDK\Analytics\Types\FilterField;
 
 class FilterFieldTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FilterFieldTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Analytics\Types\FilterField', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Analytics\Types\FilterField', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

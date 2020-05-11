@@ -20,7 +20,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-namespace DTS\eBaySDK\JmesPath;
+namespace Enbit\eBaySDK\JmesPath;
 
 /**
  * Tree visitor used to evaluates JMESPath AST expressions.

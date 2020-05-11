@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\ListingDurationReferenceType[] $ListingDuration
+ * @property \Enbit\eBaySDK\Trading\Types\ListingDurationReferenceType[] $ListingDuration
  * @property boolean $ShippingTermsRequired
  * @property boolean $BestOfferEnabled
  * @property boolean $UserConsentRequired
@@ -21,7 +21,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $BasicUpgradePackEnabled
  * @property boolean $ValuePackEnabled
  * @property boolean $ProPackPlusEnabled
- * @property \DTS\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $AdFormatEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $AdFormatEnabled
  * @property boolean $BestOfferCounterEnabled
  * @property boolean $BestOfferAutoDeclineEnabled
  * @property boolean $LocalMarketSpecialitySubscription
@@ -36,16 +36,16 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $LocalListingDistancesRegular
  * @property string $LocalListingDistancesSpecialty
  * @property string $LocalListingDistancesNonSubscription
- * @property \DTS\eBaySDK\Trading\Enums\ClassifiedAdPaymentMethodEnabledCodeType $ClassifiedAdPaymentMethodEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ClassifiedAdPaymentMethodEnabledCodeType $ClassifiedAdPaymentMethodEnabled
  * @property boolean $ClassifiedAdShippingMethodEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ClassifiedAdBestOfferEnabledCodeType $ClassifiedAdBestOfferEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ClassifiedAdBestOfferEnabledCodeType $ClassifiedAdBestOfferEnabled
  * @property boolean $ClassifiedAdCounterOfferEnabled
  * @property boolean $ClassifiedAdAutoDeclineEnabled
  * @property boolean $ClassifiedAdContactByPhoneEnabled
  * @property boolean $ClassifiedAdContactByEmailEnabled
  * @property boolean $SafePaymentRequired
  * @property boolean $ClassifiedAdPayPerLeadEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ItemSpecificsEnabledCodeType $ItemSpecificsEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ItemSpecificsEnabledCodeType $ItemSpecificsEnabled
  * @property boolean $PaisaPayFullEscrowEnabled
  * @property boolean $ISBNIdentifierEnabled
  * @property boolean $UPCIdentifierEnabled
@@ -58,34 +58,34 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $CrossBorderTradeAustraliaEnabled
  * @property boolean $PayPalBuyerProtectionEnabled
  * @property boolean $BuyerGuaranteeEnabled
- * @property \DTS\eBaySDK\Trading\Enums\INEscrowWorkflowTimelineCodeType $INEscrowWorkflowTimeline
- * @property \DTS\eBaySDK\Trading\Types\ListingEnhancementDurationReferenceType $GalleryFeaturedDurations
+ * @property \Enbit\eBaySDK\Trading\Enums\INEscrowWorkflowTimelineCodeType $INEscrowWorkflowTimeline
+ * @property \Enbit\eBaySDK\Trading\Types\ListingEnhancementDurationReferenceType $GalleryFeaturedDurations
  * @property boolean $PayPalRequired
- * @property \DTS\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $eBayMotorsProAdFormatEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $eBayMotorsProAdFormatEnabled
  * @property boolean $eBayMotorsProContactByPhoneEnabled
  * @property integer $eBayMotorsProPhoneCount
  * @property boolean $eBayMotorsProContactByAddressEnabled
  * @property integer $eBayMotorsProStreetCount
  * @property boolean $eBayMotorsProCompanyNameEnabled
  * @property boolean $eBayMotorsProContactByEmailEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ClassifiedAdBestOfferEnabledCodeType $eBayMotorsProBestOfferEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ClassifiedAdBestOfferEnabledCodeType $eBayMotorsProBestOfferEnabled
  * @property boolean $eBayMotorsProAutoAcceptEnabled
  * @property boolean $eBayMotorsProAutoDeclineEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ClassifiedAdPaymentMethodEnabledCodeType $eBayMotorsProPaymentMethodCheckOutEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ClassifiedAdPaymentMethodEnabledCodeType $eBayMotorsProPaymentMethodCheckOutEnabled
  * @property boolean $eBayMotorsProShippingMethodEnabled
  * @property boolean $eBayMotorsProCounterOfferEnabled
  * @property boolean $eBayMotorsProSellerContactDetailsEnabled
- * @property \DTS\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $LocalMarketAdFormatEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\AdFormatEnabledCodeType $LocalMarketAdFormatEnabled
  * @property boolean $LocalMarketContactByPhoneEnabled
  * @property integer $LocalMarketPhoneCount
  * @property boolean $LocalMarketContactByAddressEnabled
  * @property integer $LocalMarketStreetCount
  * @property boolean $LocalMarketCompanyNameEnabled
  * @property boolean $LocalMarketContactByEmailEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ClassifiedAdBestOfferEnabledCodeType $LocalMarketBestOfferEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ClassifiedAdBestOfferEnabledCodeType $LocalMarketBestOfferEnabled
  * @property boolean $LocalMarketAutoAcceptEnabled
  * @property boolean $LocalMarketAutoDeclineEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ClassifiedAdPaymentMethodEnabledCodeType $LocalMarketPaymentMethodCheckOutEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ClassifiedAdPaymentMethodEnabledCodeType $LocalMarketPaymentMethodCheckOutEnabled
  * @property boolean $LocalMarketShippingMethodEnabled
  * @property boolean $LocalMarketCounterOfferEnabled
  * @property boolean $LocalMarketSellerContactDetailsEnabled
@@ -93,42 +93,42 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $ClassifiedAdContactByAddressEnabled
  * @property integer $ClassifiedAdStreetCount
  * @property boolean $ClassifiedAdCompanyNameEnabled
- * @property \DTS\eBaySDK\Trading\Enums\GeographicExposureCodeType $SpecialitySubscription
- * @property \DTS\eBaySDK\Trading\Enums\GeographicExposureCodeType $RegularSubscription
- * @property \DTS\eBaySDK\Trading\Enums\GeographicExposureCodeType $PremiumSubscription
- * @property \DTS\eBaySDK\Trading\Enums\GeographicExposureCodeType $NonSubscription
+ * @property \Enbit\eBaySDK\Trading\Enums\GeographicExposureCodeType $SpecialitySubscription
+ * @property \Enbit\eBaySDK\Trading\Enums\GeographicExposureCodeType $RegularSubscription
+ * @property \Enbit\eBaySDK\Trading\Enums\GeographicExposureCodeType $PremiumSubscription
+ * @property \Enbit\eBaySDK\Trading\Enums\GeographicExposureCodeType $NonSubscription
  * @property boolean $PayPalRequiredForStoreOwner
  * @property boolean $ReviseQuantityAllowed
  * @property boolean $RevisePriceAllowed
  * @property boolean $StoreOwnerExtendedListingDurationsEnabled
- * @property \DTS\eBaySDK\Trading\Types\StoreOwnerExtendedListingDurationsType $StoreOwnerExtendedListingDurations
+ * @property \Enbit\eBaySDK\Trading\Types\StoreOwnerExtendedListingDurationsType $StoreOwnerExtendedListingDurations
  * @property boolean $ReturnPolicyEnabled
  * @property boolean $HandlingTimeEnabled
- * @property \DTS\eBaySDK\Trading\Types\AmountType $MaxFlatShippingCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $MaxFlatShippingCost
  * @property boolean $MaxFlatShippingCostCBTExempt
- * @property \DTS\eBaySDK\Trading\Types\AmountType $Group1MaxFlatShippingCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $Group2MaxFlatShippingCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $Group3MaxFlatShippingCost
- * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType[] $PaymentMethod
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $Group1MaxFlatShippingCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $Group2MaxFlatShippingCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $Group3MaxFlatShippingCost
+ * @property \Enbit\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType[] $PaymentMethod
  * @property boolean $VariationsEnabled
  * @property boolean $FreeGalleryPlusEnabled
  * @property boolean $FreePicturePackEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ItemCompatibilityEnabledCodeType $ItemCompatibilityEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ItemCompatibilityEnabledCodeType $ItemCompatibilityEnabled
  * @property integer $MinItemCompatibility
  * @property integer $MaxItemCompatibility
- * @property \DTS\eBaySDK\Trading\Enums\ConditionEnabledCodeType $ConditionEnabled
- * @property \DTS\eBaySDK\Trading\Types\ConditionValuesType $ConditionValues
+ * @property \Enbit\eBaySDK\Trading\Enums\ConditionEnabledCodeType $ConditionEnabled
+ * @property \Enbit\eBaySDK\Trading\Types\ConditionValuesType $ConditionValues
  * @property boolean $ValueCategory
- * @property \DTS\eBaySDK\Trading\Enums\ProductCreationEnabledCodeType $ProductCreationEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $EANEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $ISBNEnabled
- * @property \DTS\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $UPCEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ProductCreationEnabledCodeType $ProductCreationEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $EANEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $ISBNEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ProductIdentiferEnabledCodeType $UPCEnabled
  * @property integer $MaxGranularFitmentCount
  * @property string $CompatibleVehicleType
- * @property \DTS\eBaySDK\Trading\Enums\PaymentOptionsGroupEnabledCodeType $PaymentOptionsGroup
- * @property \DTS\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $ShippingProfileCategoryGroup
- * @property \DTS\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $PaymentProfileCategoryGroup
- * @property \DTS\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $ReturnPolicyProfileCategoryGroup
+ * @property \Enbit\eBaySDK\Trading\Enums\PaymentOptionsGroupEnabledCodeType $PaymentOptionsGroup
+ * @property \Enbit\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $ShippingProfileCategoryGroup
+ * @property \Enbit\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $PaymentProfileCategoryGroup
+ * @property \Enbit\eBaySDK\Trading\Enums\ProfileCategoryGroupCodeType $ReturnPolicyProfileCategoryGroup
  * @property boolean $VINSupported
  * @property boolean $VRMSupported
  * @property boolean $SellerProvidedTitleSupported
@@ -139,16 +139,16 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property boolean $DigitalGoodDeliveryEnabled
  * @property boolean $EpidSupported
  * @property boolean $KTypeSupported
- * @property \DTS\eBaySDK\Trading\Enums\ProductRequiredEnabledCodeType $ProductRequiredEnabled
+ * @property \Enbit\eBaySDK\Trading\Enums\ProductRequiredEnabledCodeType $ProductRequiredEnabled
  */
-class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
+class SiteDefaultsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ListingDuration' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingDurationReferenceType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ListingDurationReferenceType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ListingDuration'
@@ -430,7 +430,7 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'INEscrowWorkflowTimeline'
         ],
         'GalleryFeaturedDurations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingEnhancementDurationReferenceType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ListingEnhancementDurationReferenceType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GalleryFeaturedDurations'
@@ -682,7 +682,7 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'StoreOwnerExtendedListingDurationsEnabled'
         ],
         'StoreOwnerExtendedListingDurations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\StoreOwnerExtendedListingDurationsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\StoreOwnerExtendedListingDurationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'StoreOwnerExtendedListingDurations'
@@ -700,7 +700,7 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'HandlingTimeEnabled'
         ],
         'MaxFlatShippingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MaxFlatShippingCost'
@@ -712,19 +712,19 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'MaxFlatShippingCostCBTExempt'
         ],
         'Group1MaxFlatShippingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Group1MaxFlatShippingCost'
         ],
         'Group2MaxFlatShippingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Group2MaxFlatShippingCost'
         ],
         'Group3MaxFlatShippingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Group3MaxFlatShippingCost'
@@ -778,7 +778,7 @@ class SiteDefaultsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ConditionEnabled'
         ],
         'ConditionValues' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ConditionValuesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ConditionValuesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConditionValues'

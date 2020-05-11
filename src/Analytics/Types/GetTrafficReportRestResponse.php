@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Analytics\Types;
+namespace Enbit\eBaySDK\Analytics\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use Enbit\eBaySDK\StatusCodeTrait;
+use Enbit\eBaySDK\HttpHeadersTrait;
 
 /**
  *
- * @property \DTS\eBaySDK\Analytics\Types\ErrorDetailV3[] $errors
- * @property \DTS\eBaySDK\Analytics\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Analytics\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\Analytics\Types\ErrorDetailV3[] $warnings
  */
-class GetTrafficReportRestResponse extends \DTS\eBaySDK\Analytics\Types\Report
+class GetTrafficReportRestResponse extends \Enbit\eBaySDK\Analytics\Types\Report
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -28,13 +28,13 @@ class GetTrafficReportRestResponse extends \DTS\eBaySDK\Analytics\Types\Report
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'DTS\eBaySDK\Analytics\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Analytics\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Analytics\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Analytics\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

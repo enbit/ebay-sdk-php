@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $q
  * @property string $sort
  */
-class GetPromotionsRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetPromotionsRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Types\MetaDataCodeResultType[] $metadataCodeValues
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\MetaDataCodeResultType[] $metadataCodeValues
  */
-class GetReturnMetadataResponse extends \DTS\eBaySDK\ReturnManagement\Types\BaseResponse
+class GetReturnMetadataResponse extends \Enbit\eBaySDK\ReturnManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'metadataCodeValues' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\MetaDataCodeResultType',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\MetaDataCodeResultType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'metadataCodeValues'

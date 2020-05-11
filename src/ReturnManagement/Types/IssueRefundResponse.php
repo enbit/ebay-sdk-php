@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ReturnManagement\Enums\RefundStatusType $RefundStatus
+ * @property \Enbit\eBaySDK\ReturnManagement\Enums\RefundStatusType $RefundStatus
  */
-class IssueRefundResponse extends \DTS\eBaySDK\ReturnManagement\Types\BaseResponse
+class IssueRefundResponse extends \Enbit\eBaySDK\ReturnManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.

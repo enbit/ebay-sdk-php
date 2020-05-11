@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -21,12 +21,12 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $ISBN
  * @property string $UPC
  * @property string $EAN
- * @property \DTS\eBaySDK\MerchantData\Types\BrandMPNType $BrandMPN
- * @property \DTS\eBaySDK\MerchantData\Types\TicketListingDetailsType $TicketListingDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\BrandMPNType $BrandMPN
+ * @property \Enbit\eBaySDK\MerchantData\Types\TicketListingDetailsType $TicketListingDetails
  * @property boolean $UseFirstProduct
  * @property boolean $IncludeeBayProductDetails
  */
-class ProductListingDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ProductListingDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -87,13 +87,13 @@ class ProductListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'EAN'
         ],
         'BrandMPN' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\BrandMPNType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\BrandMPNType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BrandMPN'
         ],
         'TicketListingDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TicketListingDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\TicketListingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TicketListingDetails'

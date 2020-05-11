@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
@@ -16,10 +16,10 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
  * @property boolean $immediatePay
  * @property string $paymentInstructions
  * @property string $paypalEmailAddress
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\DepositDetails $depositDetails
+ * @property \Enbit\eBaySDK\BusinessPoliciesManagement\Types\DepositDetails $depositDetails
  * @property integer $daysToFullPayment
  */
-class PaymentInfo extends \DTS\eBaySDK\Types\BaseType
+class PaymentInfo extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -50,7 +50,7 @@ class PaymentInfo extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'paypalEmailAddress'
         ],
         'depositDetails' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\DepositDetails',
+            'type' => 'Enbit\eBaySDK\BusinessPoliciesManagement\Types\DepositDetails',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'depositDetails'

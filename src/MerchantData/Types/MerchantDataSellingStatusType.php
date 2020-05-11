@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property integer $QuantitySold
  */
-class MerchantDataSellingStatusType extends \DTS\eBaySDK\Types\BaseType
+class MerchantDataSellingStatusType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

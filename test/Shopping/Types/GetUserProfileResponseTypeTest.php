@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Shopping\Types;
+namespace Enbit\eBaySDK\Test\Shopping\Types;
 
-use DTS\eBaySDK\Shopping\Types\GetUserProfileResponseType;
+use Enbit\eBaySDK\Shopping\Types\GetUserProfileResponseType;
 
 class GetUserProfileResponseTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetUserProfileResponseTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\GetUserProfileResponseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\GetUserProfileResponseType', $this->obj);
     }
 
     public function testExtendsAbstractResponseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\AbstractResponseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\AbstractResponseType', $this->obj);
     }
 }

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
@@ -19,10 +19,10 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $longMessage
  * @property string $message
  * @property string[] $outputRefIds
- * @property \DTS\eBaySDK\Marketing\Types\ErrorParameterV3[] $parameters
+ * @property \Enbit\eBaySDK\Marketing\Types\ErrorParameterV3[] $parameters
  * @property string $subdomain
  */
-class ErrorDetailV3 extends \DTS\eBaySDK\Types\BaseType
+class ErrorDetailV3 extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -71,7 +71,7 @@ class ErrorDetailV3 extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'outputRefIds'
         ],
         'parameters' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorParameterV3',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\ErrorParameterV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'parameters'

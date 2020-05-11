@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Metadata\Types;
+namespace Enbit\eBaySDK\Test\Metadata\Types;
 
-use DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse;
+use Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse;
 
 class GetPoliciesForReturnsRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetPoliciesForReturnsRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Metadata\Types\GetPoliciesForReturnsRestResponse', $this->obj);
     }
 
     public function testExtendsReturnPolicyResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Metadata\Types\ReturnPolicyResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Metadata\Types\ReturnPolicyResponse', $this->obj);
     }
 }

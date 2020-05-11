@@ -1,12 +1,12 @@
 <?php
-namespace DTS\eBaySDK\Trading\Services;
+namespace Enbit\eBaySDK\Trading\Services;
 
-use DTS\eBaySDK\Trading\Types;
+use Enbit\eBaySDK\Trading\Types;
 
 /**
  * Base class for the Trading service.
  */
-class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
+class TradingBaseService extends \Enbit\eBaySDK\Services\BaseService
 {
     /**
      * HTTP header constant. The API version your application supports.
@@ -63,7 +63,7 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\Trading\Services\TradingService::API_VERSION,
+                'default' => \Enbit\eBaySDK\Trading\Services\TradingService::API_VERSION,
                 'required' => true
             ],
             'authorization' => [
@@ -86,12 +86,12 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
      * the request object before it is handled by the parent class.
      *
      * @param string $name The name of the operation.
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      * @param string $responseClass The name of the PHP class that will be created from the XML response.
      *
      * @return \GuzzleHttp\Promise\PromiseInterface A promise that will be resolved with an object created from the XML response.
      */
-    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass)
+    protected function callOperationAsync($name, \Enbit\eBaySDK\Types\BaseType $request, $responseClass)
     {
         /**
          * Modify the request object to include the auth token that was set up in the configuration.
@@ -108,7 +108,7 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
              * Don't modify a request if the token already exists.
              */
             if (!isset($request->RequesterCredentials)) {
-                $request->RequesterCredentials = new \DTS\eBaySDK\Trading\Types\CustomSecurityHeaderType();
+                $request->RequesterCredentials = new \Enbit\eBaySDK\Trading\Types\CustomSecurityHeaderType();
             }
             if (!isset($request->RequesterCredentials->eBayAuthToken)) {
                 $request->RequesterCredentials->eBayAuthToken = $this->getConfig('authToken');
@@ -169,11 +169,11 @@ class TradingBaseService extends \DTS\eBaySDK\Services\BaseService
     /**
      * Builds the request body string.
      *
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      *
      * @return string The request body.
      */
-    protected function buildRequestBody(\DTS\eBaySDK\Types\BaseType $request)
+    protected function buildRequestBody(\Enbit\eBaySDK\Types\BaseType $request)
     {
         if ($request->hasAttachment() && $request instanceof Types\UploadSiteHostedPicturesRequestType) {
             return $this->buildMultipartFormDataXMLPayload($request).$this->buildMultipartFormDataFilePayload($request->PictureName, $request->attachment());

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property string $ItemID
  * @property string $VariationSKU
- * @property \DTS\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
+ * @property \Enbit\eBaySDK\Shopping\Types\NameValueListArrayType $VariationSpecifics
  * @property string $IncludeSelector
  */
-class GetSingleItemRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
+class GetSingleItemRequestType extends \Enbit\eBaySDK\Shopping\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -36,7 +36,7 @@ class GetSingleItemRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractReque
             'elementName' => 'VariationSKU'
         ],
         'VariationSpecifics' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\NameValueListArrayType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VariationSpecifics'

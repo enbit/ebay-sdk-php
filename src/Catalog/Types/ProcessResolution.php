@@ -8,30 +8,30 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace Enbit\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Types\ConflictingProduct[] $conflictingProducts
- * @property \DTS\eBaySDK\Catalog\Types\Correction[] $corrections
+ * @property \Enbit\eBaySDK\Catalog\Types\ConflictingProduct[] $conflictingProducts
+ * @property \Enbit\eBaySDK\Catalog\Types\Correction[] $corrections
  * @property string $epid
  * @property string $productHref
- * @property \DTS\eBaySDK\Catalog\Types\Violation[] $violations
+ * @property \Enbit\eBaySDK\Catalog\Types\Violation[] $violations
  */
-class ProcessResolution extends \DTS\eBaySDK\Types\BaseType
+class ProcessResolution extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'conflictingProducts' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ConflictingProduct',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\ConflictingProduct',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'conflictingProducts'
         ],
         'corrections' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\Correction',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\Correction',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'corrections'
@@ -49,7 +49,7 @@ class ProcessResolution extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'productHref'
         ],
         'violations' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\Violation',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\Violation',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'violations'

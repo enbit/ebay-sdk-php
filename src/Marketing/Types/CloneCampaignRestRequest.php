@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string $campaign_id
  */
-class CloneCampaignRestRequest extends \DTS\eBaySDK\Marketing\Types\CloneCampaignRequest
+class CloneCampaignRestRequest extends \Enbit\eBaySDK\Marketing\Types\CloneCampaignRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property string $unit
  */
-class DistanceType extends \DTS\eBaySDK\Types\DoubleType
+class DistanceType extends \Enbit\eBaySDK\Types\DoubleType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Metadata\Types;
+namespace Enbit\eBaySDK\Metadata\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Metadata\Types;
  * @property string $categoryTreeId
  * @property boolean $required
  */
-class ReturnPolicy extends \DTS\eBaySDK\Types\BaseType
+class ReturnPolicy extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

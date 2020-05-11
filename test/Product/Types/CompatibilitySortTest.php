@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Product\Types;
+namespace Enbit\eBaySDK\Test\Product\Types;
 
-use DTS\eBaySDK\Product\Types\CompatibilitySort;
+use Enbit\eBaySDK\Product\Types\CompatibilitySort;
 
 class CompatibilitySortTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CompatibilitySortTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Product\Types\CompatibilitySort', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Product\Types\CompatibilitySort', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

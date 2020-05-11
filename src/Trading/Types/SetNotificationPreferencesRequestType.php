@@ -8,42 +8,42 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\ApplicationDeliveryPreferencesType $ApplicationDeliveryPreferences
- * @property \DTS\eBaySDK\Trading\Types\NotificationEnableArrayType $UserDeliveryPreferenceArray
- * @property \DTS\eBaySDK\Trading\Types\NotificationUserDataType $UserData
- * @property \DTS\eBaySDK\Trading\Types\NotificationEventPropertyType[] $EventProperty
+ * @property \Enbit\eBaySDK\Trading\Types\ApplicationDeliveryPreferencesType $ApplicationDeliveryPreferences
+ * @property \Enbit\eBaySDK\Trading\Types\NotificationEnableArrayType $UserDeliveryPreferenceArray
+ * @property \Enbit\eBaySDK\Trading\Types\NotificationUserDataType $UserData
+ * @property \Enbit\eBaySDK\Trading\Types\NotificationEventPropertyType[] $EventProperty
  * @property string $DeliveryURLName
  */
-class SetNotificationPreferencesRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class SetNotificationPreferencesRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ApplicationDeliveryPreferences' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ApplicationDeliveryPreferencesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ApplicationDeliveryPreferencesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ApplicationDeliveryPreferences'
         ],
         'UserDeliveryPreferenceArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NotificationEnableArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NotificationEnableArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UserDeliveryPreferenceArray'
         ],
         'UserData' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NotificationUserDataType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NotificationUserDataType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UserData'
         ],
         'EventProperty' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NotificationEventPropertyType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NotificationEventPropertyType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'EventProperty'

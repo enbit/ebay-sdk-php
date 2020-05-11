@@ -8,55 +8,55 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType $BidRetractionFeedbackPeriodArray
- * @property \DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType $NegativeFeedbackPeriodArray
- * @property \DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType $NeutralFeedbackPeriodArray
- * @property \DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType $PositiveFeedbackPeriodArray
- * @property \DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType $TotalFeedbackPeriodArray
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType $BidRetractionFeedbackPeriodArray
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType $NegativeFeedbackPeriodArray
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType $NeutralFeedbackPeriodArray
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType $PositiveFeedbackPeriodArray
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType $TotalFeedbackPeriodArray
  * @property integer $NeutralCommentCountFromSuspendedUsers
  * @property integer $UniqueNegativeFeedbackCount
  * @property integer $UniquePositiveFeedbackCount
  * @property integer $UniqueNeutralFeedbackCount
- * @property \DTS\eBaySDK\Trading\Types\SellerRatingSummaryArrayType $SellerRatingSummaryArray
- * @property \DTS\eBaySDK\Trading\Types\SellerRoleMetricsType $SellerRoleMetrics
- * @property \DTS\eBaySDK\Trading\Types\BuyerRoleMetricsType $BuyerRoleMetrics
+ * @property \Enbit\eBaySDK\Trading\Types\SellerRatingSummaryArrayType $SellerRatingSummaryArray
+ * @property \Enbit\eBaySDK\Trading\Types\SellerRoleMetricsType $SellerRoleMetrics
+ * @property \Enbit\eBaySDK\Trading\Types\BuyerRoleMetricsType $BuyerRoleMetrics
  */
-class FeedbackSummaryType extends \DTS\eBaySDK\Types\BaseType
+class FeedbackSummaryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'BidRetractionFeedbackPeriodArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BidRetractionFeedbackPeriodArray'
         ],
         'NegativeFeedbackPeriodArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NegativeFeedbackPeriodArray'
         ],
         'NeutralFeedbackPeriodArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NeutralFeedbackPeriodArray'
         ],
         'PositiveFeedbackPeriodArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PositiveFeedbackPeriodArray'
         ],
         'TotalFeedbackPeriodArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackPeriodArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalFeedbackPeriodArray'
@@ -86,19 +86,19 @@ class FeedbackSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'UniqueNeutralFeedbackCount'
         ],
         'SellerRatingSummaryArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellerRatingSummaryArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellerRatingSummaryArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerRatingSummaryArray'
         ],
         'SellerRoleMetrics' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellerRoleMetricsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellerRoleMetricsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerRoleMetrics'
         ],
         'BuyerRoleMetrics' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\BuyerRoleMetricsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\BuyerRoleMetricsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerRoleMetrics'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\GetRecommendationsResponseContainerType;
+use Enbit\eBaySDK\Trading\Types\GetRecommendationsResponseContainerType;
 
 class GetRecommendationsResponseContainerTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetRecommendationsResponseContainerTypeTest extends \PHPUnit_Framework_Tes
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\GetRecommendationsResponseContainerType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\GetRecommendationsResponseContainerType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

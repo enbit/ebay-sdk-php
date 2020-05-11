@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
  * @property integer $QuantitySold
  * @property string $DestinationPostalCode
- * @property \DTS\eBaySDK\Trading\Enums\CountryCodeType $DestinationCountryCode
+ * @property \Enbit\eBaySDK\Trading\Enums\CountryCodeType $DestinationCountryCode
  */
-class GetItemShippingRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetItemShippingRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\DetailNameCodeType[] $DetailName
+ * @property \Enbit\eBaySDK\Trading\Enums\DetailNameCodeType[] $DetailName
  */
-class GeteBayDetailsRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GeteBayDetailsRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

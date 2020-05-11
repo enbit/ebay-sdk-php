@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
  * @property string $payment_policy_id
  */
-class UpdateAPaymentPolicyRestRequest extends \DTS\eBaySDK\Account\Types\PaymentPolicyRequest
+class UpdateAPaymentPolicyRestRequest extends \Enbit\eBaySDK\Account\Types\PaymentPolicyRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

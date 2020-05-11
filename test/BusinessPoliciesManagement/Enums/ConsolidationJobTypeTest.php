@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\BusinessPoliciesManagement\Enums;
+namespace Enbit\eBaySDK\Test\BusinessPoliciesManagement\Enums;
 
-use DTS\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType;
+use Enbit\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType;
 
 class ConsolidationJobTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class ConsolidationJobTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType', $this->obj);
     }
 }

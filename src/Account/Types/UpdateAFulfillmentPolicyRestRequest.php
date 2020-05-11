@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
  * @property string $fulfillmentPolicyId
  */
-class UpdateAFulfillmentPolicyRestRequest extends \DTS\eBaySDK\Account\Types\FulfillmentPolicyRequest
+class UpdateAFulfillmentPolicyRestRequest extends \Enbit\eBaySDK\Account\Types\FulfillmentPolicyRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

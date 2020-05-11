@@ -1,9 +1,9 @@
 <?php
-namespace DTS\eBaySDK\Types\Test;
+namespace Enbit\eBaySDK\Types\Test;
 
-use DTS\eBaySDK\Test\Mocks\AmountClass;
-use DTS\eBaySDK\Test\Mocks\SimpleClass;
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\AmountClass;
+use Enbit\eBaySDK\Test\Mocks\SimpleClass;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
 
 class ComplexClassTest extends \PHPUnit_Framework_TestCase
 {
@@ -16,12 +16,12 @@ class ComplexClassTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\ComplexClass', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\ComplexClass', $this->obj);
     }
 
     public function testExtendsSimpleClass()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $this->obj);
     }
 
     public function testGettingSettingProperties()
@@ -61,27 +61,27 @@ class ComplexClassTest extends \PHPUnit_Framework_TestCase
         $simpleClass = new SimpleClass();
         $this->obj->SimpleClass = $simpleClass;
         $this->assertEquals($simpleClass, $this->obj->SimpleClass);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $this->obj->SimpleClass);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $this->obj->SimpleClass);
 
         $this->assertEquals(0, count($this->obj->strings));
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->strings[] = 'foo';
         $this->obj->strings[] = 'bar';
         $this->assertEquals(2, count($this->obj->strings));
         $this->assertEquals('foo', $this->obj->strings[0]);
         $this->assertEquals('bar', $this->obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->strings = ['foo', 'bar'];
         $this->assertEquals(2, count($this->obj->strings));
         $this->assertEquals('foo', $this->obj->strings[0]);
         $this->assertEquals('bar', $this->obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->strings = [];
         $this->assertEquals(0, count($this->obj->strings));
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
     }
 
     public function testToXml()

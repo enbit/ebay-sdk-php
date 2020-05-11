@@ -8,41 +8,41 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\VariationType[] $Variation
- * @property \DTS\eBaySDK\MerchantData\Types\PicturesType[] $Pictures
- * @property \DTS\eBaySDK\MerchantData\Types\NameValueListArrayType $VariationSpecificsSet
- * @property \DTS\eBaySDK\MerchantData\Types\ModifyNameArrayType $ModifyNameList
+ * @property \Enbit\eBaySDK\MerchantData\Types\VariationType[] $Variation
+ * @property \Enbit\eBaySDK\MerchantData\Types\PicturesType[] $Pictures
+ * @property \Enbit\eBaySDK\MerchantData\Types\NameValueListArrayType $VariationSpecificsSet
+ * @property \Enbit\eBaySDK\MerchantData\Types\ModifyNameArrayType $ModifyNameList
  */
-class VariationsType extends \DTS\eBaySDK\Types\BaseType
+class VariationsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Variation' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\VariationType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\VariationType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Variation'
         ],
         'Pictures' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PicturesType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\PicturesType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Pictures'
         ],
         'VariationSpecificsSet' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\NameValueListArrayType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VariationSpecificsSet'
         ],
         'ModifyNameList' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ModifyNameArrayType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ModifyNameArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ModifyNameList'

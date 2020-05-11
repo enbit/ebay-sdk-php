@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Product\Types\PaginationOutput $paginationOutput
- * @property \DTS\eBaySDK\Product\Types\ProductSubmissionResult[] $productSubmissionResponse
+ * @property \Enbit\eBaySDK\Product\Types\PaginationOutput $paginationOutput
+ * @property \Enbit\eBaySDK\Product\Types\ProductSubmissionResult[] $productSubmissionResponse
  */
-class GetProductSubmissionsResponse extends \DTS\eBaySDK\Product\Types\BaseServiceResponse
+class GetProductSubmissionsResponse extends \Enbit\eBaySDK\Product\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'paginationOutput' => [
-            'type' => 'DTS\eBaySDK\Product\Types\PaginationOutput',
+            'type' => 'Enbit\eBaySDK\Product\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'
         ],
         'productSubmissionResponse' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductSubmissionResult',
+            'type' => 'Enbit\eBaySDK\Product\Types\ProductSubmissionResult',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'productSubmissionResponse'

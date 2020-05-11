@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
  * @property boolean $extendedHolidayReturnsOffered
- * @property \DTS\eBaySDK\Browse\Enums\RefundMethodEnum $refundMethod
+ * @property \Enbit\eBaySDK\Browse\Enums\RefundMethodEnum $refundMethod
  * @property string $restockingFeePercentage
  * @property string $returnInstructions
- * @property \DTS\eBaySDK\Browse\Enums\ReturnMethodEnum $returnMethod
- * @property \DTS\eBaySDK\Browse\Types\TimeDuration $returnPeriod
+ * @property \Enbit\eBaySDK\Browse\Enums\ReturnMethodEnum $returnMethod
+ * @property \Enbit\eBaySDK\Browse\Types\TimeDuration $returnPeriod
  * @property boolean $returnsAccepted
- * @property \DTS\eBaySDK\Browse\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
+ * @property \Enbit\eBaySDK\Browse\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
  */
-class ItemReturnTerms extends \DTS\eBaySDK\Types\BaseType
+class ItemReturnTerms extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -58,7 +58,7 @@ class ItemReturnTerms extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'returnMethod'
         ],
         'returnPeriod' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\TimeDuration',
+            'type' => 'Enbit\eBaySDK\Browse\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPeriod'

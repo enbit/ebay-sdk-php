@@ -8,26 +8,26 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Types\Amount $cumulativeInventoryValue
+ * @property \Enbit\eBaySDK\Account\Types\Amount $cumulativeInventoryValue
  * @property integer $cumulativeQuantity
- * @property \DTS\eBaySDK\Account\Types\LookbackPeriod $lookbackPeriod
+ * @property \Enbit\eBaySDK\Account\Types\LookbackPeriod $lookbackPeriod
  * @property integer $maxAvailableQuantity
- * @property \DTS\eBaySDK\Account\Types\Amount $maxInventoryValue
+ * @property \Enbit\eBaySDK\Account\Types\Amount $maxInventoryValue
  * @property integer $minAvailableQuantity
- * @property \DTS\eBaySDK\Account\Types\Amount $minInventoryValue
+ * @property \Enbit\eBaySDK\Account\Types\Amount $minInventoryValue
  */
-class InventorySnapshot extends \DTS\eBaySDK\Types\BaseType
+class InventorySnapshot extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'cumulativeInventoryValue' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cumulativeInventoryValue'
@@ -39,7 +39,7 @@ class InventorySnapshot extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'cumulativeQuantity'
         ],
         'lookbackPeriod' => [
-            'type' => 'DTS\eBaySDK\Account\Types\LookbackPeriod',
+            'type' => 'Enbit\eBaySDK\Account\Types\LookbackPeriod',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'lookbackPeriod'
@@ -51,7 +51,7 @@ class InventorySnapshot extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'maxAvailableQuantity'
         ],
         'maxInventoryValue' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxInventoryValue'
@@ -63,7 +63,7 @@ class InventorySnapshot extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'minAvailableQuantity'
         ],
         'minInventoryValue' => [
-            'type' => 'DTS\eBaySDK\Account\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Account\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minInventoryValue'

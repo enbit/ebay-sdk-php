@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Enums;
+namespace Enbit\eBaySDK\Test\MerchantData\Enums;
 
-use DTS\eBaySDK\MerchantData\Enums\InsuranceOptionCodeType;
+use Enbit\eBaySDK\MerchantData\Enums\InsuranceOptionCodeType;
 
 class InsuranceOptionCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class InsuranceOptionCodeTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Enums\InsuranceOptionCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Enums\InsuranceOptionCodeType', $this->obj);
     }
 }

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
- * @property \DTS\eBaySDK\Browse\Types\ConvertedAmount $shippingCost
+ * @property \Enbit\eBaySDK\Browse\Types\ConvertedAmount $shippingCost
  * @property string $shippingCostType
  */
-class ShippingOptionSummary extends \DTS\eBaySDK\Types\BaseType
+class ShippingOptionSummary extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -36,7 +36,7 @@ class ShippingOptionSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'minEstimatedDeliveryDate'
         ],
         'shippingCost' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ConvertedAmount',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'

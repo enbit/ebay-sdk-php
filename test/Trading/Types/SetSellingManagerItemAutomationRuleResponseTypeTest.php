@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType;
+use Enbit\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType;
 
 class SetSellingManagerItemAutomationRuleResponseTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SetSellingManagerItemAutomationRuleResponseTypeTest extends \PHPUnit_Frame
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\SetSellingManagerItemAutomationRuleResponseType', $this->obj);
     }
 
     public function testExtendsAbstractResponseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\AbstractResponseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\AbstractResponseType', $this->obj);
     }
 }

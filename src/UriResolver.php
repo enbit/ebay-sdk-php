@@ -1,5 +1,5 @@
 <?php
-namespace DTS\eBaySDK;
+namespace Enbit\eBaySDK;
 
 /**
  * @internal Resolves a resource uri.

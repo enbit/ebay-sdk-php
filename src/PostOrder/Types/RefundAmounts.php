@@ -8,41 +8,41 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $buyerFinalAcceptRefundAmt
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $buyerInitExpectRefundAmt
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $internationalRefundAmount
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $refundAmount
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $buyerFinalAcceptRefundAmt
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $buyerInitExpectRefundAmt
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $internationalRefundAmount
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $refundAmount
  */
-class RefundAmounts extends \DTS\eBaySDK\Types\BaseType
+class RefundAmounts extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'buyerFinalAcceptRefundAmt' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerFinalAcceptRefundAmt'
         ],
         'buyerInitExpectRefundAmt' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'buyerInitExpectRefundAmt'
         ],
         'internationalRefundAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'internationalRefundAmount'
         ],
         'refundAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundAmount'

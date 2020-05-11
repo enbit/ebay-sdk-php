@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Enums;
+namespace Enbit\eBaySDK\Trading\Enums;
 
 use MyCLabs\Enum\Enum;
 

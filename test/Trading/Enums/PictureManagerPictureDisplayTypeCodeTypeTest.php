@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Enums;
+namespace Enbit\eBaySDK\Test\Trading\Enums;
 
-use DTS\eBaySDK\Trading\Enums\PictureManagerPictureDisplayTypeCodeType;
+use Enbit\eBaySDK\Trading\Enums\PictureManagerPictureDisplayTypeCodeType;
 
 class PictureManagerPictureDisplayTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class PictureManagerPictureDisplayTypeCodeTypeTest extends \PHPUnit_Framework_Te
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Enums\PictureManagerPictureDisplayTypeCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Enums\PictureManagerPictureDisplayTypeCodeType', $this->obj);
     }
 }

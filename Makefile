@@ -118,8 +118,8 @@ sync_feedback:
 sync_file:
 	rsync -rtvu --delete --exclude *BaseService.php --exclude Data.php --exclude XopInclude.php ../ebay-api-sdk-php/dist/FileTransfer/src/FileTransfer/ src/FileTransfer/
 	rsync -rtvu --delete --exclude /Mocks/ --exclude /Services/ ../ebay-api-sdk-php/dist/FileTransfer/test/FileTransfer/ test/FileTransfer/
-	sed -i -e "s/@property string/@property \\\DTS\\\eBaySDK\\\FileTransfer\\\Types\\\Data/" src/FileTransfer/Types/FileAttachment.php
-	sed -i -e "s/'string'/'DTS\\\eBaySDK\\\FileTransfer\\\Types\\\Data'/" src/FileTransfer/Types/FileAttachment.php
+	sed -i -e "s/@property string/@property \\\Enbit\\\eBaySDK\\\FileTransfer\\\Types\\\Data/" src/FileTransfer/Types/FileAttachment.php
+	sed -i -e "s/'string'/'Enbit\\\eBaySDK\\\FileTransfer\\\Types\\\Data'/" src/FileTransfer/Types/FileAttachment.php
 
 sync_finding:
 	rsync -rtvu --delete --exclude *BaseService.php ../ebay-api-sdk-php/dist/Finding/src/Finding/ src/Finding/

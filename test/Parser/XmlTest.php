@@ -1,19 +1,19 @@
 <?php
-namespace DTS\eBaySDK\Parser\Test;
+namespace Enbit\eBaySDK\Parser\Test;
 
-use DTS\eBaySDK\Parser\XmlParser;
+use Enbit\eBaySDK\Parser\XmlParser;
 
 class XmlTest extends \PHPUnit_Framework_TestCase
 {
     public function testCanParseXml()
     {
-        $xmlParser = new XmlParser('\DTS\eBaySDK\Test\Mocks\ComplexClass');
+        $xmlParser = new XmlParser('\Enbit\eBaySDK\Test\Mocks\ComplexClass');
         $xml = file_get_contents(__DIR__.'/../Mocks/Response.xml');
         $xml = preg_replace('/[\n\r]/', '', $xml);
         $xml = preg_replace('/>\s+/', '>', $xml);
         $obj = $xmlParser->parse($xml);
 
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\ComplexClass', $obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\ComplexClass', $obj);
 
         // This is not in the XML and so should not be set.
         $this->assertEquals(false, isset($obj->foo));
@@ -24,7 +24,7 @@ class XmlTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(true, $obj->booleanTrue);
         $this->assertEquals(false, $obj->booleanFalse);
         $this->assertEquals(new \DateTime('2000-01-01T16:15:30.123Z', new \DateTimeZone('UTC')), $obj->DateTime);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->SimpleClass);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->SimpleClass);
         $this->assertEquals(321, $obj->SimpleClass->integer);
         $this->assertEquals('another string', $obj->SimpleClass->string);
         $this->assertEquals(123, $obj->SimpleClass->IntegerAttribute);
@@ -40,9 +40,9 @@ class XmlTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(4, $obj->integers[3]);
         $this->assertEquals(5, $obj->integers[4]);
         $this->assertEquals('bar', $obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[0]);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[0]);
         $this->assertEquals(888, $obj->simpleClasses[0]->integer);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[1]);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[1]);
         $this->assertEquals(999, $obj->simpleClasses[1]->integer);
         $this->assertEquals(543.21, $obj->AmountClass->value);
         $this->assertEquals('one', $obj->AmountClass->AttributeOne);
@@ -62,13 +62,13 @@ class XmlTest extends \PHPUnit_Framework_TestCase
 
     public function testCanParseXmlWithNamespace()
     {
-        $xmlParser = new XmlParser('\DTS\eBaySDK\Test\Mocks\ComplexClass');
+        $xmlParser = new XmlParser('\Enbit\eBaySDK\Test\Mocks\ComplexClass');
         $xml = file_get_contents(__DIR__.'/../Mocks/ResponseNS.xml');
         $xml = preg_replace('/[\n\r]/', '', $xml);
         $xml = preg_replace('/>\s+/', '>', $xml);
         $obj = $xmlParser->parse($xml);
 
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\ComplexClass', $obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\ComplexClass', $obj);
 
         // This is not in the XML and so should not be set.
         $this->assertEquals(false, isset($obj->foo));
@@ -79,7 +79,7 @@ class XmlTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(true, $obj->booleanTrue);
         $this->assertEquals(false, $obj->booleanFalse);
         $this->assertEquals(new \DateTime('2000-01-01T16:15:30.123Z', new \DateTimeZone('UTC')), $obj->DateTime);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->SimpleClass);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->SimpleClass);
         $this->assertEquals(321, $obj->SimpleClass->integer);
         $this->assertEquals('another string', $obj->SimpleClass->string);
         $this->assertEquals(123, $obj->SimpleClass->IntegerAttribute);
@@ -95,9 +95,9 @@ class XmlTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(4, $obj->integers[3]);
         $this->assertEquals(5, $obj->integers[4]);
         $this->assertEquals('bar', $obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[0]);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[0]);
         $this->assertEquals(888, $obj->simpleClasses[0]->integer);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[1]);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $obj->simpleClasses[1]);
         $this->assertEquals(999, $obj->simpleClasses[1]->integer);
         $this->assertEquals(543.21, $obj->AmountClass->value);
         $this->assertEquals('one', $obj->AmountClass->AttributeOne);

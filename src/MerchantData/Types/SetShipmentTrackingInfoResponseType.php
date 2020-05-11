@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $OrderLineItemID
  */
-class SetShipmentTrackingInfoResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
+class SetShipmentTrackingInfoResponseType extends \Enbit\eBaySDK\MerchantData\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.

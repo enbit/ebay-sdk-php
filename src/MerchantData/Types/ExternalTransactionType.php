@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $ExternalTransactionID
  * @property \DateTime $ExternalTransactionTime
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeOrCreditAmount
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $PaymentOrRefundAmount
- * @property \DTS\eBaySDK\MerchantData\Enums\PaymentTransactionStatusCodeType $ExternalTransactionStatus
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $FeeOrCreditAmount
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $PaymentOrRefundAmount
+ * @property \Enbit\eBaySDK\MerchantData\Enums\PaymentTransactionStatusCodeType $ExternalTransactionStatus
  */
-class ExternalTransactionType extends \DTS\eBaySDK\Types\BaseType
+class ExternalTransactionType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -37,13 +37,13 @@ class ExternalTransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ExternalTransactionTime'
         ],
         'FeeOrCreditAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeOrCreditAmount'
         ],
         'PaymentOrRefundAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentOrRefundAmount'

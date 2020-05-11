@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -18,7 +18,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $SpacingIntervalInMinutes
  * @property integer $ListingHoldInventoryLevel
  */
-class SellingManagerAutoListMinActiveItemsType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerAutoListMinActiveItemsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

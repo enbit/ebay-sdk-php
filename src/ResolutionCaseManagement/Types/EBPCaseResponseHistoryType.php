@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
  * @property string $note
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseUserType $author
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\CaseUserType $author
  * @property string $activity
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType $activityDetail
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType $activityDetail
  * @property \DateTime $creationDate
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\ResponseHistoryAttributesType $attributes
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\ResponseHistoryAttributesType $attributes
  */
-class EBPCaseResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
+class EBPCaseResponseHistoryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -32,7 +32,7 @@ class EBPCaseResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'note'
         ],
         'author' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseUserType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\CaseUserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'author'
@@ -44,7 +44,7 @@ class EBPCaseResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'activity'
         ],
         'activityDetail' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\ActivityDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'activityDetail'
@@ -56,7 +56,7 @@ class EBPCaseResponseHistoryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'creationDate'
         ],
         'attributes' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\ResponseHistoryAttributesType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\ResponseHistoryAttributesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'attributes'

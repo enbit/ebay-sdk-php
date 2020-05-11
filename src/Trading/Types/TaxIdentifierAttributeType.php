@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\TaxIdentifierAttributeCodeType $name
+ * @property \Enbit\eBaySDK\Trading\Enums\TaxIdentifierAttributeCodeType $name
  */
-class TaxIdentifierAttributeType extends \DTS\eBaySDK\Types\StringType
+class TaxIdentifierAttributeType extends \Enbit\eBaySDK\Types\StringType
 {
     /**
      * @var array Properties belonging to objects of this class.

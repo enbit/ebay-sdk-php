@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $UserID
  * @property string $StoreName
  */
-class MyeBayFavoriteSellerType extends \DTS\eBaySDK\Types\BaseType
+class MyeBayFavoriteSellerType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -1,15 +1,15 @@
 <?php
-namespace DTS\eBaySDK\Test\Feed\Mocks;
+namespace Enbit\eBaySDK\Test\Feed\Mocks;
 
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
 
-class Service extends \DTS\eBaySDK\Feed\Services\FeedBaseService
+class Service extends \Enbit\eBaySDK\Feed\Services\FeedBaseService
 {
     protected static $operations = [
         'testOperation' => [
             'method' => 'GET',
             'resource' => 'item/{item_id}',
-            'responseClass' => '\DTS\eBaySDK\Test\Mocks\ComplexClass',
+            'responseClass' => '\Enbit\eBaySDK\Test\Mocks\ComplexClass',
             'params' => [
             ]
         ]

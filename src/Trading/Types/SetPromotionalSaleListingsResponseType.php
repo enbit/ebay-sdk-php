@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\PromotionalSaleStatusCodeType $Status
+ * @property \Enbit\eBaySDK\Trading\Enums\PromotionalSaleStatusCodeType $Status
  */
-class SetPromotionalSaleListingsResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class SetPromotionalSaleListingsResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.

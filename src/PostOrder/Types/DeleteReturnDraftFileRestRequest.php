@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $draftId
  * @property string $fileId
  */
-class DeleteReturnDraftFileRestRequest extends \DTS\eBaySDK\Types\BaseType
+class DeleteReturnDraftFileRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

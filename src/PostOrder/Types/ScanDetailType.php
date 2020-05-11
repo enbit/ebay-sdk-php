@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
@@ -18,9 +18,9 @@ namespace DTS\eBaySDK\PostOrder\Types;
  * @property string $eventPostalCode
  * @property string $eventStateOrProvince
  * @property string $eventStatus
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $eventTime
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $eventTime
  */
-class ScanDetailType extends \DTS\eBaySDK\Types\BaseType
+class ScanDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -63,7 +63,7 @@ class ScanDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'eventStatus'
         ],
         'eventTime' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eventTime'

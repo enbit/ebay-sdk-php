@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\SellerDashboardAlertSeverityCodeType $Severity
+ * @property \Enbit\eBaySDK\Trading\Enums\SellerDashboardAlertSeverityCodeType $Severity
  * @property string $Text
  */
-class SellerDashboardAlertType extends \DTS\eBaySDK\Types\BaseType
+class SellerDashboardAlertType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\MultiLegShippingServiceType $ShippingServiceDetails
- * @property \DTS\eBaySDK\MerchantData\Types\AddressType $ShipToAddress
+ * @property \Enbit\eBaySDK\MerchantData\Types\MultiLegShippingServiceType $ShippingServiceDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\AddressType $ShipToAddress
  * @property integer $ShippingTimeMin
  * @property integer $ShippingTimeMax
  */
-class MultiLegShipmentType extends \DTS\eBaySDK\Types\BaseType
+class MultiLegShipmentType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ShippingServiceDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MultiLegShippingServiceType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\MultiLegShippingServiceType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceDetails'
         ],
         'ShipToAddress' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AddressType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShipToAddress'

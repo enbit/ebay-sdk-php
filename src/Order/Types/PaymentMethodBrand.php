@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Order\Types\Image $logoImage
- * @property \DTS\eBaySDK\Order\Enums\PaymentMethodBrandEnum $paymentMethodBrandType
+ * @property \Enbit\eBaySDK\Order\Types\Image $logoImage
+ * @property \Enbit\eBaySDK\Order\Enums\PaymentMethodBrandEnum $paymentMethodBrandType
  */
-class PaymentMethodBrand extends \DTS\eBaySDK\Types\BaseType
+class PaymentMethodBrand extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'logoImage' => [
-            'type' => 'DTS\eBaySDK\Order\Types\Image',
+            'type' => 'Enbit\eBaySDK\Order\Types\Image',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'logoImage'

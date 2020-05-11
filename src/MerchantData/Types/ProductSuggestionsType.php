@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\ProductSuggestionType[] $ProductSuggestion
+ * @property \Enbit\eBaySDK\MerchantData\Types\ProductSuggestionType[] $ProductSuggestion
  */
-class ProductSuggestionsType extends \DTS\eBaySDK\Types\BaseType
+class ProductSuggestionsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ProductSuggestion' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ProductSuggestionType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ProductSuggestionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ProductSuggestion'

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\AppealCaseDecisionRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\AppealCaseDecisionRestRequest;
 
 class AppealCaseDecisionRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AppealCaseDecisionRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\AppealCaseDecisionRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\AppealCaseDecisionRestRequest', $this->obj);
     }
 
     public function testExtendsAppealRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\AppealRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\AppealRequest', $this->obj);
     }
 }

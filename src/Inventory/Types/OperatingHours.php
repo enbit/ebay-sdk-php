@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Enums\DayOfWeekEnum $dayOfWeekEnum
- * @property \DTS\eBaySDK\Inventory\Types\Interval[] $intervals
+ * @property \Enbit\eBaySDK\Inventory\Enums\DayOfWeekEnum $dayOfWeekEnum
+ * @property \Enbit\eBaySDK\Inventory\Types\Interval[] $intervals
  */
-class OperatingHours extends \DTS\eBaySDK\Types\BaseType
+class OperatingHours extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class OperatingHours extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'dayOfWeekEnum'
         ],
         'intervals' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Interval',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\Interval',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'intervals'

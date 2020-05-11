@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\RelatedItemsManagement\Types;
+namespace Enbit\eBaySDK\Test\RelatedItemsManagement\Types;
 
-use DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse;
+use Enbit\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse;
 
 class GetBundlesResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetBundlesResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\RelatedItemsManagement\Types\GetBundlesResponse', $this->obj);
     }
 
     public function testExtendsBaseResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\RelatedItemsManagement\Types\BaseResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\RelatedItemsManagement\Types\BaseResponse', $this->obj);
     }
 }

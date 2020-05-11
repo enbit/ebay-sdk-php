@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace Enbit\eBaySDK\Catalog\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Catalog\Types\ChangeRequest[] $changeRequests
+ * @property \Enbit\eBaySDK\Catalog\Types\ChangeRequest[] $changeRequests
  * @property string $href
  * @property integer $limit
  * @property string $next
@@ -20,14 +20,14 @@ namespace DTS\eBaySDK\Catalog\Types;
  * @property string $prev
  * @property integer $total
  */
-class GetChangeRequestsResponse extends \DTS\eBaySDK\Types\BaseType
+class GetChangeRequestsResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'changeRequests' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ChangeRequest',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\ChangeRequest',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'changeRequests'

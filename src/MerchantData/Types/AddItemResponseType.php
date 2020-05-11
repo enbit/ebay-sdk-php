@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $ItemID
  * @property \DateTime $StartTime
  * @property \DateTime $EndTime
- * @property \DTS\eBaySDK\MerchantData\Types\FeesType $Fees
+ * @property \Enbit\eBaySDK\MerchantData\Types\FeesType $Fees
  * @property string $CategoryID
  * @property string $Category2ID
- * @property \DTS\eBaySDK\MerchantData\Enums\DiscountReasonCodeType[] $DiscountReason
- * @property \DTS\eBaySDK\MerchantData\Types\ProductSuggestionsType $ProductSuggestions
- * @property \DTS\eBaySDK\MerchantData\Types\ListingRecommendationsType $ListingRecommendations
+ * @property \Enbit\eBaySDK\MerchantData\Enums\DiscountReasonCodeType[] $DiscountReason
+ * @property \Enbit\eBaySDK\MerchantData\Types\ProductSuggestionsType $ProductSuggestions
+ * @property \Enbit\eBaySDK\MerchantData\Types\ListingRecommendationsType $ListingRecommendations
  */
-class AddItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractResponseType
+class AddItemResponseType extends \Enbit\eBaySDK\MerchantData\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -47,7 +47,7 @@ class AddItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractRespon
             'elementName' => 'EndTime'
         ],
         'Fees' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\FeesType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\FeesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Fees'
@@ -71,13 +71,13 @@ class AddItemResponseType extends \DTS\eBaySDK\MerchantData\Types\AbstractRespon
             'elementName' => 'DiscountReason'
         ],
         'ProductSuggestions' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ProductSuggestionsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ProductSuggestionsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductSuggestions'
         ],
         'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ListingRecommendationsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ListingRecommendationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingRecommendations'

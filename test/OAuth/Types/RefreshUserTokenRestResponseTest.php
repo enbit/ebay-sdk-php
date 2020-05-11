@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Test\OAuth\Types;
+namespace Enbit\eBaySDK\Test\OAuth\Types;
 
-use DTS\eBaySDK\OAuth\Types\RefreshUserTokenRestResponse;
+use Enbit\eBaySDK\OAuth\Types\RefreshUserTokenRestResponse;
 
 class RefreshUserTokenRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,12 +14,12 @@ class RefreshUserTokenRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\OAuth\Types\RefreshUserTokenRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\OAuth\Types\RefreshUserTokenRestResponse', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 
     public function testProperties()

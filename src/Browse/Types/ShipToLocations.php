@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Browse\Types\Region[] $regionExcluded
- * @property \DTS\eBaySDK\Browse\Types\Region[] $regionIncluded
+ * @property \Enbit\eBaySDK\Browse\Types\Region[] $regionExcluded
+ * @property \Enbit\eBaySDK\Browse\Types\Region[] $regionIncluded
  */
-class ShipToLocations extends \DTS\eBaySDK\Types\BaseType
+class ShipToLocations extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'regionExcluded' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Region',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Region',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'regionExcluded'
         ],
         'regionIncluded' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\Region',
+            'type' => 'Enbit\eBaySDK\Browse\Types\Region',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'regionIncluded'

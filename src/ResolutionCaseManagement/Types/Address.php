@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
@@ -20,7 +20,7 @@ namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
  * @property string $country
  * @property string $postalCode
  */
-class Address extends \DTS\eBaySDK\Types\BaseType
+class Address extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

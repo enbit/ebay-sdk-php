@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Test;
+namespace Enbit\eBaySDK\Test;
 
-use DTS\eBaySDK\HttpHandler;
+use Enbit\eBaySDK\HttpHandler;
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;

@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $TemplateText
  * @property string $LogoURL
- * @property \DTS\eBaySDK\Trading\Enums\EndOfAuctionLogoTypeCodeType $LogoType
+ * @property \Enbit\eBaySDK\Trading\Enums\EndOfAuctionLogoTypeCodeType $LogoType
  * @property boolean $EmailCustomized
  * @property boolean $TextCustomized
  * @property boolean $LogoCustomized
  */
-class EndOfAuctionEmailPreferencesType extends \DTS\eBaySDK\Types\BaseType
+class EndOfAuctionEmailPreferencesType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

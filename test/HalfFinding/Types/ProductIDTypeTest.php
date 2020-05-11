@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\HalfFinding\Types;
+namespace Enbit\eBaySDK\Test\HalfFinding\Types;
 
-use DTS\eBaySDK\HalfFinding\Types\ProductIDType;
+use Enbit\eBaySDK\HalfFinding\Types\ProductIDType;
 
 class ProductIDTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ProductIDTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\HalfFinding\Types\ProductIDType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\HalfFinding\Types\ProductIDType', $this->obj);
     }
 
     public function testExtendsStringType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\StringType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\StringType', $this->obj);
     }
 }

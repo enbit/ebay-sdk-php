@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
  * @property string $item_group_id
  */
-class GetItemsByItemGroupRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetItemsByItemGroupRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

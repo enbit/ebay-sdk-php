@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\ListingTypeCodeType $type
+ * @property \Enbit\eBaySDK\Trading\Enums\ListingTypeCodeType $type
  */
-class ListingDurationReferenceType extends \DTS\eBaySDK\Types\IntegerType
+class ListingDurationReferenceType extends \Enbit\eBaySDK\Types\IntegerType
 {
     /**
      * @var array Properties belonging to objects of this class.

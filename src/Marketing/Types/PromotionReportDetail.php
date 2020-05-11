@@ -8,52 +8,52 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Types\Amount $averageItemDiscount
- * @property \DTS\eBaySDK\Marketing\Types\Amount $averageItemRevenue
- * @property \DTS\eBaySDK\Marketing\Types\Amount $averageOrderDiscount
- * @property \DTS\eBaySDK\Marketing\Types\Amount $averageOrderRevenue
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $averageItemDiscount
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $averageItemRevenue
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $averageOrderDiscount
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $averageOrderRevenue
  * @property string $averageOrderSize
- * @property \DTS\eBaySDK\Marketing\Types\Amount $baseSale
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $baseSale
  * @property integer $itemsSoldQuantity
  * @property integer $numberOfOrdersSold
  * @property string $percentageSalesLift
  * @property string $promotionHref
  * @property string $promotionId
  * @property string $promotionReportId
- * @property \DTS\eBaySDK\Marketing\Types\Amount $promotionSale
- * @property \DTS\eBaySDK\Marketing\Types\Amount $totalDiscount
- * @property \DTS\eBaySDK\Marketing\Types\Amount $totalSale
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $promotionSale
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $totalDiscount
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $totalSale
  */
-class PromotionReportDetail extends \DTS\eBaySDK\Types\BaseType
+class PromotionReportDetail extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'averageItemDiscount' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'averageItemDiscount'
         ],
         'averageItemRevenue' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'averageItemRevenue'
         ],
         'averageOrderDiscount' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'averageOrderDiscount'
         ],
         'averageOrderRevenue' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'averageOrderRevenue'
@@ -65,7 +65,7 @@ class PromotionReportDetail extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'averageOrderSize'
         ],
         'baseSale' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'baseSale'
@@ -107,19 +107,19 @@ class PromotionReportDetail extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'promotionReportId'
         ],
         'promotionSale' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'promotionSale'
         ],
         'totalDiscount' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'totalDiscount'
         ],
         'totalSale' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'totalSale'

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -23,7 +23,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $CrossBorderTransactionCount
  * @property double $CrossBorderTransactionPercent
  */
-class SellerRoleMetricsType extends \DTS\eBaySDK\Types\BaseType
+class SellerRoleMetricsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

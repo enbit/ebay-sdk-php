@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Test\RelatedItemsManagement\Services;
+namespace Enbit\eBaySDK\Test\RelatedItemsManagement\Services;
 
-use DTS\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementBaseService;
-use DTS\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService;
-use DTS\eBaySDK\Test\RelatedItemsManagement\Mocks\Service;
-use DTS\eBaySDK\Test\Mocks\HttpHandler;
+use Enbit\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementBaseService;
+use Enbit\eBaySDK\RelatedItemsManagement\Services\RelatedItemsManagementService;
+use Enbit\eBaySDK\Test\RelatedItemsManagement\Mocks\Service;
+use Enbit\eBaySDK\Test\Mocks\HttpHandler;
 
 class ServiceTest extends \PHPUnit_Framework_TestCase
 {

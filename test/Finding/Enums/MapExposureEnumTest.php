@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Enums;
+namespace Enbit\eBaySDK\Test\Finding\Enums;
 
-use DTS\eBaySDK\Finding\Enums\MapExposureEnum;
+use Enbit\eBaySDK\Finding\Enums\MapExposureEnum;
 
 class MapExposureEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class MapExposureEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Enums\MapExposureEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Enums\MapExposureEnum', $this->obj);
     }
 }

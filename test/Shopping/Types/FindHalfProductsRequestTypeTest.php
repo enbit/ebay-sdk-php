@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Shopping\Types;
+namespace Enbit\eBaySDK\Test\Shopping\Types;
 
-use DTS\eBaySDK\Shopping\Types\FindHalfProductsRequestType;
+use Enbit\eBaySDK\Shopping\Types\FindHalfProductsRequestType;
 
 class FindHalfProductsRequestTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FindHalfProductsRequestTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\FindHalfProductsRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\FindHalfProductsRequestType', $this->obj);
     }
 
     public function testExtendsAbstractRequestType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Shopping\Types\AbstractRequestType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Shopping\Types\AbstractRequestType', $this->obj);
     }
 }

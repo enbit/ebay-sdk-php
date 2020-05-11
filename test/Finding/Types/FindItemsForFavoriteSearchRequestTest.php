@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Types;
+namespace Enbit\eBaySDK\Test\Finding\Types;
 
-use DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest;
+use Enbit\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest;
 
 class FindItemsForFavoriteSearchRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FindItemsForFavoriteSearchRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\FindItemsForFavoriteSearchRequest', $this->obj);
     }
 
     public function testExtendsBaseServiceRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\BaseServiceRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\BaseServiceRequest', $this->obj);
     }
 }

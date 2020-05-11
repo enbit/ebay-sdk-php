@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Feedback\Types;
+namespace Enbit\eBaySDK\Feedback\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Feedback\Types\TransactionKey[] $transactionKey
+ * @property \Enbit\eBaySDK\Feedback\Types\TransactionKey[] $transactionKey
  */
-class CreateDSRSummaryByTransactionRequest extends \DTS\eBaySDK\Feedback\Types\BaseServiceRequest
+class CreateDSRSummaryByTransactionRequest extends \Enbit\eBaySDK\Feedback\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'transactionKey' => [
-            'type' => 'DTS\eBaySDK\Feedback\Types\TransactionKey',
+            'type' => 'Enbit\eBaySDK\Feedback\Types\TransactionKey',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'transactionKey'

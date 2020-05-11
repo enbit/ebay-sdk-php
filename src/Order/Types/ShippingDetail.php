@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\Order\Types;
  * @property string $shippingCarrierCode
  * @property string $shippingServiceCode
  */
-class ShippingDetail extends \DTS\eBaySDK\Types\BaseType
+class ShippingDetail extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

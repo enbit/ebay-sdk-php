@@ -1,9 +1,9 @@
 <?php
-namespace DTS\eBaySDK\Types\Test;
+namespace Enbit\eBaySDK\Types\Test;
 
-use DTS\eBaySDK\Trading\Services;
-use DTS\eBaySDK\Trading\Types;
-use DTS\eBaySDK\Test\Mocks\HttpHandler;
+use Enbit\eBaySDK\Trading\Services;
+use Enbit\eBaySDK\Trading\Types;
+use Enbit\eBaySDK\Test\Mocks\HttpHandler;
 
 class MultipartFormDataTest extends \PHPUnit_Framework_TestCase
 {

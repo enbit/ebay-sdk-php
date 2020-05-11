@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -16,13 +16,13 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $PageID
  * @property string $URLPath
  * @property string $URL
- * @property \DTS\eBaySDK\Trading\Enums\StoreCustomPageStatusCodeType $Status
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreCustomPageStatusCodeType $Status
  * @property string $Content
  * @property boolean $LeftNav
  * @property boolean $PreviewEnabled
  * @property integer $Order
  */
-class StoreCustomPageType extends \DTS\eBaySDK\Types\BaseType
+class StoreCustomPageType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

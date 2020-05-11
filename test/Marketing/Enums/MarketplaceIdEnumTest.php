@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Enums;
+namespace Enbit\eBaySDK\Test\Marketing\Enums;
 
-use DTS\eBaySDK\Marketing\Enums\MarketplaceIdEnum;
+use Enbit\eBaySDK\Marketing\Enums\MarketplaceIdEnum;
 
 class MarketplaceIdEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class MarketplaceIdEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Enums\MarketplaceIdEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Enums\MarketplaceIdEnum', $this->obj);
     }
 }

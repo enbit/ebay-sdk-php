@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\AccountDetailEntryCodeType $AccountDetailsEntryType
+ * @property \Enbit\eBaySDK\Trading\Enums\AccountDetailEntryCodeType $AccountDetailsEntryType
  * @property string $Description
- * @property \DTS\eBaySDK\Trading\Types\AmountType $Balance
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $Balance
  * @property \DateTime $Date
- * @property \DTS\eBaySDK\Trading\Types\AmountType $GrossDetailAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $GrossDetailAmount
  * @property string $ItemID
  * @property string $Memo
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ConversionRate
- * @property \DTS\eBaySDK\Trading\Types\AmountType $NetDetailAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ConversionRate
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $NetDetailAmount
  * @property string $RefNumber
  * @property integer $VATPercent
  * @property string $Title
@@ -28,7 +28,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $TransactionID
  * @property boolean $ReceivedTopRatedDiscount
  */
-class AccountEntryType extends \DTS\eBaySDK\Types\BaseType
+class AccountEntryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -47,7 +47,7 @@ class AccountEntryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Description'
         ],
         'Balance' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Balance'
@@ -59,7 +59,7 @@ class AccountEntryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Date'
         ],
         'GrossDetailAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GrossDetailAmount'
@@ -77,13 +77,13 @@ class AccountEntryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Memo'
         ],
         'ConversionRate' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConversionRate'
         ],
         'NetDetailAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NetDetailAmount'

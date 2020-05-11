@@ -33,7 +33,7 @@ $burgomaster->createPhar(
     __DIR__ . "/artifacts/ebay-sdk-php.phar",
     null,
     $autoloaderFilename,
-    'ebay-sdk-php-' . \DTS\eBaySDK\Sdk::VERSION . '.phar'
+    'ebay-sdk-php-' . \Enbit\eBaySDK\Sdk::VERSION . '.phar'
 );
 
 $burgomaster->startSection('test_phar');

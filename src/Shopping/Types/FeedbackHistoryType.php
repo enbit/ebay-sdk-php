@@ -8,53 +8,53 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $BidRetractionFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $NegativeFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $NeutralFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $PositiveFeedbackPeriods
- * @property \DTS\eBaySDK\Shopping\Types\FeedbackPeriodType[] $TotalFeedbackPeriods
+ * @property \Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType[] $BidRetractionFeedbackPeriods
+ * @property \Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType[] $NegativeFeedbackPeriods
+ * @property \Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType[] $NeutralFeedbackPeriods
+ * @property \Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType[] $PositiveFeedbackPeriods
+ * @property \Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType[] $TotalFeedbackPeriods
  * @property integer $UniqueNegativeFeedbackCount
  * @property integer $UniquePositiveFeedbackCount
- * @property \DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType[] $AverageRatingDetails
+ * @property \Enbit\eBaySDK\Shopping\Types\AverageRatingDetailsType[] $AverageRatingDetails
  * @property integer $NeutralCommentCountFromSuspendedUsers
  * @property integer $UniqueNeutralFeedbackCount
  */
-class FeedbackHistoryType extends \DTS\eBaySDK\Types\BaseType
+class FeedbackHistoryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'BidRetractionFeedbackPeriods' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'BidRetractionFeedbackPeriods'
         ],
         'NegativeFeedbackPeriods' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'NegativeFeedbackPeriods'
         ],
         'NeutralFeedbackPeriods' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'NeutralFeedbackPeriods'
         ],
         'PositiveFeedbackPeriods' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'PositiveFeedbackPeriods'
         ],
         'TotalFeedbackPeriods' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\FeedbackPeriodType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\FeedbackPeriodType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'TotalFeedbackPeriods'
@@ -72,7 +72,7 @@ class FeedbackHistoryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'UniquePositiveFeedbackCount'
         ],
         'AverageRatingDetails' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AverageRatingDetailsType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AverageRatingDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'AverageRatingDetails'

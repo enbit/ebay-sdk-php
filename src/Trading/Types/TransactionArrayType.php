@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\TransactionType[] $Transaction
+ * @property \Enbit\eBaySDK\Trading\Types\TransactionType[] $Transaction
  */
-class TransactionArrayType extends \DTS\eBaySDK\Types\BaseType
+class TransactionArrayType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'Transaction' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TransactionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\TransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Transaction'

@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Types;
+namespace Enbit\eBaySDK\ProductMetadata\Types;
 
 /**
  *
  * @property string $unitOfMeasurement
  * @property integer $maximumValueAllowed
  */
-class NumericTypeSpecificInformation extends \DTS\eBaySDK\Types\BaseType
+class NumericTypeSpecificInformation extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

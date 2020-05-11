@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\BulkDataExchange\Enums;
+namespace Enbit\eBaySDK\Test\BulkDataExchange\Enums;
 
-use DTS\eBaySDK\BulkDataExchange\Enums\ItemEventType;
+use Enbit\eBaySDK\BulkDataExchange\Enums\ItemEventType;
 
 class ItemEventTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class ItemEventTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\BulkDataExchange\Enums\ItemEventType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\BulkDataExchange\Enums\ItemEventType', $this->obj);
     }
 }

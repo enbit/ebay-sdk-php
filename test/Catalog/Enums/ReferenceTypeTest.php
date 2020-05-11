@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Catalog\Enums;
+namespace Enbit\eBaySDK\Test\Catalog\Enums;
 
-use DTS\eBaySDK\Catalog\Enums\ReferenceType;
+use Enbit\eBaySDK\Catalog\Enums\ReferenceType;
 
 class ReferenceTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class ReferenceTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Catalog\Enums\ReferenceType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Catalog\Enums\ReferenceType', $this->obj);
     }
 }

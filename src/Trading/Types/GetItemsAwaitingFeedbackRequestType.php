@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\ItemSortTypeCodeType $Sort
- * @property \DTS\eBaySDK\Trading\Types\PaginationType $Pagination
+ * @property \Enbit\eBaySDK\Trading\Enums\ItemSortTypeCodeType $Sort
+ * @property \Enbit\eBaySDK\Trading\Types\PaginationType $Pagination
  */
-class GetItemsAwaitingFeedbackRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetItemsAwaitingFeedbackRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class GetItemsAwaitingFeedbackRequestType extends \DTS\eBaySDK\Trading\Types\Abs
             'elementName' => 'Sort'
         ],
         'Pagination' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaginationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Pagination'

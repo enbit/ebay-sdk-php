@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\HalfFinding\Enums;
+namespace Enbit\eBaySDK\HalfFinding\Enums;
 
 class SortOnType
 {

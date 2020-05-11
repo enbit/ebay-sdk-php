@@ -1,6 +1,6 @@
 <?php
 
-namespace DTS\eBaySDK\Test;
+namespace Enbit\eBaySDK\Test;
 
 class FunctionsTest extends \PHPUnit_Framework_TestCase
 {
@@ -9,7 +9,7 @@ class FunctionsTest extends \PHPUnit_Framework_TestCase
         $a = ['a'=>'b','c' => ['d' => 'e']];
         $b = ['c' => ['f' => 'g']];
 
-        $merged = \DTS\eBaySDK\arrayMergeDeep($a, $b);
+        $merged = \Enbit\eBaySDK\arrayMergeDeep($a, $b);
 
         $this->assertEquals([
             'a' => 'b',

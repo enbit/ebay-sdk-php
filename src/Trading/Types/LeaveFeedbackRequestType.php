@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
  * @property string $CommentText
- * @property \DTS\eBaySDK\Trading\Enums\CommentTypeCodeType $CommentType
+ * @property \Enbit\eBaySDK\Trading\Enums\CommentTypeCodeType $CommentType
  * @property string $TransactionID
  * @property string $TargetUser
- * @property \DTS\eBaySDK\Trading\Types\ItemRatingDetailArrayType $SellerItemRatingDetailArray
+ * @property \Enbit\eBaySDK\Trading\Types\ItemRatingDetailArrayType $SellerItemRatingDetailArray
  * @property string $OrderLineItemID
- * @property \DTS\eBaySDK\Trading\Enums\ItemArrivedWithinEDDCodeType $ItemArrivedWithinEDDType
+ * @property \Enbit\eBaySDK\Trading\Enums\ItemArrivedWithinEDDCodeType $ItemArrivedWithinEDDType
  * @property boolean $ItemDeliveredWithinEDD
  */
-class LeaveFeedbackRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class LeaveFeedbackRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -59,7 +59,7 @@ class LeaveFeedbackRequestType extends \DTS\eBaySDK\Trading\Types\AbstractReques
             'elementName' => 'TargetUser'
         ],
         'SellerItemRatingDetailArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemRatingDetailArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemRatingDetailArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerItemRatingDetailArray'

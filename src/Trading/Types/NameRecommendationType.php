@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $Name
- * @property \DTS\eBaySDK\Trading\Types\RecommendationValidationRulesType $ValidationRules
- * @property \DTS\eBaySDK\Trading\Types\ValueRecommendationType[] $ValueRecommendation
+ * @property \Enbit\eBaySDK\Trading\Types\RecommendationValidationRulesType $ValidationRules
+ * @property \Enbit\eBaySDK\Trading\Types\ValueRecommendationType[] $ValueRecommendation
  * @property string $HelpURL
  * @property string $HelpText
  */
-class NameRecommendationType extends \DTS\eBaySDK\Types\BaseType
+class NameRecommendationType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -31,13 +31,13 @@ class NameRecommendationType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Name'
         ],
         'ValidationRules' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\RecommendationValidationRulesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\RecommendationValidationRulesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ValidationRules'
         ],
         'ValueRecommendation' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ValueRecommendationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ValueRecommendationType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ValueRecommendation'

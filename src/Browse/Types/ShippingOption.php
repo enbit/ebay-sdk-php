@@ -8,31 +8,31 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Browse\Types\ConvertedAmount $additionalShippingCostPerUnit
+ * @property \Enbit\eBaySDK\Browse\Types\ConvertedAmount $additionalShippingCostPerUnit
  * @property string $cutOffDateUsedForEstimate
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
  * @property integer $quantityUsedForEstimate
  * @property string $shippingCarrierCode
- * @property \DTS\eBaySDK\Browse\Types\ConvertedAmount $shippingCost
+ * @property \Enbit\eBaySDK\Browse\Types\ConvertedAmount $shippingCost
  * @property string $shippingCostType
  * @property string $shippingServiceCode
- * @property \DTS\eBaySDK\Browse\Types\ShipToLocation $shipToLocationUsedForEstimate
+ * @property \Enbit\eBaySDK\Browse\Types\ShipToLocation $shipToLocationUsedForEstimate
  * @property string $trademarkSymbol
  * @property string $type
  */
-class ShippingOption extends \DTS\eBaySDK\Types\BaseType
+class ShippingOption extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'additionalShippingCostPerUnit' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ConvertedAmount',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'additionalShippingCostPerUnit'
@@ -68,7 +68,7 @@ class ShippingOption extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'shippingCarrierCode'
         ],
         'shippingCost' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ConvertedAmount',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ConvertedAmount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingCost'
@@ -86,7 +86,7 @@ class ShippingOption extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'shippingServiceCode'
         ],
         'shipToLocationUsedForEstimate' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\ShipToLocation',
+            'type' => 'Enbit\eBaySDK\Browse\Types\ShipToLocation',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shipToLocationUsedForEstimate'

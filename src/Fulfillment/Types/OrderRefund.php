@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace Enbit\eBaySDK\Fulfillment\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Fulfillment\Types\Amount $amount
+ * @property \Enbit\eBaySDK\Fulfillment\Types\Amount $amount
  * @property string $refundDate
  * @property string $refundReferenceId
- * @property \DTS\eBaySDK\Fulfillment\Enums\RefundStatusEnum $refundStatus
+ * @property \Enbit\eBaySDK\Fulfillment\Enums\RefundStatusEnum $refundStatus
  */
-class OrderRefund extends \DTS\eBaySDK\Types\BaseType
+class OrderRefund extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'amount' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'amount'

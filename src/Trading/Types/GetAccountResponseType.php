@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $AccountID
- * @property \DTS\eBaySDK\Trading\Types\AccountSummaryType $AccountSummary
- * @property \DTS\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
- * @property \DTS\eBaySDK\Trading\Types\AccountEntriesType $AccountEntries
- * @property \DTS\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
+ * @property \Enbit\eBaySDK\Trading\Types\AccountSummaryType $AccountSummary
+ * @property \Enbit\eBaySDK\Trading\Enums\CurrencyCodeType $Currency
+ * @property \Enbit\eBaySDK\Trading\Types\AccountEntriesType $AccountEntries
+ * @property \Enbit\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
  * @property boolean $HasMoreEntries
  * @property integer $EntriesPerPage
  * @property integer $PageNumber
  */
-class GetAccountResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetAccountResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -34,7 +34,7 @@ class GetAccountResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponse
             'elementName' => 'AccountID'
         ],
         'AccountSummary' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AccountSummaryType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AccountSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AccountSummary'
@@ -46,13 +46,13 @@ class GetAccountResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponse
             'elementName' => 'Currency'
         ],
         'AccountEntries' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AccountEntriesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AccountEntriesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AccountEntries'
         ],
         'PaginationResult' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationResultType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaginationResultType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaginationResult'

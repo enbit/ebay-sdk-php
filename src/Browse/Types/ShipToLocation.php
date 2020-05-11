@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Browse\Enums\CountryCodeEnum $country
+ * @property \Enbit\eBaySDK\Browse\Enums\CountryCodeEnum $country
  * @property string $postalCode
  */
-class ShipToLocation extends \DTS\eBaySDK\Types\BaseType
+class ShipToLocation extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

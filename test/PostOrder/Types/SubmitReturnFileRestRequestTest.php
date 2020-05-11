@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\SubmitReturnFileRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\SubmitReturnFileRestRequest;
 
 class SubmitReturnFileRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SubmitReturnFileRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\SubmitReturnFileRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\SubmitReturnFileRestRequest', $this->obj);
     }
 
     public function testExtendsSubmitFileRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\SubmitFileRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\SubmitFileRequest', $this->obj);
     }
 }

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Finding\Types;
+namespace Enbit\eBaySDK\Finding\Types;
 
 /**
  *
  * @property string $keywords
- * @property \DTS\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
- * @property \DTS\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
- * @property \DTS\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
+ * @property \Enbit\eBaySDK\Finding\Types\ItemFilter[] $itemFilter
+ * @property \Enbit\eBaySDK\Finding\Types\AspectFilter[] $aspectFilter
+ * @property \Enbit\eBaySDK\Finding\Enums\OutputSelectorType[] $outputSelector
  */
-class FindItemsByKeywordsRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingServiceRequest
+class FindItemsByKeywordsRequest extends \Enbit\eBaySDK\Finding\Types\BaseFindingServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,13 +30,13 @@ class FindItemsByKeywordsRequest extends \DTS\eBaySDK\Finding\Types\BaseFindingS
             'elementName' => 'keywords'
         ],
         'itemFilter' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\ItemFilter',
+            'type' => 'Enbit\eBaySDK\Finding\Types\ItemFilter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemFilter'
         ],
         'aspectFilter' => [
-            'type' => 'DTS\eBaySDK\Finding\Types\AspectFilter',
+            'type' => 'Enbit\eBaySDK\Finding\Types\AspectFilter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'aspectFilter'

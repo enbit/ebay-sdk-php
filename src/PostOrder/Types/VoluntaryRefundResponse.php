@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\VoluntaryRefundResult $refundResult
+ * @property \Enbit\eBaySDK\PostOrder\Types\VoluntaryRefundResult $refundResult
  */
-class VoluntaryRefundResponse extends \DTS\eBaySDK\Types\BaseType
+class VoluntaryRefundResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'refundResult' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\VoluntaryRefundResult',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\VoluntaryRefundResult',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'refundResult'

@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $returnId
  */
-class MarkReturnReceivedRestRequest extends \DTS\eBaySDK\PostOrder\Types\MarkAsReceivedRequest
+class MarkReturnReceivedRestRequest extends \Enbit\eBaySDK\PostOrder\Types\MarkAsReceivedRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

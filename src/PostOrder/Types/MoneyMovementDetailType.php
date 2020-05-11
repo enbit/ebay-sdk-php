@@ -8,32 +8,32 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $actualAmount
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $creationDate
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $actualAmount
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $creationDate
  * @property string $externalPaymentId
  * @property string $moneyMovementType
  * @property string $paymentProvider
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $requestedAmount
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $requestedAmount
  * @property string $status
  */
-class MoneyMovementDetailType extends \DTS\eBaySDK\Types\BaseType
+class MoneyMovementDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'actualAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualAmount'
         ],
         'creationDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'creationDate'
@@ -57,7 +57,7 @@ class MoneyMovementDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'paymentProvider'
         ],
         'requestedAmount' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'requestedAmount'

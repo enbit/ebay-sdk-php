@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $SKU
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $Price
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $Price
  * @property integer $Quantity
  * @property string $ItemID
  * @property integer $BidCount
  * @property boolean $ReserveMet
- * @property \DTS\eBaySDK\MerchantData\Types\MerchantDataVariationsType $Variations
+ * @property \Enbit\eBaySDK\MerchantData\Types\MerchantDataVariationsType $Variations
  */
-class SKUDetailsType extends \DTS\eBaySDK\Types\BaseType
+class SKUDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -33,7 +33,7 @@ class SKUDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SKU'
         ],
         'Price' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Price'
@@ -63,7 +63,7 @@ class SKUDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ReserveMet'
         ],
         'Variations' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MerchantDataVariationsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\MerchantDataVariationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Variations'

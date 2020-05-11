@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property integer $TotalQuantity
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TotalValue
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $TotalValue
  */
-class ItemTotalsType extends \DTS\eBaySDK\Types\BaseType
+class ItemTotalsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class ItemTotalsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TotalQuantity'
         ],
         'TotalValue' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalValue'

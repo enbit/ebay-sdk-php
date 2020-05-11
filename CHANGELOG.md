@@ -116,7 +116,7 @@
 
 ### Fixes
 
-* SDK now ignores properties in the JSON response that would normally trigger an DTS\eBaySDK\Exceptions\UnknownPropertyException exception.
+* SDK now ignores properties in the JSON response that would normally trigger an Enbit\eBaySDK\Exceptions\UnknownPropertyException exception.
 
 ## 12.0.0 - 2017-05-23
 
@@ -133,8 +133,8 @@
 ### Breaking changes
 
 * Support Marketing API version 1.1.0.
-* Removed constant DTS\eBaySDK\Marketing\Enuns\InventoryCriterionEnum::C_INVALID.
-* Removed property inventoryReferenceType from DTS\eBaySDK\Marketing\TypesInventoryItem class.
+* Removed constant Enbit\eBaySDK\Marketing\Enuns\InventoryCriterionEnum::C_INVALID.
+* Removed property inventoryReferenceType from Enbit\eBaySDK\Marketing\TypesInventoryItem class.
 
 ## 10.0.0 - 2017-03-17
 
@@ -201,7 +201,7 @@
 
 ### Fixes
 
-* Allow properties on `DTS\eBaySDK\Types\DecimalType` objects to be assigned both `integer` and `double` values.
+* Allow properties on `Enbit\eBaySDK\Types\DecimalType` objects to be assigned both `integer` and `double` values.
 
 ### Features
 
@@ -231,9 +231,9 @@
 
 * Support Merchant Data API version 965.
 * Support Trading API version 967.
-* The protected method `\DTS\eBaySDK\Services::BaseService::callOperation` has been removed. Code that called this method will now need to call `callOperationAsync(...)->wait()` instead.
+* The protected method `\Enbit\eBaySDK\Services::BaseService::callOperation` has been removed. Code that called this method will now need to call `callOperationAsync(...)->wait()` instead.
 * The `handler` configuration option is now called [httpHandler](http://devbay.net/sdk/guides/guide/configuration.html#httpHandler) and supports the new [httpOptions](http://devbay.net/sdk/guides/guide/configuration.html#httpOptions) configuration option.
-* The class `\DTS\eBaySDK\Handler` is now `\DTS\eBaySDK\HttpHandler`.
+* The class `\Enbit\eBaySDK\Handler` is now `\Enbit\eBaySDK\HttpHandler`.
 
 ## 4.0.1 - 2016-05-25
 
@@ -275,7 +275,7 @@ As this is version 1.0.0 there are a few breaking changes. A full list can be fo
 
 ### Fixes
 
-* Some properties where incorrectly declared as being `DTS\eBaySDK\ResolutionCaseManagement\Types\Integer` instead of `integer`.
+* Some properties where incorrectly declared as being `Enbit\eBaySDK\ResolutionCaseManagement\Types\Integer` instead of `integer`.
 * Correct URLs for Resolution Case Management service.
 
 ### API

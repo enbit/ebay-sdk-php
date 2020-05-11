@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
  * @property integer $maxActualDelivery
  * @property integer $minActualDelivery
  */
-class DeliveryEstimate extends \DTS\eBaySDK\Types\BaseType
+class DeliveryEstimate extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

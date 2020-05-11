@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Compliance\Types;
+namespace Enbit\eBaySDK\Compliance\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\Compliance\Types;
  * @property integer $offset
  * @property string $compliance_type
  */
-class GetListingViolationsRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetListingViolationsRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

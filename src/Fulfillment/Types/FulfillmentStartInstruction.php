@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace Enbit\eBaySDK\Fulfillment\Types;
 
 /**
  *
  * @property boolean $ebaySupportedFulfillment
- * @property \DTS\eBaySDK\Fulfillment\Types\Address $finalDestinationAddress
- * @property \DTS\eBaySDK\Fulfillment\Enums\FulfillmentInstructionsType $fulfillmentInstructionsType
+ * @property \Enbit\eBaySDK\Fulfillment\Types\Address $finalDestinationAddress
+ * @property \Enbit\eBaySDK\Fulfillment\Enums\FulfillmentInstructionsType $fulfillmentInstructionsType
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
- * @property \DTS\eBaySDK\Fulfillment\Types\ShippingStep $shippingStep
+ * @property \Enbit\eBaySDK\Fulfillment\Types\ShippingStep $shippingStep
  */
-class FulfillmentStartInstruction extends \DTS\eBaySDK\Types\BaseType
+class FulfillmentStartInstruction extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -32,7 +32,7 @@ class FulfillmentStartInstruction extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ebaySupportedFulfillment'
         ],
         'finalDestinationAddress' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Address',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\Address',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'finalDestinationAddress'
@@ -56,7 +56,7 @@ class FulfillmentStartInstruction extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'minEstimatedDeliveryDate'
         ],
         'shippingStep' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\ShippingStep',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\ShippingStep',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'shippingStep'

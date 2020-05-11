@@ -8,29 +8,29 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingInsuranceCost
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ShippingInsuranceCost
  * @property string $ShippingServiceName
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceAdditionalCost
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ShippingServiceAdditionalCost
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ShippingServiceCost
  * @property integer $ShippingServicePriority
  * @property string[] $ShipsTo
  * @property \DateTime $EstimatedDeliveryMinTime
  * @property \DateTime $EstimatedDeliveryMaxTime
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ImportCharge
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ImportCharge
  * @property \DateTime $ShippingServiceCutOffTime
  */
-class InternationalShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
+class InternationalShippingServiceOptionType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ShippingInsuranceCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingInsuranceCost'
@@ -42,13 +42,13 @@ class InternationalShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippingServiceName'
         ],
         'ShippingServiceAdditionalCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceAdditionalCost'
         ],
         'ShippingServiceCost' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceCost'
@@ -78,7 +78,7 @@ class InternationalShippingServiceOptionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'EstimatedDeliveryMaxTime'
         ],
         'ImportCharge' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ImportCharge'

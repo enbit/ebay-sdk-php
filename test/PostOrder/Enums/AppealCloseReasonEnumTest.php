@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Enums;
+namespace Enbit\eBaySDK\Test\PostOrder\Enums;
 
-use DTS\eBaySDK\PostOrder\Enums\AppealCloseReasonEnum;
+use Enbit\eBaySDK\PostOrder\Enums\AppealCloseReasonEnum;
 
 class AppealCloseReasonEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class AppealCloseReasonEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Enums\AppealCloseReasonEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Enums\AppealCloseReasonEnum', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\RejectCancellationRequestRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\RejectCancellationRequestRestRequest;
 
 class RejectCancellationRequestRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class RejectCancellationRequestRestRequestTest extends \PHPUnit_Framework_TestCa
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\RejectCancellationRequestRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\RejectCancellationRequestRestRequest', $this->obj);
     }
 
     public function testExtendsRejectCancelRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\RejectCancelRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\RejectCancelRequest', $this->obj);
     }
 }

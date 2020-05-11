@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\ListingDurationReferenceType;
+use Enbit\eBaySDK\Trading\Types\ListingDurationReferenceType;
 
 class ListingDurationReferenceTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class ListingDurationReferenceTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\ListingDurationReferenceType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\ListingDurationReferenceType', $this->obj);
     }
 
     public function testExtendsIntegerType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\IntegerType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\IntegerType', $this->obj);
     }
 }

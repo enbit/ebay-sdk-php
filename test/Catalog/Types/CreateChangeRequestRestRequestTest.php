@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Catalog\Types;
+namespace Enbit\eBaySDK\Test\Catalog\Types;
 
-use DTS\eBaySDK\Catalog\Types\CreateChangeRequestRestRequest;
+use Enbit\eBaySDK\Catalog\Types\CreateChangeRequestRestRequest;
 
 class CreateChangeRequestRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CreateChangeRequestRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Catalog\Types\CreateChangeRequestRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Catalog\Types\CreateChangeRequestRestRequest', $this->obj);
     }
 
     public function testExtendsCreateChangeRequestPayload()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Catalog\Types\CreateChangeRequestPayload', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Catalog\Types\CreateChangeRequestPayload', $this->obj);
     }
 }

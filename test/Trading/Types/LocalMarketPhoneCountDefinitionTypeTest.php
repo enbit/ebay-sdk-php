@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Types;
+namespace Enbit\eBaySDK\Test\Trading\Types;
 
-use DTS\eBaySDK\Trading\Types\LocalMarketPhoneCountDefinitionType;
+use Enbit\eBaySDK\Trading\Types\LocalMarketPhoneCountDefinitionType;
 
 class LocalMarketPhoneCountDefinitionTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class LocalMarketPhoneCountDefinitionTypeTest extends \PHPUnit_Framework_TestCas
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Types\LocalMarketPhoneCountDefinitionType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Types\LocalMarketPhoneCountDefinitionType', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

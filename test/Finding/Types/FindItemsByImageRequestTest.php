@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Types;
+namespace Enbit\eBaySDK\Test\Finding\Types;
 
-use DTS\eBaySDK\Finding\Types\FindItemsByImageRequest;
+use Enbit\eBaySDK\Finding\Types\FindItemsByImageRequest;
 
 class FindItemsByImageRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FindItemsByImageRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\FindItemsByImageRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\FindItemsByImageRequest', $this->obj);
     }
 
     public function testExtendsBestMatchFindingServiceRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\BestMatchFindingServiceRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\BestMatchFindingServiceRequest', $this->obj);
     }
 }

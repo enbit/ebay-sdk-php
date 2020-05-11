@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string $campaign_id
  */
-class CreateAdsByInventoryReferenceRestRequest extends \DTS\eBaySDK\Marketing\Types\CreateAdsByInventoryReferenceRequest
+class CreateAdsByInventoryReferenceRestRequest extends \Enbit\eBaySDK\Marketing\Types\CreateAdsByInventoryReferenceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

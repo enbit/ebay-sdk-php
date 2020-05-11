@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Feedback\Types;
+namespace Enbit\eBaySDK\Feedback\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Feedback\Types\DSRSummary[] $DSRSummary
+ * @property \Enbit\eBaySDK\Feedback\Types\DSRSummary[] $DSRSummary
  * @property integer $totalTransactionCount
  */
-class GetDSRSummaryResponse extends \DTS\eBaySDK\Feedback\Types\BaseServiceResponse
+class GetDSRSummaryResponse extends \Enbit\eBaySDK\Feedback\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'DSRSummary' => [
-            'type' => 'DTS\eBaySDK\Feedback\Types\DSRSummary',
+            'type' => 'Enbit\eBaySDK\Feedback\Types\DSRSummary',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'DSRSummary'

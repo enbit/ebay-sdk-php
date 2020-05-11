@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property integer $itemId
- * @property \DTS\eBaySDK\PostOrder\Types\Java:XMLGregorianCalendar $returnDate
+ * @property \Enbit\eBaySDK\PostOrder\Types\Java:XMLGregorianCalendar $returnDate
  * @property integer $returnId
  */
-class RuleTriggerHistDetailType extends \DTS\eBaySDK\Types\BaseType
+class RuleTriggerHistDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,7 +29,7 @@ class RuleTriggerHistDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'itemId'
         ],
         'returnDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Java:XMLGregorianCalendar',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Java:XMLGregorianCalendar',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDate'

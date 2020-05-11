@@ -8,25 +8,25 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\PaymentStatusCodeType $eBayPaymentStatus
- * @property \DTS\eBaySDK\Trading\Enums\CheckoutStatusCodeType $CheckoutStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\PaymentStatusCodeType $eBayPaymentStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\CheckoutStatusCodeType $CheckoutStatus
  * @property \DateTime $LastTimeModified
- * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType $PaymentMethodUsed
- * @property \DTS\eBaySDK\Trading\Enums\CompleteStatusCodeType $CompleteStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType $PaymentMethodUsed
+ * @property \Enbit\eBaySDK\Trading\Enums\CompleteStatusCodeType $CompleteStatus
  * @property boolean $BuyerSelectedShipping
- * @property \DTS\eBaySDK\Trading\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\PaymentHoldStatusCodeType $PaymentHoldStatus
  * @property boolean $IntegratedMerchantCreditCardEnabled
- * @property \DTS\eBaySDK\Trading\Enums\InquiryStatusCodeType $InquiryStatus
- * @property \DTS\eBaySDK\Trading\Enums\ReturnStatusCodeType $ReturnStatus
- * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentInstrumentCodeType $PaymentInstrument
- * @property \DTS\eBaySDK\Trading\Enums\DigitalStatusCodeType $DigitalStatus
- * @property \DTS\eBaySDK\Trading\Enums\CancelStatusCodeType $CancelStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\InquiryStatusCodeType $InquiryStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\ReturnStatusCodeType $ReturnStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\BuyerPaymentInstrumentCodeType $PaymentInstrument
+ * @property \Enbit\eBaySDK\Trading\Enums\DigitalStatusCodeType $DigitalStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\CancelStatusCodeType $CancelStatus
  */
-class TransactionStatusType extends \DTS\eBaySDK\Types\BaseType
+class TransactionStatusType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

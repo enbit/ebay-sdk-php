@@ -1,5 +1,5 @@
 <?php
-namespace DTS\eBaySDK\OAuth\Types;
+namespace Enbit\eBaySDK\OAuth\Types;
 
 /**
  *
@@ -7,7 +7,7 @@ namespace DTS\eBaySDK\OAuth\Types;
  * @property string $refresh_token
  * @property string $scope
  */
-class RefreshUserTokenRestRequest extends \DTS\eBaySDK\Types\BaseType
+class RefreshUserTokenRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

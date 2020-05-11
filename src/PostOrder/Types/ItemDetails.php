@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $itemPictureUrl
- * @property \DTS\eBaySDK\PostOrder\Types\Amount $itemPrice
+ * @property \Enbit\eBaySDK\PostOrder\Types\Amount $itemPrice
  * @property string $itemTitle
  * @property string $viewPurchasedItemUrl
  */
-class ItemDetails extends \DTS\eBaySDK\Types\BaseType
+class ItemDetails extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class ItemDetails extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'itemPictureUrl'
         ],
         'itemPrice' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Amount',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemPrice'

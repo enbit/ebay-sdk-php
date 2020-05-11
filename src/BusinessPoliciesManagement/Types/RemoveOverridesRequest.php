@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
  * @property integer $profileId
  */
-class RemoveOverridesRequest extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\BaseRequest
+class RemoveOverridesRequest extends \Enbit\eBaySDK\BusinessPoliciesManagement\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

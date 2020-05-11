@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\VoidShippingLabelRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\VoidShippingLabelRestRequest;
 
 class VoidShippingLabelRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class VoidShippingLabelRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\VoidShippingLabelRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\VoidShippingLabelRestRequest', $this->obj);
     }
 
     public function testExtendsVoidLabelRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\VoidLabelRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\VoidLabelRequest', $this->obj);
     }
 }

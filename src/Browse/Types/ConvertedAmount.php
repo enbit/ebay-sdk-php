@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Browse\Enums\CurrencyCodeEnum $convertedFromCurrency
+ * @property \Enbit\eBaySDK\Browse\Enums\CurrencyCodeEnum $convertedFromCurrency
  * @property string $convertedFromValue
- * @property \DTS\eBaySDK\Browse\Enums\CurrencyCodeEnum $currency
+ * @property \Enbit\eBaySDK\Browse\Enums\CurrencyCodeEnum $currency
  * @property string $value
  */
-class ConvertedAmount extends \DTS\eBaySDK\Types\BaseType
+class ConvertedAmount extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

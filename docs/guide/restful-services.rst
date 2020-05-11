@@ -16,12 +16,12 @@ The names of the classes for the request and response objects follow the patten 
 .. code-block:: php
 
     <?php
-    use \DTS\eBaySDK\Browse\Types;
+    use \Enbit\eBaySDK\Browse\Types;
 
     $request = new Types\GetItemRestRequest();
 
     /**
-     * $response will be of the type DTS\eBaySDK\Browse\Types\GetItemRestResponse
+     * $response will be of the type Enbit\eBaySDK\Browse\Types\GetItemRestResponse
      */
     $response = $service->getItem($request);
 
@@ -39,7 +39,7 @@ Since the SDK exposes these parameters as object properties they can be specifie
 .. code-block:: php
 
     <?php
-    use \DTS\eBaySDK\Browse\Types;
+    use \Enbit\eBaySDK\Browse\Types;
 
     $request = new Types\SearchForItemsRestRequest();
     $request->category_ids = '29792';
@@ -143,13 +143,13 @@ Returns true if any header names match the given header name using a case-insens
 OAuth access tokens
 -------------------
 
-The SDK provides some support for generating the OAuth tokens needed by the RESTful services. This is provided via the ``\DTS\eBaySDK\OAuth\Services\OAuthService`` class.
+The SDK provides some support for generating the OAuth tokens needed by the RESTful services. This is provided via the ``\Enbit\eBaySDK\OAuth\Services\OAuthService`` class.
 
 
 .. code-block:: php
 
-    use \DTS\eBaySDK\OAuth\Services;
-    use \DTS\eBaySDK\OAuth\Types;
+    use \Enbit\eBaySDK\OAuth\Services;
+    use \Enbit\eBaySDK\OAuth\Types;
 
     $service = new Services\OAuthService([
         'credentials' => '<YOUR CREDENTIALS>',

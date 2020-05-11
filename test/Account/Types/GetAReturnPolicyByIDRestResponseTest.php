@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Account\Types;
+namespace Enbit\eBaySDK\Test\Account\Types;
 
-use DTS\eBaySDK\Account\Types\GetAReturnPolicyByIDRestResponse;
+use Enbit\eBaySDK\Account\Types\GetAReturnPolicyByIDRestResponse;
 
 class GetAReturnPolicyByIDRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetAReturnPolicyByIDRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Account\Types\GetAReturnPolicyByIDRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Account\Types\GetAReturnPolicyByIDRestResponse', $this->obj);
     }
 
     public function testExtendsReturnPolicy()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Account\Types\ReturnPolicy', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Account\Types\ReturnPolicy', $this->obj);
     }
 }

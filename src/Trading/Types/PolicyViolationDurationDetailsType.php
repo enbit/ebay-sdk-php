@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\PeriodCodeType $Period
+ * @property \Enbit\eBaySDK\Trading\Enums\PeriodCodeType $Period
  * @property string $Description
  */
-class PolicyViolationDurationDetailsType extends \DTS\eBaySDK\Types\BaseType
+class PolicyViolationDurationDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Order\Enums;
+namespace Enbit\eBaySDK\Test\Order\Enums;
 
-use DTS\eBaySDK\Order\Enums\PaymentMethodBrandEnum;
+use Enbit\eBaySDK\Order\Enums\PaymentMethodBrandEnum;
 
 class PaymentMethodBrandEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class PaymentMethodBrandEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Enums\PaymentMethodBrandEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Enums\PaymentMethodBrandEnum', $this->obj);
     }
 }

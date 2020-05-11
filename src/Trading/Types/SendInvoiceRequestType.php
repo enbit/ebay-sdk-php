@@ -8,28 +8,28 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
  * @property string $TransactionID
  * @property string $OrderID
- * @property \DTS\eBaySDK\Trading\Types\InternationalShippingServiceOptionsType[] $InternationalShippingServiceOptions
- * @property \DTS\eBaySDK\Trading\Types\ShippingServiceOptionsType[] $ShippingServiceOptions
- * @property \DTS\eBaySDK\Trading\Types\SalesTaxType $SalesTax
- * @property \DTS\eBaySDK\Trading\Enums\InsuranceOptionCodeType $InsuranceOption
- * @property \DTS\eBaySDK\Trading\Types\AmountType $InsuranceFee
- * @property \DTS\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
+ * @property \Enbit\eBaySDK\Trading\Types\InternationalShippingServiceOptionsType[] $InternationalShippingServiceOptions
+ * @property \Enbit\eBaySDK\Trading\Types\ShippingServiceOptionsType[] $ShippingServiceOptions
+ * @property \Enbit\eBaySDK\Trading\Types\SalesTaxType $SalesTax
+ * @property \Enbit\eBaySDK\Trading\Enums\InsuranceOptionCodeType $InsuranceOption
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $InsuranceFee
+ * @property \Enbit\eBaySDK\Trading\Enums\BuyerPaymentMethodCodeType[] $PaymentMethods
  * @property string $PayPalEmailAddress
  * @property string $CheckoutInstructions
  * @property boolean $EmailCopyToSeller
- * @property \DTS\eBaySDK\Trading\Types\AmountType $CODCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $CODCost
  * @property string $SKU
  * @property string $OrderLineItemID
- * @property \DTS\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
  */
-class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class SendInvoiceRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -54,19 +54,19 @@ class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestT
             'elementName' => 'OrderID'
         ],
         'InternationalShippingServiceOptions' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\InternationalShippingServiceOptionsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\InternationalShippingServiceOptionsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'InternationalShippingServiceOptions'
         ],
         'ShippingServiceOptions' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShippingServiceOptionsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ShippingServiceOptionsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ShippingServiceOptions'
         ],
         'SalesTax' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SalesTaxType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SalesTaxType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SalesTax'
@@ -78,7 +78,7 @@ class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestT
             'elementName' => 'InsuranceOption'
         ],
         'InsuranceFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'InsuranceFee'
@@ -108,7 +108,7 @@ class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestT
             'elementName' => 'EmailCopyToSeller'
         ],
         'CODCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CODCost'
@@ -126,7 +126,7 @@ class SendInvoiceRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestT
             'elementName' => 'OrderLineItemID'
         ],
         'AdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AdjustmentAmount'

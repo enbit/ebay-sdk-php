@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property boolean $AlwaysUseThisPaymentAddress
- * @property \DTS\eBaySDK\Trading\Enums\DisplayPayNowButtonCodeType $DisplayPayNowButton
+ * @property \Enbit\eBaySDK\Trading\Enums\DisplayPayNowButtonCodeType $DisplayPayNowButton
  * @property boolean $PayPalPreferred
  * @property string $DefaultPayPalEmailAddress
  * @property boolean $PayPalAlwaysOn
- * @property \DTS\eBaySDK\Trading\Types\AddressType $SellerPaymentAddress
- * @property \DTS\eBaySDK\Trading\Enums\UPSRateOptionCodeType $UPSRateOption
- * @property \DTS\eBaySDK\Trading\Enums\FedExRateOptionCodeType $FedExRateOption
- * @property \DTS\eBaySDK\Trading\Enums\USPSRateOptionCodeType $USPSRateOption
+ * @property \Enbit\eBaySDK\Trading\Types\AddressType $SellerPaymentAddress
+ * @property \Enbit\eBaySDK\Trading\Enums\UPSRateOptionCodeType $UPSRateOption
+ * @property \Enbit\eBaySDK\Trading\Enums\FedExRateOptionCodeType $FedExRateOption
+ * @property \Enbit\eBaySDK\Trading\Enums\USPSRateOptionCodeType $USPSRateOption
  */
-class SellerPaymentPreferencesType extends \DTS\eBaySDK\Types\BaseType
+class SellerPaymentPreferencesType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -59,7 +59,7 @@ class SellerPaymentPreferencesType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PayPalAlwaysOn'
         ],
         'SellerPaymentAddress' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddressType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerPaymentAddress'

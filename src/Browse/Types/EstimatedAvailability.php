@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
  * @property integer $availabilityThreshold
- * @property \DTS\eBaySDK\Browse\Enums\AvailabilityThresholdEnum $availabilityThresholdType
- * @property \DTS\eBaySDK\Browse\Enums\DeliveryOptionsEnum[] $deliveryOptions
- * @property \DTS\eBaySDK\Browse\Enums\AvailabilityStatusEnum $estimatedAvailabilityStatus
+ * @property \Enbit\eBaySDK\Browse\Enums\AvailabilityThresholdEnum $availabilityThresholdType
+ * @property \Enbit\eBaySDK\Browse\Enums\DeliveryOptionsEnum[] $deliveryOptions
+ * @property \Enbit\eBaySDK\Browse\Enums\AvailabilityStatusEnum $estimatedAvailabilityStatus
  * @property integer $estimatedAvailableQuantity
  * @property integer $estimatedSoldQuantity
  */
-class EstimatedAvailability extends \DTS\eBaySDK\Types\BaseType
+class EstimatedAvailability extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

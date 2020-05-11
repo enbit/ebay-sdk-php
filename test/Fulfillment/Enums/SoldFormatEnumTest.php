@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Fulfillment\Enums;
+namespace Enbit\eBaySDK\Test\Fulfillment\Enums;
 
-use DTS\eBaySDK\Fulfillment\Enums\SoldFormatEnum;
+use Enbit\eBaySDK\Fulfillment\Enums\SoldFormatEnum;
 
 class SoldFormatEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class SoldFormatEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Fulfillment\Enums\SoldFormatEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Fulfillment\Enums\SoldFormatEnum', $this->obj);
     }
 }

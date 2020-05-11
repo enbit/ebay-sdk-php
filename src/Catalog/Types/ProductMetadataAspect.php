@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace Enbit\eBaySDK\Catalog\Types;
 
 /**
  *
  * @property string $aspectHelpText
- * @property \DTS\eBaySDK\Catalog\Types\ProductAspectConstraint $constraint
+ * @property \Enbit\eBaySDK\Catalog\Types\ProductAspectConstraint $constraint
  * @property boolean $droppable
  * @property string $name
- * @property \DTS\eBaySDK\Catalog\Types\ProductAspectValue[] $values
+ * @property \Enbit\eBaySDK\Catalog\Types\ProductAspectValue[] $values
  * @property string[] $valuesAssociatedWithProduct
  */
-class ProductMetadataAspect extends \DTS\eBaySDK\Types\BaseType
+class ProductMetadataAspect extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -32,7 +32,7 @@ class ProductMetadataAspect extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'aspectHelpText'
         ],
         'constraint' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductAspectConstraint',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\ProductAspectConstraint',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'constraint'
@@ -50,7 +50,7 @@ class ProductMetadataAspect extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'name'
         ],
         'values' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductAspectValue',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\ProductAspectValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'values'

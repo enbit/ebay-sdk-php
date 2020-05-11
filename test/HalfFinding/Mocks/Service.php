@@ -1,9 +1,9 @@
 <?php
-namespace DTS\eBaySDK\Test\HalfFinding\Mocks;
+namespace Enbit\eBaySDK\Test\HalfFinding\Mocks;
 
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
 
-class Service extends \DTS\eBaySDK\HalfFinding\Services\HalfFindingBaseService
+class Service extends \Enbit\eBaySDK\HalfFinding\Services\HalfFindingBaseService
 {
     public function __construct(array $config)
     {
@@ -15,7 +15,7 @@ class Service extends \DTS\eBaySDK\HalfFinding\Services\HalfFindingBaseService
         return $this->callOperationAsync(
             'testOperation',
             new ComplexClass(),
-            '\DTS\eBaySDK\Test\Mocks\ComplexClass'
+            '\Enbit\eBaySDK\Test\Mocks\ComplexClass'
         )->wait();
     }
 }

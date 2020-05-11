@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $CategoryID
  * @property integer $LevelLimit
  * @property boolean $ViewAllNodes
- * @property \DTS\eBaySDK\Trading\Enums\FeatureIDCodeType[] $FeatureID
+ * @property \Enbit\eBaySDK\Trading\Enums\FeatureIDCodeType[] $FeatureID
  * @property boolean $AllFeaturesForCategory
  */
-class GetCategoryFeaturesRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetCategoryFeaturesRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.

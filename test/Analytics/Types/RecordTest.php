@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Analytics\Types;
+namespace Enbit\eBaySDK\Test\Analytics\Types;
 
-use DTS\eBaySDK\Analytics\Types\Record;
+use Enbit\eBaySDK\Analytics\Types\Record;
 
 class RecordTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class RecordTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Analytics\Types\Record', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Analytics\Types\Record', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\InsuranceOptionCodeType $InsuranceOption
- * @property \DTS\eBaySDK\Trading\Types\FlatRateInsuranceRangeCostType[] $FlatRateInsuranceRangeCost
+ * @property \Enbit\eBaySDK\Trading\Enums\InsuranceOptionCodeType $InsuranceOption
+ * @property \Enbit\eBaySDK\Trading\Types\FlatRateInsuranceRangeCostType[] $FlatRateInsuranceRangeCost
  */
-class ShippingInsuranceType extends \DTS\eBaySDK\Types\BaseType
+class ShippingInsuranceType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class ShippingInsuranceType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'InsuranceOption'
         ],
         'FlatRateInsuranceRangeCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FlatRateInsuranceRangeCostType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FlatRateInsuranceRangeCostType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'FlatRateInsuranceRangeCost'

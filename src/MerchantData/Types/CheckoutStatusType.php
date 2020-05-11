@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Enums\PaymentStatusCodeType $eBayPaymentStatus
+ * @property \Enbit\eBaySDK\MerchantData\Enums\PaymentStatusCodeType $eBayPaymentStatus
  * @property \DateTime $LastModifiedTime
- * @property \DTS\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType $PaymentMethod
- * @property \DTS\eBaySDK\MerchantData\Enums\CompleteStatusCodeType $Status
+ * @property \Enbit\eBaySDK\MerchantData\Enums\BuyerPaymentMethodCodeType $PaymentMethod
+ * @property \Enbit\eBaySDK\MerchantData\Enums\CompleteStatusCodeType $Status
  * @property boolean $IntegratedMerchantCreditCardEnabled
- * @property \DTS\eBaySDK\MerchantData\Types\EBayPaymentMismatchDetailsType $eBayPaymentMismatchDetails
- * @property \DTS\eBaySDK\MerchantData\Enums\BuyerPaymentInstrumentCodeType $PaymentInstrument
+ * @property \Enbit\eBaySDK\MerchantData\Types\EBayPaymentMismatchDetailsType $eBayPaymentMismatchDetails
+ * @property \Enbit\eBaySDK\MerchantData\Enums\BuyerPaymentInstrumentCodeType $PaymentInstrument
  */
-class CheckoutStatusType extends \DTS\eBaySDK\Types\BaseType
+class CheckoutStatusType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -57,7 +57,7 @@ class CheckoutStatusType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IntegratedMerchantCreditCardEnabled'
         ],
         'eBayPaymentMismatchDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\EBayPaymentMismatchDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\EBayPaymentMismatchDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eBayPaymentMismatchDetails'

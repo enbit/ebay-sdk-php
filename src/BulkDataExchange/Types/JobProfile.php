@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  * @property string $jobId
  * @property string $jobType
- * @property \DTS\eBaySDK\BulkDataExchange\Enums\JobStatus $jobStatus
+ * @property \Enbit\eBaySDK\BulkDataExchange\Enums\JobStatus $jobStatus
  * @property \DateTime $creationTime
  * @property \DateTime $completionTime
  * @property integer $errorCount
@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\BulkDataExchange\Types;
  * @property string $fileReferenceId
  * @property string $inputFileReferenceId
  */
-class JobProfile extends \DTS\eBaySDK\Types\BaseType
+class JobProfile extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

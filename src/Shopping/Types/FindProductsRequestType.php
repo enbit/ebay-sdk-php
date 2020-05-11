@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property string $IncludeSelector
  * @property boolean $AvailableItemsOnly
  * @property string[] $DomainName
- * @property \DTS\eBaySDK\Shopping\Types\ProductIDType $ProductID
+ * @property \Enbit\eBaySDK\Shopping\Types\ProductIDType $ProductID
  * @property string $QueryKeywords
- * @property \DTS\eBaySDK\Shopping\Enums\ProductSortCodeType $ProductSort
- * @property \DTS\eBaySDK\Shopping\Enums\SortOrderCodeType $SortOrder
+ * @property \Enbit\eBaySDK\Shopping\Enums\ProductSortCodeType $ProductSort
+ * @property \Enbit\eBaySDK\Shopping\Enums\SortOrderCodeType $SortOrder
  * @property integer $MaxEntries
  * @property integer $PageNumber
  * @property string $CategoryID
  * @property boolean $HideDuplicateItems
  */
-class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractRequestType
+class FindProductsRequestType extends \Enbit\eBaySDK\Shopping\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -49,7 +49,7 @@ class FindProductsRequestType extends \DTS\eBaySDK\Shopping\Types\AbstractReques
             'elementName' => 'DomainName'
         ],
         'ProductID' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\ProductIDType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\ProductIDType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductID'

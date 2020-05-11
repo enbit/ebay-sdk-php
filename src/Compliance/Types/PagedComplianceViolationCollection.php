@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Compliance\Types;
+namespace Enbit\eBaySDK\Compliance\Types;
 
 /**
  *
@@ -18,9 +18,9 @@ namespace DTS\eBaySDK\Compliance\Types;
  * @property string $next
  * @property string $prev
  * @property integer $limit
- * @property \DTS\eBaySDK\Compliance\Types\ComplianceViolation[] $listingViolations
+ * @property \Enbit\eBaySDK\Compliance\Types\ComplianceViolation[] $listingViolations
  */
-class PagedComplianceViolationCollection extends \DTS\eBaySDK\Types\BaseType
+class PagedComplianceViolationCollection extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -63,7 +63,7 @@ class PagedComplianceViolationCollection extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'limit'
         ],
         'listingViolations' => [
-            'type' => 'DTS\eBaySDK\Compliance\Types\ComplianceViolation',
+            'type' => 'Enbit\eBaySDK\Compliance\Types\ComplianceViolation',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'listingViolations'

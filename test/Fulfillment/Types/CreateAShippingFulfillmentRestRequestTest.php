@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Fulfillment\Types;
+namespace Enbit\eBaySDK\Test\Fulfillment\Types;
 
-use DTS\eBaySDK\Fulfillment\Types\CreateAShippingFulfillmentRestRequest;
+use Enbit\eBaySDK\Fulfillment\Types\CreateAShippingFulfillmentRestRequest;
 
 class CreateAShippingFulfillmentRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CreateAShippingFulfillmentRestRequestTest extends \PHPUnit_Framework_TestC
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Fulfillment\Types\CreateAShippingFulfillmentRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Fulfillment\Types\CreateAShippingFulfillmentRestRequest', $this->obj);
     }
 
     public function testExtendsShippingFulfillmentDetails()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Fulfillment\Types\ShippingFulfillmentDetails', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Fulfillment\Types\ShippingFulfillmentDetails', $this->obj);
     }
 }

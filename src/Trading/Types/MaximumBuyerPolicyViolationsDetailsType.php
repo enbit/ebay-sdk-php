@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\NumberOfPolicyViolationsDetailsType $NumberOfPolicyViolations
- * @property \DTS\eBaySDK\Trading\Types\PolicyViolationDurationDetailsType[] $PolicyViolationDuration
+ * @property \Enbit\eBaySDK\Trading\Types\NumberOfPolicyViolationsDetailsType $NumberOfPolicyViolations
+ * @property \Enbit\eBaySDK\Trading\Types\PolicyViolationDurationDetailsType[] $PolicyViolationDuration
  */
-class MaximumBuyerPolicyViolationsDetailsType extends \DTS\eBaySDK\Types\BaseType
+class MaximumBuyerPolicyViolationsDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'NumberOfPolicyViolations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NumberOfPolicyViolationsDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NumberOfPolicyViolationsDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NumberOfPolicyViolations'
         ],
         'PolicyViolationDuration' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PolicyViolationDurationDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PolicyViolationDurationDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'PolicyViolationDuration'

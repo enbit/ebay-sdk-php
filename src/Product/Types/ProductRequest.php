@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
  * @property string $invocationId
  * @property string $categoryId
  * @property string $keywords
- * @property \DTS\eBaySDK\Product\Types\PropertyValue[] $propertyFilter
- * @property \DTS\eBaySDK\Product\Types\SortOrder $sortOrder
+ * @property \Enbit\eBaySDK\Product\Types\PropertyValue[] $propertyFilter
+ * @property \Enbit\eBaySDK\Product\Types\SortOrder $sortOrder
  * @property string[] $dataset
  * @property string[] $datasetPropertyName
- * @property \DTS\eBaySDK\Product\Types\PaginationInput $paginationInput
- * @property \DTS\eBaySDK\Product\Types\ProductStatus $productStatusFilter
+ * @property \Enbit\eBaySDK\Product\Types\PaginationInput $paginationInput
+ * @property \Enbit\eBaySDK\Product\Types\ProductStatus $productStatusFilter
  */
-class ProductRequest extends \DTS\eBaySDK\Types\BaseType
+class ProductRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -47,13 +47,13 @@ class ProductRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'keywords'
         ],
         'propertyFilter' => [
-            'type' => 'DTS\eBaySDK\Product\Types\PropertyValue',
+            'type' => 'Enbit\eBaySDK\Product\Types\PropertyValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'propertyFilter'
         ],
         'sortOrder' => [
-            'type' => 'DTS\eBaySDK\Product\Types\SortOrder',
+            'type' => 'Enbit\eBaySDK\Product\Types\SortOrder',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sortOrder'
@@ -71,13 +71,13 @@ class ProductRequest extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'datasetPropertyName'
         ],
         'paginationInput' => [
-            'type' => 'DTS\eBaySDK\Product\Types\PaginationInput',
+            'type' => 'Enbit\eBaySDK\Product\Types\PaginationInput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationInput'
         ],
         'productStatusFilter' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductStatus',
+            'type' => 'Enbit\eBaySDK\Product\Types\ProductStatus',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productStatusFilter'

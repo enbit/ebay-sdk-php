@@ -37,12 +37,12 @@ You no longer need to convert characters to their HTML entities before passing t
 Removed MerchantDataService class
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``DTS\eBaySDK\MerchantData\Services\MerchantDataService`` class was removed in version 1 and replaced with the ``DTS\eBaySDK\MerchantData\MerchantData`` class. There is no difference in how the new class works when compared with the previous version.
+The ``Enbit\eBaySDK\MerchantData\Services\MerchantDataService`` class was removed in version 1 and replaced with the ``Enbit\eBaySDK\MerchantData\MerchantData`` class. There is no difference in how the new class works when compared with the previous version.
 
 Removed UnboundType class
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``DTS\eBaySDK\Types\UnboundType`` class was removed in version 1 and replaced with the ``DTS\eBaySDK\Types\RepeatableType`` class. There is no difference in how the new class works when compared with the previous version.
+The ``Enbit\eBaySDK\Types\UnboundType`` class was removed in version 1 and replaced with the ``Enbit\eBaySDK\Types\RepeatableType`` class. There is no difference in how the new class works when compared with the previous version.
 
 Required configuration options enforced
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -51,7 +51,7 @@ From version 1 onwards the SDK enforces required configuration options by thrown
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Trading\Services\TradingService;
+    use Enbit\eBaySDK\Trading\Services\TradingService;
 
     // Pre-version 1
     // No exception thrown.
@@ -72,7 +72,7 @@ Version 1 introduced strict type checking for configuration options. A ``Invalid
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     // Pre-version 1
     // No exception thrown.
@@ -97,7 +97,7 @@ The service configuration options ``appId``, ``certId``, and ``devId`` have been
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     // Pre-version 1
     $service = new FindingService([
@@ -145,7 +145,7 @@ The ``logger`` method has been removed. Debugging the SDK has been simplified an
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     // Pre-version 1
     class EchoLogger extends Psr\Log\AbstractLogger
@@ -172,18 +172,18 @@ The ``logger`` method has been removed. Debugging the SDK has been simplified an
 Exceptions no longer thrown for non-existent configuration options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The pre-version 1 SDK would throw a ``DTS\eBaySDK\Exceptions\UnknownConfigurationOptionException`` when a non-existent configuration option was passed to either the service constructor or ``config`` method. The SDK will now silently ignore any unknown configuration options.
+The pre-version 1 SDK would throw a ``Enbit\eBaySDK\Exceptions\UnknownConfigurationOptionException`` when a non-existent configuration option was passed to either the service constructor or ``config`` method. The SDK will now silently ignore any unknown configuration options.
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     // Pre-version 1
     try {
         $service = new FindingService([
             'non-existent' => true
         ]);
-    } catch (\DTS\eBaySDK\Exceptions\UnknownConfigurationOptionException $e) {
+    } catch (\Enbit\eBaySDK\Exceptions\UnknownConfigurationOptionException $e) {
         echo $e->getMessage();
     }
 
@@ -200,10 +200,10 @@ Version 1 introduced the new :ref:`httpHandler <httpHandler>` configuration opti
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     // Pre-version 1
-    class HttpClient implements \DTS\eBaySDK\Interfaces\HttpClientInterface
+    class HttpClient implements \Enbit\eBaySDK\Interfaces\HttpClientInterface
     {
         public function __construct() {}
 

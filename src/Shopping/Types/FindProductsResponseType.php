@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property integer $ApproximatePages
  * @property boolean $MoreResults
- * @property \DTS\eBaySDK\Shopping\Types\DomainHistogramType $DomainHistogram
+ * @property \Enbit\eBaySDK\Shopping\Types\DomainHistogramType $DomainHistogram
  * @property integer $PageNumber
- * @property \DTS\eBaySDK\Shopping\Types\CatalogProductType[] $Product
+ * @property \Enbit\eBaySDK\Shopping\Types\CatalogProductType[] $Product
  * @property integer $TotalProducts
  * @property boolean $DuplicateItems
  */
-class FindProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractResponseType
+class FindProductsResponseType extends \Enbit\eBaySDK\Shopping\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -39,7 +39,7 @@ class FindProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractRespo
             'elementName' => 'MoreResults'
         ],
         'DomainHistogram' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\DomainHistogramType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\DomainHistogramType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DomainHistogram'
@@ -51,7 +51,7 @@ class FindProductsResponseType extends \DTS\eBaySDK\Shopping\Types\AbstractRespo
             'elementName' => 'PageNumber'
         ],
         'Product' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\CatalogProductType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\CatalogProductType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Product'

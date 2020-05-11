@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Enums\DataTypeEnum $dataType
+ * @property \Enbit\eBaySDK\Marketing\Enums\DataTypeEnum $dataType
  * @property string $dimensionKey
- * @property \DTS\eBaySDK\Marketing\Types\DimensionKeyAnnotation[] $dimensionKeyAnnotations
+ * @property \Enbit\eBaySDK\Marketing\Types\DimensionKeyAnnotation[] $dimensionKeyAnnotations
  */
-class DimensionMetadata extends \DTS\eBaySDK\Types\BaseType
+class DimensionMetadata extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class DimensionMetadata extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'dimensionKey'
         ],
         'dimensionKeyAnnotations' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\DimensionKeyAnnotation',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\DimensionKeyAnnotation',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'dimensionKeyAnnotations'

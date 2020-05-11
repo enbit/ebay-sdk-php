@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Feed\Types;
+namespace Enbit\eBaySDK\Feed\Types;
 
 /**
  *
@@ -26,7 +26,7 @@ namespace DTS\eBaySDK\Feed\Types;
  * @property string $itemId
  * @property string $material
  * @property string $mpn
- * @property \DTS\eBaySDK\Feed\Enums\CurrencyCodeEnum $priceCurrency
+ * @property \Enbit\eBaySDK\Feed\Enums\CurrencyCodeEnum $priceCurrency
  * @property string $priceValue
  * @property string $sellerFeedbackPercentage
  * @property double $sellerFeedbackScore
@@ -35,7 +35,7 @@ namespace DTS\eBaySDK\Feed\Types;
  * @property string $sizeType
  * @property string $title
  */
-class ItemFeed extends \DTS\eBaySDK\Types\BaseType
+class ItemFeed extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

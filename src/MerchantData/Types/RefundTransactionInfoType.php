@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Enums\PaymentTransactionStatusCodeType $RefundStatus
- * @property \DTS\eBaySDK\MerchantData\Enums\RefundSourceTypeCodeType $RefundType
- * @property \DTS\eBaySDK\MerchantData\Types\UserIdentityType $RefundTo
+ * @property \Enbit\eBaySDK\MerchantData\Enums\PaymentTransactionStatusCodeType $RefundStatus
+ * @property \Enbit\eBaySDK\MerchantData\Enums\RefundSourceTypeCodeType $RefundType
+ * @property \Enbit\eBaySDK\MerchantData\Types\UserIdentityType $RefundTo
  * @property \DateTime $RefundTime
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $RefundAmount
- * @property \DTS\eBaySDK\MerchantData\Types\TransactionReferenceType $ReferenceID
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeOrCreditAmount
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $RefundAmount
+ * @property \Enbit\eBaySDK\MerchantData\Types\TransactionReferenceType $ReferenceID
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $FeeOrCreditAmount
  */
-class RefundTransactionInfoType extends \DTS\eBaySDK\Types\BaseType
+class RefundTransactionInfoType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -39,7 +39,7 @@ class RefundTransactionInfoType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'RefundType'
         ],
         'RefundTo' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\UserIdentityType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\UserIdentityType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RefundTo'
@@ -51,19 +51,19 @@ class RefundTransactionInfoType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'RefundTime'
         ],
         'RefundAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'RefundAmount'
         ],
         'ReferenceID' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\TransactionReferenceType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\TransactionReferenceType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ReferenceID'
         ],
         'FeeOrCreditAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeOrCreditAmount'

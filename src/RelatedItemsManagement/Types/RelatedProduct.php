@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\RelatedItemsManagement\Types;
+namespace Enbit\eBaySDK\RelatedItemsManagement\Types;
 
 /**
  *
  * @property string $SKU
- * @property \DTS\eBaySDK\RelatedItemsManagement\Types\Discount $discount
+ * @property \Enbit\eBaySDK\RelatedItemsManagement\Types\Discount $discount
  * @property integer $rank
  * @property string $title
  * @property integer $maxQtyForSinglePrimary
  */
-class RelatedProduct extends \DTS\eBaySDK\Types\BaseType
+class RelatedProduct extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -31,7 +31,7 @@ class RelatedProduct extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SKU'
         ],
         'discount' => [
-            'type' => 'DTS\eBaySDK\RelatedItemsManagement\Types\Discount',
+            'type' => 'Enbit\eBaySDK\RelatedItemsManagement\Types\Discount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'discount'

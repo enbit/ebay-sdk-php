@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Account\Types;
+namespace Enbit\eBaySDK\Test\Account\Types;
 
-use DTS\eBaySDK\Account\Types\SoldAggregatedMetrics;
+use Enbit\eBaySDK\Account\Types\SoldAggregatedMetrics;
 
 class SoldAggregatedMetricsTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SoldAggregatedMetricsTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Account\Types\SoldAggregatedMetrics', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Account\Types\SoldAggregatedMetrics', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Types\Test;
+namespace Enbit\eBaySDK\Types\Test;
 
-use DTS\eBaySDK\Test\Mocks\AmountClass;
+use Enbit\eBaySDK\Test\Mocks\AmountClass;
 
 class AmountClassTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,12 +14,12 @@ class AmountClassTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\AmountClass', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\AmountClass', $this->obj);
     }
 
     public function testExtendsDoubleType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\DoubleType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\DoubleType', $this->obj);
     }
 
     public function testToXml()

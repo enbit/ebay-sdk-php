@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
  * @property string $SKU
- * @property \DTS\eBaySDK\Trading\Types\FeesType $Fees
+ * @property \Enbit\eBaySDK\Trading\Types\FeesType $Fees
  * @property string $CategoryID
  * @property string $Category2ID
- * @property \DTS\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
- * @property \DTS\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
+ * @property \Enbit\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
+ * @property \Enbit\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
  */
-class VerifyAddFixedPriceItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class VerifyAddFixedPriceItemResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -39,7 +39,7 @@ class VerifyAddFixedPriceItemResponseType extends \DTS\eBaySDK\Trading\Types\Abs
             'elementName' => 'SKU'
         ],
         'Fees' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Fees'
@@ -63,7 +63,7 @@ class VerifyAddFixedPriceItemResponseType extends \DTS\eBaySDK\Trading\Types\Abs
             'elementName' => 'DiscountReason'
         ],
         'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingRecommendationsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ListingRecommendationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingRecommendations'

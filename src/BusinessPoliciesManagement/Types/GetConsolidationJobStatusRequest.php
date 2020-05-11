@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
  * @property integer $JobId
  */
-class GetConsolidationJobStatusRequest extends \DTS\eBaySDK\BusinessPoliciesManagement\Types\BaseRequest
+class GetConsolidationJobStatusRequest extends \Enbit\eBaySDK\BusinessPoliciesManagement\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

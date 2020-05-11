@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Order\Types;
+namespace Enbit\eBaySDK\Test\Order\Types;
 
-use DTS\eBaySDK\Order\Types\UpdateGuestPaymentInfoRestRequest;
+use Enbit\eBaySDK\Order\Types\UpdateGuestPaymentInfoRestRequest;
 
 class UpdateGuestPaymentInfoRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateGuestPaymentInfoRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\UpdateGuestPaymentInfoRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\UpdateGuestPaymentInfoRestRequest', $this->obj);
     }
 
     public function testExtendsUpdatePaymentInformation()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\UpdatePaymentInformation', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\UpdatePaymentInformation', $this->obj);
     }
 }

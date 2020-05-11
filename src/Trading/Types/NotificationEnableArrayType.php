@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\NotificationEnableType[] $NotificationEnable
+ * @property \Enbit\eBaySDK\Trading\Types\NotificationEnableType[] $NotificationEnable
  */
-class NotificationEnableArrayType extends \DTS\eBaySDK\Types\BaseType
+class NotificationEnableArrayType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'NotificationEnable' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\NotificationEnableType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\NotificationEnableType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'NotificationEnable'

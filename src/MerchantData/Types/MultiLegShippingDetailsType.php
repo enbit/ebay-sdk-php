@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\MerchantData\Types\MultiLegShipmentType $SellerShipmentToLogisticsProvider
+ * @property \Enbit\eBaySDK\MerchantData\Types\MultiLegShipmentType $SellerShipmentToLogisticsProvider
  */
-class MultiLegShippingDetailsType extends \DTS\eBaySDK\Types\BaseType
+class MultiLegShippingDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'SellerShipmentToLogisticsProvider' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\MultiLegShipmentType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\MultiLegShipmentType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerShipmentToLogisticsProvider'

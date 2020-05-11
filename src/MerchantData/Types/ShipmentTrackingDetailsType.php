@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $ShippingCarrierUsed
  * @property string $ShipmentTrackingNumber
- * @property \DTS\eBaySDK\MerchantData\Types\ShipmentLineItemType $ShipmentLineItem
+ * @property \Enbit\eBaySDK\MerchantData\Types\ShipmentLineItemType $ShipmentLineItem
  */
-class ShipmentTrackingDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ShipmentTrackingDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class ShipmentTrackingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShipmentTrackingNumber'
         ],
         'ShipmentLineItem' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ShipmentLineItemType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ShipmentLineItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShipmentLineItem'

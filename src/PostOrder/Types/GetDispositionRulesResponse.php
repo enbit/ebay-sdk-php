@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property boolean $creationDisabled
- * @property \DTS\eBaySDK\PostOrder\Types\RuleDetailType[] $rule
+ * @property \Enbit\eBaySDK\PostOrder\Types\RuleDetailType[] $rule
  * @property integer $totalNumRules
  * @property integer $versionId
  */
-class GetDispositionRulesResponse extends \DTS\eBaySDK\Types\BaseType
+class GetDispositionRulesResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class GetDispositionRulesResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'creationDisabled'
         ],
         'rule' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\RuleDetailType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\RuleDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'rule'

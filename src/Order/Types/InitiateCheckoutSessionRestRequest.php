@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
  */
-class InitiateCheckoutSessionRestRequest extends \DTS\eBaySDK\Order\Types\CreateSignInCheckoutSessionRequest
+class InitiateCheckoutSessionRestRequest extends \Enbit\eBaySDK\Order\Types\CreateSignInCheckoutSessionRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

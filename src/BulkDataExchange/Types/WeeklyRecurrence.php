@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  * @property string $dayOfWeek
  * @property string $timeOfDay
  */
-class WeeklyRecurrence extends \DTS\eBaySDK\Types\BaseType
+class WeeklyRecurrence extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

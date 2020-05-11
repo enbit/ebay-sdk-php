@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $Description
- * @property \DTS\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
- * @property \DTS\eBaySDK\Trading\Types\AmountType $StartPrice
+ * @property \Enbit\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $StartPrice
  * @property string $DetailVersion
  * @property \DateTime $UpdateTime
  * @property double $MinBuyItNowPricePercent
  */
-class ListingStartPriceDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ListingStartPriceDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -38,7 +38,7 @@ class ListingStartPriceDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ListingType'
         ],
         'StartPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'StartPrice'

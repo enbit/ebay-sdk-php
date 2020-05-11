@@ -8,37 +8,37 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property \DateTime $EstimatedDeliveryDate
- * @property \DTS\eBaySDK\Trading\Types\AmountType $InsuredValue
- * @property \DTS\eBaySDK\Trading\Types\MeasureType $PackageDepth
- * @property \DTS\eBaySDK\Trading\Types\MeasureType $PackageLength
- * @property \DTS\eBaySDK\Trading\Types\MeasureType $PackageWidth
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $InsuredValue
+ * @property \Enbit\eBaySDK\Trading\Types\MeasureType $PackageDepth
+ * @property \Enbit\eBaySDK\Trading\Types\MeasureType $PackageLength
+ * @property \Enbit\eBaySDK\Trading\Types\MeasureType $PackageWidth
  * @property string $PayPalShipmentID
  * @property integer $ShipmentID
- * @property \DTS\eBaySDK\Trading\Types\AmountType $PostageTotal
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $PostageTotal
  * @property \DateTime $PrintedTime
- * @property \DTS\eBaySDK\Trading\Types\AddressType $ShipFromAddress
- * @property \DTS\eBaySDK\Trading\Types\AddressType $ShippingAddress
- * @property \DTS\eBaySDK\Trading\Enums\ShippingFeatureCodeType[] $ShippingFeature
- * @property \DTS\eBaySDK\Trading\Enums\ShippingPackageCodeType $ShippingPackage
+ * @property \Enbit\eBaySDK\Trading\Types\AddressType $ShipFromAddress
+ * @property \Enbit\eBaySDK\Trading\Types\AddressType $ShippingAddress
+ * @property \Enbit\eBaySDK\Trading\Enums\ShippingFeatureCodeType[] $ShippingFeature
+ * @property \Enbit\eBaySDK\Trading\Enums\ShippingPackageCodeType $ShippingPackage
  * @property string $ShippingServiceUsed
- * @property \DTS\eBaySDK\Trading\Types\MeasureType $WeightMajor
- * @property \DTS\eBaySDK\Trading\Types\MeasureType $WeightMinor
- * @property \DTS\eBaySDK\Trading\Types\ItemTransactionIDType[] $ItemTransactionID
+ * @property \Enbit\eBaySDK\Trading\Types\MeasureType $WeightMajor
+ * @property \Enbit\eBaySDK\Trading\Types\MeasureType $WeightMinor
+ * @property \Enbit\eBaySDK\Trading\Types\ItemTransactionIDType[] $ItemTransactionID
  * @property \DateTime $DeliveryDate
- * @property \DTS\eBaySDK\Trading\Enums\ShipmentDeliveryStatusCodeType $DeliveryStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\ShipmentDeliveryStatusCodeType $DeliveryStatus
  * @property \DateTime $RefundGrantedTime
  * @property \DateTime $RefundRequestedTime
- * @property \DTS\eBaySDK\Trading\Enums\ShipmentStatusCodeType $Status
+ * @property \Enbit\eBaySDK\Trading\Enums\ShipmentStatusCodeType $Status
  * @property \DateTime $ShippedTime
- * @property \DTS\eBaySDK\Trading\Types\ShipmentTrackingDetailsType[] $ShipmentTrackingDetails
- * @property \DTS\eBaySDK\Trading\Types\ShipmentLineItemType $ShipmentLineItem
+ * @property \Enbit\eBaySDK\Trading\Types\ShipmentTrackingDetailsType[] $ShipmentTrackingDetails
+ * @property \Enbit\eBaySDK\Trading\Types\ShipmentLineItemType $ShipmentLineItem
  */
-class ShipmentType extends \DTS\eBaySDK\Types\BaseType
+class ShipmentType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -51,25 +51,25 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'EstimatedDeliveryDate'
         ],
         'InsuredValue' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'InsuredValue'
         ],
         'PackageDepth' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MeasureType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MeasureType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PackageDepth'
         ],
         'PackageLength' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MeasureType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MeasureType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PackageLength'
         ],
         'PackageWidth' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MeasureType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MeasureType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PackageWidth'
@@ -87,7 +87,7 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShipmentID'
         ],
         'PostageTotal' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PostageTotal'
@@ -99,13 +99,13 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PrintedTime'
         ],
         'ShipFromAddress' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddressType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShipFromAddress'
         ],
         'ShippingAddress' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddressType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingAddress'
@@ -129,19 +129,19 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippingServiceUsed'
         ],
         'WeightMajor' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MeasureType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MeasureType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'WeightMajor'
         ],
         'WeightMinor' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MeasureType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MeasureType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'WeightMinor'
         ],
         'ItemTransactionID' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemTransactionIDType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemTransactionIDType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ItemTransactionID'
@@ -183,13 +183,13 @@ class ShipmentType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippedTime'
         ],
         'ShipmentTrackingDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShipmentTrackingDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ShipmentTrackingDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ShipmentTrackingDetails'
         ],
         'ShipmentLineItem' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShipmentLineItemType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ShipmentLineItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShipmentLineItem'

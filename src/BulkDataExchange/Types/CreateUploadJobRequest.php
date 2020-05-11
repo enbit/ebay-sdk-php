@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  * @property string $uploadJobType
  * @property string $UUID
- * @property \DTS\eBaySDK\BulkDataExchange\Enums\FileType $fileType
+ * @property \Enbit\eBaySDK\BulkDataExchange\Enums\FileType $fileType
  */
-class CreateUploadJobRequest extends \DTS\eBaySDK\BulkDataExchange\Types\BaseServiceRequest
+class CreateUploadJobRequest extends \Enbit\eBaySDK\BulkDataExchange\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

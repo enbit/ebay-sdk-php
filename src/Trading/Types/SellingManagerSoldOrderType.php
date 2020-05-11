@@ -8,32 +8,32 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerSoldTransactionType[] $SellingManagerSoldTransaction
- * @property \DTS\eBaySDK\Trading\Types\AddressType $ShippingAddress
- * @property \DTS\eBaySDK\Trading\Types\ShippingDetailsType $ShippingDetails
- * @property \DTS\eBaySDK\Trading\Types\AmountType $CashOnDeliveryCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TotalAmount
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerSoldTransactionType[] $SellingManagerSoldTransaction
+ * @property \Enbit\eBaySDK\Trading\Types\AddressType $ShippingAddress
+ * @property \Enbit\eBaySDK\Trading\Types\ShippingDetailsType $ShippingDetails
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $CashOnDeliveryCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $TotalAmount
  * @property integer $TotalQuantity
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ItemCost
- * @property \DTS\eBaySDK\Trading\Types\VATRateType[] $VATRate
- * @property \DTS\eBaySDK\Trading\Types\AmountType $NetInsuranceFee
- * @property \DTS\eBaySDK\Trading\Types\AmountType $VATInsuranceFee
- * @property \DTS\eBaySDK\Trading\Types\AmountType $VATShippingFee
- * @property \DTS\eBaySDK\Trading\Types\AmountType $NetShippingFee
- * @property \DTS\eBaySDK\Trading\Types\AmountType $NetTotalAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $VATTotalAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ActualShippingCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ItemCost
+ * @property \Enbit\eBaySDK\Trading\Types\VATRateType[] $VATRate
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $NetInsuranceFee
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $VATInsuranceFee
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $VATShippingFee
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $NetShippingFee
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $NetTotalAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $VATTotalAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ActualShippingCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
  * @property string $NotesToBuyer
  * @property string $NotesFromBuyer
  * @property string $NotesToSeller
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerOrderStatusType $OrderStatus
- * @property \DTS\eBaySDK\Trading\Enums\UnpaidItemStatusTypeCodeType $UnpaidItemStatus
- * @property \DTS\eBaySDK\Trading\Types\AmountType $SalePrice
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerOrderStatusType $OrderStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\UnpaidItemStatusTypeCodeType $UnpaidItemStatus
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $SalePrice
  * @property integer $EmailsSent
  * @property integer $DaysSinceSale
  * @property string $BuyerID
@@ -41,38 +41,38 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $SaleRecordID
  * @property \DateTime $CreationTime
  */
-class SellingManagerSoldOrderType extends \DTS\eBaySDK\Types\BaseType
+class SellingManagerSoldOrderType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'SellingManagerSoldTransaction' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerSoldTransactionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerSoldTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'SellingManagerSoldTransaction'
         ],
         'ShippingAddress' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AddressType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AddressType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingAddress'
         ],
         'ShippingDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShippingDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ShippingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingDetails'
         ],
         'CashOnDeliveryCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CashOnDeliveryCost'
         ],
         'TotalAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalAmount'
@@ -84,61 +84,61 @@ class SellingManagerSoldOrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TotalQuantity'
         ],
         'ItemCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemCost'
         ],
         'VATRate' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\VATRateType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\VATRateType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'VATRate'
         ],
         'NetInsuranceFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NetInsuranceFee'
         ],
         'VATInsuranceFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATInsuranceFee'
         ],
         'VATShippingFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATShippingFee'
         ],
         'NetShippingFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NetShippingFee'
         ],
         'NetTotalAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'NetTotalAmount'
         ],
         'VATTotalAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'VATTotalAmount'
         ],
         'ActualShippingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ActualShippingCost'
         ],
         'AdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AdjustmentAmount'
@@ -162,7 +162,7 @@ class SellingManagerSoldOrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'NotesToSeller'
         ],
         'OrderStatus' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerOrderStatusType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerOrderStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderStatus'
@@ -174,7 +174,7 @@ class SellingManagerSoldOrderType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'UnpaidItemStatus'
         ],
         'SalePrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SalePrice'

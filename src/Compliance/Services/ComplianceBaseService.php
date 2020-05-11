@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Compliance\Services;
+namespace Enbit\eBaySDK\Compliance\Services;
 
 /**
  * Base class for the Compliance service.
  */
-class ComplianceBaseService extends \DTS\eBaySDK\Services\BaseRestService
+class ComplianceBaseService extends \Enbit\eBaySDK\Services\BaseRestService
 {
     /**
      * @var array $endPoints The API endpoints.
@@ -44,7 +44,7 @@ class ComplianceBaseService extends \DTS\eBaySDK\Services\BaseRestService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\Compliance\Services\ComplianceService::API_VERSION,
+                'default' => \Enbit\eBaySDK\Compliance\Services\ComplianceService::API_VERSION,
                 'required' => true
             ],
             'authorization' => [

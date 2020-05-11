@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  */
-class SetReturnPreferencesRestRequest extends \DTS\eBaySDK\PostOrder\Types\SetSellerReturnPreferenceRequest
+class SetReturnPreferencesRestRequest extends \Enbit\eBaySDK\PostOrder\Types\SetSellerReturnPreferenceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

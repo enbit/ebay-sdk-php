@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property boolean $eligible
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $endTime
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $startTime
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $endTime
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $startTime
  */
-class EscalationEligibilityInfo extends \DTS\eBaySDK\Types\BaseType
+class EscalationEligibilityInfo extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,13 +29,13 @@ class EscalationEligibilityInfo extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'eligible'
         ],
         'endTime' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'endTime'
         ],
         'startTime' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'startTime'

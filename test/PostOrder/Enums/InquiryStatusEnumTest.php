@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Enums;
+namespace Enbit\eBaySDK\Test\PostOrder\Enums;
 
-use DTS\eBaySDK\PostOrder\Enums\InquiryStatusEnum;
+use Enbit\eBaySDK\PostOrder\Enums\InquiryStatusEnum;
 
 class InquiryStatusEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class InquiryStatusEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Enums\InquiryStatusEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Enums\InquiryStatusEnum', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Enums;
+namespace Enbit\eBaySDK\Test\Finding\Enums;
 
-use DTS\eBaySDK\Finding\Enums\PriceTreatmentEnum;
+use Enbit\eBaySDK\Finding\Enums\PriceTreatmentEnum;
 
 class PriceTreatmentEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class PriceTreatmentEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Enums\PriceTreatmentEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Enums\PriceTreatmentEnum', $this->obj);
     }
 }

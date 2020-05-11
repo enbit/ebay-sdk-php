@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Services;
+namespace Enbit\eBaySDK\Services;
 
-use DTS\eBaySDK\Parser\XmlParser;
-use DTS\eBaySDK\ConfigurationResolver;
-use DTS\eBaySDK\Credentials\CredentialsProvider;
-use \DTS\eBaySDK as Functions;
+use Enbit\eBaySDK\Parser\XmlParser;
+use Enbit\eBaySDK\ConfigurationResolver;
+use Enbit\eBaySDK\Credentials\CredentialsProvider;
+use \Enbit\eBaySDK as Functions;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\ResponseInterface;
 
@@ -24,7 +24,7 @@ abstract class BaseService
     const HDR_RESPONSE_ENCODING = 'Accept-Encoding';
 
     /**
-     * @var \DTS\eBaySDK\ConfigurationResolver Resolves configuration options.
+     * @var \Enbit\eBaySDK\ConfigurationResolver Resolves configuration options.
      */
     private $resolver;
 
@@ -69,25 +69,25 @@ abstract class BaseService
         return [
             'profile' => [
                 'valid' => ['string'],
-                'fn'    => 'DTS\eBaySDK\applyProfile',
+                'fn'    => 'Enbit\eBaySDK\applyProfile',
             ],
             'compressResponse' => [
                 'valid'   => ['bool'],
                 'default' => false
             ],
             'credentials' => [
-                'valid'   => ['DTS\eBaySDK\Credentials\CredentialsInterface', 'array', 'callable'],
-                'fn'      => 'DTS\eBaySDK\applyCredentials',
+                'valid'   => ['Enbit\eBaySDK\Credentials\CredentialsInterface', 'array', 'callable'],
+                'fn'      => 'Enbit\eBaySDK\applyCredentials',
                 'default' => [CredentialsProvider::class, 'defaultProvider']
             ],
             'debug' => [
                 'valid'   => ['bool', 'array'],
-                'fn'      => 'DTS\eBaySDK\applyDebug',
+                'fn'      => 'Enbit\eBaySDK\applyDebug',
                 'default' => false
             ],
             'httpHandler' => [
                 'valid'   => ['callable'],
-                'default' => 'DTS\eBaySDK\defaultHttpHandler'
+                'default' => 'Enbit\eBaySDK\defaultHttpHandler'
             ],
             'httpOptions' => [
                 'valid'   => ['array'],
@@ -133,7 +133,7 @@ abstract class BaseService
     /**
      * Helper method to return the value of the credentials configuration option.
      *
-     * @return \DTS\eBaySDK\Credentials\CredentialsInterface
+     * @return \Enbit\eBaySDK\Credentials\CredentialsInterface
      */
     public function getCredentials()
     {
@@ -144,12 +144,12 @@ abstract class BaseService
      * Sends an asynchronous API request.
      *
      * @param string $name The name of the operation.
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      * @param string $responseClass The name of the PHP class that will be created from the XML response.
      *
      * @return \GuzzleHttp\Promise\PromiseInterface A promise that will be resolved with an object created from the XML response.
      */
-    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass)
+    protected function callOperationAsync($name, \Enbit\eBaySDK\Types\BaseType $request, $responseClass)
     {
         $url = $this->getUrl();
         $body = $this->buildRequestBody($request);
@@ -195,11 +195,11 @@ abstract class BaseService
     /**
      * Builds the request body string.
      *
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      *
      * @return string The request body.
      */
-    protected function buildRequestBody(\DTS\eBaySDK\Types\BaseType $request)
+    protected function buildRequestBody(\Enbit\eBaySDK\Types\BaseType $request)
     {
         if (!$request->hasAttachment()) {
             return $request->toRequestXml();
@@ -211,11 +211,11 @@ abstract class BaseService
     /**
      * Builds the XOP document part of the request body string.
      *
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      *
      * @return string The XOP document part of request body.
      */
-    private function buildXopDocument(\DTS\eBaySDK\Types\BaseType $request)
+    private function buildXopDocument(\Enbit\eBaySDK\Types\BaseType $request)
     {
         return sprintf(
             '%s%s%s%s%s',
@@ -250,11 +250,11 @@ abstract class BaseService
     /**
      * Builds the XML payload part of a multipart/form-data request body.
      *
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      *
      * @return string The XML payload part of a multipart/form-data request body.
      */
-    protected function buildMultipartFormDataXMLPayload(\DTS\eBaySDK\Types\BaseType $request)
+    protected function buildMultipartFormDataXMLPayload(\Enbit\eBaySDK\Types\BaseType $request)
     {
         return sprintf(
             '%s%s%s',
@@ -289,7 +289,7 @@ abstract class BaseService
      * Helper function that builds the HTTP request headers.
      *
      * @param string $name The name of the operation.
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      * @param string $body The request body.
      *
      * @return array An associative array of HTTP headers.

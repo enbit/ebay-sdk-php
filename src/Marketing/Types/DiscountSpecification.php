@@ -8,24 +8,24 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Types\Amount $forEachAmount
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $forEachAmount
  * @property integer $forEachQuantity
- * @property \DTS\eBaySDK\Marketing\Types\Amount $minAmount
+ * @property \Enbit\eBaySDK\Marketing\Types\Amount $minAmount
  * @property integer $minQuantity
  * @property integer $numberOfDiscountedItems
  */
-class DiscountSpecification extends \DTS\eBaySDK\Types\BaseType
+class DiscountSpecification extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'forEachAmount' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'forEachAmount'
@@ -37,7 +37,7 @@ class DiscountSpecification extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'forEachQuantity'
         ],
         'minAmount' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'minAmount'

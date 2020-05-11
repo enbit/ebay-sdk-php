@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Enums;
+namespace Enbit\eBaySDK\Test\PostOrder\Enums;
 
-use DTS\eBaySDK\PostOrder\Enums\AddressTypeEnum;
+use Enbit\eBaySDK\PostOrder\Enums\AddressTypeEnum;
 
 class AddressTypeEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class AddressTypeEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Enums\AddressTypeEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Enums\AddressTypeEnum', $this->obj);
     }
 }

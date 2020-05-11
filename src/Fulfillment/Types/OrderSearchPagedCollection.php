@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace Enbit\eBaySDK\Fulfillment\Types;
 
 /**
  *
@@ -16,12 +16,12 @@ namespace DTS\eBaySDK\Fulfillment\Types;
  * @property integer $limit
  * @property string $next
  * @property integer $offset
- * @property \DTS\eBaySDK\Fulfillment\Types\Order[] $orders
+ * @property \Enbit\eBaySDK\Fulfillment\Types\Order[] $orders
  * @property string $prev
  * @property integer $total
- * @property \DTS\eBaySDK\Fulfillment\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Fulfillment\Types\ErrorDetailV3[] $warnings
  */
-class OrderSearchPagedCollection extends \DTS\eBaySDK\Types\BaseType
+class OrderSearchPagedCollection extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -52,7 +52,7 @@ class OrderSearchPagedCollection extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'offset'
         ],
         'orders' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\Order',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\Order',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'orders'
@@ -70,7 +70,7 @@ class OrderSearchPagedCollection extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'total'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

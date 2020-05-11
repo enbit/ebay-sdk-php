@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -18,9 +18,9 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property integer $BidsToUniqueSellers
  * @property integer $BidsToUniqueCategories
  * @property integer $BidRetractions
- * @property \DTS\eBaySDK\MerchantData\Types\ItemBidDetailsType[] $ItemBidDetails
+ * @property \Enbit\eBaySDK\MerchantData\Types\ItemBidDetailsType[] $ItemBidDetails
  */
-class BiddingSummaryType extends \DTS\eBaySDK\Types\BaseType
+class BiddingSummaryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -63,7 +63,7 @@ class BiddingSummaryType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BidRetractions'
         ],
         'ItemBidDetails' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\ItemBidDetailsType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\ItemBidDetailsType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ItemBidDetails'

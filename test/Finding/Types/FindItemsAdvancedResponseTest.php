@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Types;
+namespace Enbit\eBaySDK\Test\Finding\Types;
 
-use DTS\eBaySDK\Finding\Types\FindItemsAdvancedResponse;
+use Enbit\eBaySDK\Finding\Types\FindItemsAdvancedResponse;
 
 class FindItemsAdvancedResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FindItemsAdvancedResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\FindItemsAdvancedResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\FindItemsAdvancedResponse', $this->obj);
     }
 
     public function testExtendsBaseFindingServiceResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\BaseFindingServiceResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\BaseFindingServiceResponse', $this->obj);
     }
 }

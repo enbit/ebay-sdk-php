@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
  * @property string $UserID
  * @property boolean $FeedbackPrivate
- * @property \DTS\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType $FeedbackRatingStar
+ * @property \Enbit\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType $FeedbackRatingStar
  * @property integer $FeedbackScore
  * @property boolean $UserAnonymized
  * @property boolean $NewUser
  * @property \DateTime $RegistrationDate
- * @property \DTS\eBaySDK\Shopping\Enums\SiteCodeType $RegistrationSite
- * @property \DTS\eBaySDK\Shopping\Enums\UserStatusCodeType $Status
- * @property \DTS\eBaySDK\Shopping\Enums\SellerBusinessCodeType $SellerBusinessType
+ * @property \Enbit\eBaySDK\Shopping\Enums\SiteCodeType $RegistrationSite
+ * @property \Enbit\eBaySDK\Shopping\Enums\UserStatusCodeType $Status
+ * @property \Enbit\eBaySDK\Shopping\Enums\SellerBusinessCodeType $SellerBusinessType
  * @property string $StoreURL
  * @property string $StoreName
  * @property string $SellerItemsURL
@@ -32,10 +32,10 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $ReviewsAndGuidesURL
  * @property string $FeedbackDetailsURL
  * @property double $PositiveFeedbackPercent
- * @property \DTS\eBaySDK\Shopping\Enums\SellerLevelCodeType $SellerLevel
+ * @property \Enbit\eBaySDK\Shopping\Enums\SellerLevelCodeType $SellerLevel
  * @property boolean $TopRatedSeller
  */
-class SimpleUserType extends \DTS\eBaySDK\Types\BaseType
+class SimpleUserType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

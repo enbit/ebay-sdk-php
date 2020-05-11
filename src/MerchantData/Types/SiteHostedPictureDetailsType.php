@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property string $PictureName
- * @property \DTS\eBaySDK\MerchantData\Enums\PictureSetCodeType $PictureSet
- * @property \DTS\eBaySDK\MerchantData\Enums\PictureFormatCodeType $PictureFormat
+ * @property \Enbit\eBaySDK\MerchantData\Enums\PictureSetCodeType $PictureSet
+ * @property \Enbit\eBaySDK\MerchantData\Enums\PictureFormatCodeType $PictureFormat
  * @property string $FullURL
  * @property string $BaseURL
- * @property \DTS\eBaySDK\MerchantData\Types\PictureSetMemberType[] $PictureSetMember
+ * @property \Enbit\eBaySDK\MerchantData\Types\PictureSetMemberType[] $PictureSetMember
  * @property string $ExternalPictureURL
  * @property \DateTime $UseByDate
  */
-class SiteHostedPictureDetailsType extends \DTS\eBaySDK\Types\BaseType
+class SiteHostedPictureDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -58,7 +58,7 @@ class SiteHostedPictureDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BaseURL'
         ],
         'PictureSetMember' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\PictureSetMemberType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\PictureSetMemberType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'PictureSetMember'

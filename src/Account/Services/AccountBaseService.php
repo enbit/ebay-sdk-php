@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Account\Services;
+namespace Enbit\eBaySDK\Account\Services;
 
 /**
  * Base class for the Account service.
  */
-class AccountBaseService extends \DTS\eBaySDK\Services\BaseRestService
+class AccountBaseService extends \Enbit\eBaySDK\Services\BaseRestService
 {
     /**
      * @var array $endPoints The API endpoints.
@@ -44,7 +44,7 @@ class AccountBaseService extends \DTS\eBaySDK\Services\BaseRestService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\Account\Services\AccountService::API_VERSION,
+                'default' => \Enbit\eBaySDK\Account\Services\AccountService::API_VERSION,
                 'required' => true
             ],
             'authorization' => [

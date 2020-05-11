@@ -8,119 +8,119 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\AmountType $AmountPaid
- * @property \DTS\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ConvertedAdjustmentAmount
- * @property \DTS\eBaySDK\Trading\Types\UserType $Buyer
- * @property \DTS\eBaySDK\Trading\Types\ShippingDetailsType $ShippingDetails
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ConvertedAmountPaid
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ConvertedTransactionPrice
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $AmountPaid
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $AdjustmentAmount
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ConvertedAdjustmentAmount
+ * @property \Enbit\eBaySDK\Trading\Types\UserType $Buyer
+ * @property \Enbit\eBaySDK\Trading\Types\ShippingDetailsType $ShippingDetails
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ConvertedAmountPaid
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ConvertedTransactionPrice
  * @property \DateTime $CreatedDate
- * @property \DTS\eBaySDK\Trading\Enums\DepositTypeCodeType $DepositType
- * @property \DTS\eBaySDK\Trading\Types\ItemType $Item
+ * @property \Enbit\eBaySDK\Trading\Enums\DepositTypeCodeType $DepositType
+ * @property \Enbit\eBaySDK\Trading\Types\ItemType $Item
  * @property integer $QuantityPurchased
- * @property \DTS\eBaySDK\Trading\Types\TransactionStatusType $Status
+ * @property \Enbit\eBaySDK\Trading\Types\TransactionStatusType $Status
  * @property string $TransactionID
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TransactionPrice
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $TransactionPrice
  * @property boolean $BestOfferSale
  * @property integer $VATPercent
- * @property \DTS\eBaySDK\Trading\Types\ExternalTransactionType[] $ExternalTransaction
- * @property \DTS\eBaySDK\Trading\Types\SellingManagerProductDetailsType $SellingManagerProductDetails
- * @property \DTS\eBaySDK\Trading\Types\ShippingServiceOptionsType $ShippingServiceSelected
- * @property \DTS\eBaySDK\Trading\Enums\PaidStatusCodeType $BuyerPaidStatus
- * @property \DTS\eBaySDK\Trading\Enums\PaidStatusCodeType $SellerPaidStatus
+ * @property \Enbit\eBaySDK\Trading\Types\ExternalTransactionType[] $ExternalTransaction
+ * @property \Enbit\eBaySDK\Trading\Types\SellingManagerProductDetailsType $SellingManagerProductDetails
+ * @property \Enbit\eBaySDK\Trading\Types\ShippingServiceOptionsType $ShippingServiceSelected
+ * @property \Enbit\eBaySDK\Trading\Enums\PaidStatusCodeType $BuyerPaidStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\PaidStatusCodeType $SellerPaidStatus
  * @property \DateTime $PaidTime
  * @property \DateTime $ShippedTime
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TotalPrice
- * @property \DTS\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackLeft
- * @property \DTS\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackReceived
- * @property \DTS\eBaySDK\Trading\Types\OrderType $ContainingOrder
- * @property \DTS\eBaySDK\Trading\Types\AmountType $FinalValueFee
- * @property \DTS\eBaySDK\Trading\Enums\SiteCodeType $TransactionSiteID
- * @property \DTS\eBaySDK\Trading\Enums\TransactionPlatformCodeType $Platform
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $TotalPrice
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackLeft
+ * @property \Enbit\eBaySDK\Trading\Types\FeedbackInfoType $FeedbackReceived
+ * @property \Enbit\eBaySDK\Trading\Types\OrderType $ContainingOrder
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $FinalValueFee
+ * @property \Enbit\eBaySDK\Trading\Enums\SiteCodeType $TransactionSiteID
+ * @property \Enbit\eBaySDK\Trading\Enums\TransactionPlatformCodeType $Platform
  * @property string $PayPalEmailAddress
  * @property string $PaisaPayID
- * @property \DTS\eBaySDK\Trading\Types\AmountType $BuyerGuaranteePrice
- * @property \DTS\eBaySDK\Trading\Types\VariationType $Variation
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $BuyerGuaranteePrice
+ * @property \Enbit\eBaySDK\Trading\Types\VariationType $Variation
  * @property string $BuyerCheckoutMessage
- * @property \DTS\eBaySDK\Trading\Types\AmountType $TotalTransactionPrice
- * @property \DTS\eBaySDK\Trading\Types\TaxesType $Taxes
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $TotalTransactionPrice
+ * @property \Enbit\eBaySDK\Trading\Types\TaxesType $Taxes
  * @property boolean $BundlePurchase
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ActualShippingCost
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ActualHandlingCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ActualShippingCost
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ActualHandlingCost
  * @property string $OrderLineItemID
  * @property string $eBayPaymentID
- * @property \DTS\eBaySDK\Trading\Types\PaymentHoldDetailType $PaymentHoldDetails
- * @property \DTS\eBaySDK\Trading\Types\SellerDiscountsType $SellerDiscounts
+ * @property \Enbit\eBaySDK\Trading\Types\PaymentHoldDetailType $PaymentHoldDetails
+ * @property \Enbit\eBaySDK\Trading\Types\SellerDiscountsType $SellerDiscounts
  * @property string $CodiceFiscale
  * @property boolean $IsMultiLegShipping
- * @property \DTS\eBaySDK\Trading\Types\MultiLegShippingDetailsType $MultiLegShippingDetails
+ * @property \Enbit\eBaySDK\Trading\Types\MultiLegShippingDetailsType $MultiLegShippingDetails
  * @property \DateTime $InvoiceSentTime
- * @property \DTS\eBaySDK\Trading\Types\UnpaidItemType $UnpaidItem
+ * @property \Enbit\eBaySDK\Trading\Types\UnpaidItemType $UnpaidItem
  * @property boolean $IntangibleItem
- * @property \DTS\eBaySDK\Trading\Types\PaymentsInformationType $MonetaryDetails
- * @property \DTS\eBaySDK\Trading\Types\PickupDetailsType $PickupDetails
- * @property \DTS\eBaySDK\Trading\Types\PickupMethodSelectedType $PickupMethodSelected
- * @property \DTS\eBaySDK\Trading\Types\AmountType $ShippingConvenienceCharge
+ * @property \Enbit\eBaySDK\Trading\Types\PaymentsInformationType $MonetaryDetails
+ * @property \Enbit\eBaySDK\Trading\Types\PickupDetailsType $PickupDetails
+ * @property \Enbit\eBaySDK\Trading\Types\PickupMethodSelectedType $PickupMethodSelected
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $ShippingConvenienceCharge
  * @property string $LogisticsPlanType
- * @property \DTS\eBaySDK\Trading\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
+ * @property \Enbit\eBaySDK\Trading\Types\BuyerPackageEnclosuresType $BuyerPackageEnclosures
  * @property string $InventoryReservationID
  * @property string $ExtendedOrderID
  * @property boolean $eBayPlusTransaction
- * @property \DTS\eBaySDK\Trading\Types\GiftSummaryType $GiftSummary
- * @property \DTS\eBaySDK\Trading\Types\DigitalDeliverySelectedType $DigitalDeliverySelected
+ * @property \Enbit\eBaySDK\Trading\Types\GiftSummaryType $GiftSummary
+ * @property \Enbit\eBaySDK\Trading\Types\DigitalDeliverySelectedType $DigitalDeliverySelected
  * @property boolean $Gift
  * @property boolean $GuaranteedShipping
  * @property boolean $GuaranteedDelivery
  */
-class TransactionType extends \DTS\eBaySDK\Types\BaseType
+class TransactionType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'AmountPaid' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AmountPaid'
         ],
         'AdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AdjustmentAmount'
         ],
         'ConvertedAdjustmentAmount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedAdjustmentAmount'
         ],
         'Buyer' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\UserType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\UserType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Buyer'
         ],
         'ShippingDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShippingDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ShippingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingDetails'
         ],
         'ConvertedAmountPaid' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedAmountPaid'
         ],
         'ConvertedTransactionPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedTransactionPrice'
@@ -138,7 +138,7 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'DepositType'
         ],
         'Item' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Item'
@@ -150,7 +150,7 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'QuantityPurchased'
         ],
         'Status' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TransactionStatusType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\TransactionStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Status'
@@ -162,7 +162,7 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'TransactionID'
         ],
         'TransactionPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TransactionPrice'
@@ -180,19 +180,19 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'VATPercent'
         ],
         'ExternalTransaction' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ExternalTransactionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ExternalTransactionType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ExternalTransaction'
         ],
         'SellingManagerProductDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingManagerProductDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingManagerProductDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingManagerProductDetails'
         ],
         'ShippingServiceSelected' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ShippingServiceOptionsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ShippingServiceOptionsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingServiceSelected'
@@ -222,31 +222,31 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShippedTime'
         ],
         'TotalPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalPrice'
         ],
         'FeedbackLeft' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackInfoType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeedbackLeft'
         ],
         'FeedbackReceived' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeedbackInfoType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeedbackInfoType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeedbackReceived'
         ],
         'ContainingOrder' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\OrderType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\OrderType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ContainingOrder'
         ],
         'FinalValueFee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FinalValueFee'
@@ -276,13 +276,13 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'PaisaPayID'
         ],
         'BuyerGuaranteePrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerGuaranteePrice'
         ],
         'Variation' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\VariationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\VariationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Variation'
@@ -294,13 +294,13 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BuyerCheckoutMessage'
         ],
         'TotalTransactionPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'TotalTransactionPrice'
         ],
         'Taxes' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\TaxesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\TaxesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Taxes'
@@ -312,13 +312,13 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BundlePurchase'
         ],
         'ActualShippingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ActualShippingCost'
         ],
         'ActualHandlingCost' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ActualHandlingCost'
@@ -336,13 +336,13 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'eBayPaymentID'
         ],
         'PaymentHoldDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaymentHoldDetailType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaymentHoldDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaymentHoldDetails'
         ],
         'SellerDiscounts' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellerDiscountsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellerDiscountsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellerDiscounts'
@@ -360,7 +360,7 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IsMultiLegShipping'
         ],
         'MultiLegShippingDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MultiLegShippingDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MultiLegShippingDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MultiLegShippingDetails'
@@ -372,7 +372,7 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'InvoiceSentTime'
         ],
         'UnpaidItem' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\UnpaidItemType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\UnpaidItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UnpaidItem'
@@ -384,25 +384,25 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'IntangibleItem'
         ],
         'MonetaryDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaymentsInformationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaymentsInformationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MonetaryDetails'
         ],
         'PickupDetails' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PickupDetailsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PickupDetailsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupDetails'
         ],
         'PickupMethodSelected' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PickupMethodSelectedType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PickupMethodSelectedType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PickupMethodSelected'
         ],
         'ShippingConvenienceCharge' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ShippingConvenienceCharge'
@@ -414,7 +414,7 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'LogisticsPlanType'
         ],
         'BuyerPackageEnclosures' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\BuyerPackageEnclosuresType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\BuyerPackageEnclosuresType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyerPackageEnclosures'
@@ -438,13 +438,13 @@ class TransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'eBayPlusTransaction'
         ],
         'GiftSummary' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\GiftSummaryType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\GiftSummaryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'GiftSummary'
         ],
         'DigitalDeliverySelected' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\DigitalDeliverySelectedType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\DigitalDeliverySelectedType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DigitalDeliverySelected'

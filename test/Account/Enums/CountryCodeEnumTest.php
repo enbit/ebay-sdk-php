@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Account\Enums;
+namespace Enbit\eBaySDK\Test\Account\Enums;
 
-use DTS\eBaySDK\Account\Enums\CountryCodeEnum;
+use Enbit\eBaySDK\Account\Enums\CountryCodeEnum;
 
 class CountryCodeEnumTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class CountryCodeEnumTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Account\Enums\CountryCodeEnum', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Account\Enums\CountryCodeEnum', $this->obj);
     }
 }

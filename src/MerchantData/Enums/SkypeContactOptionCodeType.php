@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Enums;
+namespace Enbit\eBaySDK\MerchantData\Enums;
 
 class SkypeContactOptionCodeType
 {

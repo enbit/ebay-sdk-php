@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property integer $count
- * @property \DTS\eBaySDK\PostOrder\Enums\ReturnCountFilterEnum $type
+ * @property \Enbit\eBaySDK\PostOrder\Enums\ReturnCountFilterEnum $type
  */
-class CountSummaryType extends \DTS\eBaySDK\Types\BaseType
+class CountSummaryType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

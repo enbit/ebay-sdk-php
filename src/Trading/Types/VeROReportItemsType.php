@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\VeROReportItemType[] $ReportItem
+ * @property \Enbit\eBaySDK\Trading\Types\VeROReportItemType[] $ReportItem
  */
-class VeROReportItemsType extends \DTS\eBaySDK\Types\BaseType
+class VeROReportItemsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ReportItem' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\VeROReportItemType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\VeROReportItemType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ReportItem'

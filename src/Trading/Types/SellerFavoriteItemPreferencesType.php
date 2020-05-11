@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $SearchKeywords
  * @property integer $StoreCategoryID
- * @property \DTS\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
- * @property \DTS\eBaySDK\Trading\Enums\StoreItemListSortOrderCodeType $SearchSortOrder
- * @property \DTS\eBaySDK\Trading\Types\AmountType $MinPrice
- * @property \DTS\eBaySDK\Trading\Types\AmountType $MaxPrice
+ * @property \Enbit\eBaySDK\Trading\Enums\ListingTypeCodeType $ListingType
+ * @property \Enbit\eBaySDK\Trading\Enums\StoreItemListSortOrderCodeType $SearchSortOrder
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $MinPrice
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $MaxPrice
  * @property string[] $FavoriteItemID
  */
-class SellerFavoriteItemPreferencesType extends \DTS\eBaySDK\Types\BaseType
+class SellerFavoriteItemPreferencesType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -51,13 +51,13 @@ class SellerFavoriteItemPreferencesType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'SearchSortOrder'
         ],
         'MinPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MinPrice'
         ],
         'MaxPrice' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MaxPrice'

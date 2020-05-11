@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Order\Types;
+namespace Enbit\eBaySDK\Test\Order\Types;
 
-use DTS\eBaySDK\Order\Types\InitiateGuestCheckoutSessionRestRequest;
+use Enbit\eBaySDK\Order\Types\InitiateGuestCheckoutSessionRestRequest;
 
 class InitiateGuestCheckoutSessionRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class InitiateGuestCheckoutSessionRestRequestTest extends \PHPUnit_Framework_Tes
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\InitiateGuestCheckoutSessionRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\InitiateGuestCheckoutSessionRestRequest', $this->obj);
     }
 
     public function testExtendsCreateGuestCheckoutSessionRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\CreateGuestCheckoutSessionRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\CreateGuestCheckoutSessionRequest', $this->obj);
     }
 }

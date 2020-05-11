@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult[] $eligibilityResultsPerCheckType
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnEligibilityItemType $returnItem
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult[] $eligibilityResultsPerCheckType
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnEligibilityItemType $returnItem
  */
-class ReturnEligibilityPerItemType extends \DTS\eBaySDK\Types\BaseType
+class ReturnEligibilityPerItemType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'eligibilityResultsPerCheckType' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnEligibilityItemPerCheckTypeResult',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'eligibilityResultsPerCheckType'
         ],
         'returnItem' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnEligibilityItemType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnEligibilityItemType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnItem'

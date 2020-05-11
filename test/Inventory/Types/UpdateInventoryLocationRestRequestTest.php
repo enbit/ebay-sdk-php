@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest;
+use Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest;
 
 class UpdateInventoryLocationRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateInventoryLocationRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\UpdateInventoryLocationRestRequest', $this->obj);
     }
 
     public function testExtendsInventoryLocation()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\InventoryLocation', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\InventoryLocation', $this->obj);
     }
 }

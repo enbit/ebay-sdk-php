@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $returnId
  */
-class EscalateReturnRestRequest extends \DTS\eBaySDK\PostOrder\Types\EscalateRequest
+class EscalateReturnRestRequest extends \Enbit\eBaySDK\PostOrder\Types\EscalateRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

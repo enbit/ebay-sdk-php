@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $StartingDisputeID
  * @property string $EndingDisputeID
- * @property \DTS\eBaySDK\Trading\Types\DisputeArrayType $DisputeArray
+ * @property \Enbit\eBaySDK\Trading\Types\DisputeArrayType $DisputeArray
  * @property integer $ItemsPerPage
  * @property integer $PageNumber
- * @property \DTS\eBaySDK\Trading\Types\DisputeFilterCountType[] $DisputeFilterCount
- * @property \DTS\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
+ * @property \Enbit\eBaySDK\Trading\Types\DisputeFilterCountType[] $DisputeFilterCount
+ * @property \Enbit\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
  */
-class GetUserDisputesResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetUserDisputesResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -39,7 +39,7 @@ class GetUserDisputesResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRes
             'elementName' => 'EndingDisputeID'
         ],
         'DisputeArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\DisputeArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\DisputeArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DisputeArray'
@@ -57,13 +57,13 @@ class GetUserDisputesResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRes
             'elementName' => 'PageNumber'
         ],
         'DisputeFilterCount' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\DisputeFilterCountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\DisputeFilterCountType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'DisputeFilterCount'
         ],
         'PaginationResult' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationResultType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaginationResultType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaginationResult'

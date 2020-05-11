@@ -8,25 +8,25 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\ConditionListDetailType $dataList
+ * @property \Enbit\eBaySDK\PostOrder\Types\ConditionListDetailType $dataList
  * @property boolean $isChecked
  * @property boolean $isEbayPlus
  * @property boolean $isInvalid
  * @property boolean $storeCategory
  * @property integer $storeId
  */
-class RuleConditionDetailType extends \DTS\eBaySDK\Types\BaseType
+class RuleConditionDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'dataList' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ConditionListDetailType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ConditionListDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dataList'

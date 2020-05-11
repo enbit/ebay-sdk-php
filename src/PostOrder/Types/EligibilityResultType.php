@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $caseId
- * @property \DTS\eBaySDK\PostOrder\Types\ReturnEligibilityErrorDetailType[] $eligibilityErrorDetail
- * @property \DTS\eBaySDK\PostOrder\Types\StatusType $eligibilityStatus
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $eligibleStartDate
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $returnCreationDate
- * @property \DTS\eBaySDK\PostOrder\Types\DateTime $returnDeadline
+ * @property \Enbit\eBaySDK\PostOrder\Types\ReturnEligibilityErrorDetailType[] $eligibilityErrorDetail
+ * @property \Enbit\eBaySDK\PostOrder\Types\StatusType $eligibilityStatus
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $eligibleStartDate
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $returnCreationDate
+ * @property \Enbit\eBaySDK\PostOrder\Types\DateTime $returnDeadline
  * @property string $returnId
  */
-class EligibilityResultType extends \DTS\eBaySDK\Types\BaseType
+class EligibilityResultType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -33,31 +33,31 @@ class EligibilityResultType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'caseId'
         ],
         'eligibilityErrorDetail' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ReturnEligibilityErrorDetailType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ReturnEligibilityErrorDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'eligibilityErrorDetail'
         ],
         'eligibilityStatus' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\StatusType',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\StatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibilityStatus'
         ],
         'eligibleStartDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'eligibleStartDate'
         ],
         'returnCreationDate' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnCreationDate'
         ],
         'returnDeadline' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\DateTime',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\DateTime',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnDeadline'

@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
  */
-class CreateCampaignRestRequest extends \DTS\eBaySDK\Marketing\Types\CreateCampaignRequest
+class CreateCampaignRestRequest extends \Enbit\eBaySDK\Marketing\Types\CreateCampaignRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

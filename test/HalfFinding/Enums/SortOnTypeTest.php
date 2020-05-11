@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\HalfFinding\Enums;
+namespace Enbit\eBaySDK\Test\HalfFinding\Enums;
 
-use DTS\eBaySDK\HalfFinding\Enums\SortOnType;
+use Enbit\eBaySDK\HalfFinding\Enums\SortOnType;
 
 class SortOnTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class SortOnTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\HalfFinding\Enums\SortOnType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\HalfFinding\Enums\SortOnType', $this->obj);
     }
 }

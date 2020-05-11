@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property boolean $ValidToken
  */
-class ValidateChallengeInputResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class ValidateChallengeInputResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.

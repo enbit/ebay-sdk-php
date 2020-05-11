@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $inventory_reference_id
  * @property string $inventory_reference_type
  */
-class GetAdsByInventoryReferenceRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetAdsByInventoryReferenceRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\UpdateOfferRestRequest;
+use Enbit\eBaySDK\Inventory\Types\UpdateOfferRestRequest;
 
 class UpdateOfferRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateOfferRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\UpdateOfferRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\UpdateOfferRestRequest', $this->obj);
     }
 
     public function testExtendsEbayOfferDetailsWithId()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\EbayOfferDetailsWithId', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\EbayOfferDetailsWithId', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Product\Enums;
+namespace Enbit\eBaySDK\Test\Product\Enums;
 
-use DTS\eBaySDK\Product\Enums\OutputSelector;
+use Enbit\eBaySDK\Product\Enums\OutputSelector;
 
 class OutputSelectorTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class OutputSelectorTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Product\Enums\OutputSelector', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Product\Enums\OutputSelector', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Taxonomy\Types;
+namespace Enbit\eBaySDK\Test\Taxonomy\Types;
 
-use DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse;
+use Enbit\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse;
 
 class GetACategoryTreeRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetACategoryTreeRestResponseTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Taxonomy\Types\GetACategoryTreeRestResponse', $this->obj);
     }
 
     public function testExtendsCategoryTree()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Taxonomy\Types\CategoryTree', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Taxonomy\Types\CategoryTree', $this->obj);
     }
 }

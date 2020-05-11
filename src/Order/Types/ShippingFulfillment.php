@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Order\Types;
+namespace Enbit\eBaySDK\Order\Types;
 
 /**
  *
  * @property string $actualDeliveryDate
- * @property \DTS\eBaySDK\Order\Types\LineItemReference[] $lineItemReferences
+ * @property \Enbit\eBaySDK\Order\Types\LineItemReference[] $lineItemReferences
  * @property string $maxEstimatedDeliveryDate
  * @property string $minEstimatedDeliveryDate
  * @property string $shipmentTrackingNumber
@@ -22,7 +22,7 @@ namespace DTS\eBaySDK\Order\Types;
  * @property string $shippingCarrierCode
  * @property string $shippingServiceCode
  */
-class ShippingFulfillment extends \DTS\eBaySDK\Types\BaseType
+class ShippingFulfillment extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class ShippingFulfillment extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'actualDeliveryDate'
         ],
         'lineItemReferences' => [
-            'type' => 'DTS\eBaySDK\Order\Types\LineItemReference',
+            'type' => 'Enbit\eBaySDK\Order\Types\LineItemReference',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'lineItemReferences'

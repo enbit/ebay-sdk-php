@@ -2,7 +2,7 @@
 Configuration
 =============
 
-This guide describes the service configuration options. These options can be provided in a service constructor or to the ``DTS\eBaySDK\Sdk`` class.
+This guide describes the service configuration options. These options can be provided in a service constructor or to the ``Enbit\eBaySDK\Sdk`` class.
 
 Options
 -------
@@ -11,7 +11,7 @@ The following example shows how to pass options into the FindingService construc
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion' => '1.13.0',
@@ -57,8 +57,8 @@ Each of the services offered by eBay have a version number. Use this optional co
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
-    use DTS\eBaySDK\Trading\Services\TradingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Trading\Services\TradingService;
 
     /**
      * Use the 1.13.0 version of the finding service.
@@ -78,7 +78,7 @@ If you do not provide a version number the SDK will default to the value that is
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Shopping\Services\ShoppingService;
+    use Enbit\eBaySDK\Shopping\Services\ShoppingService;
 
     /**
      * apiVerion will default to the value in ShoppingService::API_VERSION.
@@ -115,8 +115,8 @@ The Trading service is different to other services in that the  Auth'n'auth toke
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Trading\Types;
-    use DTS\eBaySDK\Trading\Services;
+    use Enbit\eBaySDK\Trading\Types;
+    use Enbit\eBaySDK\Trading\Services;
 
     /**
      * No auth token provided.
@@ -147,7 +147,7 @@ Required by some operations in the Browse service. Increases the accuracy of the
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Browse\Services\BrowseService;
+    use Enbit\eBaySDK\Browse\Services\BrowseService;
 
     $service = new BrowseService([
       'contextualLocation' => 'country=US,zip=19406'
@@ -156,7 +156,7 @@ Required by some operations in the Browse service. Increases the accuracy of the
 credentials
 ~~~~~~~~~~~
 
-:Type: ``array|DTS\eBaySDK\Credentials\CredentialsInterface|callable``
+:Type: ``array|Enbit\eBaySDK\Credentials\CredentialsInterface|callable``
 :Services: ``BulkDataExchange``, ``BusinessPoliciesManagement``, ``Feedback``, ``FileTransfer``, ``Finding``, ``HalfFinding``, ``Merchandising``, ``OAuth``, ``Product``, ``ProductMetadata``, ``RelatedItemsManagement``, ``ResolutionCaseManagement``, ``ReturnManagement``, ``Shopping``, ``Trading``.
 
 Provide your "Application ID", "Certificate ID", and "Developer ID" credentials that are required when using the eBay API. If you do not provide any credentials the SDK will attempt to load them in the following order:
@@ -168,7 +168,7 @@ You can :ref:`hardcode your credentials <hardcoded_credentials>` via an associat
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -180,12 +180,12 @@ You can :ref:`hardcode your credentials <hardcoded_credentials>` via an associat
         ]
     ]);
 
-You can also pass an instance of the ``DTS\eBaySDK\Credentials\CredentialsInterface`` interface.
+You can also pass an instance of the ``Enbit\eBaySDK\Credentials\CredentialsInterface`` interface.
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\Credentials;
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Credentials\Credentials;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $credentials = new Credentials('111', '222', '333');
 
@@ -199,8 +199,8 @@ Pass a callable :ref:`credentials provider <credentials_provider>` function to c
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Credentials\Credentials;
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Credentials\Credentials;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $provider = function () {
         return new Credentials('111', '222', '333');
@@ -238,7 +238,7 @@ scrub_strings (array)
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion' => '1.13.0',
@@ -273,7 +273,7 @@ By default the SDK uses a ``Guzzle 6`` client to handle the sending and receivin
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $httpHandler = function (Psr\Http\Message\RequestInterface $request, array $options) {
         $client = new SomeClient();
@@ -310,7 +310,7 @@ A float specifying the number of seconds to wait when trying to connect to the A
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -331,7 +331,7 @@ Depending on your project's requirments you may find that you need to set custom
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -382,7 +382,7 @@ If you are connecting to the API through a proxy pass a string specifying the pr
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -414,7 +414,7 @@ A float specifying the number of seconds to wait for a response from the API. Us
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion'  => '1.13.0',
@@ -455,7 +455,7 @@ Specifies the name of a profile within the ini file that is located in your HOME
 
 .. code-block:: php
 
-    use DTS\eBaySDK\Finding\Services\FindingService;
+    use Enbit\eBaySDK\Finding\Services\FindingService;
 
     $service = new FindingService([
         'apiVersion' => '1.13.0',

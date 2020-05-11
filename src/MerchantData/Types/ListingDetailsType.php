@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
  * @property boolean $Adult
  * @property boolean $BindingAuction
  * @property boolean $CheckoutEnabled
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ConvertedBuyItNowPrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ConvertedStartPrice
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $ConvertedReservePrice
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $ConvertedBuyItNowPrice
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $ConvertedStartPrice
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $ConvertedReservePrice
  * @property boolean $HasReservePrice
  * @property string $RelistedItemID
  * @property string $SecondChanceOriginalItemID
@@ -27,14 +27,14 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $HasUnansweredQuestions
  * @property boolean $HasPublicMessages
  * @property boolean $BuyItNowAvailable
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $MinimumBestOfferPrice
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $MinimumBestOfferPrice
  * @property string $LocalListingDistance
  * @property string $TCROriginalItemID
  * @property string $ViewItemURLForNaturalSearch
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $BestOfferAutoAcceptPrice
- * @property \DTS\eBaySDK\MerchantData\Enums\EndReasonCodeType $EndingReason
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $BestOfferAutoAcceptPrice
+ * @property \Enbit\eBaySDK\MerchantData\Enums\EndReasonCodeType $EndingReason
  */
-class ListingDetailsType extends \DTS\eBaySDK\Types\BaseType
+class ListingDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -59,19 +59,19 @@ class ListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'CheckoutEnabled'
         ],
         'ConvertedBuyItNowPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedBuyItNowPrice'
         ],
         'ConvertedStartPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedStartPrice'
         ],
         'ConvertedReservePrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ConvertedReservePrice'
@@ -131,7 +131,7 @@ class ListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'BuyItNowAvailable'
         ],
         'MinimumBestOfferPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'MinimumBestOfferPrice'
@@ -155,7 +155,7 @@ class ListingDetailsType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ViewItemURLForNaturalSearch'
         ],
         'BestOfferAutoAcceptPrice' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BestOfferAutoAcceptPrice'

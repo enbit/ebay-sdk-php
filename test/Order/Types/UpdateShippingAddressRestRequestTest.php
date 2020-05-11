@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Order\Types;
+namespace Enbit\eBaySDK\Test\Order\Types;
 
-use DTS\eBaySDK\Order\Types\UpdateShippingAddressRestRequest;
+use Enbit\eBaySDK\Order\Types\UpdateShippingAddressRestRequest;
 
 class UpdateShippingAddressRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateShippingAddressRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\UpdateShippingAddressRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\UpdateShippingAddressRestRequest', $this->obj);
     }
 
     public function testExtendsShippingAddressImpl()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Order\Types\ShippingAddressImpl', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Order\Types\ShippingAddressImpl', $this->obj);
     }
 }

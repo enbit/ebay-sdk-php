@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\Trading\Enums\VeROItemStatusCodeType $ItemStatus
+ * @property \Enbit\eBaySDK\Trading\Enums\VeROItemStatusCodeType $ItemStatus
  * @property string $ItemReasonForFailure
  */
-class VeROReportedItemType extends \DTS\eBaySDK\Types\BaseType
+class VeROReportedItemType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

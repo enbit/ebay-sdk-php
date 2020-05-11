@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  * @property string $downloadJobType
  * @property string $UUID
- * @property \DTS\eBaySDK\BulkDataExchange\Types\DownloadRequestFilter $downloadRequestFilter
+ * @property \Enbit\eBaySDK\BulkDataExchange\Types\DownloadRequestFilter $downloadRequestFilter
  */
-class StartDownloadJobRequest extends \DTS\eBaySDK\BulkDataExchange\Types\BaseServiceRequest
+class StartDownloadJobRequest extends \Enbit\eBaySDK\BulkDataExchange\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class StartDownloadJobRequest extends \DTS\eBaySDK\BulkDataExchange\Types\BaseSe
             'elementName' => 'UUID'
         ],
         'downloadRequestFilter' => [
-            'type' => 'DTS\eBaySDK\BulkDataExchange\Types\DownloadRequestFilter',
+            'type' => 'Enbit\eBaySDK\BulkDataExchange\Types\DownloadRequestFilter',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'downloadRequestFilter'

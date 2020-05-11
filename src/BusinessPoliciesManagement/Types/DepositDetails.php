@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
  * @property integer $daysToFullPayment
  * @property integer $hoursToDeposit
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Types\Amount $depositAmount
+ * @property \Enbit\eBaySDK\BusinessPoliciesManagement\Types\Amount $depositAmount
  */
-class DepositDetails extends \DTS\eBaySDK\Types\BaseType
+class DepositDetails extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -35,7 +35,7 @@ class DepositDetails extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'hoursToDeposit'
         ],
         'depositAmount' => [
-            'type' => 'DTS\eBaySDK\BusinessPoliciesManagement\Types\Amount',
+            'type' => 'Enbit\eBaySDK\BusinessPoliciesManagement\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'depositAmount'

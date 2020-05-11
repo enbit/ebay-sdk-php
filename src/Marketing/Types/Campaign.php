@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Marketing\Types\CampaignCriterion $campaignCriterion
+ * @property \Enbit\eBaySDK\Marketing\Types\CampaignCriterion $campaignCriterion
  * @property string $campaignId
  * @property string $campaignName
- * @property \DTS\eBaySDK\Marketing\Enums\CampaignStatusEnum $campaignStatus
+ * @property \Enbit\eBaySDK\Marketing\Enums\CampaignStatusEnum $campaignStatus
  * @property string $endDate
- * @property \DTS\eBaySDK\Marketing\Types\FundingStrategy $fundingStrategy
- * @property \DTS\eBaySDK\Marketing\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \Enbit\eBaySDK\Marketing\Types\FundingStrategy $fundingStrategy
+ * @property \Enbit\eBaySDK\Marketing\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $startDate
  */
-class Campaign extends \DTS\eBaySDK\Types\BaseType
+class Campaign extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'campaignCriterion' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\CampaignCriterion',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\CampaignCriterion',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'campaignCriterion'
@@ -58,7 +58,7 @@ class Campaign extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'endDate'
         ],
         'fundingStrategy' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\FundingStrategy',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\FundingStrategy',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'fundingStrategy'

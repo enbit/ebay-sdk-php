@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $StockPhoto
  * @property boolean $Recommended
  */
-class ProductSuggestionType extends \DTS\eBaySDK\Types\BaseType
+class ProductSuggestionType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

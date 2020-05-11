@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $Keyword
- * @property \DTS\eBaySDK\Trading\Types\CategoryType $Category
+ * @property \Enbit\eBaySDK\Trading\Types\CategoryType $Category
  * @property integer $Ranking
  */
-class ContextSearchAssetType extends \DTS\eBaySDK\Types\BaseType
+class ContextSearchAssetType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,7 +29,7 @@ class ContextSearchAssetType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'Keyword'
         ],
         'Category' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\CategoryType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\CategoryType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Category'

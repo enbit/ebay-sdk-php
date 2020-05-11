@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Browse\Types;
+namespace Enbit\eBaySDK\Browse\Types;
 
 /**
  *
  * @property string $feedbackPercentage
  * @property integer $feedbackScore
  * @property string $sellerAccountType
- * @property \DTS\eBaySDK\Browse\Types\SellerLegalInfo $sellerLegalInfo
+ * @property \Enbit\eBaySDK\Browse\Types\SellerLegalInfo $sellerLegalInfo
  * @property string $username
  */
-class Seller extends \DTS\eBaySDK\Types\BaseType
+class Seller extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -43,7 +43,7 @@ class Seller extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'sellerAccountType'
         ],
         'sellerLegalInfo' => [
-            'type' => 'DTS\eBaySDK\Browse\Types\SellerLegalInfo',
+            'type' => 'Enbit\eBaySDK\Browse\Types\SellerLegalInfo',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'sellerLegalInfo'

@@ -8,26 +8,26 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\Inventory\Types\ErrorDetailV3[] $errors
  * @property string $inventoryItemGroupKey
- * @property \DTS\eBaySDK\Inventory\Types\InventoryItemListing[] $inventoryItems
+ * @property \Enbit\eBaySDK\Inventory\Types\InventoryItemListing[] $inventoryItems
  * @property string $listingId
- * @property \DTS\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \Enbit\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
  * @property integer $statusCode
- * @property \DTS\eBaySDK\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Inventory\Types\ErrorDetailV3[] $warnings
  */
-class MigrateListingResponse extends \DTS\eBaySDK\Types\BaseType
+class MigrateListingResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'errors' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
@@ -39,7 +39,7 @@ class MigrateListingResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'inventoryItemGroupKey'
         ],
         'inventoryItems' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\InventoryItemListing',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\InventoryItemListing',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'inventoryItems'
@@ -63,7 +63,7 @@ class MigrateListingResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'statusCode'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

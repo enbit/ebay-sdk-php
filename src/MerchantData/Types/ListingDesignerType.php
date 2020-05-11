@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property boolean $OptimalPictureSize
  * @property integer $ThemeID
  */
-class ListingDesignerType extends \DTS\eBaySDK\Types\BaseType
+class ListingDesignerType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

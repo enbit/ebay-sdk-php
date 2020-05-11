@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
  * @property string $propertyName
- * @property \DTS\eBaySDK\Product\Types\Value[] $value
+ * @property \Enbit\eBaySDK\Product\Types\Value[] $value
  */
-class PropertyValue extends \DTS\eBaySDK\Types\BaseType
+class PropertyValue extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class PropertyValue extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'propertyName'
         ],
         'value' => [
-            'type' => 'DTS\eBaySDK\Product\Types\Value',
+            'type' => 'Enbit\eBaySDK\Product\Types\Value',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'value'

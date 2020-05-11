@@ -1,8 +1,8 @@
 <?php
-namespace DTS\eBaySDK\Notification;
+namespace Enbit\eBaySDK\Notification;
 
 
-use DTS\eBaySDK\Parser\XmlParser;
+use Enbit\eBaySDK\Parser\XmlParser;
 
 
 /**
@@ -50,7 +50,7 @@ class Notification
     }
 
     /**
-     * Helper method to get response class of notification correponding
+     * Helper method to get response class of notification corresponding
      */
     public function getResponseClass()
     {
@@ -125,7 +125,7 @@ class Notification
     {
         preg_match('/^\s*<[A-Za-z]+/',$str,$match);
         $responseType = preg_replace('/^\s*</','',$match[0]??'');
-        $this->responseClass = '\\DTS\\eBaySDK\\Trading\\Types\\'.$responseType.'Type';
+        $this->responseClass = '\\Enbit\\eBaySDK\\Trading\\Types\\'.$responseType.'Type';
     }
 
     /**
@@ -141,7 +141,7 @@ class Notification
 
     /**
      * check the integrity of the soap text
-     * @param string $soap soap text reveived from notification
+     * @param string $soap soap text received from notification
      * @return bool
      */
     private function checkSoap($soap)

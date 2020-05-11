@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\MarkReturnShippedRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\MarkReturnShippedRestRequest;
 
 class MarkReturnShippedRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class MarkReturnShippedRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\MarkReturnShippedRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\MarkReturnShippedRestRequest', $this->obj);
     }
 
     public function testExtendsMarkAsShippedRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\MarkAsShippedRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\MarkAsShippedRequest', $this->obj);
     }
 }

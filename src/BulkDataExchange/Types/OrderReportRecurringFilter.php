@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  * @property integer $createTimeRange
  * @property integer $modTimeRange
- * @property \DTS\eBaySDK\BulkDataExchange\Enums\ListingType $listingType
+ * @property \Enbit\eBaySDK\BulkDataExchange\Enums\ListingType $listingType
  * @property integer $version
  */
-class OrderReportRecurringFilter extends \DTS\eBaySDK\BulkDataExchange\Types\BaseServiceRequest
+class OrderReportRecurringFilter extends \Enbit\eBaySDK\BulkDataExchange\Types\BaseServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

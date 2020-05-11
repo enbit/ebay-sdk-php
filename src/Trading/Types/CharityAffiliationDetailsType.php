@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\CharityAffiliationDetailType[] $CharityAffiliationDetail
+ * @property \Enbit\eBaySDK\Trading\Types\CharityAffiliationDetailType[] $CharityAffiliationDetail
  */
-class CharityAffiliationDetailsType extends \DTS\eBaySDK\Types\BaseType
+class CharityAffiliationDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'CharityAffiliationDetail' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\CharityAffiliationDetailType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\CharityAffiliationDetailType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'CharityAffiliationDetail'

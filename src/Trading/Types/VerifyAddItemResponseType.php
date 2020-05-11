@@ -8,19 +8,19 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\Trading\Types\FeesType $Fees
+ * @property \Enbit\eBaySDK\Trading\Types\FeesType $Fees
  * @property string $CategoryID
  * @property string $Category2ID
- * @property \DTS\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
- * @property \DTS\eBaySDK\Trading\Types\ProductSuggestionsType $ProductSuggestions
- * @property \DTS\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
+ * @property \Enbit\eBaySDK\Trading\Enums\DiscountReasonCodeType[] $DiscountReason
+ * @property \Enbit\eBaySDK\Trading\Types\ProductSuggestionsType $ProductSuggestions
+ * @property \Enbit\eBaySDK\Trading\Types\ListingRecommendationsType $ListingRecommendations
  */
-class VerifyAddItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class VerifyAddItemResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -33,7 +33,7 @@ class VerifyAddItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRespo
             'elementName' => 'ItemID'
         ],
         'Fees' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'Fees'
@@ -57,13 +57,13 @@ class VerifyAddItemResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRespo
             'elementName' => 'DiscountReason'
         ],
         'ProductSuggestions' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ProductSuggestionsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ProductSuggestionsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ProductSuggestions'
         ],
         'ListingRecommendations' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ListingRecommendationsType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ListingRecommendationsType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ListingRecommendations'

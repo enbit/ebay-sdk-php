@@ -8,17 +8,17 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string $adId
- * @property \DTS\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\Marketing\Types\ErrorDetailV3[] $errors
  * @property string $href
  * @property string $listingId
  * @property integer $statusCode
  */
-class AdResponse extends \DTS\eBaySDK\Types\BaseType
+class AdResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -31,7 +31,7 @@ class AdResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'adId'
         ],
         'errors' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'

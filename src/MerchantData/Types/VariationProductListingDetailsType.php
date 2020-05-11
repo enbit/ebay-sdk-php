@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property string $UPC
  * @property string $EAN
  */
-class VariationProductListingDetailsType extends \DTS\eBaySDK\Types\BaseType
+class VariationProductListingDetailsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

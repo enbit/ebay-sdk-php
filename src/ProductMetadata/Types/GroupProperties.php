@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Types;
+namespace Enbit\eBaySDK\ProductMetadata\Types;
 
 /**
  *
  * @property string $groupType
  * @property string $groupName
- * @property \DTS\eBaySDK\ProductMetadata\Types\GroupProperty[] $groupProperty
+ * @property \Enbit\eBaySDK\ProductMetadata\Types\GroupProperty[] $groupProperty
  * @property string $description
  */
-class GroupProperties extends \DTS\eBaySDK\Types\BaseType
+class GroupProperties extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -36,7 +36,7 @@ class GroupProperties extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'groupName'
         ],
         'groupProperty' => [
-            'type' => 'DTS\eBaySDK\ProductMetadata\Types\GroupProperty',
+            'type' => 'Enbit\eBaySDK\ProductMetadata\Types\GroupProperty',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'groupProperty'

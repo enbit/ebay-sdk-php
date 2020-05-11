@@ -1,5 +1,5 @@
 <?php
-namespace DTS\eBaySDK;
+namespace Enbit\eBaySDK;
 
 /**
  * Trait that allows objects to get/set HTTP headers.

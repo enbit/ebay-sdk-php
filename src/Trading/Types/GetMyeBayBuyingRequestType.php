@@ -8,98 +8,98 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $WatchList
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $BidList
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $BestOfferList
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $WonList
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $LostList
- * @property \DTS\eBaySDK\Trading\Types\MyeBaySelectionType $FavoriteSearches
- * @property \DTS\eBaySDK\Trading\Types\MyeBaySelectionType $FavoriteSellers
- * @property \DTS\eBaySDK\Trading\Types\MyeBaySelectionType $SecondChanceOffer
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $DeletedFromWonList
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $DeletedFromLostList
- * @property \DTS\eBaySDK\Trading\Types\ItemListCustomizationType $BuyingSummary
- * @property \DTS\eBaySDK\Trading\Types\MyeBaySelectionType $UserDefinedLists
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $WatchList
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $BidList
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $BestOfferList
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $WonList
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $LostList
+ * @property \Enbit\eBaySDK\Trading\Types\MyeBaySelectionType $FavoriteSearches
+ * @property \Enbit\eBaySDK\Trading\Types\MyeBaySelectionType $FavoriteSellers
+ * @property \Enbit\eBaySDK\Trading\Types\MyeBaySelectionType $SecondChanceOffer
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $DeletedFromWonList
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $DeletedFromLostList
+ * @property \Enbit\eBaySDK\Trading\Types\ItemListCustomizationType $BuyingSummary
+ * @property \Enbit\eBaySDK\Trading\Types\MyeBaySelectionType $UserDefinedLists
  * @property boolean $HideVariations
  */
-class GetMyeBayBuyingRequestType extends \DTS\eBaySDK\Trading\Types\AbstractRequestType
+class GetMyeBayBuyingRequestType extends \Enbit\eBaySDK\Trading\Types\AbstractRequestType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'WatchList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'WatchList'
         ],
         'BidList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BidList'
         ],
         'BestOfferList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BestOfferList'
         ],
         'WonList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'WonList'
         ],
         'LostList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'LostList'
         ],
         'FavoriteSearches' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MyeBaySelectionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MyeBaySelectionType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FavoriteSearches'
         ],
         'FavoriteSellers' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MyeBaySelectionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MyeBaySelectionType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FavoriteSellers'
         ],
         'SecondChanceOffer' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MyeBaySelectionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MyeBaySelectionType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SecondChanceOffer'
         ],
         'DeletedFromWonList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DeletedFromWonList'
         ],
         'DeletedFromLostList' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'DeletedFromLostList'
         ],
         'BuyingSummary' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemListCustomizationType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemListCustomizationType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BuyingSummary'
         ],
         'UserDefinedLists' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\MyeBaySelectionType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\MyeBaySelectionType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'UserDefinedLists'

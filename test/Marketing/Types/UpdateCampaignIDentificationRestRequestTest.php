@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\UpdateCampaignIDentificationRestRequest;
+use Enbit\eBaySDK\Marketing\Types\UpdateCampaignIDentificationRestRequest;
 
 class UpdateCampaignIDentificationRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateCampaignIDentificationRestRequestTest extends \PHPUnit_Framework_Tes
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\UpdateCampaignIDentificationRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\UpdateCampaignIDentificationRestRequest', $this->obj);
     }
 
     public function testExtendsUpdateCampaignIdentificationRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\UpdateCampaignIdentificationRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\UpdateCampaignIdentificationRequest', $this->obj);
     }
 }

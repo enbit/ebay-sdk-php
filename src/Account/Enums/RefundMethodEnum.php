@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Enums;
+namespace Enbit\eBaySDK\Account\Enums;
 
 class RefundMethodEnum
 {

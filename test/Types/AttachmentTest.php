@@ -1,9 +1,9 @@
 <?php
-namespace DTS\eBaySDK\Types\Test;
+namespace Enbit\eBaySDK\Types\Test;
 
-use DTS\eBaySDK\Test\Mocks\Service;
-use DTS\eBaySDK\Test\Mocks\ComplexClass;
-use DTS\eBaySDK\Test\Mocks\HttpHandler;
+use Enbit\eBaySDK\Test\Mocks\Service;
+use Enbit\eBaySDK\Test\Mocks\ComplexClass;
+use Enbit\eBaySDK\Test\Mocks\HttpHandler;
 
 class AttachmentTest extends \PHPUnit_Framework_TestCase
 {
@@ -78,7 +78,7 @@ class AttachmentTest extends \PHPUnit_Framework_TestCase
     {
         $this->httpHandler->returnAttachment = true;
         $response = $this->service->bar($this->request);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\ComplexClass', $response);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\ComplexClass', $response);
         $this->assertEquals(123, $response->integer);
         $this->assertEquals('a string', $response->string);
         $this->assertEquals(123.45, $response->double);

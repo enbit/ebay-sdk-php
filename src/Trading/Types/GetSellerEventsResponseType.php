@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property \DateTime $TimeTo
- * @property \DTS\eBaySDK\Trading\Types\ItemArrayType $ItemArray
+ * @property \Enbit\eBaySDK\Trading\Types\ItemArrayType $ItemArray
  */
-class GetSellerEventsResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetSellerEventsResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class GetSellerEventsResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRes
             'elementName' => 'TimeTo'
         ],
         'ItemArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ItemArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ItemArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemArray'

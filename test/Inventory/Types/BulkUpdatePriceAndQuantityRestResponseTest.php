@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Inventory\Types;
+namespace Enbit\eBaySDK\Test\Inventory\Types;
 
-use DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse;
+use Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse;
 
 class BulkUpdatePriceAndQuantityRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class BulkUpdatePriceAndQuantityRestResponseTest extends \PHPUnit_Framework_Test
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\BulkUpdatePriceAndQuantityRestResponse', $this->obj);
     }
 
     public function testExtendsBulkPriceQuantityResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Inventory\Types\BulkPriceQuantityResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Inventory\Types\BulkPriceQuantityResponse', $this->obj);
     }
 }

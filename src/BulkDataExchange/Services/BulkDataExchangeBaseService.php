@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\BulkDataExchange\Services;
+namespace Enbit\eBaySDK\BulkDataExchange\Services;
 
 /**
  * Base class for the BulkDataExchange service.
  */
-class BulkDataExchangeBaseService extends \DTS\eBaySDK\Services\BaseService
+class BulkDataExchangeBaseService extends \Enbit\eBaySDK\Services\BaseService
 {
     /**
      * HTTP header constant. The API version your application supports.
@@ -41,7 +41,7 @@ class BulkDataExchangeBaseService extends \DTS\eBaySDK\Services\BaseService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\BulkDataExchange\Services\BulkDataExchangeService::API_VERSION
+                'default' => \Enbit\eBaySDK\BulkDataExchange\Services\BulkDataExchangeService::API_VERSION
             ],
             'authToken' => [
                 'valid' => ['string'],

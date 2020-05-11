@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
@@ -19,9 +19,9 @@ namespace DTS\eBaySDK\Inventory\Types;
  * @property string $subtitle
  * @property string $title
  * @property string[] $variantSKUs
- * @property \DTS\eBaySDK\Inventory\Types\VariesBy $variesBy
+ * @property \Enbit\eBaySDK\Inventory\Types\VariesBy $variesBy
  */
-class InventoryItemGroup extends \DTS\eBaySDK\Types\BaseType
+class InventoryItemGroup extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -70,7 +70,7 @@ class InventoryItemGroup extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'variantSKUs'
         ],
         'variesBy' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\VariesBy',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\VariesBy',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'variesBy'

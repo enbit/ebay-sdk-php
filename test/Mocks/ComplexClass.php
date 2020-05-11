@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Test\Mocks;
+namespace Enbit\eBaySDK\Test\Mocks;
 
-class ComplexClass extends \DTS\eBaySDK\Test\Mocks\SimpleClass
+class ComplexClass extends \Enbit\eBaySDK\Test\Mocks\SimpleClass
 {
     private static $propertyTypes = [
         'foo' => [
@@ -11,13 +11,13 @@ class ComplexClass extends \DTS\eBaySDK\Test\Mocks\SimpleClass
             'elementName' => 'foo'
         ],
         'AmountClass' => [
-            'type' => 'DTS\eBaySDK\Test\Mocks\AmountClass',
+            'type' => 'Enbit\eBaySDK\Test\Mocks\AmountClass',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'AmountClass'
         ],
         'simpleClasses' => [
-            'type' => 'DTS\eBaySDK\Test\Mocks\SimpleClass',
+            'type' => 'Enbit\eBaySDK\Test\Mocks\SimpleClass',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'simpleClasses'

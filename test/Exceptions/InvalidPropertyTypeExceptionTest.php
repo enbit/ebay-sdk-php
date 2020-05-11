@@ -1,7 +1,7 @@
 <?php
-namespace DTS\eBaySDK\Exceptions\Test;
+namespace Enbit\eBaySDK\Exceptions\Test;
 
-use DTS\eBaySDK\Exceptions\InvalidPropertyTypeException;
+use Enbit\eBaySDK\Exceptions\InvalidPropertyTypeException;
 
 class InvalidPropertyTypeExceptionTest extends \PHPUnit_Framework_TestCase
 {
@@ -14,7 +14,7 @@ class InvalidPropertyTypeExceptionTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Exceptions\InvalidPropertyTypeException', $this->obj);
     }
 
     public function testExtendsLogicException()

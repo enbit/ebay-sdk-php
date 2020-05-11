@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  */
-class CheckInquiryEligibilityRestRequest extends \DTS\eBaySDK\PostOrder\Types\CheckInquiryEligibilityRequest
+class CheckInquiryEligibilityRestRequest extends \Enbit\eBaySDK\PostOrder\Types\CheckInquiryEligibilityRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

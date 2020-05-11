@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Services;
+namespace Enbit\eBaySDK\Services;
 
-use DTS\eBaySDK\Parser\JsonParser;
-use DTS\eBaySDK\ConfigurationResolver;
-use DTS\eBaySDK\UriResolver;
-use \DTS\eBaySDK as Functions;
+use Enbit\eBaySDK\Parser\JsonParser;
+use Enbit\eBaySDK\ConfigurationResolver;
+use Enbit\eBaySDK\UriResolver;
+use \Enbit\eBaySDK as Functions;
 use GuzzleHttp\Psr7\Request;
 use Psr\Http\Message\ResponseInterface;
 
@@ -29,12 +29,12 @@ abstract class BaseRestService
     const HDR_RESPONSE_ENCODING = 'Accept-Encoding';
 
     /**
-     * @var \DTS\eBaySDK\ConfigurationResolver Resolves configuration options.
+     * @var \Enbit\eBaySDK\ConfigurationResolver Resolves configuration options.
      */
     private $resolver;
 
     /**
-     * @var \DTS\eBaySDK\UriResolver Resolves uri parameters.
+     * @var \Enbit\eBaySDK\UriResolver Resolves uri parameters.
      */
     private $uriResolver;
 
@@ -67,12 +67,12 @@ abstract class BaseRestService
             ],
             'debug' => [
                 'valid'   => ['bool', 'array'],
-                'fn'      => 'DTS\eBaySDK\applyDebug',
+                'fn'      => 'Enbit\eBaySDK\applyDebug',
                 'default' => false
             ],
             'httpHandler' => [
                 'valid'   => ['callable'],
-                'default' => 'DTS\eBaySDK\defaultHttpHandler'
+                'default' => 'Enbit\eBaySDK\defaultHttpHandler'
             ],
             'httpOptions' => [
                 'valid'   => ['array'],
@@ -127,11 +127,11 @@ abstract class BaseRestService
      * Sends an asynchronous API request.
      *
      * @param string $name The name of the operation.
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      *
      * @return \GuzzleHttp\Promise\PromiseInterface A promise that will be resolved with an object created from the JSON response.
      */
-    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request = null)
+    protected function callOperationAsync($name, \Enbit\eBaySDK\Types\BaseType $request = null)
     {
         $operation = static::$operations[$name];
 

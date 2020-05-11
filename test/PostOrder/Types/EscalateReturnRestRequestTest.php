@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\EscalateReturnRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\EscalateReturnRestRequest;
 
 class EscalateReturnRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class EscalateReturnRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\EscalateReturnRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\EscalateReturnRestRequest', $this->obj);
     }
 
     public function testExtendsEscalateRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\EscalateRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\EscalateRequest', $this->obj);
     }
 }

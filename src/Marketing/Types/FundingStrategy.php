@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string $bidPercentage
- * @property \DTS\eBaySDK\Marketing\Enums\FundingModelEnum $fundingModel
+ * @property \Enbit\eBaySDK\Marketing\Enums\FundingModelEnum $fundingModel
  */
-class FundingStrategy extends \DTS\eBaySDK\Types\BaseType
+class FundingStrategy extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

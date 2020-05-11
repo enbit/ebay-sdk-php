@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\Order\Services;
+namespace Enbit\eBaySDK\Order\Services;
 
 /**
  * Base class for the Order service.
  */
-class OrderBaseService extends \DTS\eBaySDK\Services\BaseRestService
+class OrderBaseService extends \Enbit\eBaySDK\Services\BaseRestService
 {
     /**
      * @var array $endPoints The API endpoints.
@@ -49,7 +49,7 @@ class OrderBaseService extends \DTS\eBaySDK\Services\BaseRestService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\Order\Services\OrderService::API_VERSION,
+                'default' => \Enbit\eBaySDK\Order\Services\OrderService::API_VERSION,
                 'required' => true
             ],
             'authorization' => [

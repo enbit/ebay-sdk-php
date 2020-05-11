@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
  * @property string[] $campaignIds
  * @property string $dateFrom
  * @property string $dateTo
- * @property \DTS\eBaySDK\Marketing\Types\Dimension[] $dimensions
- * @property \DTS\eBaySDK\Marketing\Types\InventoryReference[] $inventoryReferences
+ * @property \Enbit\eBaySDK\Marketing\Types\Dimension[] $dimensions
+ * @property \Enbit\eBaySDK\Marketing\Types\InventoryReference[] $inventoryReferences
  * @property string[] $listingIds
- * @property \DTS\eBaySDK\Marketing\Types\Bas:MarketplaceIdEnum $marketplaceId
+ * @property \Enbit\eBaySDK\Marketing\Types\Bas:MarketplaceIdEnum $marketplaceId
  * @property string[] $metricKeys
- * @property \DTS\eBaySDK\Marketing\Enums\ReportFormatEnum $reportFormat
- * @property \DTS\eBaySDK\Marketing\Enums\ReportTypeEnum $reportType
+ * @property \Enbit\eBaySDK\Marketing\Enums\ReportFormatEnum $reportFormat
+ * @property \Enbit\eBaySDK\Marketing\Enums\ReportTypeEnum $reportType
  */
-class CreateReportTask extends \DTS\eBaySDK\Types\BaseType
+class CreateReportTask extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -48,13 +48,13 @@ class CreateReportTask extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'dateTo'
         ],
         'dimensions' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Dimension',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Dimension',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'dimensions'
         ],
         'inventoryReferences' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\InventoryReference',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\InventoryReference',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'inventoryReferences'
@@ -66,7 +66,7 @@ class CreateReportTask extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'listingIds'
         ],
         'marketplaceId' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\Bas:MarketplaceIdEnum',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\Bas:MarketplaceIdEnum',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'marketplaceId'

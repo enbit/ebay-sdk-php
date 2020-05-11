@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\Fee[] $fees
- * @property \DTS\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
- * @property \DTS\eBaySDK\Inventory\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Inventory\Types\Fee[] $fees
+ * @property \Enbit\eBaySDK\Inventory\Enums\MarketplaceEnum $marketplaceId
+ * @property \Enbit\eBaySDK\Inventory\Types\ErrorDetailV3[] $warnings
  */
-class FeeSummary extends \DTS\eBaySDK\Types\BaseType
+class FeeSummary extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'fees' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Fee',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\Fee',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'fees'
@@ -35,7 +35,7 @@ class FeeSummary extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'marketplaceId'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

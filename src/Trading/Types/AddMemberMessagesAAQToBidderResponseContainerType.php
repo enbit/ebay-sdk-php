@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $CorrelationID
- * @property \DTS\eBaySDK\Trading\Enums\AckCodeType $Ack
+ * @property \Enbit\eBaySDK\Trading\Enums\AckCodeType $Ack
  */
-class AddMemberMessagesAAQToBidderResponseContainerType extends \DTS\eBaySDK\Types\BaseType
+class AddMemberMessagesAAQToBidderResponseContainerType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Taxonomy\Types;
+namespace Enbit\eBaySDK\Taxonomy\Types;
 
 /**
  *
@@ -19,7 +19,7 @@ namespace DTS\eBaySDK\Taxonomy\Types;
  * @property boolean $aspectRequired
  * @property string $itemToAspectCardinality
  */
-class AspectConstraint extends \DTS\eBaySDK\Types\BaseType
+class AspectConstraint extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

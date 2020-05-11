@@ -8,21 +8,21 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Product\Types\AddProductResponse[] $addProductResponse
+ * @property \Enbit\eBaySDK\Product\Types\AddProductResponse[] $addProductResponse
  * @property string $clientBatchId
  */
-class AddProductsResponse extends \DTS\eBaySDK\Product\Types\BaseServiceResponse
+class AddProductsResponse extends \Enbit\eBaySDK\Product\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'addProductResponse' => [
-            'type' => 'DTS\eBaySDK\Product\Types\AddProductResponse',
+            'type' => 'Enbit\eBaySDK\Product\Types\AddProductResponse',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'addProductResponse'

@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Fulfillment\Types;
+namespace Enbit\eBaySDK\Fulfillment\Types;
 
 /**
  *
  * @property string $field
- * @property \DTS\eBaySDK\Fulfillment\Types\RangeValue $range
+ * @property \Enbit\eBaySDK\Fulfillment\Types\RangeValue $range
  * @property string[] $set
  * @property string $value
  */
-class FilterField extends \DTS\eBaySDK\Types\BaseType
+class FilterField extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class FilterField extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'field'
         ],
         'range' => [
-            'type' => 'DTS\eBaySDK\Fulfillment\Types\RangeValue',
+            'type' => 'Enbit\eBaySDK\Fulfillment\Types\RangeValue',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'range'

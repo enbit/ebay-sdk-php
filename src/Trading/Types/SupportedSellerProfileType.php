@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -16,9 +16,9 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property string $ProfileType
  * @property string $ProfileName
  * @property string $ShortSummary
- * @property \DTS\eBaySDK\Trading\Types\CategoryGroupType $CategoryGroup
+ * @property \Enbit\eBaySDK\Trading\Types\CategoryGroupType $CategoryGroup
  */
-class SupportedSellerProfileType extends \DTS\eBaySDK\Types\BaseType
+class SupportedSellerProfileType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -49,7 +49,7 @@ class SupportedSellerProfileType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ShortSummary'
         ],
         'CategoryGroup' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\CategoryGroupType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\CategoryGroupType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'CategoryGroup'

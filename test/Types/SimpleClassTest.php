@@ -1,15 +1,15 @@
 <?php
-namespace DTS\eBaySDK\Types\Test;
+namespace Enbit\eBaySDK\Types\Test;
 
-use DTS\eBaySDK\Test\Mocks\SimpleClass;
-use DTS\eBaySDK\Test\Mocks\Base64BinaryType;
-use DTS\eBaySDK\Test\Mocks\BooleanType;
-use DTS\eBaySDK\Test\Mocks\DecimalType;
-use DTS\eBaySDK\Test\Mocks\DoubleType;
-use DTS\eBaySDK\Test\Mocks\IntegerType;
-use DTS\eBaySDK\Test\Mocks\StringType;
-use DTS\eBaySDK\Test\Mocks\TokenType;
-use DTS\eBaySDK\Test\Mocks\URIType;
+use Enbit\eBaySDK\Test\Mocks\SimpleClass;
+use Enbit\eBaySDK\Test\Mocks\Base64BinaryType;
+use Enbit\eBaySDK\Test\Mocks\BooleanType;
+use Enbit\eBaySDK\Test\Mocks\DecimalType;
+use Enbit\eBaySDK\Test\Mocks\DoubleType;
+use Enbit\eBaySDK\Test\Mocks\IntegerType;
+use Enbit\eBaySDK\Test\Mocks\StringType;
+use Enbit\eBaySDK\Test\Mocks\TokenType;
+use Enbit\eBaySDK\Test\Mocks\URIType;
 
 class SimpleClassTest extends \PHPUnit_Framework_TestCase
 {
@@ -22,12 +22,12 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 
     public function testGettingSettingProperties()
@@ -60,44 +60,44 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
         $simpleClass = new SimpleClass();
         $this->obj->SimpleClass = $simpleClass;
         $this->assertEquals($simpleClass, $this->obj->SimpleClass);
-        $this->assertInstanceOf('\DTS\eBaySDK\Test\Mocks\SimpleClass', $this->obj->SimpleClass);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Test\Mocks\SimpleClass', $this->obj->SimpleClass);
 
         $this->assertEquals(0, count($this->obj->strings));
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->strings[] = 'foo';
         $this->obj->strings[] = 'bar';
         $this->assertEquals(2, count($this->obj->strings));
         $this->assertEquals('foo', $this->obj->strings[0]);
         $this->assertEquals('bar', $this->obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->strings = ['foo', 'bar'];
         $this->assertEquals(2, count($this->obj->strings));
         $this->assertEquals('foo', $this->obj->strings[0]);
         $this->assertEquals('bar', $this->obj->strings[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->strings = [];
         $this->assertEquals(0, count($this->obj->strings));
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->strings);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->strings);
 
         $this->obj->integers[] = 111;
         $this->obj->integers[] = 222;
         $this->assertEquals(2, count($this->obj->integers));
         $this->assertEquals(111, $this->obj->integers[0]);
         $this->assertEquals(222, $this->obj->integers[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->integers);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->integers);
 
         $this->obj->integers = [111, 222];
         $this->assertEquals(2, count($this->obj->integers));
         $this->assertEquals(111, $this->obj->integers[0]);
         $this->assertEquals(222, $this->obj->integers[1]);
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->integers);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->integers);
 
         $this->obj->integers = [];
         $this->assertEquals(0, count($this->obj->integers));
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->integers);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->integers);
 
         $this->obj->base64BinaryType = new Base64BinaryType();
         $this->obj->base64BinaryType->value = 'binary type';
@@ -148,7 +148,7 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals([1, 2, 3], $this->obj->anyType);
 
         $this->assertEquals(0, count($this->obj->anyTypes));
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\RepeatableType', $this->obj->anyTypes);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\RepeatableType', $this->obj->anyTypes);
         $this->obj->anyTypes[] = 1;
         $this->obj->anyTypes[] = 'foo';
         $this->obj->anyTypes[] = 1.23;
@@ -182,56 +182,56 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
 
     public function testGettingNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         $this->obj->foo;
     }
 
     public function testSettingNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         $this->obj->foo = 'foo';
     }
 
     public function testSettingPropertyWithAnInvalidType()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integer. Expected integer but got string');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integer. Expected integer but got string');
 
         $this->obj->integer = 'foo';
     }
 
     public function testIsSetNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         isset($this->obj->foo);
     }
 
     public function testUnSetNonExistentProperty()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\UnknownPropertyException', 'Unknown property foo');
 
         isset($this->obj->foo);
     }
 
     public function testSettingRepeatablePropertyWithAnInvalidType()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
 
         $this->obj->integers[] = 'foo';
     }
 
     public function testSettingRepeatablePropertyWithOneInvalidType()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected integer but got string');
 
         $this->obj->integers = [123, 'foo'];
     }
 
     public function testSettingRepeatablePropertyDirectly()
     {
-        $this->setExpectedException('\DTS\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected DTS\eBaySDK\Types\RepeatableType but got integer');
+        $this->setExpectedException('\Enbit\eBaySDK\Exceptions\InvalidPropertyTypeException', 'Invalid property type provided for integers. Expected Enbit\eBaySDK\Types\RepeatableType but got integer');
 
         $this->obj->integers = 123;
     }
@@ -240,7 +240,7 @@ class SimpleClassTest extends \PHPUnit_Framework_TestCase
     {
         $meta = new \stdClass();
         $meta->propertyName = 'SimpleClass';
-        $meta->phpType = 'DTS\eBaySDK\Test\Mocks\SimpleClass';
+        $meta->phpType = 'Enbit\eBaySDK\Test\Mocks\SimpleClass';
         $meta->repeatable = false;
         $meta->attribute = false;
         $meta->elementName = 'SimpleClass';

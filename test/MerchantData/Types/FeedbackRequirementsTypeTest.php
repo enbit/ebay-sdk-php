@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\MerchantData\Types;
+namespace Enbit\eBaySDK\Test\MerchantData\Types;
 
-use DTS\eBaySDK\MerchantData\Types\FeedbackRequirementsType;
+use Enbit\eBaySDK\MerchantData\Types\FeedbackRequirementsType;
 
 class FeedbackRequirementsTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class FeedbackRequirementsTypeTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\MerchantData\Types\FeedbackRequirementsType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\MerchantData\Types\FeedbackRequirementsType', $this->obj);
     }
 
     public function testExtendsBooleanType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BooleanType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BooleanType', $this->obj);
     }
 }

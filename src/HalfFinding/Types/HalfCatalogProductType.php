@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\HalfFinding\Types;
+namespace Enbit\eBaySDK\HalfFinding\Types;
 
 /**
  *
  * @property string $title
  * @property string $detailsURL
  * @property string $stockPhotoURL
- * @property \DTS\eBaySDK\HalfFinding\Types\ProductIDType[] $productID
+ * @property \Enbit\eBaySDK\HalfFinding\Types\ProductIDType[] $productID
  * @property string[] $categoryName
- * @property \DTS\eBaySDK\HalfFinding\Types\NameValueListArrayType $itemSpecifics
- * @property \DTS\eBaySDK\HalfFinding\Types\ItemType[] $item
- * @property \DTS\eBaySDK\HalfFinding\Types\Amount $listPrice
+ * @property \Enbit\eBaySDK\HalfFinding\Types\NameValueListArrayType $itemSpecifics
+ * @property \Enbit\eBaySDK\HalfFinding\Types\ItemType[] $item
+ * @property \Enbit\eBaySDK\HalfFinding\Types\Amount $listPrice
  * @property integer $reviewCount
- * @property \DTS\eBaySDK\HalfFinding\Types\Amount $BestFixedPrice
- * @property \DTS\eBaySDK\HalfFinding\Types\Amount $BestRentalPrice
+ * @property \Enbit\eBaySDK\HalfFinding\Types\Amount $BestFixedPrice
+ * @property \Enbit\eBaySDK\HalfFinding\Types\Amount $BestRentalPrice
  */
-class HalfCatalogProductType extends \DTS\eBaySDK\Types\BaseType
+class HalfCatalogProductType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -49,7 +49,7 @@ class HalfCatalogProductType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'stockPhotoURL'
         ],
         'productID' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\ProductIDType',
+            'type' => 'Enbit\eBaySDK\HalfFinding\Types\ProductIDType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'productID'
@@ -61,19 +61,19 @@ class HalfCatalogProductType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'categoryName'
         ],
         'itemSpecifics' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\NameValueListArrayType',
+            'type' => 'Enbit\eBaySDK\HalfFinding\Types\NameValueListArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'itemSpecifics'
         ],
         'item' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\ItemType',
+            'type' => 'Enbit\eBaySDK\HalfFinding\Types\ItemType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'item'
         ],
         'listPrice' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\Amount',
+            'type' => 'Enbit\eBaySDK\HalfFinding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'listPrice'
@@ -85,13 +85,13 @@ class HalfCatalogProductType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'reviewCount'
         ],
         'BestFixedPrice' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\Amount',
+            'type' => 'Enbit\eBaySDK\HalfFinding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BestFixedPrice'
         ],
         'BestRentalPrice' => [
-            'type' => 'DTS\eBaySDK\HalfFinding\Types\Amount',
+            'type' => 'Enbit\eBaySDK\HalfFinding\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BestRentalPrice'

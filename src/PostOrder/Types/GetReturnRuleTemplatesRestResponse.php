@@ -8,18 +8,18 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
-use DTS\eBaySDK\StatusCodeTrait;
-use DTS\eBaySDK\HttpHeadersTrait;
+use Enbit\eBaySDK\StatusCodeTrait;
+use Enbit\eBaySDK\HttpHeadersTrait;
 
 /**
  *
- * @property \DTS\eBaySDK\PostOrder\Types\Error[] $error
- * @property \DTS\eBaySDK\PostOrder\Types\ErrorDetailV3[] $errors
- * @property \DTS\eBaySDK\PostOrder\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\PostOrder\Types\Error[] $error
+ * @property \Enbit\eBaySDK\PostOrder\Types\ErrorDetailV3[] $errors
+ * @property \Enbit\eBaySDK\PostOrder\Types\ErrorDetailV3[] $warnings
  */
-class GetReturnRuleTemplatesRestResponse extends \DTS\eBaySDK\PostOrder\Types\GetDispositionRuleTemplatesResponse
+class GetReturnRuleTemplatesRestResponse extends \Enbit\eBaySDK\PostOrder\Types\GetDispositionRuleTemplatesResponse
 {
     use StatusCodeTrait;
     use HttpHeadersTrait;
@@ -29,19 +29,19 @@ class GetReturnRuleTemplatesRestResponse extends \DTS\eBaySDK\PostOrder\Types\Ge
      */
     private static $propertyTypes = [
         'error' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\Error',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\Error',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'error'
         ],
         'errors' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'errors'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\PostOrder\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\PostOrder\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

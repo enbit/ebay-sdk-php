@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Browse\Types;
+namespace Enbit\eBaySDK\Test\Browse\Types;
 
-use DTS\eBaySDK\Browse\Types\AspectDistribution;
+use Enbit\eBaySDK\Browse\Types\AspectDistribution;
 
 class AspectDistributionTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class AspectDistributionTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Browse\Types\AspectDistribution', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Browse\Types\AspectDistribution', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

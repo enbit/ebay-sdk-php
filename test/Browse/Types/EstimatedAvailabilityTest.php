@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Browse\Types;
+namespace Enbit\eBaySDK\Test\Browse\Types;
 
-use DTS\eBaySDK\Browse\Types\EstimatedAvailability;
+use Enbit\eBaySDK\Browse\Types\EstimatedAvailability;
 
 class EstimatedAvailabilityTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class EstimatedAvailabilityTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Browse\Types\EstimatedAvailability', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Browse\Types\EstimatedAvailability', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

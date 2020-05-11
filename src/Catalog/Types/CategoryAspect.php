@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace Enbit\eBaySDK\Catalog\Types;
 
 /**
  *
  * @property string $aspectHelpText
- * @property \DTS\eBaySDK\Catalog\Types\ProductAspectConstraint[] $constraint
+ * @property \Enbit\eBaySDK\Catalog\Types\ProductAspectConstraint[] $constraint
  * @property string $name
- * @property \DTS\eBaySDK\Catalog\Types\CategoryAspectValue[] $values
+ * @property \Enbit\eBaySDK\Catalog\Types\CategoryAspectValue[] $values
  */
-class CategoryAspect extends \DTS\eBaySDK\Types\BaseType
+class CategoryAspect extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -30,7 +30,7 @@ class CategoryAspect extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'aspectHelpText'
         ],
         'constraint' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\ProductAspectConstraint',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\ProductAspectConstraint',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'constraint'
@@ -42,7 +42,7 @@ class CategoryAspect extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'name'
         ],
         'values' => [
-            'type' => 'DTS\eBaySDK\Catalog\Types\CategoryAspectValue',
+            'type' => 'Enbit\eBaySDK\Catalog\Types\CategoryAspectValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'values'

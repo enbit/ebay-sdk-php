@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
  */
-class OnHoldReasonDetailType extends \DTS\eBaySDK\ResolutionCaseManagement\Types\EnumerationDetailType
+class OnHoldReasonDetailType extends \Enbit\eBaySDK\ResolutionCaseManagement\Types\EnumerationDetailType
 {
     /**
      * @var array Properties belonging to objects of this class.

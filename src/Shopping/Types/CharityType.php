@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
@@ -19,9 +19,9 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property string $Mission
  * @property string $LogoURL
  * @property boolean $CharityListing
- * @property \DTS\eBaySDK\Shopping\Enums\CharityStatusCodeType $Status
+ * @property \Enbit\eBaySDK\Shopping\Enums\CharityStatusCodeType $Status
  */
-class CharityType extends \DTS\eBaySDK\Types\BaseType
+class CharityType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

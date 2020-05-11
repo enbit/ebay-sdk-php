@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ReturnManagement\Types;
+namespace Enbit\eBaySDK\ReturnManagement\Types;
 
 /**
  *
  * @property \DateTime $refundDue
- * @property \DTS\eBaySDK\ReturnManagement\Types\EstimatedRefundDetailType $estimatedRefundDetail
- * @property \DTS\eBaySDK\ReturnManagement\Types\ActualRefundDetailType $actualRefundDetail
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\EstimatedRefundDetailType $estimatedRefundDetail
+ * @property \Enbit\eBaySDK\ReturnManagement\Types\ActualRefundDetailType $actualRefundDetail
  */
-class RefundInfoType extends \DTS\eBaySDK\Types\BaseType
+class RefundInfoType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -29,13 +29,13 @@ class RefundInfoType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'refundDue'
         ],
         'estimatedRefundDetail' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\EstimatedRefundDetailType',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\EstimatedRefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'estimatedRefundDetail'
         ],
         'actualRefundDetail' => [
-            'type' => 'DTS\eBaySDK\ReturnManagement\Types\ActualRefundDetailType',
+            'type' => 'Enbit\eBaySDK\ReturnManagement\Types\ActualRefundDetailType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'actualRefundDetail'

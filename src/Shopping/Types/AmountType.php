@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Enums\CurrencyCodeType $currencyID
+ * @property \Enbit\eBaySDK\Shopping\Enums\CurrencyCodeType $currencyID
  */
-class AmountType extends \DTS\eBaySDK\Types\DoubleType
+class AmountType extends \Enbit\eBaySDK\Types\DoubleType
 {
     /**
      * @var array Properties belonging to objects of this class.

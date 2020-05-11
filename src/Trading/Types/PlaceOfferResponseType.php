@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\SellingStatusType $SellingStatus
+ * @property \Enbit\eBaySDK\Trading\Types\SellingStatusType $SellingStatus
  * @property string $TransactionID
- * @property \DTS\eBaySDK\Trading\Types\BestOfferType $BestOffer
+ * @property \Enbit\eBaySDK\Trading\Types\BestOfferType $BestOffer
  * @property string $OrderLineItemID
  */
-class PlaceOfferResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class PlaceOfferResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'SellingStatus' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\SellingStatusType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\SellingStatusType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'SellingStatus'
@@ -36,7 +36,7 @@ class PlaceOfferResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponse
             'elementName' => 'TransactionID'
         ],
         'BestOffer' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\BestOfferType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\BestOfferType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BestOffer'

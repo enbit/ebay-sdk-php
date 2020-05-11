@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\PostOrder\Types;
+namespace Enbit\eBaySDK\PostOrder\Types;
 
 /**
  *
  * @property string $caseId
  */
-class CloseCaseRestRequest extends \DTS\eBaySDK\PostOrder\Types\BuyerCloseCaseRequest
+class CloseCaseRestRequest extends \Enbit\eBaySDK\PostOrder\Types\BuyerCloseCaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.

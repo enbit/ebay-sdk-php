@@ -8,13 +8,13 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
  * @property string $offerId
  */
-class UpdateOfferRestRequest extends \DTS\eBaySDK\Inventory\Types\EbayOfferDetailsWithId
+class UpdateOfferRestRequest extends \Enbit\eBaySDK\Inventory\Types\EbayOfferDetailsWithId
 {
     /**
      * @var array Properties belonging to objects of this class.

@@ -8,23 +8,23 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\OfferArrayType $BidArray
+ * @property \Enbit\eBaySDK\Trading\Types\OfferArrayType $BidArray
  * @property string $HighBidder
- * @property \DTS\eBaySDK\Trading\Types\AmountType $HighestBid
- * @property \DTS\eBaySDK\Trading\Enums\ListingStatusCodeType $ListingStatus
+ * @property \Enbit\eBaySDK\Trading\Types\AmountType $HighestBid
+ * @property \Enbit\eBaySDK\Trading\Enums\ListingStatusCodeType $ListingStatus
  */
-class GetAllBiddersResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetAllBiddersResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'BidArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\OfferArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\OfferArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'BidArray'
@@ -36,7 +36,7 @@ class GetAllBiddersResponseType extends \DTS\eBaySDK\Trading\Types\AbstractRespo
             'elementName' => 'HighBidder'
         ],
         'HighestBid' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'HighestBid'

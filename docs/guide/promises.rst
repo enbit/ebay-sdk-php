@@ -18,8 +18,8 @@ A promise is returned whenever you call an operation with ``Async`` appended to 
 
 .. code-block:: php
 
-    use \DTS\eBaySDK\Shopping\Services;
-    use \DTS\eBaySDK\Shopping\Types;
+    use \Enbit\eBaySDK\Shopping\Services;
+    use \Enbit\eBaySDK\Shopping\Types;
 
     $service = new Services\ShoppingService();
 
@@ -42,9 +42,9 @@ Multiple requests can be composed together and executed concurrently.
 
 .. code-block:: php
 
-    use \DTS\eBaySDK\Sdk;
-    use \DTS\eBaySDK\Shopping\Types as Shopping;
-    use \DTS\eBaySDK\Trading\Types as Trading;
+    use \Enbit\eBaySDK\Sdk;
+    use \Enbit\eBaySDK\Shopping\Types as Shopping;
+    use \Enbit\eBaySDK\Trading\Types as Trading;
 
     $sdk = new Sdk([
         'authToken' => '<AUTH TOKEN>',
@@ -77,8 +77,8 @@ By chaining ``then`` callbacks with other ``then`` callbacks it's possible to cr
 
 .. code-block:: php
 
-    use \DTS\eBaySDK\Shopping\Services;
-    use \DTS\eBaySDK\Shopping\Types;
+    use \Enbit\eBaySDK\Shopping\Services;
+    use \Enbit\eBaySDK\Shopping\Types;
 
     $service = new Services\ShoppingService();
 
@@ -97,8 +97,8 @@ You can force any promise to complete synchronously by calling the ``wait`` meth
 
 .. code-block:: php
 
-    use \DTS\eBaySDK\Shopping\Services;
-    use \DTS\eBaySDK\Shopping\Types;
+    use \Enbit\eBaySDK\Shopping\Services;
+    use \Enbit\eBaySDK\Shopping\Types;
 
     $service = new Services\ShoppingService();
 

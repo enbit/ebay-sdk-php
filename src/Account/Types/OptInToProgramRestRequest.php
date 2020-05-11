@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
  */
-class OptInToProgramRestRequest extends \DTS\eBaySDK\Account\Types\Program
+class OptInToProgramRestRequest extends \Enbit\eBaySDK\Account\Types\Program
 {
     /**
      * @var array Properties belonging to objects of this class.

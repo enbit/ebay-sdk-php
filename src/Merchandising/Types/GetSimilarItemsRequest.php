@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Merchandising\Types;
+namespace Enbit\eBaySDK\Merchandising\Types;
 
 /**
  *
@@ -18,10 +18,10 @@ namespace DTS\eBaySDK\Merchandising\Types;
  * @property string $listingType
  * @property \DateTime $endTimeTo
  * @property \DateTime $endTimeFrom
- * @property \DTS\eBaySDK\Merchandising\Types\Amount $maxPrice
- * @property \DTS\eBaySDK\Merchandising\Types\ItemFilter[] $itemFilter
+ * @property \Enbit\eBaySDK\Merchandising\Types\Amount $maxPrice
+ * @property \Enbit\eBaySDK\Merchandising\Types\ItemFilter[] $itemFilter
  */
-class GetSimilarItemsRequest extends \DTS\eBaySDK\Merchandising\Types\BaseMerchandisingServiceRequest
+class GetSimilarItemsRequest extends \Enbit\eBaySDK\Merchandising\Types\BaseMerchandisingServiceRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -64,13 +64,13 @@ class GetSimilarItemsRequest extends \DTS\eBaySDK\Merchandising\Types\BaseMercha
             'elementName' => 'endTimeFrom'
         ],
         'maxPrice' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\Amount',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\Amount',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'maxPrice'
         ],
         'itemFilter' => [
-            'type' => 'DTS\eBaySDK\Merchandising\Types\ItemFilter',
+            'type' => 'Enbit\eBaySDK\Merchandising\Types\ItemFilter',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'itemFilter'

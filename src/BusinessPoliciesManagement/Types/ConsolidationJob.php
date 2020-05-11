@@ -8,16 +8,16 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BusinessPoliciesManagement\Types;
+namespace Enbit\eBaySDK\BusinessPoliciesManagement\Types;
 
 /**
  *
  * @property integer $JobId
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType $JobType
- * @property \DTS\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobStatus $JobStatus
+ * @property \Enbit\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobType $JobType
+ * @property \Enbit\eBaySDK\BusinessPoliciesManagement\Enums\ConsolidationJobStatus $JobStatus
  * @property integer $SiteId
  */
-class ConsolidationJob extends \DTS\eBaySDK\Types\BaseType
+class ConsolidationJob extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

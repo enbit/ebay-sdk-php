@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Inventory\Types;
+namespace Enbit\eBaySDK\Inventory\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Inventory\Types\Dimension $dimensions
- * @property \DTS\eBaySDK\Inventory\Enums\PackageTypeEnum $packageType
- * @property \DTS\eBaySDK\Inventory\Types\Weight $weight
+ * @property \Enbit\eBaySDK\Inventory\Types\Dimension $dimensions
+ * @property \Enbit\eBaySDK\Inventory\Enums\PackageTypeEnum $packageType
+ * @property \Enbit\eBaySDK\Inventory\Types\Weight $weight
  */
-class PackageWeightAndSize extends \DTS\eBaySDK\Types\BaseType
+class PackageWeightAndSize extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'dimensions' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Dimension',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\Dimension',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'dimensions'
@@ -35,7 +35,7 @@ class PackageWeightAndSize extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'packageType'
         ],
         'weight' => [
-            'type' => 'DTS\eBaySDK\Inventory\Types\Weight',
+            'type' => 'Enbit\eBaySDK\Inventory\Types\Weight',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'weight'

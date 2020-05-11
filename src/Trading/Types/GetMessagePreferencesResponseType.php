@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\ASQPreferencesType $ASQPreferences
+ * @property \Enbit\eBaySDK\Trading\Types\ASQPreferencesType $ASQPreferences
  */
-class GetMessagePreferencesResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetMessagePreferencesResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ASQPreferences' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\ASQPreferencesType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\ASQPreferencesType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ASQPreferences'

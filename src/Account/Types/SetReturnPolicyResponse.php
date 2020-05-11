@@ -8,33 +8,33 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Account\Types;
+namespace Enbit\eBaySDK\Account\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Account\Types\CategoryType[] $categoryTypes
+ * @property \Enbit\eBaySDK\Account\Types\CategoryType[] $categoryTypes
  * @property string $description
  * @property boolean $extendedHolidayReturnsOffered
- * @property \DTS\eBaySDK\Account\Enums\MarketplaceIdEnum $marketplaceId
+ * @property \Enbit\eBaySDK\Account\Enums\MarketplaceIdEnum $marketplaceId
  * @property string $name
- * @property \DTS\eBaySDK\Account\Enums\RefundMethodEnum $refundMethod
+ * @property \Enbit\eBaySDK\Account\Enums\RefundMethodEnum $refundMethod
  * @property string $restockingFeePercentage
  * @property string $returnInstructions
- * @property \DTS\eBaySDK\Account\Enums\ReturnMethodEnum $returnMethod
- * @property \DTS\eBaySDK\Account\Types\TimeDuration $returnPeriod
+ * @property \Enbit\eBaySDK\Account\Enums\ReturnMethodEnum $returnMethod
+ * @property \Enbit\eBaySDK\Account\Types\TimeDuration $returnPeriod
  * @property string $returnPolicyId
  * @property boolean $returnsAccepted
- * @property \DTS\eBaySDK\Account\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
- * @property \DTS\eBaySDK\Account\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Account\Enums\ReturnShippingCostPayerEnum $returnShippingCostPayer
+ * @property \Enbit\eBaySDK\Account\Types\ErrorDetailV3[] $warnings
  */
-class SetReturnPolicyResponse extends \DTS\eBaySDK\Types\BaseType
+class SetReturnPolicyResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'categoryTypes' => [
-            'type' => 'DTS\eBaySDK\Account\Types\CategoryType',
+            'type' => 'Enbit\eBaySDK\Account\Types\CategoryType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'categoryTypes'
@@ -88,7 +88,7 @@ class SetReturnPolicyResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'returnMethod'
         ],
         'returnPeriod' => [
-            'type' => 'DTS\eBaySDK\Account\Types\TimeDuration',
+            'type' => 'Enbit\eBaySDK\Account\Types\TimeDuration',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'returnPeriod'
@@ -112,7 +112,7 @@ class SetReturnPolicyResponse extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'returnShippingCostPayer'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Account\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Account\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

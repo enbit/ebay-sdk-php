@@ -8,28 +8,28 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType $caseId
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\EscalationReasonType $escalationReason
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\CaseIdType $caseId
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\EscalationReasonType $escalationReason
  * @property string $comments
  */
-class EscalateToCustomerSupportRequest extends \DTS\eBaySDK\ResolutionCaseManagement\Types\BaseRequest
+class EscalateToCustomerSupportRequest extends \Enbit\eBaySDK\ResolutionCaseManagement\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'caseId' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseIdType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\CaseIdType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'caseId'
         ],
         'escalationReason' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\EscalationReasonType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\EscalationReasonType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'escalationReason'

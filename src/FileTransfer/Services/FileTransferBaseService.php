@@ -1,10 +1,10 @@
 <?php
-namespace DTS\eBaySDK\FileTransfer\Services;
+namespace Enbit\eBaySDK\FileTransfer\Services;
 
 /**
  * Base class for the FileTransfer service.
  */
-class FileTransferBaseService extends \DTS\eBaySDK\Services\BaseService
+class FileTransferBaseService extends \Enbit\eBaySDK\Services\BaseService
 {
     /**
      * HTTP header constant. The API version your application supports.
@@ -41,7 +41,7 @@ class FileTransferBaseService extends \DTS\eBaySDK\Services\BaseService
         return $definitions + [
             'apiVersion' => [
                 'valid' => ['string'],
-                'default' => \DTS\eBaySDK\FileTransfer\Services\FileTransferService::API_VERSION
+                'default' => \Enbit\eBaySDK\FileTransfer\Services\FileTransferService::API_VERSION
             ],
             'authToken' => [
                 'valid' => ['string'],
@@ -57,12 +57,12 @@ class FileTransferBaseService extends \DTS\eBaySDK\Services\BaseService
      * the request object before it is handled by the parent class.
      *
      * @param string $name The name of the operation.
-     * @param \DTS\eBaySDK\Types\BaseType $request Request object containing the request information.
+     * @param \Enbit\eBaySDK\Types\BaseType $request Request object containing the request information.
      * @param string $responseClass The name of the PHP class that will be created from the XML response.
      *
      * @return \GuzzleHttp\Promise\PromiseInterface A promise that will be resolved with an object created from the XML response.
      */
-    protected function callOperationAsync($name, \DTS\eBaySDK\Types\BaseType $request, $responseClass)
+    protected function callOperationAsync($name, \Enbit\eBaySDK\Types\BaseType $request, $responseClass)
     {
         /**
          * Modify the request object to add xop:Include element.
@@ -72,12 +72,12 @@ class FileTransferBaseService extends \DTS\eBaySDK\Services\BaseService
              * Don't modify a request if the file attachment already exists.
              */
             if (!isset($request->fileAttachment)) {
-                $request->fileAttachment = new \DTS\eBaySDK\FileTransfer\Types\FileAttachment();
+                $request->fileAttachment = new \Enbit\eBaySDK\FileTransfer\Types\FileAttachment();
             }
 
             if (!isset($request->fileAttachment->Data)) {
-                $request->fileAttachment->Data = new \DTS\eBaySDK\FileTransfer\Types\Data([
-                    'xopInclude' => new \DTS\eBaySDK\FileTransfer\Types\XopInclude([
+                $request->fileAttachment->Data = new \Enbit\eBaySDK\FileTransfer\Types\Data([
+                    'xopInclude' => new \Enbit\eBaySDK\FileTransfer\Types\XopInclude([
                         'href' => 'cid:attachment.bin@devbay.net'
                     ])
                 ]);

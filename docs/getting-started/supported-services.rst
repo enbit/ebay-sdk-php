@@ -10,53 +10,53 @@ Namespaces
 ============================= ========================================
 eBay Service                  SDK Namespace
 ============================= ========================================
-`Account`_                    DTS\\eBaySDK\\Account
+`Account`_                    Enbit\\eBaySDK\\Account
 ----------------------------- ----------------------------------------
-`Analytics`_                  DTS\\eBaySDK\\Analytics
+`Analytics`_                  Enbit\\eBaySDK\\Analytics
 ----------------------------- ----------------------------------------
-`Browse`_                     DTS\\eBaySDK\\Browse
+`Browse`_                     Enbit\\eBaySDK\\Browse
 ----------------------------- ----------------------------------------
-`Bulk Data Exchange`_         DTS\\eBaySDK\\BulkDataExchange
+`Bulk Data Exchange`_         Enbit\\eBaySDK\\BulkDataExchange
 ----------------------------- ----------------------------------------
-`Business Policies`_          DTS\\eBaySDK\\BusinessPoliciesManagement
+`Business Policies`_          Enbit\\eBaySDK\\BusinessPoliciesManagement
 ----------------------------- ----------------------------------------
-`Feedback`_                   DTS\\eBaySDK\\Feedback
+`Feedback`_                   Enbit\\eBaySDK\\Feedback
 ----------------------------- ----------------------------------------
-`File Transfer`_              DTS\\eBaySDK\\FileTransfer
+`File Transfer`_              Enbit\\eBaySDK\\FileTransfer
 ----------------------------- ----------------------------------------
-`Finding`_                    DTS\\eBaySDK\\Finding
+`Finding`_                    Enbit\\eBaySDK\\Finding
 ----------------------------- ----------------------------------------
-`Fulfillment`_                DTS\\eBaySDK\\Fulfillment
+`Fulfillment`_                Enbit\\eBaySDK\\Fulfillment
 ----------------------------- ----------------------------------------
-`Half Finding`_               DTS\\eBaySDK\\HalfFinding
+`Half Finding`_               Enbit\\eBaySDK\\HalfFinding
 ----------------------------- ----------------------------------------
-`Inventory`_                  DTS\\eBaySDK\\Inventory
+`Inventory`_                  Enbit\\eBaySDK\\Inventory
 ----------------------------- ----------------------------------------
-`Marketing`_                  DTS\\eBaySDK\\Marketing
+`Marketing`_                  Enbit\\eBaySDK\\Marketing
 ----------------------------- ----------------------------------------
-`Merchandising`_              DTS\\eBaySDK\\Merchandising
+`Merchandising`_              Enbit\\eBaySDK\\Merchandising
 ----------------------------- ----------------------------------------
-`Merchant Data`_              DTS\\eBaySDK\\MerchantData
+`Merchant Data`_              Enbit\\eBaySDK\\MerchantData
 ----------------------------- ----------------------------------------
-`Metadata`_                   DTS\\eBaySDK\\Metadata
+`Metadata`_                   Enbit\\eBaySDK\\Metadata
 ----------------------------- ----------------------------------------
-`Order`_                      DTS\\eBaySDK\\Order
+`Order`_                      Enbit\\eBaySDK\\Order
 ----------------------------- ----------------------------------------
-`Post Order`_                 DTS\\eBaySDK\\PostOrder
+`Post Order`_                 Enbit\\eBaySDK\\PostOrder
 ----------------------------- ----------------------------------------
-`Product`_                    DTS\\eBaySDK\\Product
+`Product`_                    Enbit\\eBaySDK\\Product
 ----------------------------- ----------------------------------------
-`Product Metadata`_           DTS\\eBaySDK\\ProductMetadata
+`Product Metadata`_           Enbit\\eBaySDK\\ProductMetadata
 ----------------------------- ----------------------------------------
-`Related Items Management`_   DTS\\eBaySDK\\RelatedItemsManagement
+`Related Items Management`_   Enbit\\eBaySDK\\RelatedItemsManagement
 ----------------------------- ----------------------------------------
-`Resolution Case Management`_ DTS\\eBaySDK\\ResolutionCaseManagement
+`Resolution Case Management`_ Enbit\\eBaySDK\\ResolutionCaseManagement
 ----------------------------- ----------------------------------------
-`Return Management`_          DTS\\eBaySDK\\ReturnManagement
+`Return Management`_          Enbit\\eBaySDK\\ReturnManagement
 ----------------------------- ----------------------------------------
-`Shopping`_                   DTS\\eBaySDK\\Shopping
+`Shopping`_                   Enbit\\eBaySDK\\Shopping
 ----------------------------- ----------------------------------------
-`Trading`_                    DTS\\eBaySDK\\Trading
+`Trading`_                    Enbit\\eBaySDK\\Trading
 ============================= ========================================
 
 .. _Account: http://developer.ebay.com/devzone/rest/api-ref/account/index.html

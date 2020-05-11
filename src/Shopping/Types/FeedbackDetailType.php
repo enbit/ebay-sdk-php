@@ -8,22 +8,22 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Shopping\Types;
+namespace Enbit\eBaySDK\Shopping\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType $FeedbackRatingStar
+ * @property \Enbit\eBaySDK\Shopping\Enums\FeedbackRatingStarCodeType $FeedbackRatingStar
  * @property string $CommentingUser
  * @property integer $CommentingUserScore
  * @property string $CommentText
  * @property \DateTime $CommentTime
- * @property \DTS\eBaySDK\Shopping\Enums\CommentTypeCodeType $CommentType
+ * @property \Enbit\eBaySDK\Shopping\Enums\CommentTypeCodeType $CommentType
  * @property string $FeedbackResponse
  * @property string $FollowUp
  * @property string $ItemID
- * @property \DTS\eBaySDK\Shopping\Enums\TradingRoleCodeType $Role
+ * @property \Enbit\eBaySDK\Shopping\Enums\TradingRoleCodeType $Role
  * @property string $ItemTitle
- * @property \DTS\eBaySDK\Shopping\Types\AmountType $ItemPrice
+ * @property \Enbit\eBaySDK\Shopping\Types\AmountType $ItemPrice
  * @property string $FeedbackID
  * @property string $TransactionID
  * @property boolean $CommentReplaced
@@ -31,7 +31,7 @@ namespace DTS\eBaySDK\Shopping\Types;
  * @property boolean $FollowUpReplaced
  * @property boolean $Countable
  */
-class FeedbackDetailType extends \DTS\eBaySDK\Types\BaseType
+class FeedbackDetailType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -104,7 +104,7 @@ class FeedbackDetailType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ItemTitle'
         ],
         'ItemPrice' => [
-            'type' => 'DTS\eBaySDK\Shopping\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\Shopping\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'ItemPrice'

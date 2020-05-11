@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\CheckShippingLabelEligibilityRestResponse;
+use Enbit\eBaySDK\PostOrder\Types\CheckShippingLabelEligibilityRestResponse;
 
 class CheckShippingLabelEligibilityRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CheckShippingLabelEligibilityRestResponseTest extends \PHPUnit_Framework_T
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\CheckShippingLabelEligibilityRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\CheckShippingLabelEligibilityRestResponse', $this->obj);
     }
 
     public function testExtendsCheckLabelPrintEligibilityResponse()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\CheckLabelPrintEligibilityResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\CheckLabelPrintEligibilityResponse', $this->obj);
     }
 }

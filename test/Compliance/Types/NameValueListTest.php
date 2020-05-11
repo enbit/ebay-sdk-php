@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Compliance\Types;
+namespace Enbit\eBaySDK\Test\Compliance\Types;
 
-use DTS\eBaySDK\Compliance\Types\NameValueList;
+use Enbit\eBaySDK\Compliance\Types\NameValueList;
 
 class NameValueListTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class NameValueListTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Compliance\Types\NameValueList', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Compliance\Types\NameValueList', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Browse\Types;
+namespace Enbit\eBaySDK\Test\Browse\Types;
 
-use DTS\eBaySDK\Browse\Types\SortField;
+use Enbit\eBaySDK\Browse\Types\SortField;
 
 class SortFieldTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class SortFieldTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Browse\Types\SortField', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Browse\Types\SortField', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

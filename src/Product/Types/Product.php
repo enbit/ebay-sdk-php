@@ -8,44 +8,44 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Product\Types;
+namespace Enbit\eBaySDK\Product\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Product\Types\ProductIdentifier $productIdentifier
- * @property \DTS\eBaySDK\Product\Types\StockPhotoURL $stockPhotoURL
- * @property \DTS\eBaySDK\Product\Types\PropertyValue[] $productDetails
- * @property \DTS\eBaySDK\Product\Types\ProductStatus $productStatus
+ * @property \Enbit\eBaySDK\Product\Types\ProductIdentifier $productIdentifier
+ * @property \Enbit\eBaySDK\Product\Types\StockPhotoURL $stockPhotoURL
+ * @property \Enbit\eBaySDK\Product\Types\PropertyValue[] $productDetails
+ * @property \Enbit\eBaySDK\Product\Types\ProductStatus $productStatus
  * @property integer $compatibilityCount
  * @property string $type
- * @property \DTS\eBaySDK\Product\Types\Notes $notes
+ * @property \Enbit\eBaySDK\Product\Types\Notes $notes
  */
-class Product extends \DTS\eBaySDK\Types\BaseType
+class Product extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'productIdentifier' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductIdentifier',
+            'type' => 'Enbit\eBaySDK\Product\Types\ProductIdentifier',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productIdentifier'
         ],
         'stockPhotoURL' => [
-            'type' => 'DTS\eBaySDK\Product\Types\StockPhotoURL',
+            'type' => 'Enbit\eBaySDK\Product\Types\StockPhotoURL',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'stockPhotoURL'
         ],
         'productDetails' => [
-            'type' => 'DTS\eBaySDK\Product\Types\PropertyValue',
+            'type' => 'Enbit\eBaySDK\Product\Types\PropertyValue',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'productDetails'
         ],
         'productStatus' => [
-            'type' => 'DTS\eBaySDK\Product\Types\ProductStatus',
+            'type' => 'Enbit\eBaySDK\Product\Types\ProductStatus',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'productStatus'
@@ -63,7 +63,7 @@ class Product extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'type'
         ],
         'notes' => [
-            'type' => 'DTS\eBaySDK\Product\Types\Notes',
+            'type' => 'Enbit\eBaySDK\Product\Types\Notes',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'notes'

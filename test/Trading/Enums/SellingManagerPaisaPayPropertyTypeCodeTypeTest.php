@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Trading\Enums;
+namespace Enbit\eBaySDK\Test\Trading\Enums;
 
-use DTS\eBaySDK\Trading\Enums\SellingManagerPaisaPayPropertyTypeCodeType;
+use Enbit\eBaySDK\Trading\Enums\SellingManagerPaisaPayPropertyTypeCodeType;
 
 class SellingManagerPaisaPayPropertyTypeCodeTypeTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,6 +23,6 @@ class SellingManagerPaisaPayPropertyTypeCodeTypeTest extends \PHPUnit_Framework_
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Trading\Enums\SellingManagerPaisaPayPropertyTypeCodeType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Trading\Enums\SellingManagerPaisaPayPropertyTypeCodeType', $this->obj);
     }
 }

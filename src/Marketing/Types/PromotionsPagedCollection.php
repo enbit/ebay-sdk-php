@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Marketing\Types;
+namespace Enbit\eBaySDK\Marketing\Types;
 
 /**
  *
@@ -17,10 +17,10 @@ namespace DTS\eBaySDK\Marketing\Types;
  * @property string $next
  * @property integer $offset
  * @property string $prev
- * @property \DTS\eBaySDK\Marketing\Types\PromotionDetail[] $promotions
+ * @property \Enbit\eBaySDK\Marketing\Types\PromotionDetail[] $promotions
  * @property integer $total
  */
-class PromotionsPagedCollection extends \DTS\eBaySDK\Types\BaseType
+class PromotionsPagedCollection extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -57,7 +57,7 @@ class PromotionsPagedCollection extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'prev'
         ],
         'promotions' => [
-            'type' => 'DTS\eBaySDK\Marketing\Types\PromotionDetail',
+            'type' => 'Enbit\eBaySDK\Marketing\Types\PromotionDetail',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'promotions'

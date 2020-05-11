@@ -8,14 +8,14 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  * @property string $ItemID
- * @property \DTS\eBaySDK\Trading\Types\FeeType[] $Fee
+ * @property \Enbit\eBaySDK\Trading\Types\FeeType[] $Fee
  */
-class InventoryFeesType extends \DTS\eBaySDK\Types\BaseType
+class InventoryFeesType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -28,7 +28,7 @@ class InventoryFeesType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'ItemID'
         ],
         'Fee' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\FeeType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\FeeType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'Fee'

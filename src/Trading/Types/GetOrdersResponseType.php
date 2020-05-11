@@ -8,25 +8,25 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
+ * @property \Enbit\eBaySDK\Trading\Types\PaginationResultType $PaginationResult
  * @property boolean $HasMoreOrders
- * @property \DTS\eBaySDK\Trading\Types\OrderArrayType $OrderArray
+ * @property \Enbit\eBaySDK\Trading\Types\OrderArrayType $OrderArray
  * @property integer $OrdersPerPage
  * @property integer $PageNumber
  * @property integer $ReturnedOrderCountActual
  */
-class GetOrdersResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class GetOrdersResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'PaginationResult' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\PaginationResultType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\PaginationResultType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'PaginationResult'
@@ -38,7 +38,7 @@ class GetOrdersResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseT
             'elementName' => 'HasMoreOrders'
         ],
         'OrderArray' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\OrderArrayType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\OrderArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'OrderArray'

@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\BulkDataExchange\Types;
+namespace Enbit\eBaySDK\BulkDataExchange\Types;
 
 /**
  *
  */
-class StartUploadJobResponse extends \DTS\eBaySDK\BulkDataExchange\Types\BaseServiceResponse
+class StartUploadJobResponse extends \Enbit\eBaySDK\BulkDataExchange\Types\BaseServiceResponse
 {
     /**
      * @var array Properties belonging to objects of this class.

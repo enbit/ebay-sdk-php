@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Catalog\Types;
+namespace Enbit\eBaySDK\Catalog\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Catalog\Types;
  * @property integer $matchCount
  * @property string $refinementHref
  */
-class AspectValueDistribution extends \DTS\eBaySDK\Types\BaseType
+class AspectValueDistribution extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

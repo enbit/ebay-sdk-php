@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\Trading\Types;
  * @property integer $NeutralFeedbackLeftCount
  * @property double $FeedbackLeftPercent
  */
-class BuyerRoleMetricsType extends \DTS\eBaySDK\Types\BaseType
+class BuyerRoleMetricsType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

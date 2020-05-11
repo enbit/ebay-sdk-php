@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Marketing\Types;
+namespace Enbit\eBaySDK\Test\Marketing\Types;
 
-use DTS\eBaySDK\Marketing\Types\GetListingsInSpecificPromotionRestResponse;
+use Enbit\eBaySDK\Marketing\Types\GetListingsInSpecificPromotionRestResponse;
 
 class GetListingsInSpecificPromotionRestResponseTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class GetListingsInSpecificPromotionRestResponseTest extends \PHPUnit_Framework_
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\GetListingsInSpecificPromotionRestResponse', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\GetListingsInSpecificPromotionRestResponse', $this->obj);
     }
 
     public function testExtendsItemsPagedCollection()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Marketing\Types\ItemsPagedCollection', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Marketing\Types\ItemsPagedCollection', $this->obj);
     }
 }

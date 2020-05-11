@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\MerchantData\Types;
+namespace Enbit\eBaySDK\MerchantData\Types;
 
 /**
  *
@@ -18,9 +18,9 @@ namespace DTS\eBaySDK\MerchantData\Types;
  * @property \DateTime $OriginalChargeTime
  * @property \DateTime $StartTime
  * @property \DateTime $EndTime
- * @property \DTS\eBaySDK\MerchantData\Types\AmountType $FeeAmount
+ * @property \Enbit\eBaySDK\MerchantData\Types\AmountType $FeeAmount
  */
-class NonUsageTransactionType extends \DTS\eBaySDK\Types\BaseType
+class NonUsageTransactionType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
@@ -63,7 +63,7 @@ class NonUsageTransactionType extends \DTS\eBaySDK\Types\BaseType
             'elementName' => 'EndTime'
         ],
         'FeeAmount' => [
-            'type' => 'DTS\eBaySDK\MerchantData\Types\AmountType',
+            'type' => 'Enbit\eBaySDK\MerchantData\Types\AmountType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'FeeAmount'

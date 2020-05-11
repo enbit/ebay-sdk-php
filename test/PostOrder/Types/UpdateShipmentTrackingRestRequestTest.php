@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\PostOrder\Types;
+namespace Enbit\eBaySDK\Test\PostOrder\Types;
 
-use DTS\eBaySDK\PostOrder\Types\UpdateShipmentTrackingRestRequest;
+use Enbit\eBaySDK\PostOrder\Types\UpdateShipmentTrackingRestRequest;
 
 class UpdateShipmentTrackingRestRequestTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class UpdateShipmentTrackingRestRequestTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\UpdateShipmentTrackingRestRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\UpdateShipmentTrackingRestRequest', $this->obj);
     }
 
     public function testExtendsUpdateTrackingRequest()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\PostOrder\Types\UpdateTrackingRequest', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\PostOrder\Types\UpdateTrackingRequest', $this->obj);
     }
 }

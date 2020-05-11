@@ -8,12 +8,12 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
  */
-class DisableUnpaidItemAssistanceResponseType extends \DTS\eBaySDK\Trading\Types\AbstractResponseType
+class DisableUnpaidItemAssistanceResponseType extends \Enbit\eBaySDK\Trading\Types\AbstractResponseType
 {
     /**
      * @var array Properties belonging to objects of this class.

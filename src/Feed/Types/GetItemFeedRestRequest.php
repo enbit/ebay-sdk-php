@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Feed\Types;
+namespace Enbit\eBaySDK\Feed\Types;
 
 /**
  *
@@ -16,7 +16,7 @@ namespace DTS\eBaySDK\Feed\Types;
  * @property string $date
  * @property string $feed_type
  */
-class GetItemFeedRestRequest extends \DTS\eBaySDK\Types\BaseType
+class GetItemFeedRestRequest extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

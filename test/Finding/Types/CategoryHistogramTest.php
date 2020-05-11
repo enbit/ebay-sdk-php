@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Types;
+namespace Enbit\eBaySDK\Test\Finding\Types;
 
-use DTS\eBaySDK\Finding\Types\CategoryHistogram;
+use Enbit\eBaySDK\Finding\Types\CategoryHistogram;
 
 class CategoryHistogramTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class CategoryHistogramTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\CategoryHistogram', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\CategoryHistogram', $this->obj);
     }
 
     public function testExtendsCategory()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\Category', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\Category', $this->obj);
     }
 }

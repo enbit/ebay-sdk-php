@@ -8,9 +8,9 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Test\Finding\Types;
+namespace Enbit\eBaySDK\Test\Finding\Types;
 
-use DTS\eBaySDK\Finding\Types\DomainFilter;
+use Enbit\eBaySDK\Finding\Types\DomainFilter;
 
 class DomainFilterTest extends \PHPUnit_Framework_TestCase
 {
@@ -23,11 +23,11 @@ class DomainFilterTest extends \PHPUnit_Framework_TestCase
 
     public function testCanBeCreated()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Finding\Types\DomainFilter', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Finding\Types\DomainFilter', $this->obj);
     }
 
     public function testExtendsBaseType()
     {
-        $this->assertInstanceOf('\DTS\eBaySDK\Types\BaseType', $this->obj);
+        $this->assertInstanceOf('\Enbit\eBaySDK\Types\BaseType', $this->obj);
     }
 }

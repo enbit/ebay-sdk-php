@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Metadata\Types;
+namespace Enbit\eBaySDK\Metadata\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Metadata\Types\AutomotivePartsCompatibilityPolicy[] $automotivePartsCompatibilityPolicies
- * @property \DTS\eBaySDK\Metadata\Types\ErrorDetailV3[] $warnings
+ * @property \Enbit\eBaySDK\Metadata\Types\AutomotivePartsCompatibilityPolicy[] $automotivePartsCompatibilityPolicies
+ * @property \Enbit\eBaySDK\Metadata\Types\ErrorDetailV3[] $warnings
  */
-class AutomotivePartsCompatibilityPolicyResponse extends \DTS\eBaySDK\Types\BaseType
+class AutomotivePartsCompatibilityPolicyResponse extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'automotivePartsCompatibilityPolicies' => [
-            'type' => 'DTS\eBaySDK\Metadata\Types\AutomotivePartsCompatibilityPolicy',
+            'type' => 'Enbit\eBaySDK\Metadata\Types\AutomotivePartsCompatibilityPolicy',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'automotivePartsCompatibilityPolicies'
         ],
         'warnings' => [
-            'type' => 'DTS\eBaySDK\Metadata\Types\ErrorDetailV3',
+            'type' => 'Enbit\eBaySDK\Metadata\Types\ErrorDetailV3',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'warnings'

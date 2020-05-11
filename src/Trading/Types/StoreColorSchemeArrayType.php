@@ -8,20 +8,20 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Types\StoreColorSchemeType[] $ColorScheme
+ * @property \Enbit\eBaySDK\Trading\Types\StoreColorSchemeType[] $ColorScheme
  */
-class StoreColorSchemeArrayType extends \DTS\eBaySDK\Types\BaseType
+class StoreColorSchemeArrayType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'ColorScheme' => [
-            'type' => 'DTS\eBaySDK\Trading\Types\StoreColorSchemeType',
+            'type' => 'Enbit\eBaySDK\Trading\Types\StoreColorSchemeType',
             'repeatable' => true,
             'attribute' => false,
             'elementName' => 'ColorScheme'

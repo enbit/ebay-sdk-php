@@ -8,15 +8,15 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Trading\Types;
+namespace Enbit\eBaySDK\Trading\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Trading\Enums\CountryCodeType $Country
+ * @property \Enbit\eBaySDK\Trading\Enums\CountryCodeType $Country
  * @property boolean $OptInStatus
  * @property boolean $ListingPreference
  */
-class EBayPLUSPreferenceType extends \DTS\eBaySDK\Types\BaseType
+class EBayPLUSPreferenceType extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

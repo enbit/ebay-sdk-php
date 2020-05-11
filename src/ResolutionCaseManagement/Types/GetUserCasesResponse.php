@@ -8,27 +8,27 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ResolutionCaseManagement\Types;
+namespace Enbit\eBaySDK\ResolutionCaseManagement\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType $cases
- * @property \DTS\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput $paginationOutput
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType $cases
+ * @property \Enbit\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput $paginationOutput
  */
-class GetUserCasesResponse extends \DTS\eBaySDK\ResolutionCaseManagement\Types\BaseResponse
+class GetUserCasesResponse extends \Enbit\eBaySDK\ResolutionCaseManagement\Types\BaseResponse
 {
     /**
      * @var array Properties belonging to objects of this class.
      */
     private static $propertyTypes = [
         'cases' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\CaseArrayType',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'cases'
         ],
         'paginationOutput' => [
-            'type' => 'DTS\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput',
+            'type' => 'Enbit\eBaySDK\ResolutionCaseManagement\Types\PaginationOutput',
             'repeatable' => false,
             'attribute' => false,
             'elementName' => 'paginationOutput'

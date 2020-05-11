@@ -8,11 +8,11 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\Analytics\Types;
+namespace Enbit\eBaySDK\Analytics\Types;
 
 /**
  *
- * @property \DTS\eBaySDK\Analytics\Enums\StandardsLevelEnum $level
+ * @property \Enbit\eBaySDK\Analytics\Enums\StandardsLevelEnum $level
  * @property string $lookbackEndDate
  * @property string $lookbackStartDate
  * @property string $metricKey
@@ -20,10 +20,10 @@ namespace DTS\eBaySDK\Analytics\Types;
  * @property mixed $thresholdLowerBound
  * @property string $thresholdMetaData
  * @property mixed $thresholdUpperBound
- * @property \DTS\eBaySDK\Analytics\Enums\DataTypeEnum $type
+ * @property \Enbit\eBaySDK\Analytics\Enums\DataTypeEnum $type
  * @property mixed $value
  */
-class Metric extends \DTS\eBaySDK\Types\BaseType
+class Metric extends \Enbit\eBaySDK\Types\BaseType
 {
     /**
      * @var array Properties belonging to objects of this class.

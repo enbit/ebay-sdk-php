@@ -8,7 +8,7 @@
  * is updated. You've been warned!
  */
 
-namespace DTS\eBaySDK\ProductMetadata\Types;
+namespace Enbit\eBaySDK\ProductMetadata\Types;
 
 /**
  *
@@ -17,7 +17,7 @@ namespace DTS\eBaySDK\ProductMetadata\Types;
  * @property boolean $includeGroupPropertiesOnly
  * @property string[] $groupType
  */
-class ProductMetadataRequest extends \DTS\eBaySDK\ProductMetadata\Types\BaseRequest
+class ProductMetadataRequest extends \Enbit\eBaySDK\ProductMetadata\Types\BaseRequest
 {
     /**
      * @var array Properties belonging to objects of this class.
