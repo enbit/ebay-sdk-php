@@ -168,10 +168,6 @@ class OAuthService
      */
     public function redirectUrlForUser(array $params)
     {
-        if (!array_key_exists('state', $params)) {
-            throw new \InvalidArgumentException('state parameter required');
-        }
-
         if (!array_key_exists('scope', $params)) {
             throw new \InvalidArgumentException('scope parameter required');
         }
@@ -183,11 +179,17 @@ class OAuthService
         $urlParams = [
             'client_id'     => $this->getConfig('credentials')->getAppId(),
             'redirect_uri'  => $this->getConfig('ruName'),
-            'response_type' => 'code',
-            'state'         => $params['state'],
-            'scope'         => implode($params['scope'], ' ')
-
+            'response_type' => (! empty($params['response_type']))? $params['response_type'] : 'code',
+            'scope'         => implode($params['scope'], ' '),
         ];
+
+        if (array_key_exists('state', $params)) {
+            $urlParams['state'] = $params['state'];
+        }
+
+        if (array_key_exists('prompt', $params)) {
+            $urlParams['prompt'] = $params['prompt'];
+        }
 
         return $url.http_build_query($urlParams, null, '&', PHP_QUERY_RFC3986);
     }
